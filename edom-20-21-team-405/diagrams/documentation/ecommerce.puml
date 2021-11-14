@@ -1,0 +1,39 @@
+@startuml ecommerce.png
+
+Product "1"*-->"*" Review
+Review "1"*-->"1" Rating
+Review "1"*-->"1" Client
+Review "1"*-->"1" Image
+Review "1"*-->"1" Comment
+Comment "1"*-->"1" Client
+Comment "1"*-->"*" Comment
+
+class Product {
+  String name
+  long price
+  String category
+}
+
+class Review {
+  String title
+  Date date
+  int helpfulRating
+}
+
+class Client {
+  String name
+  String email
+  String country
+}
+
+class Rating {
+  int value
+}
+
+class Comment {
+  String comment
+  Date date
+}
+
+
+@enduml

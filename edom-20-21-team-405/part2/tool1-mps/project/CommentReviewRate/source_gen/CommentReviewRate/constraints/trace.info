@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,35,0" name="CommentReviewRate.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:11366c19-b94f-436c-ad13-562eb496cee2(CommentReviewRate.constraints)/7018486486195103240">
+    <file name="Comment_Constraints.java">
+      <node id="7018486486195103240" at="31,32,32,31" concept="10" />
+      <node id="7018486486195103240" at="39,127,40,128" concept="5" />
+      <node id="7018486486195103240" at="40,128,41,0" concept="7" />
+      <node id="7018486486195103240" at="42,55,43,71" concept="1" />
+      <node id="7018486486195103240" at="44,9,45,0" concept="7" />
+      <node id="7018486486195103240" at="45,0,46,22" concept="6" />
+      <node id="7018486486195103240" at="54,128,55,133" concept="5" />
+      <node id="7018486486195103240" at="55,133,56,0" concept="7" />
+      <node id="7018486486195103240" at="57,55,58,72" concept="1" />
+      <node id="7018486486195103240" at="59,9,60,0" concept="7" />
+      <node id="7018486486195103240" at="60,0,61,22" concept="6" />
+      <node id="7018486486196588731" at="66,59,67,40" concept="10" />
+      <node id="7018486486196588731" at="70,35,71,18" concept="6" />
+      <node id="7018486486196806285" at="74,40,75,164" concept="6" />
+      <node id="7018486486196588731" at="78,38,79,18" concept="6" />
+      <node id="7018486486196588731" at="81,0,82,0" concept="8" trace="validatePropertyBreakingPoint" />
+      <node id="7018486486196588731" at="83,109,84,99" concept="5" />
+      <node id="7018486486196588731" at="85,53,86,75" concept="1" />
+      <node id="7018486486196588731" at="87,7,88,20" concept="6" />
+      <node id="7018486486196775844" at="90,85,91,71" concept="6" />
+      <node id="7018486486195103240" at="95,84,96,119" concept="5" />
+      <node id="7018486486196588731" at="96,119,97,61" concept="1" />
+      <node id="7018486486195103240" at="97,61,98,22" concept="6" />
+      <node id="7018486486196891334" at="100,128,101,255" concept="6" />
+      <node id="7018486486197916306" at="103,128,104,30" concept="5" />
+      <node id="7018486486197918863" at="104,30,105,0" concept="7" />
+      <node id="7018486486198126196" at="107,360,108,28" concept="1" />
+      <node id="7018486486198146538" at="109,7,110,0" concept="7" />
+      <node id="7018486486198156667" at="111,362,112,28" concept="1" />
+      <node id="7018486486197609161" at="114,5,115,102" concept="6" />
+      <node id="7018486486195103240" at="117,0,118,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="7018486486195103240" at="118,0,119,0" concept="8" trace="canBeParentBreakingPoint" />
+      <node id="7018486486195103240" at="121,0,122,0" concept="8" trace="Comment$jZ" />
+      <node id="7018486486195103240" at="125,0,126,0" concept="8" trace="name$MnvL" />
+      <node id="7018486486195103240" at="129,0,130,0" concept="8" trace="Fields$BGML" />
+      <node id="7018486486195103240" at="31,0,34,0" concept="0" trace="Comment_Constraints#()V" />
+      <node id="7018486486195103240" at="41,0,44,9" concept="3" />
+      <node id="7018486486195103240" at="56,0,59,9" concept="3" />
+      <node id="7018486486196588731" at="66,0,69,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7018486486196588731" at="84,99,87,7" concept="3" />
+      <node id="7018486486196588731" at="90,0,93,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="7018486486195103240" at="100,0,103,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7018486486197935846" at="106,78,109,7" concept="3" />
+      <node id="7018486486198156665" at="110,0,113,7" concept="3" />
+      <node id="7018486486196588731" at="69,0,73,0" concept="4" trace="hasOwnGetter#()Z" />
+      <node id="7018486486196588731" at="73,0,77,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="7018486486196588731" at="77,0,81,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="7018486486195103240" at="94,0,100,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="7018486486196588731" at="82,0,90,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="7018486486197919088" at="105,0,114,5" concept="2" />
+      <node id="7018486486195103240" at="38,0,48,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7018486486195103240" at="53,0,63,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7018486486195103240" at="36,103,48,6" concept="6" />
+      <node id="7018486486195103240" at="51,105,63,6" concept="6" />
+      <node id="7018486486195103240" at="103,0,117,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7018486486195103240" at="35,0,50,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="7018486486195103240" at="50,0,65,0" concept="4" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="7018486486195103240" at="31,32,32,31" />
+      <scope id="7018486486195103240" at="42,55,43,71" />
+      <scope id="7018486486195103240" at="57,55,58,72" />
+      <scope id="7018486486196588731" at="66,59,67,40" />
+      <scope id="7018486486196588731" at="70,35,71,18" />
+      <scope id="7018486486196805858" at="74,40,75,164" />
+      <scope id="7018486486196588731" at="78,38,79,18" />
+      <scope id="7018486486196588731" at="85,53,86,75" />
+      <scope id="7018486486196775490" at="90,85,91,71" />
+      <scope id="7018486486196875068" at="100,128,101,255" />
+      <scope id="7018486486197935848" at="107,360,108,28" />
+      <scope id="7018486486198156666" at="111,362,112,28" />
+      <scope id="7018486486195103240" at="31,0,34,0" />
+      <scope id="7018486486196588731" at="66,0,69,0">
+        <var name="container" id="7018486486196588731" />
+      </scope>
+      <scope id="7018486486196588731" at="90,0,93,0">
+        <var name="node" id="7018486486196588731" />
+        <var name="propertyValue" id="7018486486196588731" />
+      </scope>
+      <scope id="7018486486195103240" at="95,84,98,22">
+        <var name="properties" id="7018486486195103240" />
+      </scope>
+      <scope id="7018486486195103240" at="100,0,103,0">
+        <var name="childConcept" id="7018486486195103240" />
+        <var name="link" id="7018486486195103240" />
+        <var name="node" id="7018486486195103240" />
+        <var name="parentNode" id="7018486486195103240" />
+      </scope>
+      <scope id="7018486486196588731" at="69,0,73,0" />
+      <scope id="7018486486196588731" at="73,0,77,0">
+        <var name="node" id="7018486486196588731" />
+      </scope>
+      <scope id="7018486486196588731" at="77,0,81,0" />
+      <scope id="7018486486196588731" at="83,109,88,20">
+        <var name="result" id="7018486486196588731" />
+      </scope>
+      <scope id="7018486486195103240" at="94,0,100,0" />
+      <scope id="7018486486195103240" at="39,127,46,22">
+        <var name="result" id="7018486486195103240" />
+      </scope>
+      <scope id="7018486486195103240" at="54,128,61,22">
+        <var name="result" id="7018486486195103240" />
+      </scope>
+      <scope id="7018486486197919090" at="106,78,113,7" />
+      <scope id="7018486486196588731" at="82,0,90,0">
+        <var name="checkingNodeContext" id="7018486486196588731" />
+        <var name="node" id="7018486486196588731" />
+        <var name="propertyValue" id="7018486486196588731" />
+      </scope>
+      <scope id="7018486486197919088" at="105,0,114,5">
+        <var name="field" id="7018486486197919091" />
+      </scope>
+      <scope id="7018486486195103240" at="38,0,48,0">
+        <var name="checkingNodeContext" id="7018486486195103240" />
+        <var name="context" id="7018486486195103240" />
+      </scope>
+      <scope id="7018486486195103240" at="53,0,63,0">
+        <var name="checkingNodeContext" id="7018486486195103240" />
+        <var name="context" id="7018486486195103240" />
+      </scope>
+      <scope id="7018486486195103240" at="36,103,48,6" />
+      <scope id="7018486486195103240" at="51,105,63,6" />
+      <scope id="7018486486197601675" at="103,128,115,102">
+        <var name="existsDateAndtext" id="7018486486197916309" />
+      </scope>
+      <scope id="7018486486195103240" at="103,0,117,0">
+        <var name="childConcept" id="7018486486195103240" />
+        <var name="childNode" id="7018486486195103240" />
+        <var name="link" id="7018486486195103240" />
+        <var name="node" id="7018486486195103240" />
+      </scope>
+      <scope id="7018486486195103240" at="35,0,50,0" />
+      <scope id="7018486486195103240" at="50,0,65,0" />
+      <unit id="7018486486195103240" at="120,0,123,0" name="CommentReviewRate.constraints.Comment_Constraints$CONCEPTS" />
+      <unit id="7018486486195103240" at="124,0,127,0" name="CommentReviewRate.constraints.Comment_Constraints$PROPS" />
+      <unit id="7018486486195103240" at="128,0,131,0" name="CommentReviewRate.constraints.Comment_Constraints$LINKS" />
+      <unit id="7018486486195103240" at="37,15,48,5" name="CommentReviewRate.constraints.Comment_Constraints$1" />
+      <unit id="7018486486195103240" at="52,15,63,5" name="CommentReviewRate.constraints.Comment_Constraints$2" />
+      <unit id="7018486486196588731" at="65,0,94,0" name="CommentReviewRate.constraints.Comment_Constraints$Name_Property" />
+      <unit id="7018486486195103240" at="30,0,132,0" name="CommentReviewRate.constraints.Comment_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:11366c19-b94f-436c-ad13-562eb496cee2(CommentReviewRate.constraints)/7018486486196939651">
+    <file name="Field_Constraints.java">
+      <node id="7018486486196939651" at="20,30,21,29" concept="10" />
+      <node id="7018486486199270277" at="25,59,26,40" concept="10" />
+      <node id="7018486486199270277" at="29,35,30,18" concept="6" />
+      <node id="7018486486199312041" at="33,40,34,164" concept="6" />
+      <node id="7018486486199270277" at="37,38,38,18" concept="6" />
+      <node id="7018486486199270277" at="40,0,41,0" concept="8" trace="validatePropertyBreakingPoint" />
+      <node id="7018486486199270277" at="42,109,43,99" concept="5" />
+      <node id="7018486486199270277" at="44,53,45,75" concept="1" />
+      <node id="7018486486199270277" at="46,7,47,20" concept="6" />
+      <node id="7018486486199274893" at="49,85,50,71" concept="6" />
+      <node id="7018486486196939651" at="54,84,55,119" concept="5" />
+      <node id="7018486486199270277" at="55,119,56,61" concept="1" />
+      <node id="7018486486196939651" at="56,61,57,22" concept="6" />
+      <node id="7018486486196939651" at="61,0,62,0" concept="8" trace="Field$ls" />
+      <node id="7018486486196939651" at="65,0,66,0" concept="8" trace="name$MnvL" />
+      <node id="7018486486196939651" at="20,0,23,0" concept="0" trace="Field_Constraints#()V" />
+      <node id="7018486486199270277" at="25,0,28,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7018486486199270277" at="43,99,46,7" concept="3" />
+      <node id="7018486486199270277" at="49,0,52,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="7018486486199270277" at="28,0,32,0" concept="4" trace="hasOwnGetter#()Z" />
+      <node id="7018486486199270277" at="32,0,36,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="7018486486199270277" at="36,0,40,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="7018486486196939651" at="53,0,59,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="7018486486199270277" at="41,0,49,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="7018486486196939651" at="20,30,21,29" />
+      <scope id="7018486486199270277" at="25,59,26,40" />
+      <scope id="7018486486199270277" at="29,35,30,18" />
+      <scope id="7018486486199271123" at="33,40,34,164" />
+      <scope id="7018486486199270277" at="37,38,38,18" />
+      <scope id="7018486486199270277" at="44,53,45,75" />
+      <scope id="7018486486199274756" at="49,85,50,71" />
+      <scope id="7018486486196939651" at="20,0,23,0" />
+      <scope id="7018486486199270277" at="25,0,28,0">
+        <var name="container" id="7018486486199270277" />
+      </scope>
+      <scope id="7018486486199270277" at="49,0,52,0">
+        <var name="node" id="7018486486199270277" />
+        <var name="propertyValue" id="7018486486199270277" />
+      </scope>
+      <scope id="7018486486196939651" at="54,84,57,22">
+        <var name="properties" id="7018486486196939651" />
+      </scope>
+      <scope id="7018486486199270277" at="28,0,32,0" />
+      <scope id="7018486486199270277" at="32,0,36,0">
+        <var name="node" id="7018486486199270277" />
+      </scope>
+      <scope id="7018486486199270277" at="36,0,40,0" />
+      <scope id="7018486486199270277" at="42,109,47,20">
+        <var name="result" id="7018486486199270277" />
+      </scope>
+      <scope id="7018486486196939651" at="53,0,59,0" />
+      <scope id="7018486486199270277" at="41,0,49,0">
+        <var name="checkingNodeContext" id="7018486486199270277" />
+        <var name="node" id="7018486486199270277" />
+        <var name="propertyValue" id="7018486486199270277" />
+      </scope>
+      <unit id="7018486486196939651" at="60,0,63,0" name="CommentReviewRate.constraints.Field_Constraints$CONCEPTS" />
+      <unit id="7018486486196939651" at="64,0,67,0" name="CommentReviewRate.constraints.Field_Constraints$PROPS" />
+      <unit id="7018486486199270277" at="24,0,53,0" name="CommentReviewRate.constraints.Field_Constraints$Name_Property" />
+      <unit id="7018486486196939651" at="19,0,68,0" name="CommentReviewRate.constraints.Field_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:11366c19-b94f-436c-ad13-562eb496cee2(CommentReviewRate.constraints)/7018486486199390043">
+    <file name="Model_Constraints.java">
+      <node id="7018486486199390043" at="28,30,29,29" concept="10" />
+      <node id="7018486486199390043" at="36,128,37,133" concept="5" />
+      <node id="7018486486199390043" at="37,133,38,0" concept="7" />
+      <node id="7018486486199390043" at="39,55,40,72" concept="1" />
+      <node id="7018486486199390043" at="41,9,42,0" concept="7" />
+      <node id="7018486486199390043" at="42,0,43,22" concept="6" />
+      <node id="7018486486199390044" at="48,59,49,40" concept="10" />
+      <node id="7018486486199390044" at="52,35,53,18" concept="6" />
+      <node id="7018486486202541294" at="56,40,57,171" concept="5" />
+      <node id="7018486486199400390" at="57,171,58,18" concept="6" />
+      <node id="7018486486199390044" at="61,38,62,18" concept="6" />
+      <node id="7018486486199390044" at="64,0,65,0" concept="8" trace="validatePropertyBreakingPoint" />
+      <node id="7018486486199390044" at="66,109,67,99" concept="5" />
+      <node id="7018486486199390044" at="68,53,69,75" concept="1" />
+      <node id="7018486486199390044" at="70,7,71,20" concept="6" />
+      <node id="7018486486199405926" at="73,85,74,71" concept="6" />
+      <node id="7018486486199390043" at="78,84,79,119" concept="5" />
+      <node id="7018486486199390044" at="79,119,80,61" concept="1" />
+      <node id="7018486486199390043" at="80,61,81,22" concept="6" />
+      <node id="7018486486199620319" at="87,230,88,25" concept="6" />
+      <node id="7018486486199411261" at="92,5,93,16" concept="6" />
+      <node id="7018486486199390043" at="95,0,96,0" concept="8" trace="canBeParentBreakingPoint" />
+      <node id="7018486486199390043" at="98,0,99,0" concept="8" trace="Model$So" />
+      <node id="7018486486199390043" at="102,0,103,0" concept="8" trace="name$MnvL" />
+      <node id="7018486486199390043" at="106,0,107,0" concept="8" trace="Subjects$nleT" />
+      <node id="7018486486199390043" at="28,0,31,0" concept="0" trace="Model_Constraints#()V" />
+      <node id="7018486486199390043" at="38,0,41,9" concept="3" />
+      <node id="7018486486199390044" at="48,0,51,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7018486486199390044" at="67,99,70,7" concept="3" />
+      <node id="7018486486199390044" at="73,0,76,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="7018486486199599314" at="86,87,89,11" concept="3" />
+      <node id="7018486486199390044" at="51,0,55,0" concept="4" trace="hasOwnGetter#()Z" />
+      <node id="7018486486199390044" at="60,0,64,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="7018486486199390044" at="55,0,60,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="7018486486199469486" at="85,85,90,9" concept="2" />
+      <node id="7018486486199390043" at="77,0,83,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="7018486486199411330" at="84,76,91,7" concept="2" />
+      <node id="7018486486199390044" at="65,0,73,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="7018486486201436553" at="83,128,92,5" concept="3" />
+      <node id="7018486486199390043" at="35,0,45,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7018486486199390043" at="33,105,45,6" concept="6" />
+      <node id="7018486486199390043" at="83,0,95,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7018486486199390043" at="32,0,47,0" concept="4" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="7018486486199390043" at="28,30,29,29" />
+      <scope id="7018486486199390043" at="39,55,40,72" />
+      <scope id="7018486486199390044" at="48,59,49,40" />
+      <scope id="7018486486199390044" at="52,35,53,18" />
+      <scope id="7018486486199390044" at="61,38,62,18" />
+      <scope id="7018486486199390044" at="68,53,69,75" />
+      <scope id="7018486486199405551" at="73,85,74,71" />
+      <scope id="7018486486199599316" at="87,230,88,25" />
+      <scope id="7018486486199390096" at="56,40,58,18">
+        <var name="name" id="7018486486202541297" />
+      </scope>
+      <scope id="7018486486199390043" at="28,0,31,0" />
+      <scope id="7018486486199390044" at="48,0,51,0">
+        <var name="container" id="7018486486199390044" />
+      </scope>
+      <scope id="7018486486199390044" at="73,0,76,0">
+        <var name="node" id="7018486486199390044" />
+        <var name="propertyValue" id="7018486486199390044" />
+      </scope>
+      <scope id="7018486486199390043" at="78,84,81,22">
+        <var name="properties" id="7018486486199390043" />
+      </scope>
+      <scope id="7018486486199469488" at="86,87,89,11" />
+      <scope id="7018486486199390044" at="51,0,55,0" />
+      <scope id="7018486486199390044" at="60,0,64,0" />
+      <scope id="7018486486199390044" at="55,0,60,0">
+        <var name="node" id="7018486486199390044" />
+      </scope>
+      <scope id="7018486486199390044" at="66,109,71,20">
+        <var name="result" id="7018486486199390044" />
+      </scope>
+      <scope id="7018486486199411332" at="85,85,90,9" />
+      <scope id="7018486486199469486" at="85,85,90,9">
+        <var name="subject2" id="7018486486199469489" />
+      </scope>
+      <scope id="7018486486199390043" at="77,0,83,0" />
+      <scope id="7018486486199390043" at="36,128,43,22">
+        <var name="result" id="7018486486199390043" />
+      </scope>
+      <scope id="7018486486199411330" at="84,76,91,7">
+        <var name="subject1" id="7018486486199411333" />
+      </scope>
+      <scope id="7018486486201436555" at="84,76,91,7" />
+      <scope id="7018486486199390044" at="65,0,73,0">
+        <var name="checkingNodeContext" id="7018486486199390044" />
+        <var name="node" id="7018486486199390044" />
+        <var name="propertyValue" id="7018486486199390044" />
+      </scope>
+      <scope id="7018486486199390043" at="35,0,45,0">
+        <var name="checkingNodeContext" id="7018486486199390043" />
+        <var name="context" id="7018486486199390043" />
+      </scope>
+      <scope id="7018486486199410477" at="83,128,93,16" />
+      <scope id="7018486486199390043" at="33,105,45,6" />
+      <scope id="7018486486199390043" at="83,0,95,0">
+        <var name="childConcept" id="7018486486199390043" />
+        <var name="childNode" id="7018486486199390043" />
+        <var name="link" id="7018486486199390043" />
+        <var name="node" id="7018486486199390043" />
+      </scope>
+      <scope id="7018486486199390043" at="32,0,47,0" />
+      <unit id="7018486486199390043" at="97,0,100,0" name="CommentReviewRate.constraints.Model_Constraints$CONCEPTS" />
+      <unit id="7018486486199390043" at="101,0,104,0" name="CommentReviewRate.constraints.Model_Constraints$PROPS" />
+      <unit id="7018486486199390043" at="105,0,108,0" name="CommentReviewRate.constraints.Model_Constraints$LINKS" />
+      <unit id="7018486486199390043" at="34,15,45,5" name="CommentReviewRate.constraints.Model_Constraints$1" />
+      <unit id="7018486486199390044" at="47,0,77,0" name="CommentReviewRate.constraints.Model_Constraints$Name_Property" />
+      <unit id="7018486486199390043" at="27,0,109,0" name="CommentReviewRate.constraints.Model_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:11366c19-b94f-436c-ad13-562eb496cee2(CommentReviewRate.constraints)/7018486486199406122">
+    <file name="Subject_Constraints.java">
+      <node id="7018486486199406122" at="28,32,29,31" concept="10" />
+      <node id="7018486486199406122" at="36,128,37,133" concept="5" />
+      <node id="7018486486199406122" at="37,133,38,0" concept="7" />
+      <node id="7018486486199406122" at="39,55,40,72" concept="1" />
+      <node id="7018486486199406122" at="41,9,42,0" concept="7" />
+      <node id="7018486486199406122" at="42,0,43,22" concept="6" />
+      <node id="7018486486199406123" at="48,59,49,40" concept="10" />
+      <node id="7018486486199406123" at="52,35,53,18" concept="6" />
+      <node id="7018486486199408149" at="56,40,57,164" concept="6" />
+      <node id="7018486486199406123" at="60,38,61,18" concept="6" />
+      <node id="7018486486199406123" at="63,0,64,0" concept="8" trace="validatePropertyBreakingPoint" />
+      <node id="7018486486199406123" at="65,109,66,99" concept="5" />
+      <node id="7018486486199406123" at="67,53,68,75" concept="1" />
+      <node id="7018486486199406123" at="69,7,70,20" concept="6" />
+      <node id="7018486486199406833" at="72,85,73,71" concept="6" />
+      <node id="7018486486199406122" at="77,84,78,119" concept="5" />
+      <node id="7018486486199406123" at="78,119,79,61" concept="1" />
+      <node id="7018486486199406122" at="79,61,80,22" concept="6" />
+      <node id="7018486486200253522" at="86,222,87,25" concept="6" />
+      <node id="7018486486199928312" at="91,5,92,16" concept="6" />
+      <node id="7018486486199406122" at="94,0,95,0" concept="8" trace="canBeParentBreakingPoint" />
+      <node id="7018486486199406122" at="97,0,98,0" concept="8" trace="Subject$4v" />
+      <node id="7018486486199406122" at="101,0,102,0" concept="8" trace="name$MnvL" />
+      <node id="7018486486199406122" at="105,0,106,0" concept="8" trace="Fields$eu2z" />
+      <node id="7018486486199406122" at="28,0,31,0" concept="0" trace="Subject_Constraints#()V" />
+      <node id="7018486486199406122" at="38,0,41,9" concept="3" />
+      <node id="7018486486199406123" at="48,0,51,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7018486486199406123" at="66,99,69,7" concept="3" />
+      <node id="7018486486199406123" at="72,0,75,0" concept="9" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="7018486486200188029" at="85,83,88,11" concept="3" />
+      <node id="7018486486199406123" at="51,0,55,0" concept="4" trace="hasOwnGetter#()Z" />
+      <node id="7018486486199406123" at="55,0,59,0" concept="4" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="7018486486199406123" at="59,0,63,0" concept="4" trace="hasOwnValidator#()Z" />
+      <node id="7018486486199992610" at="84,80,89,9" concept="2" />
+      <node id="7018486486199406122" at="76,0,82,0" concept="4" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="7018486486199908913" at="83,74,90,7" concept="2" />
+      <node id="7018486486199406123" at="64,0,72,0" concept="4" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="7018486486201190677" at="82,128,91,5" concept="3" />
+      <node id="7018486486199406122" at="35,0,45,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeParent;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7018486486199406122" at="33,105,45,6" concept="6" />
+      <node id="7018486486199406122" at="82,0,94,0" concept="9" trace="staticCanBeAParent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7018486486199406122" at="32,0,47,0" concept="4" trace="calculateCanBeParentConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="7018486486199406122" at="28,32,29,31" />
+      <scope id="7018486486199406122" at="39,55,40,72" />
+      <scope id="7018486486199406123" at="48,59,49,40" />
+      <scope id="7018486486199406123" at="52,35,53,18" />
+      <scope id="7018486486199406224" at="56,40,57,164" />
+      <scope id="7018486486199406123" at="60,38,61,18" />
+      <scope id="7018486486199406123" at="67,53,68,75" />
+      <scope id="7018486486199406516" at="72,85,73,71" />
+      <scope id="7018486486200188031" at="86,222,87,25" />
+      <scope id="7018486486199406122" at="28,0,31,0" />
+      <scope id="7018486486199406123" at="48,0,51,0">
+        <var name="container" id="7018486486199406123" />
+      </scope>
+      <scope id="7018486486199406123" at="72,0,75,0">
+        <var name="node" id="7018486486199406123" />
+        <var name="propertyValue" id="7018486486199406123" />
+      </scope>
+      <scope id="7018486486199406122" at="77,84,80,22">
+        <var name="properties" id="7018486486199406122" />
+      </scope>
+      <scope id="7018486486199992613" at="85,83,88,11" />
+      <scope id="7018486486199406123" at="51,0,55,0" />
+      <scope id="7018486486199406123" at="55,0,59,0">
+        <var name="node" id="7018486486199406123" />
+      </scope>
+      <scope id="7018486486199406123" at="59,0,63,0" />
+      <scope id="7018486486199406123" at="65,109,70,20">
+        <var name="result" id="7018486486199406123" />
+      </scope>
+      <scope id="7018486486199908914" at="84,80,89,9" />
+      <scope id="7018486486199992610" at="84,80,89,9">
+        <var name="field2" id="7018486486199992611" />
+      </scope>
+      <scope id="7018486486199406122" at="76,0,82,0" />
+      <scope id="7018486486199406122" at="36,128,43,22">
+        <var name="result" id="7018486486199406122" />
+      </scope>
+      <scope id="7018486486199908913" at="83,74,90,7">
+        <var name="field" id="7018486486199908960" />
+      </scope>
+      <scope id="7018486486201190679" at="83,74,90,7" />
+      <scope id="7018486486199406123" at="64,0,72,0">
+        <var name="checkingNodeContext" id="7018486486199406123" />
+        <var name="node" id="7018486486199406123" />
+        <var name="propertyValue" id="7018486486199406123" />
+      </scope>
+      <scope id="7018486486199406122" at="35,0,45,0">
+        <var name="checkingNodeContext" id="7018486486199406122" />
+        <var name="context" id="7018486486199406122" />
+      </scope>
+      <scope id="7018486486199907606" at="82,128,92,16" />
+      <scope id="7018486486199406122" at="33,105,45,6" />
+      <scope id="7018486486199406122" at="82,0,94,0">
+        <var name="childConcept" id="7018486486199406122" />
+        <var name="childNode" id="7018486486199406122" />
+        <var name="link" id="7018486486199406122" />
+        <var name="node" id="7018486486199406122" />
+      </scope>
+      <scope id="7018486486199406122" at="32,0,47,0" />
+      <unit id="7018486486199406122" at="96,0,99,0" name="CommentReviewRate.constraints.Subject_Constraints$CONCEPTS" />
+      <unit id="7018486486199406122" at="100,0,103,0" name="CommentReviewRate.constraints.Subject_Constraints$PROPS" />
+      <unit id="7018486486199406122" at="104,0,107,0" name="CommentReviewRate.constraints.Subject_Constraints$LINKS" />
+      <unit id="7018486486199406122" at="34,15,45,5" name="CommentReviewRate.constraints.Subject_Constraints$1" />
+      <unit id="7018486486199406123" at="47,0,76,0" name="CommentReviewRate.constraints.Subject_Constraints$Name_Property" />
+      <unit id="7018486486199406122" at="27,0,108,0" name="CommentReviewRate.constraints.Subject_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

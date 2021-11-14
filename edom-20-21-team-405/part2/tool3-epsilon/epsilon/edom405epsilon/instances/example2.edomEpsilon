@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ASCII"?>
+<edom405epsilon:Model
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:edom405epsilon="http://www.example.org/edom405epsilon"
+    name="EcommerceModel">
+  <subject name="Product">
+    <comment
+        name="ProductReview">
+      <user
+          name="Joaquim"/>
+      <field
+          name="text"/>
+      <field
+          name="date"
+          type="Date"/>
+      <field
+          name="text"/>
+      <comment
+          name="SecondUserCom">
+        <user
+            name="Ana"/>
+        <field
+            name="text"/>
+        <field
+            name="something"/>
+        <comment
+            name="ThirdUserCom">
+          <user
+              name="Josefino"/>
+          <field
+              name="text"/>
+          <field
+              name="somethingElse"/>
+        </comment>
+      </comment>
+    </comment>
+    <field name="price"
+        type="EInteger"/>
+  </subject>
+</edom405epsilon:Model>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:6ea5cd20-1a16-4839-9f17-fe30bf599ffb(CommentReviewRate.sandbox)" content="header">
+  <persistence version="9" />
+  <attribute name="content" value="header" />
+  <languages>
+    <use id="f07b76fc-fe82-4d2c-8d35-02e79970824d" name="CommentReviewRate" version="0" />
+  </languages>
+  <imports />
+</model>
+

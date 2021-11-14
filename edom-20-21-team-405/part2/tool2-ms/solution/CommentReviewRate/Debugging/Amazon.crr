@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a1b9545f-db8a-4f8b-8bd9-43ed16382f93" name="Amazon" xmlns="http://schemas.microsoft.com/dsltools/CommentReviewRate">
+  <subjects>
+    <subject Id="e7711d26-837b-4bf9-b31d-740c1a1c230a" name="Product">
+      <comments>
+        <subjectHasComments Id="73e6888b-5b7e-47b6-8c16-1f7887debf25">
+          <commentMoniker Id="92b1754e-58f7-41bb-9567-d09f1d87d36a" />
+        </subjectHasComments>
+      </comments>
+      <fields>
+        <subjectHasFields Id="b86f33df-d1c1-4066-a6ff-43532c8503d1">
+          <fieldMoniker Id="7ace5bdd-9ec6-45d1-8e36-a2685da99a71" />
+        </subjectHasFields>
+        <subjectHasFields Id="acf899ac-ce4e-4a43-aeaf-4382d2254015">
+          <fieldMoniker Id="b8f97264-b8b5-4ff9-948f-9a1e8433d7f1" />
+        </subjectHasFields>
+      </fields>
+    </subject>
+  </subjects>
+  <fields>
+    <modelHasFields Id="fd94f16f-7312-44ee-a75c-ccad3239d352">
+      <field Id="7ace5bdd-9ec6-45d1-8e36-a2685da99a71" name="title" type="String" />
+    </modelHasFields>
+    <modelHasFields Id="3456d648-0c8e-44e6-82bb-bf322d96dd07">
+      <field Id="b8f97264-b8b5-4ff9-948f-9a1e8433d7f1" name="text" type="String" />
+    </modelHasFields>
+    <modelHasFields Id="3d967719-7716-4691-a699-588b6c43dadd">
+      <field Id="78de637f-ec4f-42a3-a89b-fbb1093e952a" name="date" type="Date" />
+    </modelHasFields>
+  </fields>
+  <comments>
+    <modelHasComments Id="eabd8640-0bc6-48a6-bc65-206e6381cad1">
+      <comment Id="92b1754e-58f7-41bb-9567-d09f1d87d36a" name="ProductComment">
+        <fields>
+          <commentHasFields Id="5f1b9a94-5d1d-4e76-a997-6104d4a558ac">
+            <fieldMoniker Id="78de637f-ec4f-42a3-a89b-fbb1093e952a" />
+          </commentHasFields>
+          <commentHasFields Id="35f21bb5-92fd-47c5-bfa6-7652e0ef932d">
+            <fieldMoniker Id="b8f97264-b8b5-4ff9-948f-9a1e8433d7f1" />
+          </commentHasFields>
+        </fields>
+        <rating>
+          <commentHasRating Id="bdb7909d-b0d3-4107-8939-7ddc864ede21">
+            <ratingMoniker Id="59c5dc0a-ae60-4d03-9fc3-c3b4ed163359" />
+          </commentHasRating>
+        </rating>
+        <validation>
+          <commentHasValidation Id="48aadb8e-802c-4fc7-8143-8e1d50177ab8">
+            <validationMoniker Id="6b38fe26-bb21-42f2-92cf-1ab4177a2031" />
+          </commentHasValidation>
+        </validation>
+      </comment>
+    </modelHasComments>
+  </comments>
+  <ratings>
+    <modelHasRatings Id="5fe464cc-1cad-4d2f-b320-ce3cec28f029">
+      <rating Id="59c5dc0a-ae60-4d03-9fc3-c3b4ed163359" name="AmazonRating" />
+    </modelHasRatings>
+  </ratings>
+  <validations>
+    <modelHasValidations Id="67e2afb8-4915-418a-a032-60a7ef9bcfec">
+      <validation Id="6b38fe26-bb21-42f2-92cf-1ab4177a2031" name="ManualValidation" />
+    </modelHasValidations>
+  </validations>
+</model>

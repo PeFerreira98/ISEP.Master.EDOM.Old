@@ -1,0 +1,31 @@
+package edom405epsilon.egl.gen;
+
+import java.util.List;
+		
+public class [%=rating.name%] extends Rating {
+
+	[% for (field in rating.field) { %]
+	public [%=field.type%] [%=field.name%];
+	[%}%]
+
+	public [%=rating.name%]([% for (field in rating.field) { %][%=field.type%] [%=field.name%][%}%]) {
+         super();
+         [% for (field in rating.field) { %]
+		 this.[%=field.name%] = [%=field.name%];
+		 [%}%]
+         
+    }
+    
+   [% for (field in rating.field) { %]
+   public [%=field.type%] get[%=field.name%]() {
+     	return [%=field.name%];
+   }
+   [%}%]
+	 
+   [% for (field in rating.field) { %]
+   public void set[%=field.name%]([%=field.type%] [%=field.name%]) {
+       this.[%=field.name%] = [%=field.name%];
+   }
+   [%}%]
+
+}	

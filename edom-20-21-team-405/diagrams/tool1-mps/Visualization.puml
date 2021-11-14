@@ -1,0 +1,52 @@
+@startuml
+digraph model  {
+ModelTest [shape=box3d];
+ModelTest -> Subject1 [label="has subject"];
+Comment1 [shape=oval];
+User1 [shape=diamond];
+Comment1 -> User1 [label="from"];
+Email [shape=square];
+String [shape=Msquare];
+User1 -> Email [label="has"];
+Email -> String [label="from type"];
+Name [shape=square];
+String [shape=Msquare];
+User1 -> Name [label="has"];
+Name -> String [label="from type"];
+SubUser1 [shape=diamond];
+SubComment1 -> SubUser1 [label="from"];
+Comment1 -> SubComment1 [label="commented"];
+Email [shape=square];
+String [shape=Msquare];
+SubUser1 -> Email [label="has"];
+Email -> String [label="from type"];
+Name [shape=square];
+String [shape=Msquare];
+SubUser1 -> Name [label="has"];
+Name -> String [label="from type"];
+Subject1 -> Comment1 [label="has comment"];
+Description [shape=square];
+String [shape=Msquare];
+Subject1 -> Description [label="has"];
+Description -> String [label="from type"];
+
+ModelTest -> Subject2 [label="has subject"];
+Comment2 [shape=oval];
+User2 [shape=diamond];
+Comment2 -> User2 [label="from"];
+Email [shape=square];
+String [shape=Msquare];
+User2 -> Email [label="has"];
+Email -> String [label="from type"];
+Name [shape=square];
+String [shape=Msquare];
+User2 -> Name [label="has"];
+Name -> String [label="from type"];
+Subject2 -> Comment2 [label="has comment"];
+Description [shape=square];
+String [shape=Msquare];
+Subject2 -> Description [label="has"];
+Description -> String [label="from type"];
+
+}
+@enduml 

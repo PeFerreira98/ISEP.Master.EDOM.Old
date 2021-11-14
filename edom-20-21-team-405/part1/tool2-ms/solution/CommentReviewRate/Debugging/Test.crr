@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e2287f78-b1d0-434f-9bd9-04165f977373" xmlns="http://schemas.microsoft.com/dsltools/CommentReviewRate">
+  <subjects>
+    <subject Id="6eab4e52-4094-4c52-9943-2b5fe94e7383" name="Subject">
+      <comments>
+        <subjectHasComments Id="69e331e0-260b-496c-ac21-78405a5e8e81">
+          <commentMoniker Id="1135955a-b3dc-40bd-a425-8ef8ab5f0a08" />
+        </subjectHasComments>
+      </comments>
+      <fields>
+        <subjectHasFields Id="14fda79b-4f63-4237-950c-85352c24d4c7">
+          <fieldMoniker Id="a981ecf6-c15a-445c-a3d9-01f403e27330" />
+        </subjectHasFields>
+      </fields>
+    </subject>
+  </subjects>
+  <users>
+    <modelHasUsers Id="6d431d1a-202d-4fdd-8330-109bfc481330">
+      <user Id="c35c0332-27b0-4f16-8b5a-3343dfb602f2" name="User">
+        <fields>
+          <userHasFields Id="f6255c31-1d55-49b5-bea1-0a1d28df8534">
+            <fieldMoniker Id="a981ecf6-c15a-445c-a3d9-01f403e27330" />
+          </userHasFields>
+        </fields>
+      </user>
+    </modelHasUsers>
+  </users>
+  <fields>
+    <modelHasFields Id="c73f4853-07b3-410b-b4ee-d7ea7d280157">
+      <field Id="a981ecf6-c15a-445c-a3d9-01f403e27330" name="Field" type="STRING" />
+    </modelHasFields>
+  </fields>
+  <comments>
+    <modelHasComments Id="17158e08-4472-48de-abbd-c6637ca52718">
+      <comment Id="1135955a-b3dc-40bd-a425-8ef8ab5f0a08" name="Comment">
+        <replies>
+          <commentHasComments Id="54c9f492-1400-4ba7-804f-8a8fd525480b">
+            <commentMoniker Id="1135955a-b3dc-40bd-a425-8ef8ab5f0a08" />
+          </commentHasComments>
+        </replies>
+        <user>
+          <commentHasUser Id="5134a513-6d57-47d7-8b5f-218f14ca04fb">
+            <userMoniker Id="c35c0332-27b0-4f16-8b5a-3343dfb602f2" />
+          </commentHasUser>
+        </user>
+        <fields>
+          <commentHasFields Id="7a275974-afaa-4184-a2a9-5b4d53277245">
+            <fieldMoniker Id="a981ecf6-c15a-445c-a3d9-01f403e27330" />
+          </commentHasFields>
+        </fields>
+      </comment>
+    </modelHasComments>
+  </comments>
+</model>

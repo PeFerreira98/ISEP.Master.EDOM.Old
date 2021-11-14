@@ -1,0 +1,19 @@
+-- @atlcompiler emftvm
+-- @path UCUS=/pt.isep.edom.atb.ucus/model/generated/ucus.ecore
+
+module usecasename2uppercase;
+create OUT : UCUS refining IN : UCUS;
+ 
+rule UseCaseName2UpperCase {
+	from 
+		t1 : UCUS!UseCase (t1.name.substring(1, 1).toUpper().compareTo(t1.name.substring(1, 1))<>0)
+	to
+		t2 : UCUS!UseCase (
+			name <- t1.name.substring(1, 1).toUpper() + t1.name.substring(2, t1.name.size())	
+	) 
+	do {
+		-- debug can be used to print to the console
+		('Applied UseCaseName2UpperCase for Use Case '+t1.name).debug();
+	}
+}
+ 

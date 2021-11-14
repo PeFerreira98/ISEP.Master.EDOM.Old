@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/pt.isep.edom.i160826.ucus/src-gen" creationIcons="false"
+    editDirectory="/pt.isep.edom.i160826.ucus.edit/src-gen" editorDirectory="/pt.isep.edom.i160826.ucus.editor/src-gen"
+    modelPluginID="pt.isep.edom.i160826.ucus" modelName="Ucus" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" testsDirectory="/pt.isep.edom.i160826.ucus.tests/src-gen" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>ucus.ecore</foreignModel>
+  <genPackages prefix="Ucus" basePackage="pt.isep.edom.i160826" disposableProviderFactory="true"
+      ecorePackage="ucus.ecore#/">
+    <genClasses ecoreClass="ucus.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucus.ecore#//Model/subject"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucus.ecore#//Model/actor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//Model/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucus.ecore#//Model/association"/>
+    </genClasses>
+    <genClasses ecoreClass="ucus.ecore#//UseCase">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//UseCase/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucus.ecore#//UseCase/includes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//UseCase/include"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucus.ecore#//UseCase/extends"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//UseCase/extend"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//UseCase/association"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//UseCase/description"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference ucus.ecore#//UseCase/allIncludedUseCases"/>
+      <genFeatures property="Readonly" notify="false" createChild="false" ecoreFeature="ecore:EReference ucus.ecore#//UseCase/subject"/>
+    </genClasses>
+    <genClasses ecoreClass="ucus.ecore#//Actor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//Actor/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//Actor/association"/>
+    </genClasses>
+    <genClasses ecoreClass="ucus.ecore#//Subject">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ucus.ecore#//Subject/usecase"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//Subject/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ucus.ecore#//Include">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//Include/addition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//Include/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ucus.ecore#//Extend">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//Extend/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//Extend/extendedCase"/>
+    </genClasses>
+    <genClasses ecoreClass="ucus.ecore#//Association">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ucus.ecore#//Association/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//Association/actor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ucus.ecore#//Association/usecase"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated edom405epsilon -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="edom405epsilon.presentation.Edom405epsilonModelWizardID"
+            name="%_UI_Edom405epsilonModelWizard_label"
+            class="edom405epsilon.presentation.Edom405epsilonModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Edom405epsilonModelFile.gif">
+         <description>%_UI_Edom405epsilonModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated edom405epsilon -->
+      <editor
+            id="edom405epsilon.presentation.Edom405epsilonEditorID"
+            name="%_UI_Edom405epsilonEditor_label"
+            icon="icons/full/obj16/Edom405epsilonModelFile.gif"
+            extensions="edom405epsilon"
+            class="edom405epsilon.presentation.Edom405epsilonEditor"
+            contributorClass="edom405epsilon.presentation.Edom405epsilonActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

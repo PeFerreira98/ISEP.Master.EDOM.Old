@@ -1,0 +1,44 @@
+@startuml
+
+class Channel {
+    Name : String
+    SubscribersNumber : Long
+}
+
+class Comment {
+    CommentText : String
+    CreationDate : Date
+    VideoAuthorLike : Bool
+}
+
+class Feedback {
+    Like : Bool
+}
+
+class Thumbnail {
+    Name : String
+    Image : Object
+}
+
+class User {
+    Name : String
+    Email : String
+}
+
+class Video {
+    Title : String
+    Description: String
+    Duration : Time
+}
+
+
+Channel "1" *-- "1" User
+User "1" *-- "0..1" Feedback
+Channel "1" *-- "0..*" Video
+Video "1" *-- "0..*" Comment
+Comment "1" *-- "0..*" Comment
+Comment "1" *-- "0..*" Feedback
+Video "1" *-- "1" Thumbnail
+User "1" *-- "0..*" Comment
+
+@enduml

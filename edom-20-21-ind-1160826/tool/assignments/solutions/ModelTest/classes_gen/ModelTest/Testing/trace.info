@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:60f7cc14-d4df-47c3-a115-e81d827394bc(ModelTest.Testing)/8036375429497657051">
+    <file name="Association1.java">
+      <node id="8036375429497659440" at="7,0,8,0" concept="1" trace="association1" />
+      <node id="8036375429497659440" at="9,41,10,29" concept="0" />
+      <node id="8036375429497659440" at="13,27,14,29" concept="3" />
+      <node id="8036375429497659440" at="17,40,18,33" concept="0" />
+      <node id="8036375429497659440" at="9,0,12,0" concept="2" trace="Association1#(Ljava/lang/String;)V" />
+      <node id="8036375429497659440" at="13,0,16,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="8036375429497659440" at="17,0,20,0" concept="2" trace="setName#(Ljava/lang/String;)V" />
+      <scope id="8036375429497659440" at="9,41,10,29" />
+      <scope id="8036375429497659440" at="13,27,14,29" />
+      <scope id="8036375429497659440" at="17,40,18,33" />
+      <scope id="8036375429497659440" at="9,0,12,0">
+        <var name="name" id="8036375429497659440" />
+      </scope>
+      <scope id="8036375429497659440" at="13,0,16,0" />
+      <scope id="8036375429497659440" at="17,0,20,0">
+        <var name="newValue" id="8036375429497659440" />
+      </scope>
+      <unit id="8036375429497659440" at="6,0,22,0" name="ModelTest.Testing.Association1" />
+    </file>
+    <file name="Ator_A.java">
+      <node id="8036375429497657448" at="7,0,8,0" concept="1" trace="ator_a" />
+      <node id="8036375429497657448" at="9,35,10,23" concept="0" />
+      <node id="8036375429497657448" at="13,27,14,23" concept="3" />
+      <node id="8036375429497657448" at="17,40,18,27" concept="0" />
+      <node id="8036375429497657448" at="9,0,12,0" concept="2" trace="Ator_A#(Ljava/lang/String;)V" />
+      <node id="8036375429497657448" at="13,0,16,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="8036375429497657448" at="17,0,20,0" concept="2" trace="setName#(Ljava/lang/String;)V" />
+      <scope id="8036375429497657448" at="9,35,10,23" />
+      <scope id="8036375429497657448" at="13,27,14,23" />
+      <scope id="8036375429497657448" at="17,40,18,27" />
+      <scope id="8036375429497657448" at="9,0,12,0">
+        <var name="name" id="8036375429497657448" />
+      </scope>
+      <scope id="8036375429497657448" at="13,0,16,0" />
+      <scope id="8036375429497657448" at="17,0,20,0">
+        <var name="newValue" id="8036375429497657448" />
+      </scope>
+      <unit id="8036375429497657448" at="6,0,21,0" name="ModelTest.Testing.Ator_A" />
+    </file>
+    <file name="Ator_B.java">
+      <node id="8036375429497657714" at="7,0,8,0" concept="1" trace="ator_b" />
+      <node id="8036375429497657714" at="9,35,10,23" concept="0" />
+      <node id="8036375429497657714" at="13,27,14,23" concept="3" />
+      <node id="8036375429497657714" at="17,40,18,27" concept="0" />
+      <node id="8036375429497657714" at="9,0,12,0" concept="2" trace="Ator_B#(Ljava/lang/String;)V" />
+      <node id="8036375429497657714" at="13,0,16,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="8036375429497657714" at="17,0,20,0" concept="2" trace="setName#(Ljava/lang/String;)V" />
+      <scope id="8036375429497657714" at="9,35,10,23" />
+      <scope id="8036375429497657714" at="13,27,14,23" />
+      <scope id="8036375429497657714" at="17,40,18,27" />
+      <scope id="8036375429497657714" at="9,0,12,0">
+        <var name="name" id="8036375429497657714" />
+      </scope>
+      <scope id="8036375429497657714" at="13,0,16,0" />
+      <scope id="8036375429497657714" at="17,0,20,0">
+        <var name="newValue" id="8036375429497657714" />
+      </scope>
+      <unit id="8036375429497657714" at="6,0,21,0" name="ModelTest.Testing.Ator_B" />
+    </file>
+    <file name="SubjectA.java">
+      <node id="8036375429497657981" at="7,0,8,0" concept="1" trace="subjecta" />
+      <node id="8036375429497657981" at="9,37,10,25" concept="0" />
+      <node id="8036375429497657981" at="13,27,14,25" concept="3" />
+      <node id="8036375429497657981" at="17,40,18,29" concept="0" />
+      <node id="8036375429497657981" at="9,0,12,0" concept="2" trace="SubjectA#(Ljava/lang/String;)V" />
+      <node id="8036375429497657981" at="13,0,16,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="8036375429497657981" at="17,0,20,0" concept="2" trace="setName#(Ljava/lang/String;)V" />
+      <scope id="8036375429497657981" at="9,37,10,25" />
+      <scope id="8036375429497657981" at="13,27,14,25" />
+      <scope id="8036375429497657981" at="17,40,18,29" />
+      <scope id="8036375429497657981" at="9,0,12,0">
+        <var name="name" id="8036375429497657981" />
+      </scope>
+      <scope id="8036375429497657981" at="13,0,16,0" />
+      <scope id="8036375429497657981" at="17,0,20,0">
+        <var name="newValue" id="8036375429497657981" />
+      </scope>
+      <unit id="8036375429497657981" at="6,0,22,0" name="ModelTest.Testing.SubjectA" />
+    </file>
+    <file name="SubjectB.java">
+      <node id="3640726808349562803" at="7,0,8,0" concept="1" trace="subjectb" />
+      <node id="3640726808349562803" at="9,37,10,25" concept="0" />
+      <node id="3640726808349562803" at="13,27,14,25" concept="3" />
+      <node id="3640726808349562803" at="17,40,18,29" concept="0" />
+      <node id="3640726808349562803" at="9,0,12,0" concept="2" trace="SubjectB#(Ljava/lang/String;)V" />
+      <node id="3640726808349562803" at="13,0,16,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="3640726808349562803" at="17,0,20,0" concept="2" trace="setName#(Ljava/lang/String;)V" />
+      <scope id="3640726808349562803" at="9,37,10,25" />
+      <scope id="3640726808349562803" at="13,27,14,25" />
+      <scope id="3640726808349562803" at="17,40,18,29" />
+      <scope id="3640726808349562803" at="9,0,12,0">
+        <var name="name" id="3640726808349562803" />
+      </scope>
+      <scope id="3640726808349562803" at="13,0,16,0" />
+      <scope id="3640726808349562803" at="17,0,20,0">
+        <var name="newValue" id="3640726808349562803" />
+      </scope>
+      <unit id="3640726808349562803" at="6,0,22,0" name="ModelTest.Testing.SubjectB" />
+    </file>
+    <file name="UCUS.java">
+      <node id="8036375429497657448" at="8,0,9,0" concept="1" trace="ator_a" />
+      <node id="8036375429497657714" at="9,0,10,0" concept="1" trace="ator_b" />
+      <node id="8036375429497659440" at="11,0,12,0" concept="1" trace="association1" />
+      <node id="8036375429497657981" at="13,0,14,0" concept="1" trace="subjecta" />
+      <node id="3640726808349562803" at="14,0,15,0" concept="1" trace="subjectb" />
+      <node id="8036375429497659439" at="16,0,17,0" concept="1" trace="usecase_ab" />
+      <node id="8036375429497657051" at="20,0,22,0" concept="2" trace="UCUS#()V" />
+      <scope id="8036375429497657051" at="20,22,20,22" />
+      <scope id="8036375429497657051" at="20,0,22,0" />
+      <unit id="8036375429497657051" at="6,0,23,0" name="ModelTest.Testing.UCUS" />
+    </file>
+    <file name="Usecase_AB.java">
+      <node id="8036375429497659439" at="7,0,8,0" concept="1" trace="usecase_ab" />
+      <node id="8036375429497659439" at="9,39,10,27" concept="0" />
+      <node id="8036375429497659439" at="13,27,14,27" concept="3" />
+      <node id="8036375429497659439" at="17,40,18,31" concept="0" />
+      <node id="8036375429497659439" at="9,0,12,0" concept="2" trace="Usecase_AB#(Ljava/lang/String;)V" />
+      <node id="8036375429497659439" at="13,0,16,0" concept="2" trace="getName#()Ljava/lang/String;" />
+      <node id="8036375429497659439" at="17,0,20,0" concept="2" trace="setName#(Ljava/lang/String;)V" />
+      <scope id="8036375429497659439" at="9,39,10,27" />
+      <scope id="8036375429497659439" at="13,27,14,27" />
+      <scope id="8036375429497659439" at="17,40,18,31" />
+      <scope id="8036375429497659439" at="9,0,12,0">
+        <var name="name" id="8036375429497659439" />
+      </scope>
+      <scope id="8036375429497659439" at="13,0,16,0" />
+      <scope id="8036375429497659439" at="17,0,20,0">
+        <var name="newValue" id="8036375429497659439" />
+      </scope>
+      <unit id="8036375429497659439" at="6,0,22,0" name="ModelTest.Testing.Usecase_AB" />
+    </file>
+  </root>
+</debug-info>
+

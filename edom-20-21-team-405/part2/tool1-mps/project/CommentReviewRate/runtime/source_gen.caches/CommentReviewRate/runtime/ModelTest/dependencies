@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="CommentReviewRate.runtime.ModelTest.CarReviewVideo">
+    <classNode extendsClassName="CommentReviewRate.runtime.ModelTest.Subject" />
+  </dependency>
+  <dependency className="CommentReviewRate.runtime.ModelTest.GenTest">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="CommentReviewRate.runtime.ModelTest.MusicVideo">
+    <classNode extendsClassName="CommentReviewRate.runtime.ModelTest.Subject" />
+  </dependency>
+  <dependency className="CommentReviewRate.runtime.ModelTest.NewsVideo">
+    <classNode extendsClassName="CommentReviewRate.runtime.ModelTest.Subject" />
+  </dependency>
+  <dependency className="CommentReviewRate.runtime.ModelTest.Subject">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="CommentReviewRate.runtime.ModelTest.Youtube">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+</dependenciesRoot>
+

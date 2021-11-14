@@ -1,0 +1,38 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".puml" #>
+<#@ CommentReviewRate processor="CommentReviewRateDirectiveProcessor" requires="fileName='Sample.crr'" #>
+@startuml
+digraph model {
+<# foreach(Subject subject in Model.Subjects) {#><#=subject.Name#> [shape=box3d];
+<#}#>
+<# foreach(Comment comment in Model.Comments) {#><#=comment.Name#> [shape=oval];
+<#}#>
+<# foreach(User user in Model.Users) {#><#=user.Name#> [shape=diamond];
+<#}#>
+<# foreach(Field field in Model.Fields) {#><#=field.Name#> [shape=square];
+<#=field.type#> [shape=Msquare];
+<#}#>
+
+<#foreach(Subject subject in Model.Subjects) {#>
+	<#foreach(Comment comment in subject.Comments) {#>
+		<#=subject.Name#> -> <#=comment.Name#> [label="has comment"];
+		<#foreach(Comment reply in comment.Replies) {#> 
+			<#=comment.Name#> -> <#=reply.Name#> [label="has reply"];
+		<#}#>
+		<#=comment.Name#> -> <#=comment.User.Name#> [label="from user"];
+		
+		<#foreach(Field field in comment.Fields) {#>
+			<#=comment.Name#> -> <#=field.Name#> [label="has field"];
+		<#}#>
+	<#}#>
+	<#foreach(Field field in subject.Fields) {#>
+		<#=subject.Name#> -> <#=field.Name#> [label="has field"];
+		<#=field.Name#> -> <#=field.type#> [label="of type"];
+	<#}#>
+<#}#>
+<#foreach(Field field in Model.Fields) {#>
+	<#=field.Name#> -> <#=field.type#> [label="from type"];
+<#}#>
+
+}
+@enduml

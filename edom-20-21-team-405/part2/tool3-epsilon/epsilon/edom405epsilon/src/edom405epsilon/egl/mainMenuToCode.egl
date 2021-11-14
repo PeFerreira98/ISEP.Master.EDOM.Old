@@ -1,0 +1,22 @@
+package edom405epsilon.egl.gen;
+
+import java.util.Scanner;
+
+public class [%=models.name%]App {
+
+    public static void main(String[] arguments){
+
+        Scanner scanner = new Scanner(System.in);
+
+        Model model = Bootstrap.setUpModel();
+
+        System.out.println("Welcome to [%=models.name%]!!!\n");
+        
+        [% for (subject in models.subject) { %]
+        [%=subject.name%]Controller.main[%=subject.name%]Menu(model, scanner);[%continue;}%]
+
+        
+
+    }
+
+}

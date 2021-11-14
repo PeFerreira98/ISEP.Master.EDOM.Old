@@ -1,0 +1,9 @@
+package edom405epsilon.egl.gen;
+	
+import java.util.List;
+		
+public interface iValidate {
+
+	private bolean validate(Comment comment);
+
+}	

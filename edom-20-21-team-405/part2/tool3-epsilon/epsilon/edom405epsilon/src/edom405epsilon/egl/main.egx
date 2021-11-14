@@ -1,0 +1,201 @@
+rule ratingToCode 
+{
+	  // The EGL template to be invoked
+	  template : "ratingToCode.egl"
+	
+	  // Output file
+	  target : "gen/" + "Rating" + ".java"
+
+}
+
+
+rule RatingImplToCode 
+  transform rating : Rating {
+  
+  parameters {
+  	var params : new Map;
+  	params.put("rating", rating);
+
+  	return params;
+
+  }
+
+  // The EGL template to be invoked
+  template : "ratingImplToCode.egl"
+
+  // Output file
+ 
+  target : "gen/" + rating.name + ".java"
+
+}
+
+
+rule commentToCode 
+{
+	  // The EGL template to be invoked
+	  template : "commentToCode.egl"
+	
+	  // Output file
+	  target : "gen/" + "Comment" + ".java"
+
+}
+
+rule commentImplToCode 
+  transform subject : Subject {
+  
+  pre{
+  	var commentName = subject.comment.get(0).name;
+  }
+  
+  parameters {
+  	var params : new Map;
+  	params.put("subject", subject);
+  	
+
+  	return params;
+  }
+
+  // The EGL template to be invoked
+  template : "commentImplToCode.egl"
+
+  // Output file
+ 
+  target : "gen/" + commentName + ".java"
+
+}
+
+rule subjectToCode 
+{
+	  // The EGL template to be invoked
+	  template : "subjectToCode.egl"
+	
+	  // Output file
+	  target : "gen/" + "Subject" + ".java"
+
+}
+
+rule subjectImplToCode 
+  transform subject : Subject {
+  
+  
+  
+  parameters {
+  	var params : new Map;
+  	params.put("subject", subject);
+  	var subjectName = subject;
+
+  	return params;
+
+  }
+
+  // The EGL template to be invoked
+  template : "subjectImplToCode.egl"
+
+  // Output file
+ 
+  target : "gen/" + subject.name + ".java"
+
+}
+
+
+rule modelToCode 
+{
+	  // The EGL template to be invoked
+	  template : "modelToCode.egl"
+	
+	  // Output file
+	  target : "gen/" + "Model" + ".java"
+
+}
+
+rule ModelImplToCode 
+  transform models : Model {
+  
+  
+  parameters {
+  	var params : new Map;
+  	params.put("models", models);
+  	return params;
+  }
+
+  // The EGL template to be invoked
+  template : "modelImplToCode.egl"
+
+  // Output file
+ 
+  target : "gen/" + models.name + ".java"
+
+}
+
+rule bootstrapToCode 
+{
+	  // The EGL template to be invoked
+	  template : "bootstrapToCode.egl"
+	
+	  // Output file
+	  target : "gen/" + "Bootstrap" + ".java"
+
+}
+
+rule commentControllerToCode 
+  transform subject : Subject {
+  
+  pre{
+  	var commentName = subject.comment.get(0).name;
+  }
+  
+  parameters {
+  	var params : new Map;
+  	params.put("subject", subject);
+
+  	return params;
+
+  }
+
+  // The EGL template to be invoked
+  template : "commentControllerToCode.egl"
+
+  // Output file
+  
+  target : "gen/" + commentName + "Controller.java"
+
+}
+
+rule subjectControllerToCode 
+  transform subject : Subject {
+  
+  
+  	parameters {
+	  	var params : new Map;
+	  	params.put("subject", subject);
+	  	return params;
+  	}
+  	
+	  // The EGL template to be invoked
+	  template : "subjectControllerToCode.egl"
+	
+	  // Output file
+	  target : "gen/" + subject.name + "Controller.java"
+
+}
+
+rule mainMenuToCode 
+  transform models : Model {
+  
+  
+  	parameters {
+	  	var params : new Map;
+	  	params.put("models", models);
+	  	return params;
+  	}
+  	
+	  // The EGL template to be invoked
+	  template : "mainMenuToCode.egl"
+	
+	  // Output file
+	  target : "gen/" + models.name + "App.java"
+
+}
+
+
+

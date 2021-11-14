@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:dc629e78-0d11-4867-9f37-6821aa588b8b(Sandbox.Ucus)/8036375429493076983">
+    <file name="Model.java">
+      <node id="8036375429493078204" at="8,0,9,0" concept="1" trace="subject_a" />
+      <node id="8036375429493076984" at="10,0,11,0" concept="1" trace="Ator1" />
+      <node id="8036375429494222230" at="11,0,12,0" concept="1" trace="Eduardo" />
+      <node id="8036375429493076983" at="14,42,15,33" concept="0" />
+      <node id="8036375429493076983" at="14,0,17,0" concept="2" trace="main#([Ljava/lang/String;)V" />
+      <scope id="8036375429493076983" at="14,42,15,33" />
+      <scope id="8036375429493076983" at="14,0,17,0">
+        <var name="args" id="8036375429493076983" />
+      </scope>
+      <unit id="8036375429493076983" at="6,0,18,0" name="Sandbox.Ucus.Model" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<commentReviewRateDiagram dslVersion="1.0.0.0" Id="10fe4a3e-7341-40e9-a144-f8434770d4d6" absoluteBounds="0, 0, 11, 8.5" name="Amazon">
+  <modelMoniker Id="a1b9545f-db8a-4f8b-8bd9-43ed16382f93" />
+  <nestedChildShapes>
+    <subjectShape Id="193a1e9f-ffb4-42fb-9c86-d83032953dc9" absoluteBounds="4.25, 1.25, 1.5, 1">
+      <subjectMoniker name="/a1b9545f-db8a-4f8b-8bd9-43ed16382f93/Video" />
+    </subjectShape>
+    <commentShape Id="897f230f-f7d0-463a-b5f8-e1f88c687adf" absoluteBounds="4.375, 2.75, 1.5, 1">
+      <commentMoniker Id="92b1754e-58f7-41bb-9567-d09f1d87d36a" />
+    </commentShape>
+    <containsConnection Id="c6584034-9760-4eef-b25f-99e1e08df10a" edgePoints="[(4.5 : 2.25); (4.5 : 2.75)]" fixedFrom="Caller" fixedTo="Algorithm">
+      <subjectHasCommentsMoniker Id="73e6888b-5b7e-47b6-8c16-1f7887debf25" />
+      <nodes>
+        <subjectShapeMoniker Id="193a1e9f-ffb4-42fb-9c86-d83032953dc9" />
+        <commentShapeMoniker Id="897f230f-f7d0-463a-b5f8-e1f88c687adf" />
+      </nodes>
+    </containsConnection>
+    <fieldShape Id="29731350-fbbb-4472-a023-ad71b7ab839b" absoluteBounds="6.25, 0.5, 1, 1">
+      <fieldMoniker Id="7ace5bdd-9ec6-45d1-8e36-a2685da99a71" />
+    </fieldShape>
+    <fieldShape Id="d4abae51-e740-473f-a95c-82f9cc65b353" absoluteBounds="1.875, 2.125, 1, 1">
+      <fieldMoniker Id="78de637f-ec4f-42a3-a89b-fbb1093e952a" />
+    </fieldShape>
+    <containsConnection Id="b9dc10d2-fda9-47ce-8f0b-71bf9af85e6c" edgePoints="[(5.75 : 1.375); (6.41928108611693 : 1.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <subjectHasFieldsMoniker Id="b86f33df-d1c1-4066-a6ff-43532c8503d1" />
+      <nodes>
+        <subjectShapeMoniker Id="193a1e9f-ffb4-42fb-9c86-d83032953dc9" />
+        <fieldShapeMoniker Id="29731350-fbbb-4472-a023-ad71b7ab839b" />
+      </nodes>
+    </containsConnection>
+    <containsConnection Id="c6049ab6-9ba3-48fe-8e5f-aff7fb1943b5" edgePoints="[(4.25 : 1.6874995); (2.375 : 1.6874995); (2.375 : 2.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <subjectHasFieldsMoniker Id="fcba2ddb-1a3a-4740-bf43-26a635c99b46" />
+      <nodes>
+        <subjectShapeMoniker Id="193a1e9f-ffb4-42fb-9c86-d83032953dc9" />
+        <fieldShapeMoniker Id="d4abae51-e740-473f-a95c-82f9cc65b353" />
+      </nodes>
+    </containsConnection>
+    <containsConnection Id="5d7b167e-bd43-4939-bd2a-92a2b9ef242e" edgePoints="[(4.375 : 2.9375); (2.7653123748999 : 2.9375)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentHasFieldsMoniker Id="5f1b9a94-5d1d-4e76-a997-6104d4a558ac" />
+      <nodes>
+        <commentShapeMoniker Id="897f230f-f7d0-463a-b5f8-e1f88c687adf" />
+        <fieldShapeMoniker Id="d4abae51-e740-473f-a95c-82f9cc65b353" />
+      </nodes>
+    </containsConnection>
+    <ratingShape Id="01b90bce-c2b3-4150-9942-6a0192929885" absoluteBounds="3.25, 4.625, 1.5, 1">
+      <ratingMoniker Id="59c5dc0a-ae60-4d03-9fc3-c3b4ed163359" />
+    </ratingShape>
+    <containsConnection Id="5fe138cc-89b0-44c2-a500-9f34f351f376" edgePoints="[(4.5625 : 3.75); (4.5625 : 4.79428108611693)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentHasRatingMoniker Id="bdb7909d-b0d3-4107-8939-7ddc864ede21" />
+      <nodes>
+        <commentShapeMoniker Id="897f230f-f7d0-463a-b5f8-e1f88c687adf" />
+        <ratingShapeMoniker Id="01b90bce-c2b3-4150-9942-6a0192929885" />
+      </nodes>
+    </containsConnection>
+    <validationShape Id="e4d297b4-c06b-4284-b4be-820ac90052a2" absoluteBounds="5.625, 4.5, 1.5, 1">
+      <validationMoniker Id="6b38fe26-bb21-42f2-92cf-1ab4177a2031" />
+    </validationShape>
+    <containsConnection Id="d920dd75-e550-4414-89b8-fec76d8b3b41" edgePoints="[(5.75 : 3.75); (5.75 : 4.72361460080372)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentHasValidationMoniker Id="48aadb8e-802c-4fc7-8143-8e1d50177ab8" />
+      <nodes>
+        <commentShapeMoniker Id="897f230f-f7d0-463a-b5f8-e1f88c687adf" />
+        <validationShapeMoniker Id="e4d297b4-c06b-4284-b4be-820ac90052a2" />
+      </nodes>
+    </containsConnection>
+    <fieldShape Id="122911d0-8970-4b42-abd5-f2876652eb4b" absoluteBounds="7.75, 1.25, 0.875, 0.875">
+      <fieldMoniker Id="bbc97ca8-711e-4906-9e41-1f5d9b14dd74" />
+    </fieldShape>
+    <containsConnection Id="011bd9f8-fd1c-4a81-a475-59644b861e97" edgePoints="[(5.75 : 1.84375); (7.77885322404306 : 1.84375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <subjectHasFieldsMoniker Id="254ad756-2048-461d-ba06-f884a25655ed" />
+      <nodes>
+        <subjectShapeMoniker Id="193a1e9f-ffb4-42fb-9c86-d83032953dc9" />
+        <fieldShapeMoniker Id="122911d0-8970-4b42-abd5-f2876652eb4b" />
+      </nodes>
+    </containsConnection>
+    <containsConnection Id="11f58534-bf12-4c7b-90bc-c601b2414b8c" edgePoints="[(5.875 : 3.25); (8.1875 : 3.25); (8.1875 : 2.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentHasFieldsMoniker Id="13e6fa4c-a97a-44a9-a1bf-204299c29f62" />
+      <nodes>
+        <commentShapeMoniker Id="897f230f-f7d0-463a-b5f8-e1f88c687adf" />
+        <fieldShapeMoniker Id="122911d0-8970-4b42-abd5-f2876652eb4b" />
+      </nodes>
+    </containsConnection>
+  </nestedChildShapes>
+</commentReviewRateDiagram>

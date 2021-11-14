@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="CommentReviewRate.sandbox.Amazon">
+    <classNode dependClassName="CommentReviewRate.sandbox.Product" />
+    <classNode dependClassName="CommentReviewRate.sandbox.ProductComment" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.Article">
+    <classNode dependClassName="CommentReviewRate.sandbox.ArticleComment" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.ArticleComment">
+    <classNode dependClassName="CommentReviewRate.sandbox.Rating" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.AutomaticValidation" />
+  <dependency className="CommentReviewRate.sandbox.CommentReply">
+    <classNode dependClassName="CommentReviewRate.sandbox.Rating" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.ManualValidation" />
+  <dependency className="CommentReviewRate.sandbox.Product">
+    <classNode dependClassName="CommentReviewRate.sandbox.ProductComment" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.ProductComment">
+    <classNode dependClassName="CommentReviewRate.sandbox.Rating" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.Publico">
+    <classNode dependClassName="CommentReviewRate.sandbox.Article" />
+    <classNode dependClassName="CommentReviewRate.sandbox.ArticleComment" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.Rating" />
+  <dependency className="CommentReviewRate.sandbox.Video">
+    <classNode dependClassName="CommentReviewRate.sandbox.VideoComment" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.VideoComment">
+    <classNode dependClassName="CommentReviewRate.sandbox.Rating" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="CommentReviewRate.sandbox.Youtube">
+    <classNode dependClassName="CommentReviewRate.sandbox.Video" />
+    <classNode dependClassName="CommentReviewRate.sandbox.VideoComment" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+</dependenciesRoot>
+

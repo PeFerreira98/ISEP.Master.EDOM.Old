@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:7a161951-d1dc-48d4-b932-8216631607a1(CommentReviewRate.runtime.ModelTest)/1457367043908118037">
+    <file name="CarReviewVideo.java">
+      <unit id="1457367043908118038" at="6,0,8,0" name="CommentReviewRate.runtime.ModelTest.CarReviewVideo" />
+    </file>
+    <file name="GenTest.java">
+      <node id="1457367043908118037" at="8,0,10,0" concept="4" trace="main#([Ljava/lang/String;)V" />
+      <scope id="1457367043908118037" at="8,42,8,42" />
+      <scope id="1457367043908118037" at="8,0,10,0">
+        <var name="args" id="1457367043908118037" />
+      </scope>
+      <unit id="1457367043908118037" at="6,0,13,0" name="CommentReviewRate.runtime.ModelTest.GenTest" />
+    </file>
+    <file name="Subject.java">
+      <node id="1457367043908118038" at="7,0,8,0" concept="1" trace="attribute" />
+      <node id="1457367043908118038" at="9,41,10,31" concept="0" />
+      <node id="1457367043908118038" at="13,32,14,26" concept="3" />
+      <node id="1457367043908118038" at="17,45,18,30" concept="0" />
+      <node id="1457367043908118038" at="9,0,12,0" concept="2" trace="Subject#(Ljava/lang/String;)V" />
+      <node id="1457367043908118038" at="13,0,16,0" concept="2" trace="getAttribute#()Ljava/lang/String;" />
+      <node id="1457367043908118038" at="17,0,20,0" concept="2" trace="setAttribute#(Ljava/lang/String;)V" />
+      <scope id="1457367043908118038" at="9,41,10,31" />
+      <scope id="1457367043908118038" at="13,32,14,26" />
+      <scope id="1457367043908118038" at="17,45,18,30" />
+      <scope id="1457367043908118038" at="9,0,12,0">
+        <var name="attribute" id="1457367043908118038" />
+      </scope>
+      <scope id="1457367043908118038" at="13,0,16,0" />
+      <scope id="1457367043908118038" at="17,0,20,0">
+        <var name="newValue" id="1457367043908118038" />
+      </scope>
+      <unit id="1457367043908118038" at="6,0,22,0" name="CommentReviewRate.runtime.ModelTest.Subject" />
+    </file>
+  </root>
+  <root nodeRef="r:7a161951-d1dc-48d4-b932-8216631607a1(CommentReviewRate.runtime.ModelTest)/7018486486196773175">
+    <file name="CarReviewVideo.java">
+      <unit id="7018486486201166062" at="6,0,8,0" name="CommentReviewRate.runtime.ModelTest.CarReviewVideo" />
+    </file>
+    <file name="MusicVideo.java">
+      <unit id="1457367043906242476" at="6,0,8,0" name="CommentReviewRate.runtime.ModelTest.MusicVideo" />
+    </file>
+    <file name="NewsVideo.java">
+      <unit id="1457367043906565925" at="6,0,8,0" name="CommentReviewRate.runtime.ModelTest.NewsVideo" />
+    </file>
+    <file name="Subject.java">
+      <node id="1457367043906242476" at="7,0,8,0" concept="1" trace="attribute" />
+      <node id="1457367043906565925" at="7,0,8,0" concept="1" trace="attribute" />
+      <node id="7018486486201166062" at="7,0,8,0" concept="1" trace="attribute" />
+      <node id="1457367043906242476" at="9,41,10,31" concept="0" />
+      <node id="1457367043906565925" at="9,41,10,31" concept="0" />
+      <node id="7018486486201166062" at="9,41,10,31" concept="0" />
+      <node id="1457367043906242476" at="13,32,14,26" concept="3" />
+      <node id="1457367043906565925" at="13,32,14,26" concept="3" />
+      <node id="7018486486201166062" at="13,32,14,26" concept="3" />
+      <node id="1457367043906242476" at="17,45,18,30" concept="0" />
+      <node id="1457367043906565925" at="17,45,18,30" concept="0" />
+      <node id="7018486486201166062" at="17,45,18,30" concept="0" />
+      <node id="1457367043906242476" at="9,0,12,0" concept="2" trace="Subject#(Ljava/lang/String;)V" />
+      <node id="1457367043906565925" at="9,0,12,0" concept="2" trace="Subject#(Ljava/lang/String;)V" />
+      <node id="7018486486201166062" at="9,0,12,0" concept="2" trace="Subject#(Ljava/lang/String;)V" />
+      <node id="1457367043906242476" at="13,0,16,0" concept="2" trace="getAttribute#()Ljava/lang/String;" />
+      <node id="1457367043906565925" at="13,0,16,0" concept="2" trace="getAttribute#()Ljava/lang/String;" />
+      <node id="7018486486201166062" at="13,0,16,0" concept="2" trace="getAttribute#()Ljava/lang/String;" />
+      <node id="1457367043906242476" at="17,0,20,0" concept="2" trace="setAttribute#(Ljava/lang/String;)V" />
+      <node id="1457367043906565925" at="17,0,20,0" concept="2" trace="setAttribute#(Ljava/lang/String;)V" />
+      <node id="7018486486201166062" at="17,0,20,0" concept="2" trace="setAttribute#(Ljava/lang/String;)V" />
+      <scope id="1457367043906242476" at="9,41,10,31" />
+      <scope id="1457367043906565925" at="9,41,10,31" />
+      <scope id="7018486486201166062" at="9,41,10,31" />
+      <scope id="1457367043906242476" at="13,32,14,26" />
+      <scope id="1457367043906565925" at="13,32,14,26" />
+      <scope id="7018486486201166062" at="13,32,14,26" />
+      <scope id="1457367043906242476" at="17,45,18,30" />
+      <scope id="1457367043906565925" at="17,45,18,30" />
+      <scope id="7018486486201166062" at="17,45,18,30" />
+      <scope id="1457367043906242476" at="9,0,12,0">
+        <var name="attribute" id="1457367043906242476" />
+      </scope>
+      <scope id="1457367043906565925" at="9,0,12,0">
+        <var name="attribute" id="1457367043906565925" />
+      </scope>
+      <scope id="7018486486201166062" at="9,0,12,0">
+        <var name="attribute" id="7018486486201166062" />
+      </scope>
+      <scope id="1457367043906242476" at="13,0,16,0" />
+      <scope id="1457367043906565925" at="13,0,16,0" />
+      <scope id="7018486486201166062" at="13,0,16,0" />
+      <scope id="1457367043906242476" at="17,0,20,0">
+        <var name="newValue" id="1457367043906242476" />
+      </scope>
+      <scope id="1457367043906565925" at="17,0,20,0">
+        <var name="newValue" id="1457367043906565925" />
+      </scope>
+      <scope id="7018486486201166062" at="17,0,20,0">
+        <var name="newValue" id="7018486486201166062" />
+      </scope>
+      <unit id="1457367043906242476" at="6,0,22,0" name="CommentReviewRate.runtime.ModelTest.Subject" />
+      <unit id="1457367043906565925" at="6,0,22,0" name="CommentReviewRate.runtime.ModelTest.Subject" />
+      <unit id="7018486486201166062" at="6,0,22,0" name="CommentReviewRate.runtime.ModelTest.Subject" />
+    </file>
+    <file name="Youtube.java">
+      <node id="7018486486196773175" at="8,0,10,0" concept="4" trace="main#([Ljava/lang/String;)V" />
+      <scope id="7018486486196773175" at="8,42,8,42" />
+      <scope id="7018486486196773175" at="8,0,10,0">
+        <var name="args" id="7018486486196773175" />
+      </scope>
+      <unit id="7018486486196773175" at="6,0,13,0" name="CommentReviewRate.runtime.ModelTest.Youtube" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,190 @@
+package edom405epsilon.egl.gen;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class [%=subject.name%]Controller {
+
+    public static void main[%=subject.name%]Menu(Model model, Scanner scanner){
+        System.out.println("======= Main Menu =======");
+        System.out.println("==========================");
+
+        System.out.println("==========================");
+        System.out.println("1. List [%=subject.name%]");
+        System.out.println("2. Add [%=subject.name%]");
+        System.out.println("==========================");
+
+        System.out.println("Choose Option:");
+        String option = scanner.nextLine();
+
+        switch (Integer.parseInt(option)){
+            case 1:
+                listSubjects(model, scanner);
+                break;
+            case 2:
+                createSubject(model, scanner);
+                break;
+        }
+    }
+    
+    public static void createSubject(Model model, Scanner scanner){
+
+        System.out.println("===== Create [%=subject.name%] =====");
+        System.out.println("==========================");
+        [%=subject.name%] item = new [%=subject.name%]();
+
+        item.setcomments(new ArrayList<Comment>());
+        
+        [% var i = 1;%]
+        [% for (field in subject.field) { %]
+        [% if ( field.type.toString().equals("Date")) {%]
+		item.set[%=field.name%](LocalDateTime.now());
+		[%}else{%]
+		System.out.println("[%=i%]. [%=field.name%]:");
+        String [%=field.name%] = scanner.nextLine();
+      	[% if ( field.type.toString().equals("String")) {%]
+		item.set[%=field.name%]([%=field.name%]);[%}%]
+        [% if ( field.type.toString().equals("Integer")) {%]
+		item.set[%=field.name%](Integer.parseInt([%=field.name%]));[%}%]
+		[% if ( field.type.toString().equals("Double")) {%]
+		item.set[%=field.name%](Double.parseDouble([%=field.name%]));[%}%]
+        [%}%]
+        	
+		[% i++;%]
+		[%}%]
+
+        System.out.println("[%=i%]. Save or Exit (1 to Save, 2 for Exit)");
+        System.out.println("==========================");
+        String option = scanner.nextLine();
+
+        switch (Integer.parseInt(option)){
+            case 1:
+                System.out.println("==========================");
+                System.out.println("Saving [%=subject.name%]...:\n");
+                model.getsubjects().add(item);
+                listSubjects(model, scanner);
+                break;
+            case 2:
+                System.out.println("==========================\n");
+                main[%=subject.name%]Menu(model, scanner);
+                break;
+        }
+
+   }
+    
+   public static void addCommentToSubject(Model model, String subjectID, Scanner scanner){
+
+
+        Subject selectedItem = model.getsubjects().get(Integer.parseInt(subjectID) - 1);
+        System.out.println("Adding Comment to [%=subject.name%] " + selectedItem.getname() + " ...");
+        System.out.println("==========================");
+        [% for (comment in subject.comment) { var name = comment.name;%]
+        [%=name%] newComment = new [%=name%]();[%continue;}%]
+        
+        System.out.println("1. Text:");
+        String text = scanner.nextLine();
+        newComment.settext(text);
+
+        System.out.println("2. User: ");
+        String username = scanner.nextLine();
+        newComment.setuser(username);
+
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        LocalDateTime date = LocalDateTime.now();
+        
+        System.out.println("3. Date: " + dtf.format(date));
+        newComment.setdate(date);
+        
+        System.out.println("4. Rating:");
+        String rating = scanner.nextLine();
+        newComment.setrating(new [%=subject.name%]Rating(Double.parseDouble(rating)));
+
+        newComment.setcomments(new ArrayList<Comment>());
+
+        System.out.println("5. Save or Exit (1 to Save, 2 for Exit)");
+        System.out.println("==========================");
+        String option = scanner.nextLine();
+
+        switch (Integer.parseInt(option)){
+            case 1:
+                System.out.println("==========================");
+                System.out.println("Saving Comment...:\n");
+                model.getsubjects().get(Integer.parseInt(subjectID) - 1).getcomments().add(newComment);
+                listSubjects(model, scanner);
+                break;
+            case 2:
+                System.out.println("==========================\n");
+                subjectDataComments(model, subjectID, scanner);
+                break;
+        }
+
+    }
+    
+    public static void listSubjects(Model model, Scanner scanner){
+    	System.out.println("List of [%=subject.name%]s: \n");
+
+        for(int i = 0; i < model.getsubjects().size(); i++){
+            System.out.println( i+1 + ". " + model.getsubjects().get(i).getname());
+        }
+
+        System.out.println(model.getsubjects().size()+1 + ". Exit [%=subject.name%]s Menu \n");
+
+        System.out.println("Choose Option:");
+        String option = scanner.nextLine();
+        int optionNumber = Integer.parseInt(option);
+
+        if(optionNumber >= 1 && optionNumber <= model.getsubjects().size()){
+            int id = optionNumber;
+            subjectDataComments(model, String.valueOf(id) , scanner);
+
+        }else if(optionNumber == model.getsubjects().size() + 1){
+            main[%=subject.name%]Menu(model, scanner);
+        }
+	}
+	
+	public static void subjectDataComments(Model model, String subjectID, Scanner scanner){
+		[%=subject.name%] selectedItem = ([%=subject.name%]) model.getsubjects().get(Integer.parseInt(subjectID) - 1);
+        System.out.println("====== " + selectedItem.getname() + " ======");
+        System.out.println("[%=subject.name%] Data and Comments:");
+        System.out.println("==========================");
+        System.out.println("1. Get Fields");
+        System.out.println("2. Get Comments");
+        System.out.println("3. Add Comment");
+        System.out.println("4. Exit Menu");
+        System.out.println("==========================");
+
+        System.out.println("Choose Option:");
+        String option = scanner.nextLine();
+
+        switch (Integer.parseInt(option)){
+            case 1:
+                System.out.println("==========================");
+                System.out.println("Fields:\n");
+		        [% for (field in subject.field) { %]
+		        System.out.printf("[%=field.name%]: " + selectedItem.get[%=field.name%]() + "\n");
+		        [%}%]
+                System.out.println("==========================\n");
+                subjectDataComments(model, subjectID, scanner);
+                break;
+            case 2:
+                System.out.println("==========================\n");
+                System.out.println("Comments:\n");
+                [% for (comment in subject.comment) { var name = comment.name;%]
+                [%=name%]Controller.listcomments(model, subjectID, scanner);[%continue;}%]
+        		
+                System.out.println("==========================\n");
+                break;
+            case 3:
+                System.out.println("==========================\n");
+                System.out.println("Add Comment: \n");
+                [%=subject.name%]Controller.addCommentToSubject(model, subjectID, scanner);
+                break;
+            case 4:
+                listSubjects(model, scanner);
+                break;
+        }
+		
+	}
+}

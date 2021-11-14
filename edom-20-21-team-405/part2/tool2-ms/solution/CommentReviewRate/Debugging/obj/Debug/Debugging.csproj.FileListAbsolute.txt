@@ -1,0 +1,12 @@
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part1\tool2-ms\solution\CommentReviewRate\Debugging\bin\Debug\Debugging.dll
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part1\tool2-ms\solution\CommentReviewRate\Debugging\bin\Debug\Debugging.pdb
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part1\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.csprojAssemblyReference.cache
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part1\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part1\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.dll
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part1\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.pdb
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part2\tool2-ms\solution\CommentReviewRate\Debugging\bin\Debug\Debugging.dll
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part2\tool2-ms\solution\CommentReviewRate\Debugging\bin\Debug\Debugging.pdb
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part2\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.csprojAssemblyReference.cache
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part2\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part2\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.dll
+C:\Users\Rafael\Desktop\EDOM\edom-20-21-team-405\part2\tool2-ms\solution\CommentReviewRate\Debugging\obj\Debug\Debugging.pdb

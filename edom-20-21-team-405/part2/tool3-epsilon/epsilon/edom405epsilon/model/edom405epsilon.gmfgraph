@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="edom405epsilon">
+  <figures name="Default">
+    <descriptors name="SubjectFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="SubjectFigure" qualifiedClassName="oval">
+        <children xsi:type="gmfgraph:Label" name="SubjectLabelFigure" text="Subject"/>
+      </actualFigure>
+      <accessors accessor="getFigureSubjectLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="CommentFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CommentFigure" qualifiedClassName="oval">
+        <children xsi:type="gmfgraph:Label" name="CommentLabelFigure" text="Comment"/>
+      </actualFigure>
+      <accessors accessor="getFigureCommentLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="FieldFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="FieldFigure" qualifiedClassName="square">
+        <children xsi:type="gmfgraph:Label" name="FieldLabelFigure" text="Field"/>
+      </actualFigure>
+      <accessors accessor="getFigureFieldLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="RatingFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="RatingFigure" qualifiedClassName="triangle">
+        <children xsi:type="gmfgraph:Label" name="RatingLabelFigure" text="Rating"/>
+      </actualFigure>
+      <accessors accessor="getFigureRatingLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="AutomaticValidationFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="AutomaticValidationFigure" qualifiedClassName="diamond">
+        <children xsi:type="gmfgraph:Label" name="AutomaticValidationLabelFigure" text="AutomaticValidation"/>
+      </actualFigure>
+      <accessors accessor="getFigureAutomaticValidationLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ManualValidationFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="ManualValidationFigure" qualifiedClassName="diamond">
+        <children xsi:type="gmfgraph:Label" name="ManualValidationLabelFigure" text="ManualValidation"/>
+      </actualFigure>
+      <accessors accessor="getFigureManualValidationLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+  </figures>
+  <nodes name="Subject" figure="SubjectFigure"/>
+  <nodes name="Comment" figure="CommentFigure"/>
+  <nodes name="Field" figure="FieldFigure"/>
+  <nodes name="Rating" figure="RatingFigure"/>
+  <nodes name="AutomaticValidation" figure="AutomaticValidationFigure"/>
+  <nodes name="ManualValidation" figure="ManualValidationFigure"/>
+  <labels name="SubjectLabel" figure="SubjectFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="CommentLabel" figure="CommentFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="FieldLabel" figure="FieldFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="RatingLabel" figure="RatingFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="AutomaticValidationLabel" figure="AutomaticValidationFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="ManualValidationLabel" figure="ManualValidationFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+</gmfgraph:Canvas>

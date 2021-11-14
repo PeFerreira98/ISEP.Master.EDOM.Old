@@ -1,0 +1,33 @@
+Model amazon {
+	subject {
+		Subject Amazon {
+			usecase {
+				UseCase ReviewProduct {	
+					includes {
+						Include inc {
+							addition InsertPicture
+						}
+					}			 	
+				}
+				, UseCase CommentProduct {}
+				, UseCase InsertPicture {}        
+			}  
+		}      
+	}	   
+	actor {   
+		Actor Customer {}
+		, Actor Admin {}
+		, Actor Guest {}
+		, Actor AnotherUser {}	
+		, Actor Guest2 {}
+		, Actor Guest3 {}	
+	}
+	association {
+		Association asso1 {
+			actor Customer usecase "Amazon.ReviewProduct"
+		}, 
+		Association asso2 {
+			actor Customer usecase "Amazon.CommentProduct"
+		}
+	}
+}

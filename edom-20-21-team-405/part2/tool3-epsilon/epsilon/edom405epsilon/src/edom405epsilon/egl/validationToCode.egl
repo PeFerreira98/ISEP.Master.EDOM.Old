@@ -1,0 +1,10 @@
+package edom405epsilon.egl.gen;
+
+
+public class [%=validation.name%] implements iValidate{
+	
+	private bolean validate(Comment comment){
+		return true;
+	}
+
+}	

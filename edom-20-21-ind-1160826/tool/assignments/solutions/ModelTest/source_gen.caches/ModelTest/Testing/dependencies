@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="ModelTest.Testing.Association1">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ModelTest.Testing.Ator_A">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ModelTest.Testing.Ator_B">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ModelTest.Testing.SubjectA">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ModelTest.Testing.SubjectB">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="ModelTest.Testing.UCUS">
+    <classNode dependClassName="ModelTest.Testing.Association1" />
+    <classNode dependClassName="ModelTest.Testing.Ator_A" />
+    <classNode dependClassName="ModelTest.Testing.Ator_B" />
+    <classNode dependClassName="ModelTest.Testing.SubjectA" />
+    <classNode dependClassName="ModelTest.Testing.SubjectB" />
+    <classNode dependClassName="ModelTest.Testing.Usecase_AB" />
+  </dependency>
+  <dependency className="ModelTest.Testing.Usecase_AB">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+</dependenciesRoot>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ucus:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ucus="http://www.example.org/ucus" name="Testmodel">
+  <subject name="EcommerceSite">
+    <usecase name="ReviewProduct" include="//@subject.0/@usecase.0/@includes.0 //@subject.0/@usecase.1/@includes.0" association="//@association.0">
+      <includes addition="//@subject.0/@usecase.0" name="reviewProductInclude"/>
+    </usecase>
+    <usecase name="insertPicture">
+      <includes addition="//@subject.0/@usecase.0" name="Loop include"/>
+    </usecase>
+  </subject>
+  <subject name="EcommerceSite2">
+    <usecase name="Review2"/>
+  </subject>
+  <actor name="User" association="//@association.0"/>
+  <association name="Association1" actor="//@actor.0" usecase="//@subject.0/@usecase.0"/>
+</ucus:Model>

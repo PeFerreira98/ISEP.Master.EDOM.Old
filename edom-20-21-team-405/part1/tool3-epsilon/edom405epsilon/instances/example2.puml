@@ -1,0 +1,49 @@
+@startuml
+digraph model  {
+Product [shape=box3d];
+ProductReview [shape=oval];
+Joaquim [shape=diamond];
+ProductReview -> Joaquim [label="from"];
+text [shape=square];
+EString [shape=Msquare];
+ProductReview -> text [label="has"];
+text -> EString [label="from type"];
+date [shape=square];
+Date [shape=Msquare];
+ProductReview -> date [label="has"];
+date -> Date [label="from type"];
+text [shape=square];
+EString [shape=Msquare];
+ProductReview -> text [label="has"];
+text -> EString [label="from type"];
+SecondUserCom [shape=oval];
+ProductReview -> SecondUserCom [label="has reply"];
+Ana [shape=diamond];
+SecondUserCom -> Ana [label="from"];
+text [shape=square];
+EString [shape=Msquare];
+SecondUserCom -> text [label="has"];
+text -> EString [label="from type"];
+something [shape=square];
+EString [shape=Msquare];
+SecondUserCom -> something [label="has"];
+something -> EString [label="from type"];
+ThirdUserCom [shape=oval];
+SecondUserCom -> ThirdUserCom [label="has reply"];
+Josefino [shape=diamond];
+ThirdUserCom -> Josefino [label="from"];
+text [shape=square];
+EString [shape=Msquare];
+ThirdUserCom -> text [label="has"];
+text -> EString [label="from type"];
+somethingElse [shape=square];
+EString [shape=Msquare];
+ThirdUserCom -> somethingElse [label="has"];
+somethingElse -> EString [label="from type"];
+Product -> ProductReview [label="has comment"];
+price [shape=square];
+EInteger [shape=Msquare];
+Product -> price [label="has"];
+price -> EInteger [label="from type"];
+}
+@enduml

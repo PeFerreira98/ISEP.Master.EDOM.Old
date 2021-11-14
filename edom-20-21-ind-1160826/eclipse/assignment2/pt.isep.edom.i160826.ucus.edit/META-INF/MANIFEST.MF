@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: pt.isep.edom.i160826.ucus.edit;singleton:=true
+Automatic-Module-Name: pt.isep.edom.i160826.ucus.edit
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: pt.isep.edom.i160826.ucus.provider.UcusEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: pt.isep.edom.i160826.ucus.provider
+Require-Bundle: org.eclipse.core.runtime,
+ pt.isep.edom.i160826.ucus;visibility:=reexport,
+ org.eclipse.emf.edit;visibility:=reexport
+Bundle-ActivationPolicy: lazy

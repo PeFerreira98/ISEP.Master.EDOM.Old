@@ -1,0 +1,42 @@
+package edom405epsilon.egl.gen;
+
+import java.util.List;
+import java.time.LocalDateTime;
+		
+[% for (comment in subject.comment) {%]		
+public class [%=comment.name%] extends Comment{
+
+	[% for (field in comment.field) { %][% if (field.name != 'text' and field.name != 'date' and field.name != 'rating' and field.name != 'comments') {%]
+	public [%=field.type%] [%=field.name%];[%}%][%}%] 
+	 
+	public [%=comment.name%](String text, LocalDateTime date, Rating rating, List<Comment> comments[% for (field in comment.field) { %] [% if (field.name != 'text' and field.name != 'date' and field.name != 'rating' and field.name != 'comments') {%]
+	, [%=field.type%] [%=field.name%][%}%][%}%]){
+        super(text, date, rating, comments);
+        [% for (field in comment.field) { %][% if (field.name != 'text' and field.name != 'date' and field.name != 'rating' and field.name != 'comments') {%]
+		this.[%=field.name%] = [%=field.name%];
+		[%}%][%}%]
+		
+    }
+    
+    public [%=comment.name%](){
+    	super();
+    }
+    
+    [% for (field in comment.field) { %]
+    [% if (field.name != 'text' and field.name != 'date' and field.name != 'rating' and field.name != 'comments') {%]
+	public [%=field.type%] get[%=field.name%]() {
+       return [%=field.name%];
+    }
+	[%}%]
+	[%}%]
+	 
+	[% for (field in comment.field) { %]
+	[% if (field.name != 'text' and field.name != 'date' and field.name != 'rating' and field.name != 'comments') {%]
+	public void set[%=field.name%]([%=field.type%] [%=field.name%]) {
+	   this.[%=field.name%] = [%=field.name%];
+    }
+	[%}%]
+	[%}%]
+     
+}
+[%continue;}%]	

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ucus:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ucus="http://www.example.org/ucus">
+  <actor Name="User" association="//@association.0"/>
+  <association Name="Association1" actor="//@actor.0" usecase="//@subject.0/@usecase.0"/>
+  <subject Name="EcommerceSite">
+    <usecase Name="ReviewProduct1" association="//@association.0"/>
+    <usecase Name="InsertPicture1"/>
+  </subject>
+</ucus:Model>

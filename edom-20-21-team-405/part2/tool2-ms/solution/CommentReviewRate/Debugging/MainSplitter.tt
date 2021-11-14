@@ -1,0 +1,37 @@
+﻿<#@ template hostspecific="true" language="C#" #>
+<#@ output extension=".txt" #>
+<#@ import namespace="Microsoft.VisualStudio.TextTemplating" #>
+<#@ import namespace="System.Runtime.Remoting.Messaging" #>
+<#@ import namespace="System.IO" #>
+
+<#
+	// Get the local path:
+  string itemTemplatePath = this.Host.ResolvePath("Main.t4");
+  string dir = Path.GetDirectoryName(itemTemplatePath);
+
+  // Get the template for generating each file:
+  string loopTemplate = File.ReadAllText(itemTemplatePath);
+
+  Engine engine = new Engine();
+
+  // Pass parameter to new template:
+  string delimiterGuid = Guid.NewGuid().ToString();
+  string delimiter = "::::" + delimiterGuid + ":::";
+  CallContext.LogicalSetData("delimiter", delimiter + "{0}:::");
+  string joinedFiles = engine.ProcessTemplate(loopTemplate, this.Host);
+
+  string [] separateFiles = joinedFiles.Split(new string [] {delimiter}, StringSplitOptions.None);
+
+  foreach (string nameAndFile in separateFiles)
+  {
+     if (string.IsNullOrWhiteSpace(nameAndFile)) continue;
+     string[] parts = nameAndFile.Split(new string[]{":::"}, 2, StringSplitOptions.None);
+     if (parts.Length < 2) continue;
+
+#>
+    Generate: [<#= dir #>] [<#= parts[0] #>]
+<#
+     // Generate a file from this item:
+     File.WriteAllText(Path.Combine(dir, "prototype/src-gen/"+ parts[0] + ".java"), parts[1]);
+  }
+#>

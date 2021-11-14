@@ -1,0 +1,61 @@
+@startuml metamodel.png
+
+Model "1"*-->"*" Subject
+Subject "1"*-->"*" Comment
+Subject "1"*-->"*" Field
+Field ..> FieldTypesEnum
+Comment "1"*-->"*" Comment
+Comment "1"*-->"*" Field
+Comment "1"*-->"*" Rating
+IValidate "1"*-->"*" Field
+Rating "1"*-->"*" Field
+AutomaticValidation --> IValidate
+ManualValidation --> IValidate
+Comment "0..1"-->"1" AutomaticValidation
+Comment "0..1"-->"1" ManualValidation
+
+
+class Field {
+  
+  String name
+  FieldType type
+}
+
+class Model {
+  String name
+}
+
+class Rating {
+  String name
+}
+
+class Subject {
+  String name
+}
+
+class Comment {
+  String name
+}
+
+class AutomaticValidation {
+  String name
+}
+
+class ManualValidation {
+  String name
+}
+
+interface IValidate{
+   -validate(Comment)
+}
+
+enum FieldTypesEnum {
+  STRING
+  DATE
+  INTEGER
+  BOOLEAN
+  FLOAT
+}
+
+
+@enduml

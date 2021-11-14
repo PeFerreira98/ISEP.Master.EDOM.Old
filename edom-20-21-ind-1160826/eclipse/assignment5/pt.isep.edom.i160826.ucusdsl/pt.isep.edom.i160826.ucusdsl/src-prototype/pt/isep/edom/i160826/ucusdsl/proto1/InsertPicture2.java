@@ -1,0 +1,11 @@
+package pt.isep.edom.i160826.ucusdsl.proto1;
+
+public class InsertPicture2 implements Interaction{
+	
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+	
+		System.out.println("InsertPicture HAS NEW BEHAVIOUR!");
+	}
+}

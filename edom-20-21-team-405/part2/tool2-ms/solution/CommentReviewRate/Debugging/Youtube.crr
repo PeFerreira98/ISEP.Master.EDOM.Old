@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a1b9545f-db8a-4f8b-8bd9-43ed16382f93" name="Youtube" xmlns="http://schemas.microsoft.com/dsltools/CommentReviewRate">
+  <subjects>
+    <subject Id="e7711d26-837b-4bf9-b31d-740c1a1c230a" name="Video">
+      <comments>
+        <subjectHasComments Id="73e6888b-5b7e-47b6-8c16-1f7887debf25">
+          <commentMoniker Id="92b1754e-58f7-41bb-9567-d09f1d87d36a" />
+        </subjectHasComments>
+      </comments>
+      <fields>
+        <subjectHasFields Id="b86f33df-d1c1-4066-a6ff-43532c8503d1">
+          <fieldMoniker Id="7ace5bdd-9ec6-45d1-8e36-a2685da99a71" />
+        </subjectHasFields>
+        <subjectHasFields Id="fcba2ddb-1a3a-4740-bf43-26a635c99b46">
+          <fieldMoniker Id="78de637f-ec4f-42a3-a89b-fbb1093e952a" />
+        </subjectHasFields>
+        <subjectHasFields Id="254ad756-2048-461d-ba06-f884a25655ed">
+          <fieldMoniker Id="bbc97ca8-711e-4906-9e41-1f5d9b14dd74" />
+        </subjectHasFields>
+      </fields>
+    </subject>
+  </subjects>
+  <fields>
+    <modelHasFields Id="fd94f16f-7312-44ee-a75c-ccad3239d352">
+      <field Id="7ace5bdd-9ec6-45d1-8e36-a2685da99a71" name="title" type="String" />
+    </modelHasFields>
+    <modelHasFields Id="3d967719-7716-4691-a699-588b6c43dadd">
+      <field Id="78de637f-ec4f-42a3-a89b-fbb1093e952a" name="date" type="Date" />
+    </modelHasFields>
+    <modelHasFields Id="3458a148-bdc6-48c4-beee-ea8c1b430c95">
+      <field Id="bbc97ca8-711e-4906-9e41-1f5d9b14dd74" name="text" type="String" />
+    </modelHasFields>
+  </fields>
+  <comments>
+    <modelHasComments Id="eabd8640-0bc6-48a6-bc65-206e6381cad1">
+      <comment Id="92b1754e-58f7-41bb-9567-d09f1d87d36a" name="VideoComment">
+        <fields>
+          <commentHasFields Id="5f1b9a94-5d1d-4e76-a997-6104d4a558ac">
+            <fieldMoniker Id="78de637f-ec4f-42a3-a89b-fbb1093e952a" />
+          </commentHasFields>
+          <commentHasFields Id="13e6fa4c-a97a-44a9-a1bf-204299c29f62">
+            <fieldMoniker Id="bbc97ca8-711e-4906-9e41-1f5d9b14dd74" />
+          </commentHasFields>
+        </fields>
+        <rating>
+          <commentHasRating Id="bdb7909d-b0d3-4107-8939-7ddc864ede21">
+            <ratingMoniker Id="59c5dc0a-ae60-4d03-9fc3-c3b4ed163359" />
+          </commentHasRating>
+        </rating>
+        <validation>
+          <commentHasValidation Id="48aadb8e-802c-4fc7-8143-8e1d50177ab8">
+            <validationMoniker Id="6b38fe26-bb21-42f2-92cf-1ab4177a2031" />
+          </commentHasValidation>
+        </validation>
+      </comment>
+    </modelHasComments>
+  </comments>
+  <ratings>
+    <modelHasRatings Id="5fe464cc-1cad-4d2f-b320-ce3cec28f029">
+      <rating Id="59c5dc0a-ae60-4d03-9fc3-c3b4ed163359" name="VideoRating" />
+    </modelHasRatings>
+  </ratings>
+  <validations>
+    <modelHasValidations Id="67e2afb8-4915-418a-a032-60a7ef9bcfec">
+      <validation Id="6b38fe26-bb21-42f2-92cf-1ab4177a2031" name="AutomaticValidation" />
+    </modelHasValidations>
+  </validations>
+</model>

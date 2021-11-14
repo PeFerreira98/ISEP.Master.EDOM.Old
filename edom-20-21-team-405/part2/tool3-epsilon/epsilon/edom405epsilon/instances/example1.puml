@@ -1,0 +1,33 @@
+@startuml
+digraph model  {
+Product [shape=box3d];
+ProductReview [shape=oval];
+Joaquim [shape=diamond];
+ProductReview -> Joaquim [label="from"];
+text [shape=square];
+EString [shape=Msquare];
+ProductReview -> text [label="has"];
+text -> EString [label="from type"];
+date [shape=square];
+Date [shape=Msquare];
+ProductReview -> date [label="has"];
+date -> Date [label="from type"];
+Comment 2 [shape=oval];
+ProductReview -> Comment 2 [label="has reply"];
+Ana [shape=diamond];
+Comment 2 -> Ana [label="from"];
+text [shape=square];
+EString [shape=Msquare];
+Comment 2 -> text [label="has"];
+text -> EString [label="from type"];
+date [shape=square];
+Date [shape=Msquare];
+Comment 2 -> date [label="has"];
+date -> Date [label="from type"];
+Product -> ProductReview [label="has comment"];
+price [shape=square];
+EInteger [shape=Msquare];
+Product -> price [label="has"];
+price -> EInteger [label="from type"];
+}
+@enduml

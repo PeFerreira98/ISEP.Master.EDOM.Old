@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edom405epsilon:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:edom405epsilon="http://www.example.org/edom405epsilon" xsi:schemaLocation="http://www.example.org/edom405epsilon edom405epsilon.ecore" name="Amazon">
+  <subject name="Product">
+    <comment name="ProductReview">
+      <field name="text" type="String"/>
+      <field name="date" type="Date"/>
+      <field name="user" type="String"/>
+      <field name="title" type="String"/>
+      <comment name="SecondCommentReview">
+        <field name="text" type="String"/>
+        <field name="date" type="Date"/>
+        <field name="user" type="String"/>
+        <field name="title" type="String"/>
+        <rating name="ProductRating">
+          <field name="value" type="Double"/>
+        </rating>
+      </comment>
+      <rating name="ProductRating">
+        <field name="value" type="Double"/>
+      </rating>
+      <automaticvalidation name="AIvalidation"/>
+    </comment>
+    <field name="name" type="String"/>
+    <field name="price" type="Double"/>
+  </subject>
+</edom405epsilon:Model>

@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: pt.isep.edom.i160826.ucusdsl
+Bundle-ManifestVersion: 2
+Bundle-Name: pt.isep.edom.i160826.ucusdsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: pt.isep.edom.i160826.ucusdsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: pt.isep.edom.i160826.ucus,
+ org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.ocl.common,
+ org.eclipse.ocl.pivot,
+ org.eclipse.ocl.xtext.oclinecore;bundle-version="1.12.0",
+ pt.isep.edom.i160826.ucusdsl
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: pt.isep.edom.i160826.validation,
+ pt.isep.edom.i160826.parser.antlr,
+ pt.isep.edom.i160826.formatting2,
+ pt.isep.edom.i160826.scoping,
+ pt.isep.edom.i160826.generator,
+ pt.isep.edom.i160826.services,
+ pt.isep.edom.i160826.parser.antlr.internal,
+ pt.isep.edom.i160826,
+ pt.isep.edom.i160826.serializer
+Import-Package: org.apache.log4j

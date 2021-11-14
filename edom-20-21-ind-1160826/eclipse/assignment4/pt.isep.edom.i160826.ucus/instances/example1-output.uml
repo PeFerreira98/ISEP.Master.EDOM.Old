@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_sZfawCedEeusypqInuXaHg" name="testmodel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_sZfawSedEeusypqInuXaHg" name="ecommercesite">
+    <packagedElement xmi:type="uml:Package" xmi:id="_sZfawiedEeusypqInuXaHg" name="presentation">
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfawyedEeusypqInuXaHg" name="ReviewProductView"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfaxCedEeusypqInuXaHg" name="insertPictureView"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_sZfaxSedEeusypqInuXaHg" name="business">
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfaxiedEeusypqInuXaHg" name="ReviewProductController"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfaxyedEeusypqInuXaHg" name="insertPictureController"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_sZfayCedEeusypqInuXaHg" name="data">
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfaySedEeusypqInuXaHg" name="ReviewProductRepository"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfayiedEeusypqInuXaHg" name="insertPictureRepository"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_sZfayyedEeusypqInuXaHg" name="ecommercesite2">
+    <packagedElement xmi:type="uml:Package" xmi:id="_sZfazCedEeusypqInuXaHg" name="presentation">
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfazSedEeusypqInuXaHg" name="Review2View"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_sZfaziedEeusypqInuXaHg" name="business">
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfazyedEeusypqInuXaHg" name="Review2Controller"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_sZfa0CedEeusypqInuXaHg" name="data">
+      <packagedElement xmi:type="uml:Class" xmi:id="_sZfa0SedEeusypqInuXaHg" name="Review2Repository"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_sZfa0iedEeusypqInuXaHg" name="domain">
+    <packagedElement xmi:type="uml:Class" xmi:id="_sZfa0yedEeusypqInuXaHg" name="User"/>
+  </packagedElement>
+</uml:Model>

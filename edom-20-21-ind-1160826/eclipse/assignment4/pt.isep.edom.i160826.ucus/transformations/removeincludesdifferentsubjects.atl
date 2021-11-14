@@ -1,0 +1,19 @@
+-- @atlcompiler emftvm
+-- @path UCUS=/pt.isep.edom.atb.ucus/model/generated/ucus.ecore
+
+module removeincludesdifferentsubjects;
+create OUT : UCUS refining IN : UCUS;
+ 
+helper context UCUS!Include def : parentUseCase : UCUS!UseCase = UCUS!UseCase.allInstances()->select(u | u.includes->includes(self))->asOrderedSet()->first();
+
+-- Warning: If you do not Initialize OCL when running the transformation all OCL from the metamodel is not available and you may need to setup corresponding behavior in ATL. For example:
+-- helper context UCUS!UseCase def : mySubject : UCUS!Subject = UCUS!Subject.allInstances()->select(u | u.usecase->includes(self))->asOrderedSet()->first();
+
+rule RemoveIncludeDifferentSubject {
+	from 
+		i1 : UCUS!Include  (i1.addition.subject <> i1.parentUseCase.subject)
+	do {
+		-- debug can be used to print to the console
+		('Applied RemoveIncludeDifferentSubject for Include '+i1.name+' at Use Case '+i1.parentUseCase.name + ' '+i1.addition.subject.name).debug();
+	}
+}

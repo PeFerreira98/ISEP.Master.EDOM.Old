@@ -1,0 +1,123 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ parameter name="delimiter" type="System.String" #>
+<#@ output extension=".java" #>
+<#@ CommentReviewRate processor="CommentReviewRateDirectiveProcessor" requires="fileName='Publico.crr'" #>
+<#= string.Format(delimiter, Model.Name) #>
+package pt.isep.crr.model;
+
+import pt.isep.crr.model.Model;
+import pt.isep.crr.model.Subject;
+import java.util.List;
+
+
+public class <#=Model.Name#> extends Model {
+	
+	public <#=Model.Name#>(List<Subject> subjects) {
+		super(subjects);
+	}
+
+}
+
+<# foreach(Subject subject in Model.Subjects) {#>
+<#= string.Format(delimiter, subject.Name) #>
+package pt.isep.crr.model;
+
+import pt.isep.crr.model.Subject;
+import pt.isep.crr.model.Comment;
+import java.util.List;
+import java.util.Date;
+
+public class <#= subject.Name #> extends Subject {
+	<#foreach(Field field in  subject.Fields) {#>	
+	private final <#=field.Type#> <#=field.Name#>;
+	<# } #>
+
+	public <#=subject.Name #>(<#foreach(Field field in subject.Fields){#><#=field.Type#> <#=field.Name #>, <#} #> List<Comment> comments) {
+		super(comments); <#foreach(Field field in  subject.Fields) {#>	
+		this.<#=field.Name#> = <#=field.Name#>; <#}#>
+	
+	}
+	
+	<#foreach(Field field in  subject.Fields) {#>
+public <#=field.Type #> get<#=field.Name #>() { return <#=field.Name#>; } 
+	<# } #>
+	
+	@Override
+	public String toString() {
+		return gettitle();
+	}
+
+}
+
+<# foreach(Comment comment in subject.Comments) {#>
+<#= string.Format(delimiter, comment.Name) #>
+package pt.isep.crr.model;
+
+import pt.isep.crr.model.Comment;
+import pt.isep.crr.model.Rating;
+import java.util.List;
+import java.util.Date;
+
+public class <#= comment.Name #> extends Comment {
+	<#foreach(Field field in  comment.Fields) {#>	
+	private final <#=field.Type#> <#=field.Name#>;
+	<# } #>
+
+	public <#=comment.Name #>(<#foreach(Field field in comment.Fields){#><#=field.Type#> <#=field.Name #>, <#} #> List<Comment> replies, Rating rating) {
+		super(replies, rating); <#foreach(Field field in  comment.Fields) {#>	
+		this.<#=field.Name#> = <#=field.Name#>; <#}#>
+	
+	}
+	
+	<#foreach(Field field in  comment.Fields) {#>
+public <#=field.Type #> get<#=field.Name #>() { return <#=field.Name#>; } 
+	<# } #>
+
+
+}
+<#= string.Format(delimiter, comment.Rating.Name) #>
+package pt.isep.crr.model;
+
+import pt.isep.crr.model.Rating;
+
+public class <#=comment.Rating.Name #> implements Rating<String> {
+	
+	<#foreach(Field field in  comment.Rating.Fields) {#>	
+	private final <#=field.Type#> <#=field.Name#>;
+	<# } #>
+
+	public <#=comment.Rating.Name #>(<#foreach(Field field in comment.Rating.Fields){#><#=field.Type#> <#=field.Name #> <#} #>) {
+		<#foreach(Field field in  comment.Rating.Fields) {#>	
+		this.<#=field.Name#> = <#=field.Name#>; <#}#>
+	
+	}
+
+	@Override
+	public String getRating() {
+		//Implement Rating
+		return "Rating to be implemented in child class";
+	}
+
+	@Override
+	public void ratingOperation() {
+		//Implement rating operation (increase number of likes p.e)
+	}
+
+}
+
+<#= string.Format(delimiter, comment.Validation.Name) #>
+package pt.isep.crr.model;
+
+import pt.isep.crr.model.Validation;
+
+public class <#=comment.Validation.Name #> implements Validation {
+
+	public <#=comment.Validation.Name #>() {
+		//Validation
+	}
+
+}
+
+<# } #>
+
+<# } #>

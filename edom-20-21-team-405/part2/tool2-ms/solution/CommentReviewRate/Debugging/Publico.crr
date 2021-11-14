@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="613581a8-d0ca-4fdf-8ea0-afde7aad39ed" name="Publico" xmlns="http://schemas.microsoft.com/dsltools/CommentReviewRate">
+  <subjects>
+    <subject Id="5643e9d4-3394-42db-b398-9d85b54d04fa" name="Article">
+      <comments>
+        <subjectHasComments Id="08ce05db-5e55-418a-94f2-68579fc34623">
+          <commentMoniker Id="45cad346-98a8-4cec-ab4d-0c738e8f783b" />
+        </subjectHasComments>
+      </comments>
+      <fields>
+        <subjectHasFields Id="80d071c8-c1b8-44d4-8033-0fea0aeb7f6d">
+          <fieldMoniker Id="7ebe4466-854c-4f22-a501-afa18df5e7a1" />
+        </subjectHasFields>
+        <subjectHasFields Id="94bfef06-5c18-4fdd-b5bb-26bc62c14c1c">
+          <fieldMoniker Id="2a73e78b-726e-4ee6-8859-d66a82d1115a" />
+        </subjectHasFields>
+      </fields>
+    </subject>
+  </subjects>
+  <fields>
+    <modelHasFields Id="7844f3a0-f408-4c15-b321-a23f87cdbc9e">
+      <field Id="f409ffc1-7d2c-49d0-942f-4eb2419ee092" name="date" type="Date" />
+    </modelHasFields>
+    <modelHasFields Id="4284af7f-1b4f-42f3-85c9-4117a25c2139">
+      <field Id="2a73e78b-726e-4ee6-8859-d66a82d1115a" name="text" type="String" />
+    </modelHasFields>
+    <modelHasFields Id="77bcddac-9567-42ba-876c-278c646a6133">
+      <field Id="7ebe4466-854c-4f22-a501-afa18df5e7a1" name="title" type="String" />
+    </modelHasFields>
+    <modelHasFields Id="29b16d3a-6c9f-4d15-9266-ee6c6779375d">
+      <field Id="e60ef28b-c939-40c0-91ae-0abc28fcd8ca" name="nLikes" type="Integer" />
+    </modelHasFields>
+  </fields>
+  <comments>
+    <modelHasComments Id="e16af230-f3c9-4c80-8e6d-8dee4fc972d0">
+      <comment Id="45cad346-98a8-4cec-ab4d-0c738e8f783b" name="NewsComment">
+        <fields>
+          <commentHasFields Id="e115b10d-25a8-4b41-819a-76b838cbbc28">
+            <fieldMoniker Id="f409ffc1-7d2c-49d0-942f-4eb2419ee092" />
+          </commentHasFields>
+          <commentHasFields Id="27844519-ff10-4d64-92f4-54261465aba5">
+            <fieldMoniker Id="2a73e78b-726e-4ee6-8859-d66a82d1115a" />
+          </commentHasFields>
+        </fields>
+        <rating>
+          <commentHasRating Id="ea6152c2-de44-4fd0-b236-b11ce7a5fc2f">
+            <ratingMoniker Id="2a3ceee6-20c4-402f-a5b9-53ce7e975647" />
+          </commentHasRating>
+        </rating>
+        <validation>
+          <commentHasValidation Id="022dd4de-8709-4f47-aa8c-5852ebb1583e">
+            <validationMoniker Id="985afb36-1206-40f7-826c-24eed214df47" />
+          </commentHasValidation>
+        </validation>
+      </comment>
+    </modelHasComments>
+  </comments>
+  <ratings>
+    <modelHasRatings Id="e710fe4d-27d3-4d0f-90cf-4098e57dee09">
+      <rating Id="2a3ceee6-20c4-402f-a5b9-53ce7e975647" name="NewsCommentRating">
+        <fields>
+          <ratingHasFields Id="baa589ad-0d83-4478-a534-60d2bf2bcb6f">
+            <fieldMoniker Id="e60ef28b-c939-40c0-91ae-0abc28fcd8ca" />
+          </ratingHasFields>
+        </fields>
+      </rating>
+    </modelHasRatings>
+  </ratings>
+  <validations>
+    <modelHasValidations Id="a6cea862-968e-4c60-a4cf-423ac03babab">
+      <validation Id="985afb36-1206-40f7-826c-24eed214df47" name="AutomaticValidation" />
+    </modelHasValidations>
+  </validations>
+</model>

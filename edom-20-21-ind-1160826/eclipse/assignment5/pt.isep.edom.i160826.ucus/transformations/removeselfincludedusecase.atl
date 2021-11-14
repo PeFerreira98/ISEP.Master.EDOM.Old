@@ -1,0 +1,17 @@
+-- @atlcompiler emftvm
+-- @path UCUS=/pt.isep.edom.atb.ucus/model/generated/ucus.ecore
+
+module removeselfincludedusecase;
+create OUT : UCUS refining IN : UCUS;
+
+helper context UCUS!Include def : parentUseCase : UCUS!UseCase = UCUS!UseCase.allInstances()->select(u | u.includes->includes(self))->asOrderedSet()->first();
+
+rule RemoveSelfIncludedUseCase {
+	from 
+		i1 : UCUS!Include (i1.parentUseCase.allIncludedUseCases->exists(u | u = i1.parentUseCase))
+	do {
+		-- debug can be used to print to the console
+		('Applied RemoveSelfIncludedUseCase for Include '+i1.name+' at Use Case '+i1.parentUseCase.name).debug();
+	}
+}
+ 

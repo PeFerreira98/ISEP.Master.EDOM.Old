@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ASCII"?>
+<edom405epsilon:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:edom405epsilon="http://www.example.org/edom405epsilon" name="Amazon">
+  <subject name="EchoDot">
+    <comment name="IdealForTurningtTvIntoAsmartTv">
+      <user name="Ant&#xf3;nio"/>
+      <field name="text"/>
+      <field name="date" type="Date"/>
+      <field name="description"/>
+      <comment name="WorkingVeryGoodWithMyOldSamsungTV">
+        <user name="Ana"/>
+        <field name="text"/>
+        <field name="date" type="Date"/>
+        <field name="description"/>
+      </comment>
+    </comment>
+    <field name="price" type="EInteger"/>
+  </subject>
+</edom405epsilon:Model>

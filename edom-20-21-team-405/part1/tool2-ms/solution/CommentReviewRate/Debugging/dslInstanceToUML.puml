@@ -1,0 +1,34 @@
+﻿@startuml
+digraph model {
+ArtigoPoliticoUSA [shape=box3d];
+Comentario1 [shape=oval];
+RespostaAComentario1 [shape=oval];
+Venceslau  [shape=diamond];
+Bidén [shape=diamond];
+text [shape=square];
+STRING [shape=Msquare];
+date [shape=square];
+DATE [shape=Msquare];
+likes [shape=square];
+INTEGER [shape=Msquare];
+
+			ArtigoPoliticoUSA -> Comentario1 [label="has comment"];
+		 
+			Comentario1 -> RespostaAComentario1 [label="has reply"];
+				Comentario1 -> Venceslau  [label="from user"];
+		
+					Comentario1 -> text [label="has field"];
+					Comentario1 -> date [label="has field"];
+					Comentario1 -> likes [label="has field"];
+					ArtigoPoliticoUSA -> RespostaAComentario1 [label="has comment"];
+				RespostaAComentario1 -> Bidén [label="from user"];
+		
+					RespostaAComentario1 -> text [label="has field"];
+					RespostaAComentario1 -> date [label="has field"];
+					RespostaAComentario1 -> likes [label="has field"];
+					text -> STRING [label="from type"];
+	date -> DATE [label="from type"];
+	likes -> INTEGER [label="from type"];
+
+}
+@enduml

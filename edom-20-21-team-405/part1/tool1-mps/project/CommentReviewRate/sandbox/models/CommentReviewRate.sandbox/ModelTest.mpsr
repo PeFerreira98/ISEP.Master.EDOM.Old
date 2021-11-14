@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:6ea5cd20-1a16-4839-9f17-fe30bf599ffb(CommentReviewRate.sandbox)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="f07b76fc-fe82-4d2c-8d35-02e79970824d" name="CommentReviewRate">
+      <concept id="1736855509741036230" name="CommentReviewRate.structure.User" flags="ng" index="1skuS$">
+        <child id="1736855509741036264" name="Fields" index="1skuSa" />
+      </concept>
+      <concept id="1736855509741036233" name="CommentReviewRate.structure.Comment" flags="ng" index="1skuSF">
+        <child id="1736855509741036259" name="User" index="1skuS1" />
+        <child id="1736855509741036261" name="Fields" index="1skuS7" />
+        <child id="7018486486194042101" name="Comments" index="1J7LyN" />
+      </concept>
+      <concept id="1736855509741036236" name="CommentReviewRate.structure.Field" flags="ng" index="1skuSI">
+        <property id="1736855509741036253" name="Type" index="1skuSZ" />
+      </concept>
+      <concept id="1736855509741036222" name="CommentReviewRate.structure.Subject" flags="ng" index="1skuTs">
+        <child id="1736855509741036268" name="Fields" index="1skuSe" />
+        <child id="1736855509741036255" name="Comments" index="1skuSX" />
+      </concept>
+      <concept id="7018486486194521861" name="CommentReviewRate.structure.Model" flags="ng" index="1JTUH3">
+        <child id="7018486486194522150" name="Subjects" index="1JTUhw" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1JTUH3" id="65AF4oexOE7">
+    <property role="TrG5h" value="ModelTest" />
+    <node concept="1skuTs" id="65AF4oexOE8" role="1JTUhw">
+      <property role="TrG5h" value="Subject1" />
+      <node concept="1skuSF" id="65AF4oexOE9" role="1skuSX">
+        <property role="TrG5h" value="comment1" />
+        <node concept="1skuS$" id="65AF4oexOEa" role="1skuS1">
+          <property role="TrG5h" value="User1" />
+          <node concept="1skuSI" id="65AF4oexOEb" role="1skuSa">
+            <property role="TrG5h" value="Email" />
+          </node>
+          <node concept="1skuSI" id="65AF4oexOEc" role="1skuSa">
+            <property role="TrG5h" value="Name" />
+          </node>
+        </node>
+        <node concept="1skuSI" id="65AF4oexOEe" role="1skuS7">
+          <property role="TrG5h" value="CommentText" />
+        </node>
+        <node concept="1skuSI" id="65AF4oexOEf" role="1skuS7">
+          <property role="TrG5h" value="Date" />
+          <property role="1skuSZ" value="1wqze94iQbh/Date" />
+        </node>
+        <node concept="1skuSF" id="65AF4oeC8JD" role="1J7LyN">
+          <property role="TrG5h" value="SubComment1" />
+          <node concept="1skuS$" id="65AF4oeC8JE" role="1skuS1">
+            <property role="TrG5h" value="SubUser1" />
+            <node concept="1skuSI" id="65AF4oeC8JF" role="1skuSa">
+              <property role="TrG5h" value="Email" />
+            </node>
+            <node concept="1skuSI" id="65AF4oeC8JL" role="1skuSa">
+              <property role="TrG5h" value="Name" />
+            </node>
+          </node>
+          <node concept="1skuSI" id="65AF4oeC8JG" role="1skuS7">
+            <property role="TrG5h" value="CommentText" />
+          </node>
+          <node concept="1skuSI" id="65AF4oeC8JO" role="1skuS7">
+            <property role="TrG5h" value="Date" />
+            <property role="1skuSZ" value="1wqze94iQbh/Date" />
+          </node>
+        </node>
+      </node>
+      <node concept="1skuSI" id="65AF4oexOEg" role="1skuSe">
+        <property role="TrG5h" value="Description" />
+      </node>
+    </node>
+    <node concept="1skuTs" id="65AF4oe_g0O" role="1JTUhw">
+      <property role="TrG5h" value="Subject2" />
+      <node concept="1skuSF" id="65AF4oeC8JU" role="1skuSX">
+        <property role="TrG5h" value="Comment2" />
+        <node concept="1skuS$" id="65AF4oeC8JV" role="1skuS1">
+          <property role="TrG5h" value="User2" />
+          <node concept="1skuSI" id="65AF4oeC8JW" role="1skuSa">
+            <property role="TrG5h" value="Email" />
+          </node>
+          <node concept="1skuSI" id="65AF4oeC8K2" role="1skuSa">
+            <property role="TrG5h" value="Name" />
+          </node>
+        </node>
+        <node concept="1skuSI" id="65AF4oeC8JX" role="1skuS7">
+          <property role="TrG5h" value="Date" />
+          <property role="1skuSZ" value="1wqze94iQbh/Date" />
+        </node>
+      </node>
+      <node concept="1skuSI" id="65AF4oeC8K5" role="1skuSe">
+        <property role="TrG5h" value="Description" />
+      </node>
+    </node>
+  </node>
+</model>
+

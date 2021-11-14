@@ -1,0 +1,21 @@
+Model Amazon {
+	subject{
+		Subject Platform {
+			usecase {
+				UseCase ReviewProduct {
+					
+				}
+			}
+		}
+	}
+	actor {
+		Actor User {
+			
+		}
+	}
+	association {
+		Association association1 {
+			actor User usecase "Platform.ReviewProduct" 
+		}
+	}
+}

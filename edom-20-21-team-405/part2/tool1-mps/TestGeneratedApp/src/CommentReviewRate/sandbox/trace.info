@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:6ea5cd20-1a16-4839-9f17-fe30bf599ffb(CommentReviewRate.sandbox)/1457367043908118037">
+    <file name="AutomaticValidation.java">
+      <unit id="1457367043908118051" at="6,0,8,0" name="CommentReviewRate.sandbox.AutomaticValidation" />
+    </file>
+    <file name="CommentReply.java">
+      <node id="1457367043908118043" at="8,0,9,0" concept="3" trace="Date" />
+      <node id="1457367043908118044" at="9,0,10,0" concept="3" trace="Text" />
+      <node id="1457367043908118045" at="10,0,11,0" concept="3" trace="ratings" />
+      <node id="1457367043908118042" at="12,67,13,21" concept="2" />
+      <node id="1457367043908118042" at="13,21,14,27" concept="2" />
+      <node id="1457367043908118042" at="17,49,18,21" concept="2" />
+      <node id="1457367043908118043" at="24,27,25,16" concept="8" />
+      <node id="1457367043908118044" at="27,27,28,16" concept="8" />
+      <node id="1457367043908118043" at="31,40,32,25" concept="2" />
+      <node id="1457367043908118044" at="34,40,35,25" concept="2" />
+      <node id="1457367043908118045" at="38,32,39,24" concept="8" />
+      <node id="1457367043908118045" at="42,44,43,27" concept="2" />
+      <node id="1457367043908118042" at="21,0,23,0" concept="1" trace="CommentReply#()V" />
+      <node id="1457367043908118042" at="17,0,20,0" concept="1" trace="CommentReply#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1457367043908118043" at="24,0,27,0" concept="6" trace="getDate#()Ljava/lang/String;" />
+      <node id="1457367043908118044" at="27,0,30,0" concept="6" trace="getText#()Ljava/lang/String;" />
+      <node id="1457367043908118043" at="31,0,34,0" concept="6" trace="setDate#(Ljava/lang/String;)V" />
+      <node id="1457367043908118044" at="34,0,37,0" concept="6" trace="setText#(Ljava/lang/String;)V" />
+      <node id="1457367043908118045" at="38,0,41,0" concept="6" trace="getRatings#()[" />
+      <node id="1457367043908118045" at="42,0,45,0" concept="6" trace="setRatings#([)V" />
+      <node id="1457367043908118042" at="12,0,16,0" concept="1" trace="CommentReply#(Ljava/lang/String;Ljava/lang/String;[)V" />
+      <scope id="1457367043908118042" at="21,25,21,25" />
+      <scope id="1457367043908118042" at="17,49,18,21" />
+      <scope id="1457367043908118043" at="24,27,25,16" />
+      <scope id="1457367043908118044" at="27,27,28,16" />
+      <scope id="1457367043908118043" at="31,40,32,25" />
+      <scope id="1457367043908118044" at="34,40,35,25" />
+      <scope id="1457367043908118045" at="38,32,39,24" />
+      <scope id="1457367043908118045" at="42,44,43,27" />
+      <scope id="1457367043908118042" at="12,67,14,27" />
+      <scope id="1457367043908118042" at="21,0,23,0" />
+      <scope id="1457367043908118042" at="17,0,20,0">
+        <var name="Date" id="1457367043908118043" />
+        <var name="Text" id="1457367043908118044" />
+      </scope>
+      <scope id="1457367043908118043" at="24,0,27,0" />
+      <scope id="1457367043908118044" at="27,0,30,0" />
+      <scope id="1457367043908118043" at="31,0,34,0">
+        <var name="newValue" id="1457367043908118043" />
+      </scope>
+      <scope id="1457367043908118044" at="34,0,37,0">
+        <var name="newValue" id="1457367043908118044" />
+      </scope>
+      <scope id="1457367043908118045" at="38,0,41,0" />
+      <scope id="1457367043908118045" at="42,0,45,0">
+        <var name="ratings" id="1457367043908118045" />
+      </scope>
+      <scope id="1457367043908118042" at="12,0,16,0">
+        <var name="Date" id="1457367043908118043" />
+        <var name="Text" id="1457367043908118044" />
+        <var name="ratings" id="1457367043908118045" />
+      </scope>
+      <unit id="1457367043908118042" at="6,0,46,0" name="CommentReviewRate.sandbox.CommentReply" />
+    </file>
+    <file name="ManualValidation.java">
+      <unit id="1457367043908118052" at="6,0,8,0" name="CommentReviewRate.sandbox.ManualValidation" />
+    </file>
+    <file name="Rating.java">
+      <unit id="1457367043908118045" at="6,0,9,0" name="CommentReviewRate.sandbox.Rating" />
+      <unit id="1457367043908118047" at="6,0,9,0" name="CommentReviewRate.sandbox.Rating" />
+    </file>
+    <file name="Video.java">
+      <node id="1457367043908118038" at="10,0,11,0" concept="3" trace="Video" />
+      <node id="1457367043908118039" at="11,0,12,0" concept="3" trace="Description" />
+      <node id="1457367043908118041" at="12,0,13,0" concept="3" trace="comments" />
+      <node id="1457367043908118038" at="14,49,15,22" concept="2" />
+      <node id="1457367043908118039" at="15,22,16,35" concept="2" />
+      <node id="1457367043908118041" at="16,35,17,50" concept="2" />
+      <node id="1457367043908118038" at="23,32,24,22" concept="8" />
+      <node id="1457367043908118038" at="27,41,28,22" concept="2" />
+      <node id="1457367043908118039" at="31,34,32,23" concept="8" />
+      <node id="1457367043908118039" at="35,47,36,32" concept="2" />
+      <node id="1457367043908118041" at="39,48,40,25" concept="8" />
+      <node id="1457367043908118041" at="43,61,44,29" concept="2" />
+      <node id="1457367043908118041" at="47,48,48,31" concept="2" />
+      <node id="1457367043908118038" at="51,28,52,22" concept="8" />
+      <node id="1457367043908118038" at="20,0,22,0" concept="1" trace="Video#()V" />
+      <node id="1457367043908118038" at="23,0,26,0" concept="6" trace="getVideoName#()Ljava/lang/String;" />
+      <node id="1457367043908118038" at="27,0,30,0" concept="6" trace="setVideoName#(Ljava/lang/String;)V" />
+      <node id="1457367043908118039" at="31,0,34,0" concept="6" trace="getDescription#()Ljava/lang/String;" />
+      <node id="1457367043908118039" at="35,0,38,0" concept="6" trace="setDescription#(Ljava/lang/String;)V" />
+      <node id="1457367043908118041" at="39,0,42,0" concept="6" trace="getVideoComments#()Ljava/util/List;" />
+      <node id="1457367043908118041" at="43,0,46,0" concept="6" trace="setVideoComments#(Ljava/util/List;)V" />
+      <node id="1457367043908118041" at="47,0,50,0" concept="6" trace="addComment#(LCommentReviewRate/sandbox/VideoComment;)V" />
+      <node id="1457367043908118038" at="51,0,54,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="1457367043908118038" at="14,0,19,0" concept="1" trace="Video#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <scope id="1457367043908118038" at="20,18,20,18" />
+      <scope id="1457367043908118038" at="23,32,24,22" />
+      <scope id="1457367043908118038" at="27,41,28,22" />
+      <scope id="1457367043908118039" at="31,34,32,23" />
+      <scope id="1457367043908118039" at="35,47,36,32" />
+      <scope id="1457367043908118041" at="39,48,40,25" />
+      <scope id="1457367043908118041" at="43,61,44,29" />
+      <scope id="1457367043908118041" at="47,48,48,31" />
+      <scope id="1457367043908118038" at="51,28,52,22" />
+      <scope id="1457367043908118038" at="20,0,22,0" />
+      <scope id="1457367043908118038" at="14,49,17,50" />
+      <scope id="1457367043908118038" at="23,0,26,0" />
+      <scope id="1457367043908118038" at="27,0,30,0">
+        <var name="name" id="1457367043908118038" />
+      </scope>
+      <scope id="1457367043908118039" at="31,0,34,0" />
+      <scope id="1457367043908118039" at="35,0,38,0">
+        <var name="newValue" id="1457367043908118039" />
+      </scope>
+      <scope id="1457367043908118041" at="39,0,42,0" />
+      <scope id="1457367043908118041" at="43,0,46,0">
+        <var name="comments" id="1457367043908118041" />
+      </scope>
+      <scope id="1457367043908118041" at="47,0,50,0">
+        <var name="comment" id="1457367043908118041" />
+      </scope>
+      <scope id="1457367043908118038" at="51,0,54,0" />
+      <scope id="1457367043908118038" at="14,0,19,0">
+        <var name="Description" id="1457367043908118039" />
+        <var name="name" id="1457367043908118038" />
+      </scope>
+      <unit id="1457367043908118038" at="8,0,55,0" name="CommentReviewRate.sandbox.Video" />
+    </file>
+    <file name="VideoComment.java">
+      <node id="1457367043908118049" at="8,0,9,0" concept="3" trace="Date" />
+      <node id="1457367043908118050" at="9,0,10,0" concept="3" trace="Text" />
+      <node id="1457367043908118047" at="10,0,11,0" concept="3" trace="ratings" />
+      <node id="1457367043908118041" at="12,67,13,21" concept="2" />
+      <node id="1457367043908118041" at="13,21,14,27" concept="2" />
+      <node id="1457367043908118041" at="17,49,18,21" concept="2" />
+      <node id="1457367043908118049" at="24,27,25,16" concept="8" />
+      <node id="1457367043908118050" at="27,27,28,16" concept="8" />
+      <node id="1457367043908118049" at="31,40,32,25" concept="2" />
+      <node id="1457367043908118050" at="34,40,35,25" concept="2" />
+      <node id="1457367043908118047" at="38,32,39,24" concept="8" />
+      <node id="1457367043908118047" at="42,44,43,27" concept="2" />
+      <node id="1457367043908118041" at="21,0,23,0" concept="1" trace="VideoComment#()V" />
+      <node id="1457367043908118041" at="17,0,20,0" concept="1" trace="VideoComment#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1457367043908118049" at="24,0,27,0" concept="6" trace="getDate#()Ljava/lang/String;" />
+      <node id="1457367043908118050" at="27,0,30,0" concept="6" trace="getText#()Ljava/lang/String;" />
+      <node id="1457367043908118049" at="31,0,34,0" concept="6" trace="setDate#(Ljava/lang/String;)V" />
+      <node id="1457367043908118050" at="34,0,37,0" concept="6" trace="setText#(Ljava/lang/String;)V" />
+      <node id="1457367043908118047" at="38,0,41,0" concept="6" trace="getRatings#()[" />
+      <node id="1457367043908118047" at="42,0,45,0" concept="6" trace="setRatings#([)V" />
+      <node id="1457367043908118041" at="12,0,16,0" concept="1" trace="VideoComment#(Ljava/lang/String;Ljava/lang/String;[)V" />
+      <scope id="1457367043908118041" at="21,25,21,25" />
+      <scope id="1457367043908118041" at="17,49,18,21" />
+      <scope id="1457367043908118049" at="24,27,25,16" />
+      <scope id="1457367043908118050" at="27,27,28,16" />
+      <scope id="1457367043908118049" at="31,40,32,25" />
+      <scope id="1457367043908118050" at="34,40,35,25" />
+      <scope id="1457367043908118047" at="38,32,39,24" />
+      <scope id="1457367043908118047" at="42,44,43,27" />
+      <scope id="1457367043908118041" at="12,67,14,27" />
+      <scope id="1457367043908118041" at="21,0,23,0" />
+      <scope id="1457367043908118041" at="17,0,20,0">
+        <var name="Date" id="1457367043908118049" />
+        <var name="Text" id="1457367043908118050" />
+      </scope>
+      <scope id="1457367043908118049" at="24,0,27,0" />
+      <scope id="1457367043908118050" at="27,0,30,0" />
+      <scope id="1457367043908118049" at="31,0,34,0">
+        <var name="newValue" id="1457367043908118049" />
+      </scope>
+      <scope id="1457367043908118050" at="34,0,37,0">
+        <var name="newValue" id="1457367043908118050" />
+      </scope>
+      <scope id="1457367043908118047" at="38,0,41,0" />
+      <scope id="1457367043908118047" at="42,0,45,0">
+        <var name="ratings" id="1457367043908118047" />
+      </scope>
+      <scope id="1457367043908118041" at="12,0,16,0">
+        <var name="Date" id="1457367043908118049" />
+        <var name="Text" id="1457367043908118050" />
+        <var name="ratings" id="1457367043908118047" />
+      </scope>
+      <unit id="1457367043908118041" at="6,0,46,0" name="CommentReviewRate.sandbox.VideoComment" />
+    </file>
+    <file name="Youtube.java">
+      <node id="1457367043908118037" at="12,42,13,0" concept="9" />
+      <node id="1457367043908118038" at="13,0,14,48" concept="7" />
+      <node id="1457367043908118037" at="14,48,15,0" concept="9" />
+      <node id="1457367043908118037" at="15,0,16,43" concept="7" />
+      <node id="1457367043908118037" at="16,43,17,0" concept="9" />
+      <node id="1457367043908118037" at="18,18,19,54" concept="2" />
+      <node id="1457367043908118037" at="19,54,20,58" concept="2" />
+      <node id="1457367043908118037" at="20,58,21,47" concept="2" />
+      <node id="1457367043908118037" at="21,47,22,45" concept="2" />
+      <node id="1457367043908118037" at="22,45,23,44" concept="2" />
+      <node id="1457367043908118037" at="23,44,24,39" concept="2" />
+      <node id="1457367043908118037" at="24,39,25,0" concept="9" />
+      <node id="1457367043908118037" at="25,0,26,35" concept="7" />
+      <node id="1457367043908118037" at="26,35,27,0" concept="9" />
+      <node id="1457367043908118037" at="29,15,30,55" concept="2" />
+      <node id="1457367043908118037" at="30,55,31,39" concept="2" />
+      <node id="1457367043908118037" at="31,39,32,44" concept="7" />
+      <node id="1457367043908118039" at="32,44,33,29" concept="7" />
+      <node id="1457367043908118039" at="34,21,35,75" concept="2" />
+      <node id="1457367043908118039" at="35,75,36,39" concept="2" />
+      <node id="1457367043908118037" at="37,11,38,65" concept="7" />
+      <node id="1457367043908118037" at="38,65,39,33" concept="2" />
+      <node id="1457367043908118037" at="39,33,40,16" concept="0" />
+      <node id="1457367043908118037" at="40,16,41,0" concept="9" />
+      <node id="1457367043908118037" at="42,15,43,49" concept="2" />
+      <node id="1457367043908118038" at="44,36,45,54" concept="2" />
+      <node id="1457367043908118038" at="45,54,46,77" concept="2" />
+      <node id="1457367043908118038" at="46,77,47,88" concept="2" />
+      <node id="1457367043908118037" at="48,11,49,16" concept="0" />
+      <node id="1457367043908118037" at="49,16,50,0" concept="9" />
+      <node id="1457367043908118037" at="51,15,52,49" concept="2" />
+      <node id="1457367043908118037" at="52,49,53,59" concept="2" />
+      <node id="1457367043908118037" at="53,59,54,24" concept="7" />
+      <node id="1457367043908118038" at="55,36,56,64" concept="2" />
+      <node id="1457367043908118038" at="56,64,57,20" concept="2" />
+      <node id="1457367043908118037" at="58,11,59,0" concept="9" />
+      <node id="1457367043908118037" at="59,0,60,44" concept="7" />
+      <node id="1457367043908118037" at="60,44,61,0" concept="9" />
+      <node id="1457367043908118049" at="61,0,62,22" concept="7" />
+      <node id="1457367043908118050" at="62,22,63,22" concept="7" />
+      <node id="1457367043908118049" at="64,21,65,68" concept="2" />
+      <node id="1457367043908118049" at="65,68,66,32" concept="2" />
+      <node id="1457367043908118050" at="68,21,69,68" concept="2" />
+      <node id="1457367043908118050" at="69,68,70,32" concept="2" />
+      <node id="1457367043908118038" at="71,11,72,75" concept="2" />
+      <node id="1457367043908118037" at="72,75,73,16" concept="0" />
+      <node id="1457367043908118037" at="73,16,74,0" concept="9" />
+      <node id="1457367043908118037" at="75,15,76,25" concept="2" />
+      <node id="1457367043908118037" at="76,25,77,16" concept="0" />
+      <node id="1457367043908118039" at="33,29,37,11" concept="5" />
+      <node id="1457367043908118038" at="54,24,58,11" concept="4" />
+      <node id="1457367043908118049" at="63,22,67,11" concept="5" />
+      <node id="1457367043908118050" at="67,11,71,11" concept="5" />
+      <node id="1457367043908118038" at="43,49,48,11" concept="4" />
+      <node id="1457367043908118037" at="27,0,78,7" concept="11" />
+      <node id="1457367043908118037" at="17,0,79,5" concept="12" />
+      <node id="1457367043908118037" at="12,0,81,0" concept="10" trace="main#([Ljava/lang/String;)V" />
+      <scope id="1457367043908118039" at="34,21,36,39" />
+      <scope id="1457367043908118038" at="55,36,57,20" />
+      <scope id="1457367043908118049" at="64,21,66,32" />
+      <scope id="1457367043908118050" at="68,21,70,32" />
+      <scope id="1457367043908118037" at="75,15,77,16" />
+      <scope id="1457367043908118038" at="44,36,47,88" />
+      <scope id="1457367043908118038" at="54,24,58,11">
+        <var name="sub" id="1457367043908118038" />
+      </scope>
+      <scope id="1457367043908118038" at="43,49,48,11">
+        <var name="sub" id="1457367043908118038" />
+      </scope>
+      <scope id="1457367043908118037" at="42,15,50,0" />
+      <scope id="1457367043908118037" at="29,15,41,0">
+        <var name="Description" id="1457367043908118039" />
+        <var name="newSubject" id="1457367043908118037" />
+        <var name="subjectName" id="1457367043908118037" />
+      </scope>
+      <scope id="1457367043908118037" at="51,15,74,0">
+        <var name="Date" id="1457367043908118049" />
+        <var name="Text" id="1457367043908118050" />
+        <var name="index" id="1457367043908118037" />
+        <var name="subSelected" id="1457367043908118037" />
+      </scope>
+      <scope id="1457367043908118037" at="18,18,78,7">
+        <var name="option" id="1457367043908118037" />
+      </scope>
+      <scope id="1457367043908118037" at="12,42,79,5">
+        <var name="Videos" id="1457367043908118038" />
+        <var name="input" id="1457367043908118037" />
+      </scope>
+      <scope id="1457367043908118037" at="12,0,81,0">
+        <var name="args" id="1457367043908118037" />
+      </scope>
+      <unit id="1457367043908118037" at="9,0,82,0" name="CommentReviewRate.sandbox.Youtube" />
+    </file>
+  </root>
+  <root nodeRef="r:6ea5cd20-1a16-4839-9f17-fe30bf599ffb(CommentReviewRate.sandbox)/1457367043912935293">
+    <file name="Amazon.java">
+      <node id="1457367043912935293" at="12,42,13,0" concept="9" />
+      <node id="1457367043912935294" at="13,0,14,54" concept="7" />
+      <node id="1457367043912935293" at="14,54,15,0" concept="9" />
+      <node id="1457367043912935293" at="15,0,16,43" concept="7" />
+      <node id="1457367043912935293" at="16,43,17,0" concept="9" />
+      <node id="1457367043912935293" at="18,18,19,54" concept="2" />
+      <node id="1457367043912935293" at="19,54,20,58" concept="2" />
+      <node id="1457367043912935293" at="20,58,21,47" concept="2" />
+      <node id="1457367043912935293" at="21,47,22,45" concept="2" />
+      <node id="1457367043912935293" at="22,45,23,44" concept="2" />
+      <node id="1457367043912935293" at="23,44,24,39" concept="2" />
+      <node id="1457367043912935293" at="24,39,25,0" concept="9" />
+      <node id="1457367043912935293" at="25,0,26,35" concept="7" />
+      <node id="1457367043912935293" at="26,35,27,0" concept="9" />
+      <node id="1457367043912935293" at="29,15,30,55" concept="2" />
+      <node id="1457367043912935293" at="30,55,31,39" concept="2" />
+      <node id="1457367043912935293" at="31,39,32,44" concept="7" />
+      <node id="1457367043912935295" at="32,44,33,29" concept="7" />
+      <node id="1457367043912935295" at="34,21,35,75" concept="2" />
+      <node id="1457367043912935295" at="35,75,36,39" concept="2" />
+      <node id="1457367043912935293" at="37,11,38,69" concept="7" />
+      <node id="1457367043912935293" at="38,69,39,35" concept="2" />
+      <node id="1457367043912935293" at="39,35,40,16" concept="0" />
+      <node id="1457367043912935293" at="40,16,41,0" concept="9" />
+      <node id="1457367043912935293" at="42,15,43,49" concept="2" />
+      <node id="1457367043912935294" at="44,40,45,54" concept="2" />
+      <node id="1457367043912935294" at="45,54,46,77" concept="2" />
+      <node id="1457367043912935294" at="46,77,47,90" concept="2" />
+      <node id="1457367043912935293" at="48,11,49,16" concept="0" />
+      <node id="1457367043912935293" at="49,16,50,0" concept="9" />
+      <node id="1457367043912935293" at="51,15,52,49" concept="2" />
+      <node id="1457367043912935293" at="52,49,53,59" concept="2" />
+      <node id="1457367043912935293" at="53,59,54,24" concept="7" />
+      <node id="1457367043912935294" at="55,40,56,64" concept="2" />
+      <node id="1457367043912935294" at="56,64,57,20" concept="2" />
+      <node id="1457367043912935293" at="58,11,59,0" concept="9" />
+      <node id="1457367043912935293" at="59,0,60,44" concept="7" />
+      <node id="1457367043912935293" at="60,44,61,0" concept="9" />
+      <node id="1457367043912935305" at="61,0,62,22" concept="7" />
+      <node id="1457367043912935306" at="62,22,63,22" concept="7" />
+      <node id="1457367043912935305" at="64,21,65,68" concept="2" />
+      <node id="1457367043912935305" at="65,68,66,32" concept="2" />
+      <node id="1457367043912935306" at="68,21,69,68" concept="2" />
+      <node id="1457367043912935306" at="69,68,70,32" concept="2" />
+      <node id="1457367043912935294" at="71,11,72,79" concept="2" />
+      <node id="1457367043912935293" at="72,79,73,16" concept="0" />
+      <node id="1457367043912935293" at="73,16,74,0" concept="9" />
+      <node id="1457367043912935293" at="75,15,76,25" concept="2" />
+      <node id="1457367043912935293" at="76,25,77,16" concept="0" />
+      <node id="1457367043912935295" at="33,29,37,11" concept="5" />
+      <node id="1457367043912935294" at="54,24,58,11" concept="4" />
+      <node id="1457367043912935305" at="63,22,67,11" concept="5" />
+      <node id="1457367043912935306" at="67,11,71,11" concept="5" />
+      <node id="1457367043912935294" at="43,49,48,11" concept="4" />
+      <node id="1457367043912935293" at="27,0,78,7" concept="11" />
+      <node id="1457367043912935293" at="17,0,79,5" concept="12" />
+      <node id="1457367043912935293" at="12,0,81,0" concept="10" trace="main#([Ljava/lang/String;)V" />
+      <scope id="1457367043912935295" at="34,21,36,39" />
+      <scope id="1457367043912935294" at="55,40,57,20" />
+      <scope id="1457367043912935305" at="64,21,66,32" />
+      <scope id="1457367043912935306" at="68,21,70,32" />
+      <scope id="1457367043912935293" at="75,15,77,16" />
+      <scope id="1457367043912935294" at="44,40,47,90" />
+      <scope id="1457367043912935294" at="54,24,58,11">
+        <var name="sub" id="1457367043912935294" />
+      </scope>
+      <scope id="1457367043912935294" at="43,49,48,11">
+        <var name="sub" id="1457367043912935294" />
+      </scope>
+      <scope id="1457367043912935293" at="42,15,50,0" />
+      <scope id="1457367043912935293" at="29,15,41,0">
+        <var name="Description" id="1457367043912935295" />
+        <var name="newSubject" id="1457367043912935293" />
+        <var name="subjectName" id="1457367043912935293" />
+      </scope>
+      <scope id="1457367043912935293" at="51,15,74,0">
+        <var name="Date" id="1457367043912935305" />
+        <var name="Text" id="1457367043912935306" />
+        <var name="index" id="1457367043912935293" />
+        <var name="subSelected" id="1457367043912935293" />
+      </scope>
+      <scope id="1457367043912935293" at="18,18,78,7">
+        <var name="option" id="1457367043912935293" />
+      </scope>
+      <scope id="1457367043912935293" at="12,42,79,5">
+        <var name="Products" id="1457367043912935294" />
+        <var name="input" id="1457367043912935293" />
+      </scope>
+      <scope id="1457367043912935293" at="12,0,81,0">
+        <var name="args" id="1457367043912935293" />
+      </scope>
+      <unit id="1457367043912935293" at="9,0,82,0" name="CommentReviewRate.sandbox.Amazon" />
+    </file>
+    <file name="AutomaticValidation.java">
+      <unit id="1457367043912935307" at="6,0,8,0" name="CommentReviewRate.sandbox.AutomaticValidation" />
+    </file>
+    <file name="CommentReply.java">
+      <node id="1457367043912935299" at="8,0,9,0" concept="3" trace="Date" />
+      <node id="1457367043912935300" at="9,0,10,0" concept="3" trace="Text" />
+      <node id="1457367043912935301" at="10,0,11,0" concept="3" trace="ratings" />
+      <node id="1457367043912935298" at="12,67,13,21" concept="2" />
+      <node id="1457367043912935298" at="13,21,14,27" concept="2" />
+      <node id="1457367043912935298" at="17,49,18,21" concept="2" />
+      <node id="1457367043912935299" at="24,27,25,16" concept="8" />
+      <node id="1457367043912935300" at="27,27,28,16" concept="8" />
+      <node id="1457367043912935299" at="31,40,32,25" concept="2" />
+      <node id="1457367043912935300" at="34,40,35,25" concept="2" />
+      <node id="1457367043912935301" at="38,32,39,24" concept="8" />
+      <node id="1457367043912935301" at="42,44,43,27" concept="2" />
+      <node id="1457367043912935298" at="21,0,23,0" concept="1" trace="CommentReply#()V" />
+      <node id="1457367043912935298" at="17,0,20,0" concept="1" trace="CommentReply#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1457367043912935299" at="24,0,27,0" concept="6" trace="getDate#()Ljava/lang/String;" />
+      <node id="1457367043912935300" at="27,0,30,0" concept="6" trace="getText#()Ljava/lang/String;" />
+      <node id="1457367043912935299" at="31,0,34,0" concept="6" trace="setDate#(Ljava/lang/String;)V" />
+      <node id="1457367043912935300" at="34,0,37,0" concept="6" trace="setText#(Ljava/lang/String;)V" />
+      <node id="1457367043912935301" at="38,0,41,0" concept="6" trace="getRatings#()[" />
+      <node id="1457367043912935301" at="42,0,45,0" concept="6" trace="setRatings#([)V" />
+      <node id="1457367043912935298" at="12,0,16,0" concept="1" trace="CommentReply#(Ljava/lang/String;Ljava/lang/String;[)V" />
+      <scope id="1457367043912935298" at="21,25,21,25" />
+      <scope id="1457367043912935298" at="17,49,18,21" />
+      <scope id="1457367043912935299" at="24,27,25,16" />
+      <scope id="1457367043912935300" at="27,27,28,16" />
+      <scope id="1457367043912935299" at="31,40,32,25" />
+      <scope id="1457367043912935300" at="34,40,35,25" />
+      <scope id="1457367043912935301" at="38,32,39,24" />
+      <scope id="1457367043912935301" at="42,44,43,27" />
+      <scope id="1457367043912935298" at="12,67,14,27" />
+      <scope id="1457367043912935298" at="21,0,23,0" />
+      <scope id="1457367043912935298" at="17,0,20,0">
+        <var name="Date" id="1457367043912935299" />
+        <var name="Text" id="1457367043912935300" />
+      </scope>
+      <scope id="1457367043912935299" at="24,0,27,0" />
+      <scope id="1457367043912935300" at="27,0,30,0" />
+      <scope id="1457367043912935299" at="31,0,34,0">
+        <var name="newValue" id="1457367043912935299" />
+      </scope>
+      <scope id="1457367043912935300" at="34,0,37,0">
+        <var name="newValue" id="1457367043912935300" />
+      </scope>
+      <scope id="1457367043912935301" at="38,0,41,0" />
+      <scope id="1457367043912935301" at="42,0,45,0">
+        <var name="ratings" id="1457367043912935301" />
+      </scope>
+      <scope id="1457367043912935298" at="12,0,16,0">
+        <var name="Date" id="1457367043912935299" />
+        <var name="Text" id="1457367043912935300" />
+        <var name="ratings" id="1457367043912935301" />
+      </scope>
+      <unit id="1457367043912935298" at="6,0,46,0" name="CommentReviewRate.sandbox.CommentReply" />
+    </file>
+    <file name="ManualValidation.java">
+      <unit id="1457367043912935308" at="6,0,8,0" name="CommentReviewRate.sandbox.ManualValidation" />
+    </file>
+    <file name="Product.java">
+      <node id="1457367043912935294" at="10,0,11,0" concept="3" trace="Product" />
+      <node id="1457367043912935295" at="11,0,12,0" concept="3" trace="Description" />
+      <node id="1457367043912935297" at="12,0,13,0" concept="3" trace="comments" />
+      <node id="1457367043912935294" at="14,51,15,24" concept="2" />
+      <node id="1457367043912935295" at="15,24,16,35" concept="2" />
+      <node id="1457367043912935297" at="16,35,17,52" concept="2" />
+      <node id="1457367043912935294" at="23,34,24,24" concept="8" />
+      <node id="1457367043912935294" at="27,43,28,24" concept="2" />
+      <node id="1457367043912935295" at="31,34,32,23" concept="8" />
+      <node id="1457367043912935295" at="35,47,36,32" concept="2" />
+      <node id="1457367043912935297" at="39,52,40,25" concept="8" />
+      <node id="1457367043912935297" at="43,65,44,29" concept="2" />
+      <node id="1457367043912935297" at="47,50,48,31" concept="2" />
+      <node id="1457367043912935294" at="51,28,52,24" concept="8" />
+      <node id="1457367043912935294" at="20,0,22,0" concept="1" trace="Product#()V" />
+      <node id="1457367043912935294" at="23,0,26,0" concept="6" trace="getProductName#()Ljava/lang/String;" />
+      <node id="1457367043912935294" at="27,0,30,0" concept="6" trace="setProductName#(Ljava/lang/String;)V" />
+      <node id="1457367043912935295" at="31,0,34,0" concept="6" trace="getDescription#()Ljava/lang/String;" />
+      <node id="1457367043912935295" at="35,0,38,0" concept="6" trace="setDescription#(Ljava/lang/String;)V" />
+      <node id="1457367043912935297" at="39,0,42,0" concept="6" trace="getProductComments#()Ljava/util/List;" />
+      <node id="1457367043912935297" at="43,0,46,0" concept="6" trace="setProductComments#(Ljava/util/List;)V" />
+      <node id="1457367043912935297" at="47,0,50,0" concept="6" trace="addComment#(LCommentReviewRate/sandbox/ProductComment;)V" />
+      <node id="1457367043912935294" at="51,0,54,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="1457367043912935294" at="14,0,19,0" concept="1" trace="Product#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <scope id="1457367043912935294" at="20,20,20,20" />
+      <scope id="1457367043912935294" at="23,34,24,24" />
+      <scope id="1457367043912935294" at="27,43,28,24" />
+      <scope id="1457367043912935295" at="31,34,32,23" />
+      <scope id="1457367043912935295" at="35,47,36,32" />
+      <scope id="1457367043912935297" at="39,52,40,25" />
+      <scope id="1457367043912935297" at="43,65,44,29" />
+      <scope id="1457367043912935297" at="47,50,48,31" />
+      <scope id="1457367043912935294" at="51,28,52,24" />
+      <scope id="1457367043912935294" at="20,0,22,0" />
+      <scope id="1457367043912935294" at="14,51,17,52" />
+      <scope id="1457367043912935294" at="23,0,26,0" />
+      <scope id="1457367043912935294" at="27,0,30,0">
+        <var name="name" id="1457367043912935294" />
+      </scope>
+      <scope id="1457367043912935295" at="31,0,34,0" />
+      <scope id="1457367043912935295" at="35,0,38,0">
+        <var name="newValue" id="1457367043912935295" />
+      </scope>
+      <scope id="1457367043912935297" at="39,0,42,0" />
+      <scope id="1457367043912935297" at="43,0,46,0">
+        <var name="comments" id="1457367043912935297" />
+      </scope>
+      <scope id="1457367043912935297" at="47,0,50,0">
+        <var name="comment" id="1457367043912935297" />
+      </scope>
+      <scope id="1457367043912935294" at="51,0,54,0" />
+      <scope id="1457367043912935294" at="14,0,19,0">
+        <var name="Description" id="1457367043912935295" />
+        <var name="name" id="1457367043912935294" />
+      </scope>
+      <unit id="1457367043912935294" at="8,0,55,0" name="CommentReviewRate.sandbox.Product" />
+    </file>
+    <file name="ProductComment.java">
+      <node id="1457367043912935305" at="8,0,9,0" concept="3" trace="Date" />
+      <node id="1457367043912935306" at="9,0,10,0" concept="3" trace="Text" />
+      <node id="1457367043912935303" at="10,0,11,0" concept="3" trace="ratings" />
+      <node id="1457367043912935297" at="12,69,13,21" concept="2" />
+      <node id="1457367043912935297" at="13,21,14,27" concept="2" />
+      <node id="1457367043912935297" at="17,51,18,21" concept="2" />
+      <node id="1457367043912935305" at="24,27,25,16" concept="8" />
+      <node id="1457367043912935306" at="27,27,28,16" concept="8" />
+      <node id="1457367043912935305" at="31,40,32,25" concept="2" />
+      <node id="1457367043912935306" at="34,40,35,25" concept="2" />
+      <node id="1457367043912935303" at="38,32,39,24" concept="8" />
+      <node id="1457367043912935303" at="42,44,43,27" concept="2" />
+      <node id="1457367043912935297" at="21,0,23,0" concept="1" trace="ProductComment#()V" />
+      <node id="1457367043912935297" at="17,0,20,0" concept="1" trace="ProductComment#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1457367043912935305" at="24,0,27,0" concept="6" trace="getDate#()Ljava/lang/String;" />
+      <node id="1457367043912935306" at="27,0,30,0" concept="6" trace="getText#()Ljava/lang/String;" />
+      <node id="1457367043912935305" at="31,0,34,0" concept="6" trace="setDate#(Ljava/lang/String;)V" />
+      <node id="1457367043912935306" at="34,0,37,0" concept="6" trace="setText#(Ljava/lang/String;)V" />
+      <node id="1457367043912935303" at="38,0,41,0" concept="6" trace="getRatings#()[" />
+      <node id="1457367043912935303" at="42,0,45,0" concept="6" trace="setRatings#([)V" />
+      <node id="1457367043912935297" at="12,0,16,0" concept="1" trace="ProductComment#(Ljava/lang/String;Ljava/lang/String;[)V" />
+      <scope id="1457367043912935297" at="21,27,21,27" />
+      <scope id="1457367043912935297" at="17,51,18,21" />
+      <scope id="1457367043912935305" at="24,27,25,16" />
+      <scope id="1457367043912935306" at="27,27,28,16" />
+      <scope id="1457367043912935305" at="31,40,32,25" />
+      <scope id="1457367043912935306" at="34,40,35,25" />
+      <scope id="1457367043912935303" at="38,32,39,24" />
+      <scope id="1457367043912935303" at="42,44,43,27" />
+      <scope id="1457367043912935297" at="12,69,14,27" />
+      <scope id="1457367043912935297" at="21,0,23,0" />
+      <scope id="1457367043912935297" at="17,0,20,0">
+        <var name="Date" id="1457367043912935305" />
+        <var name="Text" id="1457367043912935306" />
+      </scope>
+      <scope id="1457367043912935305" at="24,0,27,0" />
+      <scope id="1457367043912935306" at="27,0,30,0" />
+      <scope id="1457367043912935305" at="31,0,34,0">
+        <var name="newValue" id="1457367043912935305" />
+      </scope>
+      <scope id="1457367043912935306" at="34,0,37,0">
+        <var name="newValue" id="1457367043912935306" />
+      </scope>
+      <scope id="1457367043912935303" at="38,0,41,0" />
+      <scope id="1457367043912935303" at="42,0,45,0">
+        <var name="ratings" id="1457367043912935303" />
+      </scope>
+      <scope id="1457367043912935297" at="12,0,16,0">
+        <var name="Date" id="1457367043912935305" />
+        <var name="Text" id="1457367043912935306" />
+        <var name="ratings" id="1457367043912935303" />
+      </scope>
+      <unit id="1457367043912935297" at="6,0,46,0" name="CommentReviewRate.sandbox.ProductComment" />
+    </file>
+    <file name="Rating.java">
+      <unit id="1457367043912935301" at="6,0,9,0" name="CommentReviewRate.sandbox.Rating" />
+      <unit id="1457367043912935303" at="6,0,9,0" name="CommentReviewRate.sandbox.Rating" />
+    </file>
+  </root>
+  <root nodeRef="r:6ea5cd20-1a16-4839-9f17-fe30bf599ffb(CommentReviewRate.sandbox)/1457367043912935552">
+    <file name="Article.java">
+      <node id="1457367043912935553" at="10,0,11,0" concept="3" trace="Article" />
+      <node id="1457367043912935554" at="11,0,12,0" concept="3" trace="Description" />
+      <node id="1457367043912935556" at="12,0,13,0" concept="3" trace="comments" />
+      <node id="1457367043912935553" at="14,51,15,24" concept="2" />
+      <node id="1457367043912935554" at="15,24,16,35" concept="2" />
+      <node id="1457367043912935556" at="16,35,17,52" concept="2" />
+      <node id="1457367043912935553" at="23,34,24,24" concept="8" />
+      <node id="1457367043912935553" at="27,43,28,24" concept="2" />
+      <node id="1457367043912935554" at="31,34,32,23" concept="8" />
+      <node id="1457367043912935554" at="35,47,36,32" concept="2" />
+      <node id="1457367043912935556" at="39,52,40,25" concept="8" />
+      <node id="1457367043912935556" at="43,65,44,29" concept="2" />
+      <node id="1457367043912935556" at="47,50,48,31" concept="2" />
+      <node id="1457367043912935553" at="51,28,52,24" concept="8" />
+      <node id="1457367043912935553" at="20,0,22,0" concept="1" trace="Article#()V" />
+      <node id="1457367043912935553" at="23,0,26,0" concept="6" trace="getArticleName#()Ljava/lang/String;" />
+      <node id="1457367043912935553" at="27,0,30,0" concept="6" trace="setArticleName#(Ljava/lang/String;)V" />
+      <node id="1457367043912935554" at="31,0,34,0" concept="6" trace="getDescription#()Ljava/lang/String;" />
+      <node id="1457367043912935554" at="35,0,38,0" concept="6" trace="setDescription#(Ljava/lang/String;)V" />
+      <node id="1457367043912935556" at="39,0,42,0" concept="6" trace="getArticleComments#()Ljava/util/List;" />
+      <node id="1457367043912935556" at="43,0,46,0" concept="6" trace="setArticleComments#(Ljava/util/List;)V" />
+      <node id="1457367043912935556" at="47,0,50,0" concept="6" trace="addComment#(LCommentReviewRate/sandbox/ArticleComment;)V" />
+      <node id="1457367043912935553" at="51,0,54,0" concept="6" trace="toString#()Ljava/lang/String;" />
+      <node id="1457367043912935553" at="14,0,19,0" concept="1" trace="Article#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <scope id="1457367043912935553" at="20,20,20,20" />
+      <scope id="1457367043912935553" at="23,34,24,24" />
+      <scope id="1457367043912935553" at="27,43,28,24" />
+      <scope id="1457367043912935554" at="31,34,32,23" />
+      <scope id="1457367043912935554" at="35,47,36,32" />
+      <scope id="1457367043912935556" at="39,52,40,25" />
+      <scope id="1457367043912935556" at="43,65,44,29" />
+      <scope id="1457367043912935556" at="47,50,48,31" />
+      <scope id="1457367043912935553" at="51,28,52,24" />
+      <scope id="1457367043912935553" at="20,0,22,0" />
+      <scope id="1457367043912935553" at="14,51,17,52" />
+      <scope id="1457367043912935553" at="23,0,26,0" />
+      <scope id="1457367043912935553" at="27,0,30,0">
+        <var name="name" id="1457367043912935553" />
+      </scope>
+      <scope id="1457367043912935554" at="31,0,34,0" />
+      <scope id="1457367043912935554" at="35,0,38,0">
+        <var name="newValue" id="1457367043912935554" />
+      </scope>
+      <scope id="1457367043912935556" at="39,0,42,0" />
+      <scope id="1457367043912935556" at="43,0,46,0">
+        <var name="comments" id="1457367043912935556" />
+      </scope>
+      <scope id="1457367043912935556" at="47,0,50,0">
+        <var name="comment" id="1457367043912935556" />
+      </scope>
+      <scope id="1457367043912935553" at="51,0,54,0" />
+      <scope id="1457367043912935553" at="14,0,19,0">
+        <var name="Description" id="1457367043912935554" />
+        <var name="name" id="1457367043912935553" />
+      </scope>
+      <unit id="1457367043912935553" at="8,0,55,0" name="CommentReviewRate.sandbox.Article" />
+    </file>
+    <file name="ArticleComment.java">
+      <node id="1457367043912935564" at="8,0,9,0" concept="3" trace="Date" />
+      <node id="1457367043912935565" at="9,0,10,0" concept="3" trace="Text" />
+      <node id="1457367043912935562" at="10,0,11,0" concept="3" trace="ratings" />
+      <node id="1457367043912935556" at="12,69,13,21" concept="2" />
+      <node id="1457367043912935556" at="13,21,14,27" concept="2" />
+      <node id="1457367043912935556" at="17,51,18,21" concept="2" />
+      <node id="1457367043912935564" at="24,27,25,16" concept="8" />
+      <node id="1457367043912935565" at="27,27,28,16" concept="8" />
+      <node id="1457367043912935564" at="31,40,32,25" concept="2" />
+      <node id="1457367043912935565" at="34,40,35,25" concept="2" />
+      <node id="1457367043912935562" at="38,32,39,24" concept="8" />
+      <node id="1457367043912935562" at="42,44,43,27" concept="2" />
+      <node id="1457367043912935556" at="21,0,23,0" concept="1" trace="ArticleComment#()V" />
+      <node id="1457367043912935556" at="17,0,20,0" concept="1" trace="ArticleComment#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1457367043912935564" at="24,0,27,0" concept="6" trace="getDate#()Ljava/lang/String;" />
+      <node id="1457367043912935565" at="27,0,30,0" concept="6" trace="getText#()Ljava/lang/String;" />
+      <node id="1457367043912935564" at="31,0,34,0" concept="6" trace="setDate#(Ljava/lang/String;)V" />
+      <node id="1457367043912935565" at="34,0,37,0" concept="6" trace="setText#(Ljava/lang/String;)V" />
+      <node id="1457367043912935562" at="38,0,41,0" concept="6" trace="getRatings#()[" />
+      <node id="1457367043912935562" at="42,0,45,0" concept="6" trace="setRatings#([)V" />
+      <node id="1457367043912935556" at="12,0,16,0" concept="1" trace="ArticleComment#(Ljava/lang/String;Ljava/lang/String;[)V" />
+      <scope id="1457367043912935556" at="21,27,21,27" />
+      <scope id="1457367043912935556" at="17,51,18,21" />
+      <scope id="1457367043912935564" at="24,27,25,16" />
+      <scope id="1457367043912935565" at="27,27,28,16" />
+      <scope id="1457367043912935564" at="31,40,32,25" />
+      <scope id="1457367043912935565" at="34,40,35,25" />
+      <scope id="1457367043912935562" at="38,32,39,24" />
+      <scope id="1457367043912935562" at="42,44,43,27" />
+      <scope id="1457367043912935556" at="12,69,14,27" />
+      <scope id="1457367043912935556" at="21,0,23,0" />
+      <scope id="1457367043912935556" at="17,0,20,0">
+        <var name="Date" id="1457367043912935564" />
+        <var name="Text" id="1457367043912935565" />
+      </scope>
+      <scope id="1457367043912935564" at="24,0,27,0" />
+      <scope id="1457367043912935565" at="27,0,30,0" />
+      <scope id="1457367043912935564" at="31,0,34,0">
+        <var name="newValue" id="1457367043912935564" />
+      </scope>
+      <scope id="1457367043912935565" at="34,0,37,0">
+        <var name="newValue" id="1457367043912935565" />
+      </scope>
+      <scope id="1457367043912935562" at="38,0,41,0" />
+      <scope id="1457367043912935562" at="42,0,45,0">
+        <var name="ratings" id="1457367043912935562" />
+      </scope>
+      <scope id="1457367043912935556" at="12,0,16,0">
+        <var name="Date" id="1457367043912935564" />
+        <var name="Text" id="1457367043912935565" />
+        <var name="ratings" id="1457367043912935562" />
+      </scope>
+      <unit id="1457367043912935556" at="6,0,46,0" name="CommentReviewRate.sandbox.ArticleComment" />
+    </file>
+    <file name="AutomaticValidation.java">
+      <unit id="1457367043912935566" at="6,0,8,0" name="CommentReviewRate.sandbox.AutomaticValidation" />
+    </file>
+    <file name="CommentReply.java">
+      <node id="1457367043912935558" at="8,0,9,0" concept="3" trace="Date" />
+      <node id="1457367043912935559" at="9,0,10,0" concept="3" trace="Text" />
+      <node id="1457367043912935560" at="10,0,11,0" concept="3" trace="ratings" />
+      <node id="1457367043912935557" at="12,67,13,21" concept="2" />
+      <node id="1457367043912935557" at="13,21,14,27" concept="2" />
+      <node id="1457367043912935557" at="17,49,18,21" concept="2" />
+      <node id="1457367043912935558" at="24,27,25,16" concept="8" />
+      <node id="1457367043912935559" at="27,27,28,16" concept="8" />
+      <node id="1457367043912935558" at="31,40,32,25" concept="2" />
+      <node id="1457367043912935559" at="34,40,35,25" concept="2" />
+      <node id="1457367043912935560" at="38,32,39,24" concept="8" />
+      <node id="1457367043912935560" at="42,44,43,27" concept="2" />
+      <node id="1457367043912935557" at="21,0,23,0" concept="1" trace="CommentReply#()V" />
+      <node id="1457367043912935557" at="17,0,20,0" concept="1" trace="CommentReply#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="1457367043912935558" at="24,0,27,0" concept="6" trace="getDate#()Ljava/lang/String;" />
+      <node id="1457367043912935559" at="27,0,30,0" concept="6" trace="getText#()Ljava/lang/String;" />
+      <node id="1457367043912935558" at="31,0,34,0" concept="6" trace="setDate#(Ljava/lang/String;)V" />
+      <node id="1457367043912935559" at="34,0,37,0" concept="6" trace="setText#(Ljava/lang/String;)V" />
+      <node id="1457367043912935560" at="38,0,41,0" concept="6" trace="getRatings#()[" />
+      <node id="1457367043912935560" at="42,0,45,0" concept="6" trace="setRatings#([)V" />
+      <node id="1457367043912935557" at="12,0,16,0" concept="1" trace="CommentReply#(Ljava/lang/String;Ljava/lang/String;[)V" />
+      <scope id="1457367043912935557" at="21,25,21,25" />
+      <scope id="1457367043912935557" at="17,49,18,21" />
+      <scope id="1457367043912935558" at="24,27,25,16" />
+      <scope id="1457367043912935559" at="27,27,28,16" />
+      <scope id="1457367043912935558" at="31,40,32,25" />
+      <scope id="1457367043912935559" at="34,40,35,25" />
+      <scope id="1457367043912935560" at="38,32,39,24" />
+      <scope id="1457367043912935560" at="42,44,43,27" />
+      <scope id="1457367043912935557" at="12,67,14,27" />
+      <scope id="1457367043912935557" at="21,0,23,0" />
+      <scope id="1457367043912935557" at="17,0,20,0">
+        <var name="Date" id="1457367043912935558" />
+        <var name="Text" id="1457367043912935559" />
+      </scope>
+      <scope id="1457367043912935558" at="24,0,27,0" />
+      <scope id="1457367043912935559" at="27,0,30,0" />
+      <scope id="1457367043912935558" at="31,0,34,0">
+        <var name="newValue" id="1457367043912935558" />
+      </scope>
+      <scope id="1457367043912935559" at="34,0,37,0">
+        <var name="newValue" id="1457367043912935559" />
+      </scope>
+      <scope id="1457367043912935560" at="38,0,41,0" />
+      <scope id="1457367043912935560" at="42,0,45,0">
+        <var name="ratings" id="1457367043912935560" />
+      </scope>
+      <scope id="1457367043912935557" at="12,0,16,0">
+        <var name="Date" id="1457367043912935558" />
+        <var name="Text" id="1457367043912935559" />
+        <var name="ratings" id="1457367043912935560" />
+      </scope>
+      <unit id="1457367043912935557" at="6,0,46,0" name="CommentReviewRate.sandbox.CommentReply" />
+    </file>
+    <file name="ManualValidation.java">
+      <unit id="1457367043912935567" at="6,0,8,0" name="CommentReviewRate.sandbox.ManualValidation" />
+    </file>
+    <file name="Publico.java">
+      <node id="1457367043912935552" at="12,42,13,0" concept="9" />
+      <node id="1457367043912935553" at="13,0,14,54" concept="7" />
+      <node id="1457367043912935552" at="14,54,15,0" concept="9" />
+      <node id="1457367043912935552" at="15,0,16,43" concept="7" />
+      <node id="1457367043912935552" at="16,43,17,0" concept="9" />
+      <node id="1457367043912935552" at="18,18,19,54" concept="2" />
+      <node id="1457367043912935552" at="19,54,20,58" concept="2" />
+      <node id="1457367043912935552" at="20,58,21,47" concept="2" />
+      <node id="1457367043912935552" at="21,47,22,45" concept="2" />
+      <node id="1457367043912935552" at="22,45,23,44" concept="2" />
+      <node id="1457367043912935552" at="23,44,24,39" concept="2" />
+      <node id="1457367043912935552" at="24,39,25,0" concept="9" />
+      <node id="1457367043912935552" at="25,0,26,35" concept="7" />
+      <node id="1457367043912935552" at="26,35,27,0" concept="9" />
+      <node id="1457367043912935552" at="29,15,30,55" concept="2" />
+      <node id="1457367043912935552" at="30,55,31,39" concept="2" />
+      <node id="1457367043912935552" at="31,39,32,44" concept="7" />
+      <node id="1457367043912935554" at="32,44,33,29" concept="7" />
+      <node id="1457367043912935554" at="34,21,35,75" concept="2" />
+      <node id="1457367043912935554" at="35,75,36,39" concept="2" />
+      <node id="1457367043912935552" at="37,11,38,69" concept="7" />
+      <node id="1457367043912935552" at="38,69,39,35" concept="2" />
+      <node id="1457367043912935552" at="39,35,40,16" concept="0" />
+      <node id="1457367043912935552" at="40,16,41,0" concept="9" />
+      <node id="1457367043912935552" at="42,15,43,49" concept="2" />
+      <node id="1457367043912935553" at="44,40,45,54" concept="2" />
+      <node id="1457367043912935553" at="45,54,46,77" concept="2" />
+      <node id="1457367043912935553" at="46,77,47,90" concept="2" />
+      <node id="1457367043912935552" at="48,11,49,16" concept="0" />
+      <node id="1457367043912935552" at="49,16,50,0" concept="9" />
+      <node id="1457367043912935552" at="51,15,52,49" concept="2" />
+      <node id="1457367043912935552" at="52,49,53,59" concept="2" />
+      <node id="1457367043912935552" at="53,59,54,24" concept="7" />
+      <node id="1457367043912935553" at="55,40,56,64" concept="2" />
+      <node id="1457367043912935553" at="56,64,57,20" concept="2" />
+      <node id="1457367043912935552" at="58,11,59,0" concept="9" />
+      <node id="1457367043912935552" at="59,0,60,44" concept="7" />
+      <node id="1457367043912935552" at="60,44,61,0" concept="9" />
+      <node id="1457367043912935564" at="61,0,62,22" concept="7" />
+      <node id="1457367043912935565" at="62,22,63,22" concept="7" />
+      <node id="1457367043912935564" at="64,21,65,68" concept="2" />
+      <node id="1457367043912935564" at="65,68,66,32" concept="2" />
+      <node id="1457367043912935565" at="68,21,69,68" concept="2" />
+      <node id="1457367043912935565" at="69,68,70,32" concept="2" />
+      <node id="1457367043912935553" at="71,11,72,79" concept="2" />
+      <node id="1457367043912935552" at="72,79,73,16" concept="0" />
+      <node id="1457367043912935552" at="73,16,74,0" concept="9" />
+      <node id="1457367043912935552" at="75,15,76,25" concept="2" />
+      <node id="1457367043912935552" at="76,25,77,16" concept="0" />
+      <node id="1457367043912935554" at="33,29,37,11" concept="5" />
+      <node id="1457367043912935553" at="54,24,58,11" concept="4" />
+      <node id="1457367043912935564" at="63,22,67,11" concept="5" />
+      <node id="1457367043912935565" at="67,11,71,11" concept="5" />
+      <node id="1457367043912935553" at="43,49,48,11" concept="4" />
+      <node id="1457367043912935552" at="27,0,78,7" concept="11" />
+      <node id="1457367043912935552" at="17,0,79,5" concept="12" />
+      <node id="1457367043912935552" at="12,0,81,0" concept="10" trace="main#([Ljava/lang/String;)V" />
+      <scope id="1457367043912935554" at="34,21,36,39" />
+      <scope id="1457367043912935553" at="55,40,57,20" />
+      <scope id="1457367043912935564" at="64,21,66,32" />
+      <scope id="1457367043912935565" at="68,21,70,32" />
+      <scope id="1457367043912935552" at="75,15,77,16" />
+      <scope id="1457367043912935553" at="44,40,47,90" />
+      <scope id="1457367043912935553" at="54,24,58,11">
+        <var name="sub" id="1457367043912935553" />
+      </scope>
+      <scope id="1457367043912935553" at="43,49,48,11">
+        <var name="sub" id="1457367043912935553" />
+      </scope>
+      <scope id="1457367043912935552" at="42,15,50,0" />
+      <scope id="1457367043912935552" at="29,15,41,0">
+        <var name="Description" id="1457367043912935554" />
+        <var name="newSubject" id="1457367043912935552" />
+        <var name="subjectName" id="1457367043912935552" />
+      </scope>
+      <scope id="1457367043912935552" at="51,15,74,0">
+        <var name="Date" id="1457367043912935564" />
+        <var name="Text" id="1457367043912935565" />
+        <var name="index" id="1457367043912935552" />
+        <var name="subSelected" id="1457367043912935552" />
+      </scope>
+      <scope id="1457367043912935552" at="18,18,78,7">
+        <var name="option" id="1457367043912935552" />
+      </scope>
+      <scope id="1457367043912935552" at="12,42,79,5">
+        <var name="Articles" id="1457367043912935553" />
+        <var name="input" id="1457367043912935552" />
+      </scope>
+      <scope id="1457367043912935552" at="12,0,81,0">
+        <var name="args" id="1457367043912935552" />
+      </scope>
+      <unit id="1457367043912935552" at="9,0,82,0" name="CommentReviewRate.sandbox.Publico" />
+    </file>
+    <file name="Rating.java">
+      <unit id="1457367043912935560" at="6,0,9,0" name="CommentReviewRate.sandbox.Rating" />
+      <unit id="1457367043912935562" at="6,0,9,0" name="CommentReviewRate.sandbox.Rating" />
+    </file>
+  </root>
+</debug-info>
+

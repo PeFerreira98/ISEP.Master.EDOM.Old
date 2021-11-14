@@ -1,0 +1,4 @@
+﻿
+Generation test in txt
+
+	NewsArticle ->  This shit sucks ;  yea ; 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="edom405epsilon" nsURI="http://www.example.org/edom405epsilon"
+    nsPrefix="edom405epsilon">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Subject">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameMustBeGreaterThan1Char mustHaveFieldsWithDifferentNames mustHaveCommentsWithDifferentNames"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="nameMustBeGreaterThan1Char" value="self.name.size() > 1"/>
+      <details key="mustHaveFieldsWithDifferentNames" value="&#xA;&#x9;&#x9;self.field -> forAll(&#xA;&#x9;&#x9;&#x9;f1, f2 | f1 &lt;> f2 implies f1.name &lt;> f2.name)"/>
+      <details key="mustHaveCommentsWithDifferentNames" value="&#xA;&#x9;&#x9;self.comment -> forAll(&#xA;&#x9;&#x9;&#x9;c1, c2 | c1 &lt;> c2 implies c1.name &lt;> c2.name)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comment" upperBound="-1"
+        eType="#//Comment" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="field" upperBound="-1"
+        eType="#//Field" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comment">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameMustBeGreaterThan1Char mustHaveFieldText mustHaveFieldDate mustHaveAtLeast2Fields mustNotIncludeItSelf mustHaveFieldsWithDifferentNames mustHaveCommentsWithDifferentNames"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="nameMustBeGreaterThan1Char" value="self.name.size() > 1"/>
+      <details key="mustHaveFieldText" value="self.field -> select(&#xA;&#x9;&#x9;&#x9;f : Field | (f.name.toLower().compareTo('text') = 0)&#xA;&#x9;&#x9;) -> size() = 1"/>
+      <details key="mustHaveFieldDate" value="self.field -> select(&#xA;&#x9;&#x9;&#x9;f : Field | (f.name.toLower().compareTo('date') = 0)&#xA;&#x9;&#x9;) -> size() = 1"/>
+      <details key="mustHaveAtLeast2Fields" value="self.field -> size() >= 2"/>
+      <details key="mustNotIncludeItSelf" value="&#xA;&#x9;&#x9;&#x9;self.comment -> select(c: Comment | self.name = c.name) -> size() = 0"/>
+      <details key="mustHaveFieldsWithDifferentNames" value="&#xA;&#x9;&#x9;self.field -> forAll(&#xA;&#x9;&#x9;&#x9;f1, f2 | f1 &lt;> f2 implies f1.name &lt;> f2.name)"/>
+      <details key="mustHaveCommentsWithDifferentNames" value="&#xA;&#x9;&#x9;self.comment -> forAll(&#xA;&#x9;&#x9;&#x9;c1, c2 | c1 &lt;> c2 implies c1.name &lt;> c2.name)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" lowerBound="1" eType="#//User"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="field" upperBound="-1"
+        eType="#//Field" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comment" upperBound="-1"
+        eType="#//Comment" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="User">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameMustBeGreaterThan1Char mustHaveFieldsWithDifferentNames"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="nameMustBeGreaterThan1Char" value="self.name.size() > 1"/>
+      <details key="mustHaveFieldsWithDifferentNames" value="&#xA;&#x9;&#x9;self.field -> forAll(&#xA;&#x9;&#x9;&#x9;f1, f2 | f1 &lt;> f2 implies f1.name &lt;> f2.name)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="field" upperBound="-1"
+        eType="#//Field" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Field">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameMustBeGreaterThan1Char"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="nameMustBeGreaterThan1Char" value="self.name.size() > 1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//FieldTypes"
+        defaultValueLiteral="EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="FieldTypes">
+    <eLiterals name="EString" literal="EString"/>
+    <eLiterals name="Date" value="1"/>
+    <eLiterals name="EInteger" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="nameMustBeGreaterThan1Char"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="nameMustBeGreaterThan1Char" value="self.name.size() > 1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="subject" upperBound="-1"
+        eType="#//Subject" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

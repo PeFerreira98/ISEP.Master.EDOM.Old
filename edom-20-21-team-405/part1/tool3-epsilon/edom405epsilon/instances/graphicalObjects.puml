@@ -1,0 +1,9 @@
+@startuml
+digraph model  {
+Subject [shape=box3d];
+Comment [shape=oval];
+User [shape=diamond];
+Field [shape=square];
+FieldType [shape=Msquare];
+}
+@enduml

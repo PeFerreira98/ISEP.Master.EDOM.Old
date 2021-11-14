@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ucus:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ucus="http://www.example.org/ucus">
+  <subject name="ApplicationX">
+    <usecase name="ReviewProduct"/>
+  </subject>
+  <actor name="User"/>
+</ucus:Model>

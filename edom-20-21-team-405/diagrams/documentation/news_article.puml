@@ -1,0 +1,40 @@
+	@startuml news_article-puml
+
+	class NewsArticle {
+	    theme : String
+	    title : String
+	    description : String
+	    articleText : String
+	    datePublished : Date
+	}
+
+	class Image {
+	}
+
+	class Author {
+	    name : String
+	    email : String
+	}
+
+	class Comment {
+	    commentText : String
+	    commentDate : Date
+	}
+
+	class Like {
+	}
+
+
+	class User {
+	    name : String
+	}
+
+
+	NewsArticle "1" *-- "1" Image
+	NewsArticle "*" *-- "1" Author
+	NewsArticle "1" *-- "*" Comment
+	Comment *-- Comment
+	Comment "*" *-- "1" User
+	Comment "1" *-- "*" Like
+
+	@enduml

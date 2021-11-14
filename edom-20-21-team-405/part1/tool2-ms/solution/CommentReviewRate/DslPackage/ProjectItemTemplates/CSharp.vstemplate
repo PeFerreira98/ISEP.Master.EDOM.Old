@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{30668306-3ac7-4447-b028-8c12737dd72f}</TemplateID>
+		<Name Package="{affbb2e5-2e3d-4bbc-a1c3-2d137ab623e1}" ID="103"/>
+		<Description Package="{affbb2e5-2e3d-4bbc-a1c3-2d137ab623e1}" ID="102"/>
+		<Icon Package="{affbb2e5-2e3d-4bbc-a1c3-2d137ab623e1}" ID="201" />
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>CommentReviewRate.crr</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.crr">crr.crr</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.crr.diagram">crr.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

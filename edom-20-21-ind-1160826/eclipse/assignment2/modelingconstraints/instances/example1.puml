@@ -1,0 +1,8 @@
+@startuml
+actor User
+rectangle EcommerceSite {
+usecase ReviewProduct
+usecase InsertPicture
+}
+User -- ReviewProduct
+@enduml

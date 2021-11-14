@@ -1,0 +1,41 @@
+@startuml
+digraph model  {
+EchoDot [shape=box3d];
+IdealForTurningtTvIntoAsmartTv [shape=oval];
+António [shape=diamond];
+IdealForTurningtTvIntoAsmartTv -> António [label="from"];
+text [shape=square];
+EString [shape=Msquare];
+IdealForTurningtTvIntoAsmartTv -> text [label="has"];
+text -> EString [label="from type"];
+date [shape=square];
+Date [shape=Msquare];
+IdealForTurningtTvIntoAsmartTv -> date [label="has"];
+date -> Date [label="from type"];
+description [shape=square];
+EString [shape=Msquare];
+IdealForTurningtTvIntoAsmartTv -> description [label="has"];
+description -> EString [label="from type"];
+WorkingVeryGoodWithMyOldSamsungTV [shape=oval];
+IdealForTurningtTvIntoAsmartTv -> WorkingVeryGoodWithMyOldSamsungTV [label="has reply"];
+Ana [shape=diamond];
+WorkingVeryGoodWithMyOldSamsungTV -> Ana [label="from"];
+text [shape=square];
+EString [shape=Msquare];
+WorkingVeryGoodWithMyOldSamsungTV -> text [label="has"];
+text -> EString [label="from type"];
+date [shape=square];
+Date [shape=Msquare];
+WorkingVeryGoodWithMyOldSamsungTV -> date [label="has"];
+date -> Date [label="from type"];
+description [shape=square];
+EString [shape=Msquare];
+WorkingVeryGoodWithMyOldSamsungTV -> description [label="has"];
+description -> EString [label="from type"];
+EchoDot -> IdealForTurningtTvIntoAsmartTv [label="has comment"];
+price [shape=square];
+EInteger [shape=Msquare];
+EchoDot -> price [label="has"];
+price -> EInteger [label="from type"];
+}
+@enduml

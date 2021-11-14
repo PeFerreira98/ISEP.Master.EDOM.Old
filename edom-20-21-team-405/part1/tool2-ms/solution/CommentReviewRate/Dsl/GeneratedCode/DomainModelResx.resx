@@ -1,0 +1,935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EDOM.CommentReviewRate.CommentReviewRateDomainModel.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentReviewRate</value>
+    <comment>Description for DslLibrary &apos;CommentReviewRate&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentReviewRateDomainModel.DisplayName" xml:space="preserve">
+    <value>CommentReviewRate</value>
+    <comment>DisplayName for DslLibrary &apos;CommentReviewRate&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Model.Description" xml:space="preserve">
+    <value>The root in which all other elements are embedded. Appears as a diagram.</value>
+    <comment>Description for DomainClass &apos;Model&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainClass &apos;Model&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Subject.Description" xml:space="preserve">
+    <value>Elements embedded in the model. Appear as boxes on the diagram.</value>
+    <comment>Description for DomainClass &apos;Subject&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Subject.DisplayName" xml:space="preserve">
+    <value>Subject</value>
+    <comment>DisplayName for DomainClass &apos;Subject&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Subject/Name.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.Subject.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Subject&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Subject/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Subject&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.User.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.User</value>
+    <comment>Description for DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.User/Name.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.User.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.User/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Field.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.Field</value>
+    <comment>Description for DomainClass &apos;Field&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Field.DisplayName" xml:space="preserve">
+    <value>Field</value>
+    <comment>DisplayName for DomainClass &apos;Field&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Field/Name.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.Field.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Field&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Field/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Field&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Field/type.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.Field.Type</value>
+    <comment>Description for DomainProperty &apos;type&apos; on DomainClass &apos;Field&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Field/type.DisplayName" xml:space="preserve">
+    <value>Type</value>
+    <comment>DisplayName for DomainProperty &apos;type&apos; on DomainClass &apos;Field&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Comment.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.Comment</value>
+    <comment>Description for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Comment/Name.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.Comment.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.Comment/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects.Description" xml:space="preserve">
+    <value>Embedding relationship between the Model and Elements</value>
+    <comment>Description for DomainClass &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects.DisplayName" xml:space="preserve">
+    <value>Model Has Subjects</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects/Model.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Subjects</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects/Element.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Element&apos; on DomainRelationship &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects/Element.DisplayName" xml:space="preserve">
+    <value>Element</value>
+    <comment>DisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasSubjects/Element.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;ModelHasSubjects&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasUsers</value>
+    <comment>Description for DomainClass &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers.DisplayName" xml:space="preserve">
+    <value>Model Has Users</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers/Model.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasUsers.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Users</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers/User.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasUsers.User</value>
+    <comment>Description for DomainRole &apos;User&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers/User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasUsers/User.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasFields</value>
+    <comment>Description for DomainClass &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields.DisplayName" xml:space="preserve">
+    <value>Model Has Fields</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields/Model.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasFields.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Fields</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields/Field.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasFields.Field</value>
+    <comment>Description for DomainRole &apos;Field&apos; on DomainRelationship &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields/Field.DisplayName" xml:space="preserve">
+    <value>Field</value>
+    <comment>DisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasFields/Field.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;ModelHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasComments</value>
+    <comment>Description for DomainClass &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments.DisplayName" xml:space="preserve">
+    <value>Model Has Comments</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments/Model.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasComments.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Comments</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments/Comment.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ModelHasComments.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ModelHasComments/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.SubjectHasComments</value>
+    <comment>Description for DomainClass &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments.DisplayName" xml:space="preserve">
+    <value>Subject Has Comments</value>
+    <comment>DisplayName for DomainClass &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments/Subject.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.SubjectHasComments.Subject</value>
+    <comment>Description for DomainRole &apos;Subject&apos; on DomainRelationship &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments/Subject.DisplayName" xml:space="preserve">
+    <value>Subject</value>
+    <comment>DisplayName for DomainRole &apos;Subject&apos; on DomainRelationship &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments/Subject.PropertyDisplayName" xml:space="preserve">
+    <value>Comments</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Subject&apos; on DomainRelationship &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments/Comment.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.SubjectHasComments.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasComments/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Subject</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;SubjectHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasComments</value>
+    <comment>Description for DomainClass &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments.DisplayName" xml:space="preserve">
+    <value>Comment Has Comments</value>
+    <comment>DisplayName for DomainClass &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments/SourceComment.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasComments.SourceComment</value>
+    <comment>Description for DomainRole &apos;SourceComment&apos; on DomainRelationship &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments/SourceComment.DisplayName" xml:space="preserve">
+    <value>Source Comment</value>
+    <comment>DisplayName for DomainRole &apos;SourceComment&apos; on DomainRelationship &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments/SourceComment.PropertyDisplayName" xml:space="preserve">
+    <value>Replies</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceComment&apos; on DomainRelationship &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments/TargetComment.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasComments.TargetComment</value>
+    <comment>Description for DomainRole &apos;TargetComment&apos; on DomainRelationship &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments/TargetComment.DisplayName" xml:space="preserve">
+    <value>Target Comment</value>
+    <comment>DisplayName for DomainRole &apos;TargetComment&apos; on DomainRelationship &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasComments/TargetComment.PropertyDisplayName" xml:space="preserve">
+    <value>Parent Comment</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetComment&apos; on DomainRelationship &apos;CommentHasComments&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasUser</value>
+    <comment>Description for DomainClass &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser.DisplayName" xml:space="preserve">
+    <value>Comment Has User</value>
+    <comment>DisplayName for DomainClass &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser/Comment.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasUser.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser/User.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasUser.User</value>
+    <comment>Description for DomainRole &apos;User&apos; on DomainRelationship &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser/User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasUser/User.PropertyDisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>PropertyDisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;CommentHasUser&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.SubjectHasFields</value>
+    <comment>Description for DomainClass &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields.DisplayName" xml:space="preserve">
+    <value>Subject Has Fields</value>
+    <comment>DisplayName for DomainClass &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields/Subject.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.SubjectHasFields.Subject</value>
+    <comment>Description for DomainRole &apos;Subject&apos; on DomainRelationship &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields/Subject.DisplayName" xml:space="preserve">
+    <value>Subject</value>
+    <comment>DisplayName for DomainRole &apos;Subject&apos; on DomainRelationship &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields/Subject.PropertyDisplayName" xml:space="preserve">
+    <value>Fields</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Subject&apos; on DomainRelationship &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields/Field.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.SubjectHasFields.Field</value>
+    <comment>Description for DomainRole &apos;Field&apos; on DomainRelationship &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields/Field.DisplayName" xml:space="preserve">
+    <value>Field</value>
+    <comment>DisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectHasFields/Field.PropertyDisplayName" xml:space="preserve">
+    <value>Subjects</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;SubjectHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasFields</value>
+    <comment>Description for DomainClass &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields.DisplayName" xml:space="preserve">
+    <value>Comment Has Fields</value>
+    <comment>DisplayName for DomainClass &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields/Comment.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasFields.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Fields</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields/Field.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentHasFields.Field</value>
+    <comment>Description for DomainRole &apos;Field&apos; on DomainRelationship &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields/Field.DisplayName" xml:space="preserve">
+    <value>Field</value>
+    <comment>DisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentHasFields/Field.PropertyDisplayName" xml:space="preserve">
+    <value>Comments</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;CommentHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.UserHasFields</value>
+    <comment>Description for DomainClass &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields.DisplayName" xml:space="preserve">
+    <value>User Has Fields</value>
+    <comment>DisplayName for DomainClass &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields/User.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.UserHasFields.User</value>
+    <comment>Description for DomainRole &apos;User&apos; on DomainRelationship &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields/User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields/User.PropertyDisplayName" xml:space="preserve">
+    <value>Fields</value>
+    <comment>PropertyDisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields/Field.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.UserHasFields.Field</value>
+    <comment>Description for DomainRole &apos;Field&apos; on DomainRelationship &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields/Field.DisplayName" xml:space="preserve">
+    <value>Field</value>
+    <comment>DisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserHasFields/Field.PropertyDisplayName" xml:space="preserve">
+    <value>Users</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Field&apos; on DomainRelationship &apos;UserHasFields&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/STRING.DisplayName" xml:space="preserve">
+    <value>STRING</value>
+    <comment>Display name for EnumerationLiteral &apos;STRING&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/STRING.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.FieldTypesEnum.STRING</value>
+    <comment>Description for EnumerationLiteral &apos;STRING&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/DATE.DisplayName" xml:space="preserve">
+    <value>DATE</value>
+    <comment>Display name for EnumerationLiteral &apos;DATE&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/DATE.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.FieldTypesEnum.DATE</value>
+    <comment>Description for EnumerationLiteral &apos;DATE&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/INTEGER.DisplayName" xml:space="preserve">
+    <value>INTEGER</value>
+    <comment>Display name for EnumerationLiteral &apos;INTEGER&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/INTEGER.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.FieldTypesEnum.INTEGER</value>
+    <comment>Description for EnumerationLiteral &apos;INTEGER&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/BOOLEAN.DisplayName" xml:space="preserve">
+    <value>BOOLEAN</value>
+    <comment>Display name for EnumerationLiteral &apos;BOOLEAN&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldTypesEnum/BOOLEAN.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.FieldTypesEnum.BOOLEAN</value>
+    <comment>Description for EnumerationLiteral &apos;BOOLEAN&apos; on DomainEnumeration &apos;FieldTypesEnum&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectShape.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.SubjectShape</value>
+    <comment>Description for DomainClass &apos;SubjectShape&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.SubjectShape.DisplayName" xml:space="preserve">
+    <value>Subject Shape</value>
+    <comment>DisplayName for DomainClass &apos;SubjectShape&apos;</comment>
+  </data>
+  <data name="SubjectShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentShape.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentShape</value>
+    <comment>Description for DomainClass &apos;CommentShape&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentShape.DisplayName" xml:space="preserve">
+    <value>Comment Shape</value>
+    <comment>DisplayName for DomainClass &apos;CommentShape&apos;</comment>
+  </data>
+  <data name="CommentShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserShape.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.UserShape</value>
+    <comment>Description for DomainClass &apos;UserShape&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.UserShape.DisplayName" xml:space="preserve">
+    <value>User Shape</value>
+    <comment>DisplayName for DomainClass &apos;UserShape&apos;</comment>
+  </data>
+  <data name="UserShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldShape.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.FieldShape</value>
+    <comment>Description for DomainClass &apos;FieldShape&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.FieldShape.DisplayName" xml:space="preserve">
+    <value>Field Shape</value>
+    <comment>DisplayName for DomainClass &apos;FieldShape&apos;</comment>
+  </data>
+  <data name="FieldShapeNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="FieldShapeTypeDecoratorDefaultText" xml:space="preserve">
+    <value>TypeDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ContainsConnection.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.ContainsConnection</value>
+    <comment>Description for DomainClass &apos;ContainsConnection&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.ContainsConnection.DisplayName" xml:space="preserve">
+    <value>Contains Connection</value>
+    <comment>DisplayName for DomainClass &apos;ContainsConnection&apos;</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>CommentReviewRate (*.crr)|*.crr</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>CommentReviewRate Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentReviewRateDiagram.Description" xml:space="preserve">
+    <value>Description for EDOM.CommentReviewRate.CommentReviewRateDiagram</value>
+    <comment>Description for DomainClass &apos;CommentReviewRateDiagram&apos;</comment>
+  </data>
+  <data name="EDOM.CommentReviewRate.CommentReviewRateDiagram.DisplayName" xml:space="preserve">
+    <value>Minimal Language Diagram</value>
+    <comment>DisplayName for DomainClass &apos;CommentReviewRateDiagram&apos;</comment>
+  </data>
+  <data name="CommentReviewRateToolboxTab" xml:space="preserve">
+    <value>CommentReviewRate</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="SubjectToolboxItem" xml:space="preserve">
+    <value>Subject</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SubjectToolboxTooltip" xml:space="preserve">
+    <value>Subject</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="SubjectToCommentToolboxItem" xml:space="preserve">
+    <value>SubjectToComment</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SubjectToCommentToolboxTooltip" xml:space="preserve">
+    <value>Subject To Comment</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="SubjectToFieldToolboxItem" xml:space="preserve">
+    <value>SubjectToField</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="SubjectToFieldToolboxTooltip" xml:space="preserve">
+    <value>Subject To Field</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentToolboxItem" xml:space="preserve">
+    <value>Comment</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentToolboxTooltip" xml:space="preserve">
+    <value>Comment</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentToCommentToolboxItem" xml:space="preserve">
+    <value>CommentToComment</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentToCommentToolboxTooltip" xml:space="preserve">
+    <value>Comment To Comment</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentToUserToolboxItem" xml:space="preserve">
+    <value>CommentToUser</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentToUserToolboxTooltip" xml:space="preserve">
+    <value>Comment To User</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentToFieldsToolboxItem" xml:space="preserve">
+    <value>CommentToFields</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentToFieldsToolboxTooltip" xml:space="preserve">
+    <value>Comment To Fields</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UserToolboxItem" xml:space="preserve">
+    <value>User</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="UserToolboxTooltip" xml:space="preserve">
+    <value>User</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UserToFieldsToolboxItem" xml:space="preserve">
+    <value>UserToFields</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="UserToFieldsToolboxTooltip" xml:space="preserve">
+    <value>User To Fields</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="FieldToolboxItem" xml:space="preserve">
+    <value>Field</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="FieldToolboxTooltip" xml:space="preserve">
+    <value>Field</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnresolvedToolboxItem" xml:space="preserve">
+    <value>ToolboxItem {0} was not found</value>
+    <comment>Invalid toolId</comment>
+  </data>
+  <data name="UnsupportedToolboxFormat" xml:space="preserve">
+    <value>Unsupported toolbox format: {0}</value>
+    <comment>Unsupported format Id</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SubjectToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SubjectToCommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SubjectToCommentSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="SubjectToCommentTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorTargetSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="SubjectToFieldToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="SubjectToFieldSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="SubjectToFieldTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorTargetSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="CommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentToCommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentToCommentSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="CommentToCommentTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorTargetSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="CommentToUserToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentToUserSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="CommentToUserTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorTargetSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="CommentToFieldsToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentToFieldsSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="CommentToFieldsTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorTargetSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="UserToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="UserToFieldsToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="UserToFieldsSourceCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorSourceSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="UserToFieldsTargetCursor" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ConnectorTargetSearch.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Custom connection tool cursor</comment>
+  </data>
+  <data name="FieldToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+</root>
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ucus:Model
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ucus="http://www.example.org/ucus"
+    xsi:schemaLocation="http://www.example.org/ucus ucus.ecore"
+    name="Amazon">
+  <subject name="AmazonSite">
+    <usecase
+        name="ReviewProduct"/>
+    <usecase
+        name="Test1ahahaha"/>
+    <usecase
+        name="Eahahahahaaaaaa"/>
+  </subject>
+</ucus:Model>

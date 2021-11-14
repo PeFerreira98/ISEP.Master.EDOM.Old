@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ucus -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="pt.isep.edom.i160826.ucus.presentation.UcusModelWizardID"
+            name="%_UI_UcusModelWizard_label"
+            class="pt.isep.edom.i160826.ucus.presentation.UcusModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UcusModelFile.gif">
+         <description>%_UI_UcusModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ucus -->
+      <editor
+            id="pt.isep.edom.i160826.ucus.presentation.UcusEditorID"
+            name="%_UI_UcusEditor_label"
+            icon="icons/full/obj16/UcusModelFile.gif"
+            extensions="ucus"
+            class="pt.isep.edom.i160826.ucus.presentation.UcusEditor"
+            contributorClass="pt.isep.edom.i160826.ucus.presentation.UcusActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

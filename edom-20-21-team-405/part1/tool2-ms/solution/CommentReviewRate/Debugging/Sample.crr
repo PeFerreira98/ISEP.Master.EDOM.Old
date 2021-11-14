@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="84db3918-8b86-47e2-80b0-9fd00f5e161a" xmlns="http://schemas.microsoft.com/dsltools/CommentReviewRate">
+  <subjects>
+    <subject Id="3f71d8fa-c612-4f28-8a28-8b8a606de0ef" name="ArtigoPoliticoUSA">
+      <comments>
+        <subjectHasComments Id="3f392b3f-d76f-4168-a253-e0d6adfd4543">
+          <commentMoniker Id="13d3886c-777d-4401-a273-cf38e3dc3c8f" />
+        </subjectHasComments>
+        <subjectHasComments Id="e8c05641-32db-48d7-96f9-3efc1b1ce5d0">
+          <commentMoniker Id="f9bf8a26-4e4a-49f4-9cf8-7441e108e04a" />
+        </subjectHasComments>
+      </comments>
+    </subject>
+  </subjects>
+  <users>
+    <modelHasUsers Id="46abda64-a081-4a46-b4a7-68c7d25275ec">
+      <user Id="7a751a61-9b74-42fd-b5b9-91cc4ed5cc23" name="Venceslau " />
+    </modelHasUsers>
+    <modelHasUsers Id="ee308928-e1cb-41c8-8d47-1e5124b76961">
+      <user Id="7172a027-fe6f-40cb-980f-0b04275c7adf" name="Bidén" />
+    </modelHasUsers>
+  </users>
+  <fields>
+    <modelHasFields Id="d22079d8-23f2-45f6-8803-17fe5a9024a5">
+      <field Id="e3bb8338-a579-4748-8370-7cfcc1fb9959" name="text" type="STRING" />
+    </modelHasFields>
+    <modelHasFields Id="2b244e60-3113-4ad7-9f7e-25a08c48cf67">
+      <field Id="d811f81c-a716-49d6-996e-5a41c538c17d" name="date" type="DATE" />
+    </modelHasFields>
+    <modelHasFields Id="39484b9a-812a-42ab-9d19-ed3e04f34995">
+      <field Id="7ee27ede-3942-4171-8f31-a1706235cb7c" name="likes" type="INTEGER" />
+    </modelHasFields>
+  </fields>
+  <comments>
+    <modelHasComments Id="9a5bed16-c0aa-49dd-abf3-8d020616d92b">
+      <comment Id="13d3886c-777d-4401-a273-cf38e3dc3c8f" name="Comentario1">
+        <replies>
+          <commentHasComments Id="57bdef3c-7091-4279-9152-9cf7938d0791">
+            <commentMoniker Id="f9bf8a26-4e4a-49f4-9cf8-7441e108e04a" />
+          </commentHasComments>
+        </replies>
+        <user>
+          <commentHasUser Id="101e3879-af3d-4dab-b0c8-b2de45f583f4">
+            <userMoniker Id="7a751a61-9b74-42fd-b5b9-91cc4ed5cc23" />
+          </commentHasUser>
+        </user>
+        <fields>
+          <commentHasFields Id="6cb1ce54-9e18-43f8-9465-13ab2e6c966d">
+            <fieldMoniker Id="e3bb8338-a579-4748-8370-7cfcc1fb9959" />
+          </commentHasFields>
+          <commentHasFields Id="44ae9e95-dd2a-4e12-abe1-0a071cdd995f">
+            <fieldMoniker Id="d811f81c-a716-49d6-996e-5a41c538c17d" />
+          </commentHasFields>
+          <commentHasFields Id="9818b4ac-7354-4b78-a1f3-e413ffc42fc7">
+            <fieldMoniker Id="7ee27ede-3942-4171-8f31-a1706235cb7c" />
+          </commentHasFields>
+        </fields>
+      </comment>
+    </modelHasComments>
+    <modelHasComments Id="e8f050bb-a6bb-4f6a-b719-fccd4fbac071">
+      <comment Id="f9bf8a26-4e4a-49f4-9cf8-7441e108e04a" name="RespostaAComentario1">
+        <user>
+          <commentHasUser Id="e8c2a6ae-25f4-4bfb-bfa8-c2c7dff2c7d0">
+            <userMoniker Id="7172a027-fe6f-40cb-980f-0b04275c7adf" />
+          </commentHasUser>
+        </user>
+        <fields>
+          <commentHasFields Id="c686c422-c72c-434e-9b95-2d047340b081">
+            <fieldMoniker Id="e3bb8338-a579-4748-8370-7cfcc1fb9959" />
+          </commentHasFields>
+          <commentHasFields Id="67a3726d-d871-4cb0-8105-521a1a7ea98c">
+            <fieldMoniker Id="d811f81c-a716-49d6-996e-5a41c538c17d" />
+          </commentHasFields>
+          <commentHasFields Id="51d87a21-3db3-46f4-9c60-0f20e2682bac">
+            <fieldMoniker Id="7ee27ede-3942-4171-8f31-a1706235cb7c" />
+          </commentHasFields>
+        </fields>
+      </comment>
+    </modelHasComments>
+  </comments>
+</model>

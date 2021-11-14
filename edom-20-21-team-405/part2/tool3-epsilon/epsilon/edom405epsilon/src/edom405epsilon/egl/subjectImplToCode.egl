@@ -1,0 +1,34 @@
+package edom405epsilon.egl.gen;
+
+import java.util.List;
+		
+public class [%=subject.name%] extends Subject{
+
+	[% for (field in subject.field) { %][%if (field.name != 'name' and field.name != 'comments') { %]
+	public [%=field.type%] [%=field.name%];[%}%]
+	[%}%]
+	
+	public [%=subject.name%](List<Comment> comments, String name[%for(field in subject.field){ %][%if(field.name != 'name' and field.name != 'comments'){ %]
+	,[%=field.type%] [%=field.name%][%}%][%}%]) {
+        super(name, comments);
+        [% for (field in subject.field) { %][%if (field.name != 'name' and field.name != 'comments') { %]
+		this.[%=field.name%] = [%=field.name%];
+		[%}%][%}%]
+    }
+    
+    public [%=subject.name%]() {
+    	super();
+    }
+     
+    [% for (field in subject.field) { %][%if (field.name != 'name' and field.name != 'comments') { %]
+	public [%=field.type%] get[%=field.name%]() {
+       return [%=field.name%];
+    }
+	[%}%][%}%]
+	 
+	[% for (field in subject.field) { %][%if (field.name != 'name' and field.name != 'comments') { %]
+	public void set[%=field.name%]([%=field.type%] [%=field.name%]) {
+	   this.[%=field.name%] = [%=field.name%];
+    }
+	[%}%][%}%]
+}	
