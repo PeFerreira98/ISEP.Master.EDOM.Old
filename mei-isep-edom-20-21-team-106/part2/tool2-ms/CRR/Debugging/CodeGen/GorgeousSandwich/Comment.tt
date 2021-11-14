@@ -1,0 +1,78 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\GorgeousSandwich.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(null != this.Model.Comment)
+{
+#>
+
+package crr.<#= this.Model.Name.ToLower() #>;
+
+class <#= this.Model.Comment.Name #>
+{
+    public int Id;
+    
+    public IUser Author;
+
+<#
+    if(null != this.Model.Comment.ApprovalProcess)
+    {
+#>
+    public boolean Approved;
+<#
+    }
+
+    foreach(var attr in this.Model.Comment.Attributes)
+    {
+#>
+    public <#= attr.DataType.Name #> <#= attr.Name #>;
+<#
+    }
+#>
+
+    public <#= this.Model.Comment.Name #>(){}
+
+    public <#= this.Model.Comment.Name #>(int id, IUser author
+<#
+    foreach(var attr in this.Model.Comment.Attributes)
+    {
+#>
+        , <#= attr.DataType.Name #> <#= attr.Name #>
+<#
+    }
+#>
+    )
+    {
+        this.Id = id;
+        this.Author = author;
+<#
+    foreach(var attr in this.Model.Comment.Attributes)
+    {
+#>
+        this.<#= attr.Name #> = <#= attr.Name #>;
+<#
+    }
+#>
+    }
+
+    public String toString(){
+        var res = "Id: " + this.Id + ";\nAuthor: " + this.Author + ";";
+<#
+    foreach(var attr in this.Model.Comment.Attributes)
+    {
+#>
+        res += "\n<#= attr.Name #>: " + this.<#= attr.Name #> + ";";
+<#
+    }
+#>
+
+        return res;
+    }
+}
+<#
+}
+#>

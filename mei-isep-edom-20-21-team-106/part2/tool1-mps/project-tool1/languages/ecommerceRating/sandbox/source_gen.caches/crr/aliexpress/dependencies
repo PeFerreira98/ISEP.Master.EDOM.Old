@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="crr.aliexpress.AliExpress">
+    <classNode dependClassName="crr.aliexpress.Item" />
+    <classNode dependClassName="crr.aliexpress.User" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+  <dependency className="crr.aliexpress.IUser" />
+  <dependency className="crr.aliexpress.Item">
+    <classNode dependClassName="crr.aliexpress.Rate" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="crr.aliexpress.Rate">
+    <classNode dependClassName="crr.aliexpress.IUser" />
+    <classNode dependClassName="crr.aliexpress.Review" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.aliexpress.Review">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.aliexpress.SApprovalFactory" />
+  <dependency className="crr.aliexpress.User">
+    <classNode dependClassName="crr.aliexpress.Utils" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.Scanner" />
+    <classNode extendsClassName="crr.aliexpress.IUser" />
+  </dependency>
+  <dependency className="crr.aliexpress.Utils">
+    <classNode dependClassName="crr.aliexpress.AliExpress" />
+    <classNode dependClassName="crr.aliexpress.IUser" />
+    <classNode dependClassName="crr.aliexpress.Item" />
+    <classNode dependClassName="crr.aliexpress.Rate" />
+    <classNode dependClassName="crr.aliexpress.Review" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.reflect.Field" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+</dependenciesRoot>
+

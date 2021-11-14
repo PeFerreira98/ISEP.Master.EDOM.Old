@@ -1,0 +1,452 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="16.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.10318</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DE1743B-666E-4E72-9238-B4275B3EDEBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Debugging</RootNamespace>
+    <AssemblyName>Debugging</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MinimumVisualStudioVersion>16.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Dsl\GeneratedCode\CRRSchema.xsd">
+      <Link>CRRSchema.xsd</Link>
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="Maps.crr" />
+    <None Include="Maps.crr.diagram">
+      <DependentUpon>Maps.crr</DependentUpon>
+    </None>
+    <None Include="CRRDomainModel.puml">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRRDomainModel.tt</DependentUpon>
+    </None>
+    <None Include="AliExpress.crr" />
+    <None Include="AliExpress.crr.diagram">
+      <DependentUpon>AliExpress.crr</DependentUpon>
+    </None>
+    <None Include="GorgeousSandwich.crr" />
+    <None Include="GorgeousSandwich.crr.diagram">
+      <DependentUpon>GorgeousSandwich.crr</DependentUpon>
+    </None>
+    <None Include="TestModel.crr" />
+    <None Include="TestModel.crr.diagram">
+      <DependentUpon>TestModel.crr</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4df5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CRRDomainModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CRRDomainModel.puml</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeGen\Test\Item.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Item.java</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CodeGen\Test\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Test\Utils.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Utils.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Test\ApprovalProcesses.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalProcesses.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Test\ApprovalSteps.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalSteps.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Maps\ApprovalProcesses.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalProcesses.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\GorgeousSandwich\ApprovalProcesses.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalProcesses.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\AliExpress\ApprovalProcesses.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalProcesses.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\ApprovalProcesses.java">
+      <DependentUpon>ApprovalProcesses.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\ApprovalSteps.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalSteps.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\ApprovalSteps.java">
+      <DependentUpon>ApprovalSteps.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\Comment.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Comment.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\Comment.java">
+      <DependentUpon>Comment.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\Item.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Item.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\Item.java">
+      <DependentUpon>Item.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\Model.java">
+      <DependentUpon>Model.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\Rate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Rate.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\Rate.java">
+      <DependentUpon>Rate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\Review.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Review.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\Review.java">
+      <DependentUpon>Review.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\SApprovalFactory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SApprovalFactory.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\SApprovalFactory.java">
+      <DependentUpon>SApprovalFactory.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\Users.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Users.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\Users.java">
+      <DependentUpon>Users.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\AliExpress\Utils.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Utils.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\AliExpress\Utils.java">
+      <DependentUpon>Utils.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="CodeGen\GorgeousSandwich\ApprovalProcesses.java">
+      <DependentUpon>ApprovalProcesses.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\ApprovalSteps.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalSteps.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\ApprovalSteps.java">
+      <DependentUpon>ApprovalSteps.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\Comment.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Comment.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\Comment.java">
+      <DependentUpon>Comment.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\Item.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Item.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\Item.java">
+      <DependentUpon>Item.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\Model.java">
+      <DependentUpon>Model.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\Rate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Rate.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\Rate.java">
+      <DependentUpon>Rate.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\Review.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Review.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\Review.java">
+      <DependentUpon>Review.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\SApprovalFactory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SApprovalFactory.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\SApprovalFactory.java">
+      <DependentUpon>SApprovalFactory.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\Users.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Users.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\Users.java">
+      <DependentUpon>Users.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\GorgeousSandwich\Utils.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Utils.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\GorgeousSandwich\Utils.java">
+      <DependentUpon>Utils.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="CodeGen\Maps\ApprovalProcesses.java">
+      <DependentUpon>ApprovalProcesses.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\ApprovalSteps.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApprovalSteps.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\ApprovalSteps.java">
+      <DependentUpon>ApprovalSteps.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\Comment.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Comment.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\Comment.java">
+      <DependentUpon>Comment.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\Item.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Item.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\Item.java">
+      <DependentUpon>Item.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\Model.java">
+      <DependentUpon>Model.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\Rate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Rate.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Maps\Review.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Review.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\Rate.java">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rate.tt</DependentUpon>
+    </Content>
+    <Content Include="CodeGen\Maps\Review.java">
+      <DependentUpon>Review.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\SApprovalFactory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SApprovalFactory.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\SApprovalFactory.java">
+      <DependentUpon>SApprovalFactory.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\Users.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Users.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\Users.java">
+      <DependentUpon>Users.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Maps\Utils.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Utils.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Maps\Utils.java">
+      <DependentUpon>Utils.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="CodeGen\Test\ApprovalSteps.java">
+      <DependentUpon>ApprovalSteps.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="CodeGen\Test\ApprovalProcesses.java">
+      <DependentUpon>ApprovalProcesses.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Test\SApprovalFactory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>SApprovalFactory.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Test\SApprovalFactory.java">
+      <DependentUpon>SApprovalFactory.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="CodeGen\Test\StepsImpl.java" />
+    <Content Include="CodeGen\Test\Utils.java">
+      <DependentUpon>Utils.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="CodeGen\Test\Model.java">
+      <DependentUpon>Model.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <Content Include="CodeGen\Test\Rate.java">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rate.tt</DependentUpon>
+    </Content>
+    <Content Include="CodeGen\Test\Users.java">
+      <DependentUpon>Users.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Test\Users.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Users.java</LastGenOutput>
+    </None>
+    <None Include="CodeGen\Test\Rate.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Rate.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Test\Comment.java">
+      <DependentUpon>Comment.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Test\Comment.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Comment.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Test\Review.java">
+      <DependentUpon>Review.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Content>
+    <None Include="CodeGen\Test\Review.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Review.java</LastGenOutput>
+    </None>
+    <Content Include="CodeGen\Test\Item.java">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Item.tt</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

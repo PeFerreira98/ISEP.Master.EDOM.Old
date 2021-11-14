@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="875c9f7b-1798-4900-acca-855a7683c02b" xmlns="http://schemas.microsoft.com/dsltools/CRR">
+  <items>
+    <item Id="f0975a55-a376-4012-afc0-66cf489bdba5" name="Item">
+      <attributes>
+        <itemReferencesAttributes Id="85babad5-c14b-42b7-b922-2cc676e323cf">
+          <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+        </itemReferencesAttributes>
+        <itemReferencesAttributes Id="0b203c34-995e-4771-a1d2-458d6a31fc98">
+          <attributeMoniker Id="5e014cd9-6036-4f03-96d7-7051b68a7410" />
+        </itemReferencesAttributes>
+      </attributes>
+      <rate>
+        <itemReferencesRate Id="08c7dcbe-4085-44eb-8bd6-d3b94811531b">
+          <rateMoniker Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09" />
+        </itemReferencesRate>
+      </rate>
+    </item>
+  </items>
+  <users>
+    <modelHasUsers Id="58a6bba8-cecf-4d62-8c37-d01a818b4a58">
+      <user Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7">
+        <attributes>
+          <userReferencesAttributes Id="54627ea1-7c43-4d47-b38e-4ec956ef1ad9">
+            <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+          </userReferencesAttributes>
+        </attributes>
+      </user>
+    </modelHasUsers>
+  </users>
+  <dataTypes>
+    <modelHasDataTypes Id="79993f0e-0b83-4c32-9117-6f16169f5a6c">
+      <dataType Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+    </modelHasDataTypes>
+  </dataTypes>
+  <attributes>
+    <modelHasAttributes Id="7b94fbbd-50f6-4e8d-aca8-4aa17037052c">
+      <attribute Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" name="ID">
+        <dataType>
+          <attributeReferencesDataType Id="9eda974d-70f0-4b5f-9706-54ba01e19af6">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="363c0613-9005-42e7-affb-cc648ca5aa5e">
+      <attribute Id="5e014cd9-6036-4f03-96d7-7051b68a7410" name="Name">
+        <dataType>
+          <attributeReferencesDataType Id="b4cac508-9a9d-4349-87a2-b06d2f6e1ce4">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="afeff2ce-fe61-4092-b07e-531a8bfba099">
+      <attribute Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" name="Content">
+        <dataType>
+          <attributeReferencesDataType Id="d2b84e98-6823-488e-8884-744744e55632">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+  </attributes>
+  <rate>
+    <modelHasRate Id="94ef04a9-ec64-4964-ba21-b6350af65aae">
+      <rate Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09">
+        <attributes>
+          <rateReferencesAttributes Id="416b5c56-e4cd-46bc-9f6c-4024b24a85e2">
+            <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+          </rateReferencesAttributes>
+        </attributes>
+        <review>
+          <rateReferencesReview Id="21c17880-cc8f-4e46-8854-95cbe128d64a">
+            <reviewMoniker Id="0ae0009c-54f2-4968-8a76-bef908235238" />
+          </rateReferencesReview>
+        </review>
+        <user>
+          <rateReferencesUser Id="5d7936dc-8ef3-46ba-b263-bda2f0ea1235">
+            <userMoniker Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7" />
+          </rateReferencesUser>
+        </user>
+      </rate>
+    </modelHasRate>
+  </rate>
+  <review>
+    <modelHasReview Id="d15d1105-91d3-434e-abf4-275201cc547b">
+      <review Id="0ae0009c-54f2-4968-8a76-bef908235238">
+        <attributes>
+          <reviewReferencesAttributes Id="2a582197-0c9d-44b4-b20e-a4a996d79dd7">
+            <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+          </reviewReferencesAttributes>
+          <reviewReferencesAttributes Id="9b6514a6-17d3-466a-894e-6f1b1d9cfb1b">
+            <attributeMoniker Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" />
+          </reviewReferencesAttributes>
+        </attributes>
+        <approvalProcess>
+          <reviewReferencesApprovalProcess Id="cdeeaa38-fa87-4d26-b8bd-c2990ee9a648">
+            <approvalProcessMoniker name="/875c9f7b-1798-4900-acca-855a7683c02b/Approval" />
+          </reviewReferencesApprovalProcess>
+        </approvalProcess>
+      </review>
+    </modelHasReview>
+  </review>
+  <approvalProcesses>
+    <modelHasApprovalProcesses Id="b66b208e-d217-4898-81da-d80733bdd983">
+      <approvalProcess Id="8a48ed1f-fa36-4874-b12d-c426cff569ef" name="Approval">
+        <steps>
+          <approvalProcessHasSteps Id="cb59f415-0f5b-4a6f-b308-1554fe5aa6d1">
+            <approvalStep Id="cf762efd-dcc1-4ff8-a538-9c80693c2d0c" name="Automatic Profanity Check">
+              <attributes>
+                <approvalStepReferencesAttributes Id="e888ccb1-80fc-451f-8cd7-a70db1deb8c5">
+                  <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+                </approvalStepReferencesAttributes>
+              </attributes>
+              <outcomes>
+                <approvalStepReferencesOutcomes Id="b2364bba-9eb1-445c-adf7-5958f453a302">
+                  <approvalOutcomeMoniker name="/875c9f7b-1798-4900-acca-855a7683c02b/Approval/Approved" />
+                </approvalStepReferencesOutcomes>
+                <approvalStepReferencesOutcomes Id="fcc11501-ef0c-40be-a072-e61e6cccf12c">
+                  <approvalOutcomeMoniker name="/875c9f7b-1798-4900-acca-855a7683c02b/Approval/Rejected" />
+                </approvalStepReferencesOutcomes>
+              </outcomes>
+            </approvalStep>
+          </approvalProcessHasSteps>
+        </steps>
+        <start>
+          <approvalProcessHasStart Id="96ba6972-b2c3-4232-abaf-557bbb607a51">
+            <approvalStart Id="01b6c080-4e9b-4703-be55-9ef8a906d667" name="Start">
+              <step>
+                <approvalStartReferencesStep Id="6ff859aa-b087-43a3-8785-61d538c11ff3">
+                  <approvalStepMoniker name="/875c9f7b-1798-4900-acca-855a7683c02b/Approval/Automatic Profanity Check" />
+                </approvalStartReferencesStep>
+              </step>
+            </approvalStart>
+          </approvalProcessHasStart>
+        </start>
+        <outcomes>
+          <approvalProcessHasOutcomes Id="79b3696d-2d6e-4985-9bac-f32a7a4701d6">
+            <approvalOutcome Id="82e90fb2-ca47-40b5-a284-ef32b328d6fa" name="Approved" />
+          </approvalProcessHasOutcomes>
+          <approvalProcessHasOutcomes Id="9e92df8a-161b-4e9f-a926-24a9bdca646f">
+            <approvalOutcome Id="0aaf040f-f9a7-4796-887e-477641959605" name="Rejected" />
+          </approvalProcessHasOutcomes>
+        </outcomes>
+        <attributes>
+          <approvalProcessReferencesAttributes Id="faea2cbe-1941-4831-91d2-7a7124fc47a6">
+            <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+          </approvalProcessReferencesAttributes>
+        </attributes>
+      </approvalProcess>
+    </modelHasApprovalProcesses>
+  </approvalProcesses>
+</model>

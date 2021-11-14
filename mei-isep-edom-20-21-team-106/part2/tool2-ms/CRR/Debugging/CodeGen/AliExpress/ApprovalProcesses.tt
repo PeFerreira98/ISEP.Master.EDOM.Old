@@ -1,0 +1,77 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\AliExpress.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(this.Model.ApprovalProcesses.Any())
+{
+#>
+package crr.<#= this.Model.Name.ToLower() #>;
+<#
+foreach(var approval in this.Model.ApprovalProcesses )
+{
+#>
+
+class <#= approval.Name #>
+{
+<#
+if(null != approval.Comment)
+{
+#>
+	public static boolean init<#= approval.Name #>(<#= approval.Comment.Name #> comment)
+    {
+
+        try
+        {
+            boolean res = SApprovalFactory.create<#= approval.Start.Step.Name #>().execute(comment, null);
+
+            if(res)
+            {
+                return true;
+            }
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+
+        System.out.println("<#= approval.Comment.Name #> not approved");
+        return false;
+    }
+<#
+}
+#>
+<#
+if(null != approval.Rate)
+{
+#>
+	public static boolean init<#= approval.Name #>(<#= approval.Rate.Name #> rate)
+    {
+        try
+        {
+            boolean res = SApprovalFactory.create<#= approval.Start.Step.Name #>().execute(rate, null);
+
+            if(res)
+            {
+                return true;
+            }
+        }
+        catch (Exception ex)
+        {
+            ex.printStackTrace();
+        }
+
+        System.out.println("<#= approval.Rate.Name #> not approved");
+        return false;
+    }
+<#
+}
+#>
+}
+<#
+}
+}
+#>

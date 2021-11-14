@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="875c9f7b-1798-4900-acca-855a7683c02b" xmlns="http://schemas.microsoft.com/dsltools/CRR">
+  <items>
+    <item Id="f0975a55-a376-4012-afc0-66cf489bdba5" name="Sandwich">
+      <attributes>
+        <itemReferencesAttributes Id="85babad5-c14b-42b7-b922-2cc676e323cf">
+          <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+        </itemReferencesAttributes>
+        <itemReferencesAttributes Id="0b203c34-995e-4771-a1d2-458d6a31fc98">
+          <attributeMoniker Id="5e014cd9-6036-4f03-96d7-7051b68a7410" />
+        </itemReferencesAttributes>
+      </attributes>
+      <comment>
+        <itemReferencesComment Id="af2d4bee-4382-43e9-b844-7ced1a554030">
+          <commentMoniker Id="14c1b1ed-1510-4159-89f0-8737b1bcef06" />
+        </itemReferencesComment>
+      </comment>
+      <rate>
+        <itemReferencesRate Id="08c7dcbe-4085-44eb-8bd6-d3b94811531b">
+          <rateMoniker Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09" />
+        </itemReferencesRate>
+      </rate>
+    </item>
+  </items>
+  <users>
+    <modelHasUsers Id="58a6bba8-cecf-4d62-8c37-d01a818b4a58">
+      <user Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7">
+        <attributes>
+          <userReferencesAttributes Id="54627ea1-7c43-4d47-b38e-4ec956ef1ad9">
+            <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+          </userReferencesAttributes>
+        </attributes>
+      </user>
+    </modelHasUsers>
+  </users>
+  <dataTypes>
+    <modelHasDataTypes Id="79993f0e-0b83-4c32-9117-6f16169f5a6c">
+      <dataType Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+    </modelHasDataTypes>
+    <modelHasDataTypes Id="df6f9f4e-3233-4dda-b689-08a4ff6f6ae0">
+      <dataType Id="bf95d0e1-73af-4f95-9d7e-aa821b978873" name="Int" />
+    </modelHasDataTypes>
+  </dataTypes>
+  <attributes>
+    <modelHasAttributes Id="7b94fbbd-50f6-4e8d-aca8-4aa17037052c">
+      <attribute Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" name="ID">
+        <dataType>
+          <attributeReferencesDataType Id="9eda974d-70f0-4b5f-9706-54ba01e19af6">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="363c0613-9005-42e7-affb-cc648ca5aa5e">
+      <attribute Id="5e014cd9-6036-4f03-96d7-7051b68a7410" name="Name">
+        <dataType>
+          <attributeReferencesDataType Id="b4cac508-9a9d-4349-87a2-b06d2f6e1ce4">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="afeff2ce-fe61-4092-b07e-531a8bfba099">
+      <attribute Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" name="Content">
+        <dataType>
+          <attributeReferencesDataType Id="d2b84e98-6823-488e-8884-744744e55632">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="895786d0-31c5-4fc0-8a09-684156832ed8">
+      <attribute Id="9cd0f5d8-b3d9-4197-a66b-63f4e0b6d987" name="Value">
+        <dataType>
+          <attributeReferencesDataType Id="7b20d811-3c69-4ce6-85ba-55ff5833b3ba">
+            <dataTypeMoniker Id="bf95d0e1-73af-4f95-9d7e-aa821b978873" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+  </attributes>
+  <comment>
+    <modelHasComment Id="ff6b7f90-ca77-40b6-9180-d975930a3b71">
+      <comment Id="14c1b1ed-1510-4159-89f0-8737b1bcef06">
+        <attributes>
+          <commentReferencesAttributes Id="dd82d2dc-956a-40c0-b2ef-00841d766814">
+            <attributeMoniker Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" />
+          </commentReferencesAttributes>
+        </attributes>
+        <user>
+          <commentReferencesUser Id="74f2859f-25f6-4099-8326-bad5a38860b4">
+            <userMoniker Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7" />
+          </commentReferencesUser>
+        </user>
+      </comment>
+    </modelHasComment>
+  </comment>
+  <rate>
+    <modelHasRate Id="94ef04a9-ec64-4964-ba21-b6350af65aae">
+      <rate Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09">
+        <attributes>
+          <rateReferencesAttributes Id="416b5c56-e4cd-46bc-9f6c-4024b24a85e2">
+            <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+          </rateReferencesAttributes>
+          <rateReferencesAttributes Id="df76731c-bd45-4277-9eb2-54ee886fa8ec">
+            <attributeMoniker Id="9cd0f5d8-b3d9-4197-a66b-63f4e0b6d987" />
+          </rateReferencesAttributes>
+        </attributes>
+        <review>
+          <rateReferencesReview Id="21c17880-cc8f-4e46-8854-95cbe128d64a">
+            <reviewMoniker Id="0ae0009c-54f2-4968-8a76-bef908235238" />
+          </rateReferencesReview>
+        </review>
+        <user>
+          <rateReferencesUser Id="5d7936dc-8ef3-46ba-b263-bda2f0ea1235">
+            <userMoniker Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7" />
+          </rateReferencesUser>
+        </user>
+      </rate>
+    </modelHasRate>
+  </rate>
+  <review>
+    <modelHasReview Id="d15d1105-91d3-434e-abf4-275201cc547b">
+      <review Id="0ae0009c-54f2-4968-8a76-bef908235238">
+        <attributes>
+          <reviewReferencesAttributes Id="2a582197-0c9d-44b4-b20e-a4a996d79dd7">
+            <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+          </reviewReferencesAttributes>
+          <reviewReferencesAttributes Id="9b6514a6-17d3-466a-894e-6f1b1d9cfb1b">
+            <attributeMoniker Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" />
+          </reviewReferencesAttributes>
+        </attributes>
+      </review>
+    </modelHasReview>
+  </review>
+</model>

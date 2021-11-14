@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="crr.googlemaps.GoogleMaps">
+    <classNode dependClassName="crr.googlemaps.Place" />
+    <classNode dependClassName="crr.googlemaps.User" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+  <dependency className="crr.googlemaps.IUser" />
+  <dependency className="crr.googlemaps.Place">
+    <classNode dependClassName="crr.googlemaps.Rate" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="crr.googlemaps.Rate">
+    <classNode dependClassName="crr.googlemaps.IUser" />
+    <classNode dependClassName="crr.googlemaps.Review" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.googlemaps.Review">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.googlemaps.SApprovalFactory" />
+  <dependency className="crr.googlemaps.User">
+    <classNode dependClassName="crr.googlemaps.Utils" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.Scanner" />
+    <classNode extendsClassName="crr.googlemaps.IUser" />
+  </dependency>
+  <dependency className="crr.googlemaps.Utils">
+    <classNode dependClassName="crr.googlemaps.GoogleMaps" />
+    <classNode dependClassName="crr.googlemaps.IUser" />
+    <classNode dependClassName="crr.googlemaps.Place" />
+    <classNode dependClassName="crr.googlemaps.Rate" />
+    <classNode dependClassName="crr.googlemaps.Review" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.reflect.Field" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+</dependenciesRoot>
+

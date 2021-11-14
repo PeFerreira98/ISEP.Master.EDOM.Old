@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="875c9f7b-1798-4900-acca-855a7683c02b" name="AliExpress" xmlns="http://schemas.microsoft.com/dsltools/CRR">
+  <item>
+    <item Id="1856db27-aa80-42a1-ab90-d453df91c0da" name="Item">
+      <attributes>
+        <itemReferencesAttributes Id="7a98c436-ca80-4d5e-b845-f02cfb38a526">
+          <attributeMoniker Id="ac798db1-7b4b-4b35-8090-57475c3df475" />
+        </itemReferencesAttributes>
+        <itemReferencesAttributes Id="81b7db29-a507-42e5-b453-e1d0ff66919f">
+          <attributeMoniker Id="5e014cd9-6036-4f03-96d7-7051b68a7410" />
+        </itemReferencesAttributes>
+        <itemReferencesAttributes Id="f033c805-a2ab-4963-bc3b-576a4fdfa956">
+          <attributeMoniker Id="7c466312-ec96-4953-b4fc-2e01097ab08b" />
+        </itemReferencesAttributes>
+      </attributes>
+      <rate>
+        <itemReferencesRate Id="f0093d0b-b74b-4ffb-9079-42c1372a4098">
+          <rateMoniker Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09" />
+        </itemReferencesRate>
+      </rate>
+    </item>
+  </item>
+  <users>
+    <modelHasUsers Id="58a6bba8-cecf-4d62-8c37-d01a818b4a58">
+      <user Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7">
+        <attributes>
+          <userReferencesAttributes Id="04091974-311d-4f13-9c83-f87dc8666c48">
+            <attributeMoniker Id="5e014cd9-6036-4f03-96d7-7051b68a7410" />
+          </userReferencesAttributes>
+        </attributes>
+      </user>
+    </modelHasUsers>
+  </users>
+  <dataTypes>
+    <modelHasDataTypes Id="79993f0e-0b83-4c32-9117-6f16169f5a6c">
+      <dataType Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+    </modelHasDataTypes>
+    <modelHasDataTypes Id="ab879256-6e0a-4271-ae41-47087c0a29e2">
+      <dataType Id="d9f9a3b2-cbf8-46b5-94fc-611ab8f92fbe" name="float" />
+    </modelHasDataTypes>
+    <modelHasDataTypes Id="7673a66d-a8b2-4980-a3cc-6095be8e0687">
+      <dataType Id="99cd48f1-f1c0-4c80-b9bc-57837cf3403e" name="int" />
+    </modelHasDataTypes>
+  </dataTypes>
+  <attributes>
+    <modelHasAttributes Id="363c0613-9005-42e7-affb-cc648ca5aa5e">
+      <attribute Id="5e014cd9-6036-4f03-96d7-7051b68a7410" name="Name">
+        <dataType>
+          <attributeReferencesDataType Id="b4cac508-9a9d-4349-87a2-b06d2f6e1ce4">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="afeff2ce-fe61-4092-b07e-531a8bfba099">
+      <attribute Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" name="Content">
+        <dataType>
+          <attributeReferencesDataType Id="d2b84e98-6823-488e-8884-744744e55632">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="ed5b9202-8fad-4dae-9c53-a668abe895e4">
+      <attribute Id="ac798db1-7b4b-4b35-8090-57475c3df475" name="Price">
+        <dataType>
+          <attributeReferencesDataType Id="011cebf2-5c80-4aba-bbf1-cdf433e47be7">
+            <dataTypeMoniker Id="d9f9a3b2-cbf8-46b5-94fc-611ab8f92fbe" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="8123b2df-8c1b-4e0d-98c1-7db6350b2518">
+      <attribute Id="54ffb6c0-8b01-4a49-8aa4-1c3c41c0d39d" name="Value">
+        <dataType>
+          <attributeReferencesDataType Id="fb09481a-ccac-4013-bcb9-f35b83de9e8b">
+            <dataTypeMoniker Id="99cd48f1-f1c0-4c80-b9bc-57837cf3403e" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+    <modelHasAttributes Id="d81b3ebc-95c8-4f74-a5b2-48252f3d38a0">
+      <attribute Id="7c466312-ec96-4953-b4fc-2e01097ab08b" name="Description">
+        <dataType>
+          <attributeReferencesDataType Id="7fb984e8-fe9e-43e7-94b6-6f9cb9239d57">
+            <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+          </attributeReferencesDataType>
+        </dataType>
+      </attribute>
+    </modelHasAttributes>
+  </attributes>
+  <rate>
+    <modelHasRate Id="94ef04a9-ec64-4964-ba21-b6350af65aae">
+      <rate Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09">
+        <attributes>
+          <rateReferencesAttributes Id="898fd0b9-db64-41b8-af64-0805638d9c83">
+            <attributeMoniker Id="54ffb6c0-8b01-4a49-8aa4-1c3c41c0d39d" />
+          </rateReferencesAttributes>
+        </attributes>
+        <review>
+          <rateReferencesReview Id="21c17880-cc8f-4e46-8854-95cbe128d64a">
+            <reviewMoniker Id="0ae0009c-54f2-4968-8a76-bef908235238" />
+          </rateReferencesReview>
+        </review>
+        <users>
+          <rateReferencesUsers Id="1a374389-0d73-4888-ab7e-edae1b3331e9">
+            <userMoniker Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7" />
+          </rateReferencesUsers>
+        </users>
+      </rate>
+    </modelHasRate>
+  </rate>
+  <review>
+    <modelHasReview Id="d15d1105-91d3-434e-abf4-275201cc547b">
+      <review Id="0ae0009c-54f2-4968-8a76-bef908235238">
+        <attributes>
+          <reviewReferencesAttributes Id="9b6514a6-17d3-466a-894e-6f1b1d9cfb1b">
+            <attributeMoniker Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" />
+          </reviewReferencesAttributes>
+        </attributes>
+      </review>
+    </modelHasReview>
+  </review>
+</model>

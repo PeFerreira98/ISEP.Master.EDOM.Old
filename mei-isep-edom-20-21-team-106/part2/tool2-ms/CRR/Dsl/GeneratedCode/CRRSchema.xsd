@@ -1,0 +1,1906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema id="CRRSchema" targetNamespace="http://schemas.microsoft.com/dsltools/CRR" elementFormDefault="qualified" xmlns="http://schemas.microsoft.com/dsltools/CRR" xmlns:core="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import id="CoreSchema" namespace="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" />
+  <!-- Model -->
+  <xsd:element name="model" type="Model" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Model">
+    <xsd:annotation>
+      <xsd:documentation>The root in which all other elements are embedded. Appears as a diagram.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ModelHasItem -->
+          <xsd:element name="item" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ModelHasItem</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:choice minOccurs="1" maxOccurs="1" >
+                  <xsd:element ref="modelHasItem">
+                    <xsd:annotation>
+                      <xsd:documentation>[Relationship deriving from ModelHasItem needs to be serialized in full-form]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element ref="item" >
+                    <xsd:annotation>
+                      <xsd:documentation>[Target role-player]</xsd:documentation>
+                    </xsd:annotation>
+                  </xsd:element>
+                </xsd:choice>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ModelHasUsers -->
+          <xsd:element name="users" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ModelHasUsers</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="modelHasUsers" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ModelHasUsers needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ModelHasDataTypes -->
+          <xsd:element name="dataTypes" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ModelHasDataTypes</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="modelHasDataTypes" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ModelHasDataTypes needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ModelHasAttributes -->
+          <xsd:element name="attributes" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ModelHasAttributes</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="modelHasAttributes" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ModelHasAttributes needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ModelHasComment -->
+          <xsd:element name="comment" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ModelHasComment</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="modelHasComment" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ModelHasComment needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ModelHasRate -->
+          <xsd:element name="rate" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ModelHasRate</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="modelHasRate" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ModelHasRate needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ModelHasReview -->
+          <xsd:element name="review" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ModelHasReview</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="modelHasReview" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ModelHasReview needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ModelHasApprovalProcesses -->
+          <xsd:element name="approvalProcesses" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ModelHasApprovalProcesses</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="modelHasApprovalProcesses" minOccurs="0" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ModelHasApprovalProcesses needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- dslVersion -->
+        <xsd:attribute name="dslVersion" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Version of the model serialized in this file.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Model Moniker -->
+  <xsd:element name="modelMoniker" type="ModelMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for Model instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Item -->
+  <xsd:element name="item" type="Item" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Item">
+    <xsd:annotation>
+      <xsd:documentation>Elements embedded in the model. Appear as boxes on the diagram.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ItemReferencesAttributes -->
+          <xsd:element name="attributes" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ItemReferencesAttributes</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="itemReferencesAttributes" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ItemReferencesAttributes needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ItemReferencesComment -->
+          <xsd:element name="comment" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ItemReferencesComment</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="itemReferencesComment" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ItemReferencesComment needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ItemReferencesRate -->
+          <xsd:element name="rate" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ItemReferencesRate</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="itemReferencesRate" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ItemReferencesRate needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Item Moniker -->
+  <xsd:element name="itemMoniker" type="ItemMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ItemMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for Item instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- User -->
+  <xsd:element name="user" type="User" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="User">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: UserReferencesAttributes -->
+          <xsd:element name="attributes" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of UserReferencesAttributes</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="userReferencesAttributes" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of UserReferencesAttributes needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- User Moniker -->
+  <xsd:element name="userMoniker" type="UserMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="UserMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for User instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DataType -->
+  <xsd:element name="dataType" type="DataType" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="DataType">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- DataType Moniker -->
+  <xsd:element name="dataTypeMoniker" type="DataTypeMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="DataTypeMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for DataType instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Attribute -->
+  <xsd:element name="attribute" type="Attribute" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Attribute">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: AttributeReferencesDataType -->
+          <xsd:element name="dataType" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of AttributeReferencesDataType</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="attributeReferencesDataType" minOccurs="1" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of AttributeReferencesDataType needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Attribute Moniker -->
+  <xsd:element name="attributeMoniker" type="AttributeMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="AttributeMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for Attribute instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Comment -->
+  <xsd:element name="comment" type="Comment" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Comment">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: CommentReferencesAttributes -->
+          <xsd:element name="attributes" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of CommentReferencesAttributes</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="commentReferencesAttributes" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of CommentReferencesAttributes needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: CommentReferencesUsers -->
+          <xsd:element name="users" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of CommentReferencesUsers</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="commentReferencesUsers" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of CommentReferencesUsers needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: CommentReferencesApprovalProcess -->
+          <xsd:element name="approvalProcess" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of CommentReferencesApprovalProcess</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="commentReferencesApprovalProcess" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of CommentReferencesApprovalProcess needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Comment Moniker -->
+  <xsd:element name="commentMoniker" type="CommentMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="CommentMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for Comment instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Rate -->
+  <xsd:element name="rate" type="Rate" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Rate">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: RateReferencesAttributes -->
+          <xsd:element name="attributes" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of RateReferencesAttributes</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="rateReferencesAttributes" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of RateReferencesAttributes needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: RateReferencesReview -->
+          <xsd:element name="review" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of RateReferencesReview</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="rateReferencesReview" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of RateReferencesReview needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: RateReferencesUsers -->
+          <xsd:element name="users" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of RateReferencesUsers</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="rateReferencesUsers" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of RateReferencesUsers needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: RateReferencesApprovalProcess -->
+          <xsd:element name="approvalProcess" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of RateReferencesApprovalProcess</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="rateReferencesApprovalProcess" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of RateReferencesApprovalProcess needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Rate Moniker -->
+  <xsd:element name="rateMoniker" type="RateMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="RateMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for Rate instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Review -->
+  <xsd:element name="review" type="Review" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="Review">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ReviewReferencesAttributes -->
+          <xsd:element name="attributes" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ReviewReferencesAttributes</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="reviewReferencesAttributes" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ReviewReferencesAttributes needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ReviewReferencesApprovalProcess -->
+          <xsd:element name="approvalProcess" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ReviewReferencesApprovalProcess</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="reviewReferencesApprovalProcess" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ReviewReferencesApprovalProcess needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- Review Moniker -->
+  <xsd:element name="reviewMoniker" type="ReviewMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ReviewMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for Review instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalProcess -->
+  <xsd:element name="approvalProcess" type="ApprovalProcess" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalProcess">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ApprovalProcessHasSteps -->
+          <xsd:element name="steps" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instances of ApprovalProcessHasSteps</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="approvalProcessHasSteps" minOccurs="1" maxOccurs="unbounded">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ApprovalProcessHasSteps needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ApprovalProcessHasStart -->
+          <xsd:element name="start" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ApprovalProcessHasStart</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="approvalProcessHasStart" minOccurs="1" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ApprovalProcessHasStart needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalProcess Moniker -->
+  <xsd:element name="approvalProcessMoniker" type="ApprovalProcessMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalProcessMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalProcess instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStep -->
+  <xsd:element name="approvalStep" type="ApprovalStep" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalStep">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ApprovalStepReferencesTargetScucessStep -->
+          <xsd:element name="targetScucessStep" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ApprovalStepReferencesTargetScucessStep</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="approvalStepReferencesTargetScucessStep" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ApprovalStepReferencesTargetScucessStep needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <!-- Relationship: ApprovalStepReferencesTargetFailureStep -->
+          <xsd:element name="targetFailureStep" minOccurs="0" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ApprovalStepReferencesTargetFailureStep</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="approvalStepReferencesTargetFailureStep" minOccurs="0" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ApprovalStepReferencesTargetFailureStep needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStep Moniker -->
+  <xsd:element name="approvalStepMoniker" type="ApprovalStepMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalStepMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalStep instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStart -->
+  <xsd:element name="approvalStart" type="ApprovalStart" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalStart">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Relationship: ApprovalStartReferencesStep -->
+          <xsd:element name="step" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>Instance of ApprovalStartReferencesStep</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element ref="approvalStartReferencesStep" minOccurs="1" maxOccurs="1">
+                  <xsd:annotation>
+                    <xsd:documentation>[Instance of ApprovalStartReferencesStep needs to be serialized in full-form]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+        <!-- Property: Name -->
+        <xsd:attribute name="name" type="xsd:string" use="required" />
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStart Moniker -->
+  <xsd:element name="approvalStartMoniker" type="ApprovalStartMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalStartMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalStart instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="name" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasItem -->
+  <xsd:element name="modelHasItem" abstract="true" type="ModelHasItem" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasItem" abstract="true" >
+    <xsd:annotation>
+      <xsd:documentation>Embedding relationship between the Model and Elements</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Item -->
+          <xsd:element ref="item" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasItem Moniker -->
+  <xsd:element name="modelHasItemMoniker" type="ModelHasItemMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasItemMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasItem instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasUsers -->
+  <xsd:element name="modelHasUsers" type="ModelHasUsers" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasUsers">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end User -->
+          <xsd:element ref="user" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasUsers Moniker -->
+  <xsd:element name="modelHasUsersMoniker" type="ModelHasUsersMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasUsersMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasUsers instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasDataTypes -->
+  <xsd:element name="modelHasDataTypes" type="ModelHasDataTypes" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasDataTypes">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end DataType -->
+          <xsd:element ref="dataType" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasDataTypes Moniker -->
+  <xsd:element name="modelHasDataTypesMoniker" type="ModelHasDataTypesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasDataTypesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasDataTypes instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasAttributes -->
+  <xsd:element name="modelHasAttributes" type="ModelHasAttributes" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasAttributes">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Attribute -->
+          <xsd:element ref="attribute" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasAttributes Moniker -->
+  <xsd:element name="modelHasAttributesMoniker" type="ModelHasAttributesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasAttributesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasAttributes instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ItemReferencesAttributes -->
+  <xsd:element name="itemReferencesAttributes" type="ItemReferencesAttributes" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ItemReferencesAttributes">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Attribute -->
+          <xsd:element ref="attributeMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ItemReferencesAttributes Moniker -->
+  <xsd:element name="itemReferencesAttributesMoniker" type="ItemReferencesAttributesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ItemReferencesAttributesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ItemReferencesAttributes instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- CommentReferencesAttributes -->
+  <xsd:element name="commentReferencesAttributes" type="CommentReferencesAttributes" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="CommentReferencesAttributes">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Attribute -->
+          <xsd:element ref="attributeMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- CommentReferencesAttributes Moniker -->
+  <xsd:element name="commentReferencesAttributesMoniker" type="CommentReferencesAttributesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="CommentReferencesAttributesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for CommentReferencesAttributes instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesAttributes -->
+  <xsd:element name="rateReferencesAttributes" type="RateReferencesAttributes" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="RateReferencesAttributes">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Attribute -->
+          <xsd:element ref="attributeMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesAttributes Moniker -->
+  <xsd:element name="rateReferencesAttributesMoniker" type="RateReferencesAttributesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="RateReferencesAttributesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for RateReferencesAttributes instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- AttributeReferencesDataType -->
+  <xsd:element name="attributeReferencesDataType" type="AttributeReferencesDataType" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="AttributeReferencesDataType">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end DataType -->
+          <xsd:element ref="dataTypeMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- AttributeReferencesDataType Moniker -->
+  <xsd:element name="attributeReferencesDataTypeMoniker" type="AttributeReferencesDataTypeMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="AttributeReferencesDataTypeMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for AttributeReferencesDataType instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasComment -->
+  <xsd:element name="modelHasComment" type="ModelHasComment" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasComment">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Comment -->
+          <xsd:element ref="comment" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasComment Moniker -->
+  <xsd:element name="modelHasCommentMoniker" type="ModelHasCommentMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasCommentMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasComment instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasRate -->
+  <xsd:element name="modelHasRate" type="ModelHasRate" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasRate">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Rate -->
+          <xsd:element ref="rate" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasRate Moniker -->
+  <xsd:element name="modelHasRateMoniker" type="ModelHasRateMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasRateMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasRate instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasReview -->
+  <xsd:element name="modelHasReview" type="ModelHasReview" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasReview">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Review -->
+          <xsd:element ref="review" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasReview Moniker -->
+  <xsd:element name="modelHasReviewMoniker" type="ModelHasReviewMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasReviewMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasReview instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesReview -->
+  <xsd:element name="rateReferencesReview" type="RateReferencesReview" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="RateReferencesReview">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Review -->
+          <xsd:element ref="reviewMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesReview Moniker -->
+  <xsd:element name="rateReferencesReviewMoniker" type="RateReferencesReviewMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="RateReferencesReviewMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for RateReferencesReview instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ReviewReferencesAttributes -->
+  <xsd:element name="reviewReferencesAttributes" type="ReviewReferencesAttributes" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ReviewReferencesAttributes">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Attribute -->
+          <xsd:element ref="attributeMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ReviewReferencesAttributes Moniker -->
+  <xsd:element name="reviewReferencesAttributesMoniker" type="ReviewReferencesAttributesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ReviewReferencesAttributesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ReviewReferencesAttributes instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- UserReferencesAttributes -->
+  <xsd:element name="userReferencesAttributes" type="UserReferencesAttributes" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="UserReferencesAttributes">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Attribute -->
+          <xsd:element ref="attributeMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- UserReferencesAttributes Moniker -->
+  <xsd:element name="userReferencesAttributesMoniker" type="UserReferencesAttributesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="UserReferencesAttributesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for UserReferencesAttributes instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ItemReferencesComment -->
+  <xsd:element name="itemReferencesComment" type="ItemReferencesComment" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ItemReferencesComment">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Comment -->
+          <xsd:element ref="commentMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ItemReferencesComment Moniker -->
+  <xsd:element name="itemReferencesCommentMoniker" type="ItemReferencesCommentMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ItemReferencesCommentMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ItemReferencesComment instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ItemReferencesRate -->
+  <xsd:element name="itemReferencesRate" type="ItemReferencesRate" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ItemReferencesRate">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end Rate -->
+          <xsd:element ref="rateMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ItemReferencesRate Moniker -->
+  <xsd:element name="itemReferencesRateMoniker" type="ItemReferencesRateMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ItemReferencesRateMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ItemReferencesRate instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesUsers -->
+  <xsd:element name="rateReferencesUsers" type="RateReferencesUsers" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="RateReferencesUsers">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end User -->
+          <xsd:element ref="userMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesUsers Moniker -->
+  <xsd:element name="rateReferencesUsersMoniker" type="RateReferencesUsersMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="RateReferencesUsersMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for RateReferencesUsers instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- CommentReferencesUsers -->
+  <xsd:element name="commentReferencesUsers" type="CommentReferencesUsers" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="CommentReferencesUsers">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end User -->
+          <xsd:element ref="userMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- CommentReferencesUsers Moniker -->
+  <xsd:element name="commentReferencesUsersMoniker" type="CommentReferencesUsersMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="CommentReferencesUsersMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for CommentReferencesUsers instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasApprovalProcesses -->
+  <xsd:element name="modelHasApprovalProcesses" type="ModelHasApprovalProcesses" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ModelHasApprovalProcesses">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalProcess -->
+          <xsd:element ref="approvalProcess" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ModelHasApprovalProcesses Moniker -->
+  <xsd:element name="modelHasApprovalProcessesMoniker" type="ModelHasApprovalProcessesMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ModelHasApprovalProcessesMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ModelHasApprovalProcesses instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStartReferencesStep -->
+  <xsd:element name="approvalStartReferencesStep" type="ApprovalStartReferencesStep" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalStartReferencesStep">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalStep -->
+          <xsd:element ref="approvalStepMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStartReferencesStep Moniker -->
+  <xsd:element name="approvalStartReferencesStepMoniker" type="ApprovalStartReferencesStepMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalStartReferencesStepMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalStartReferencesStep instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStepReferencesTargetScucessStep -->
+  <xsd:element name="approvalStepReferencesTargetScucessStep" type="ApprovalStepReferencesTargetScucessStep" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalStepReferencesTargetScucessStep">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalStep -->
+          <xsd:element ref="approvalStepMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStepReferencesTargetScucessStep Moniker -->
+  <xsd:element name="approvalStepReferencesTargetScucessStepMoniker" type="ApprovalStepReferencesTargetScucessStepMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalStepReferencesTargetScucessStepMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalStepReferencesTargetScucessStep instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalProcessHasSteps -->
+  <xsd:element name="approvalProcessHasSteps" type="ApprovalProcessHasSteps" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalProcessHasSteps">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalStep -->
+          <xsd:element ref="approvalStep" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalProcessHasSteps Moniker -->
+  <xsd:element name="approvalProcessHasStepsMoniker" type="ApprovalProcessHasStepsMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalProcessHasStepsMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalProcessHasSteps instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalProcessHasStart -->
+  <xsd:element name="approvalProcessHasStart" type="ApprovalProcessHasStart" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalProcessHasStart">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalStart -->
+          <xsd:element ref="approvalStart" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalProcessHasStart Moniker -->
+  <xsd:element name="approvalProcessHasStartMoniker" type="ApprovalProcessHasStartMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalProcessHasStartMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalProcessHasStart instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- CommentReferencesApprovalProcess -->
+  <xsd:element name="commentReferencesApprovalProcess" type="CommentReferencesApprovalProcess" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="CommentReferencesApprovalProcess">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalProcess -->
+          <xsd:element ref="approvalProcessMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- CommentReferencesApprovalProcess Moniker -->
+  <xsd:element name="commentReferencesApprovalProcessMoniker" type="CommentReferencesApprovalProcessMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="CommentReferencesApprovalProcessMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for CommentReferencesApprovalProcess instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesApprovalProcess -->
+  <xsd:element name="rateReferencesApprovalProcess" type="RateReferencesApprovalProcess" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="RateReferencesApprovalProcess">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalProcess -->
+          <xsd:element ref="approvalProcessMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- RateReferencesApprovalProcess Moniker -->
+  <xsd:element name="rateReferencesApprovalProcessMoniker" type="RateReferencesApprovalProcessMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="RateReferencesApprovalProcessMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for RateReferencesApprovalProcess instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ReviewReferencesApprovalProcess -->
+  <xsd:element name="reviewReferencesApprovalProcess" type="ReviewReferencesApprovalProcess" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ReviewReferencesApprovalProcess">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalProcess -->
+          <xsd:element ref="approvalProcessMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ReviewReferencesApprovalProcess Moniker -->
+  <xsd:element name="reviewReferencesApprovalProcessMoniker" type="ReviewReferencesApprovalProcessMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ReviewReferencesApprovalProcessMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ReviewReferencesApprovalProcess instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStepReferencesTargetFailureStep -->
+  <xsd:element name="approvalStepReferencesTargetFailureStep" type="ApprovalStepReferencesTargetFailureStep" substitutionGroup="core:modelElement" />
+  <xsd:complexType name="ApprovalStepReferencesTargetFailureStep">
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElement">
+        <xsd:sequence minOccurs="0" maxOccurs="1">
+          <!-- Target end ApprovalStep -->
+          <xsd:element ref="approvalStepMoniker" minOccurs="1" maxOccurs="1">
+            <xsd:annotation>
+              <xsd:documentation>[Target role-player]</xsd:documentation>
+            </xsd:annotation>
+          </xsd:element>
+        </xsd:sequence>
+        <!-- Id -->
+        <xsd:attribute name="Id" type="xsd:string">
+          <xsd:annotation>
+            <xsd:documentation>Instance Guid of this element, needed because SerializeId is set to true.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+  <!-- ApprovalStepReferencesTargetFailureStep Moniker -->
+  <xsd:element name="approvalStepReferencesTargetFailureStepMoniker" type="ApprovalStepReferencesTargetFailureStepMoniker" substitutionGroup="core:modelElementMoniker" />
+  <xsd:complexType name="ApprovalStepReferencesTargetFailureStepMoniker">
+    <xsd:annotation>
+      <xsd:documentation>Moniker for ApprovalStepReferencesTargetFailureStep instance.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="core:ModelElementMoniker">
+        <xsd:attribute name="Id" type="xsd:string" >
+          <xsd:annotation>
+            <xsd:documentation>Attribute to store the moniker string.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  
+</xsd:schema>
+

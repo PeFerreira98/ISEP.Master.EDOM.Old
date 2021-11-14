@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{cd72ce30-bb6e-4784-bf4f-f5d3542fb284}</TemplateID>
+		<Name Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="103"/>
+		<Description Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="102"/>
+		<Icon Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="201" />
+		<ProjectType>VisualBasic</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>CRR.crr</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.crr">crr.crr</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.crr.diagram">crr.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

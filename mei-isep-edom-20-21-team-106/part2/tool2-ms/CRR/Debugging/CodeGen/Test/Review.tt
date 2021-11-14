@@ -1,0 +1,68 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\TestModel.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(null != this.Model.Review)
+{
+#>
+
+package crr.<#= this.Model.Name.ToLower() #>;
+
+class <#= this.Model.Review.Name #>
+{
+    public int Id;
+
+<#
+    foreach(var attr in this.Model.Review.Attributes)
+    {
+#>
+    public <#= attr.DataType.Name #> <#= attr.Name #>;
+<#
+    }
+#>
+
+    public <#= this.Model.Review.Name #>(){}
+
+    public <#= this.Model.Review.Name #>(int id
+<#
+    foreach(var attr in this.Model.Review.Attributes)
+    {
+#>
+    , <#= attr.DataType.Name #> <#= attr.Name #>
+<#
+    }
+#>
+    )
+    {
+        this.Id = id;
+<#
+    foreach(var attr in this.Model.Review.Attributes)
+    {
+#>
+        this.<#= attr.Name #> = <#= attr.Name #>;
+<#
+    }
+#>
+    }
+
+    public String toString(){
+        var res = "Id: " + this.Id + ";";
+<#
+    foreach(var attr in this.Model.Review.Attributes)
+    {
+#>
+        res += "\n<#= attr.Name #>: " + this.<#= attr.Name #> + ";";
+<#
+    }
+#>
+
+        return res;
+    }
+}
+<#
+}
+#>

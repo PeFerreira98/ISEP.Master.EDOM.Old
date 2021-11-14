@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="crr.gorgeoussandwich.Comment">
+    <classNode dependClassName="crr.gorgeoussandwich.IUser" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.gorgeoussandwich.GorgeousSandwich">
+    <classNode dependClassName="crr.gorgeoussandwich.Sandwich" />
+    <classNode dependClassName="crr.gorgeoussandwich.User" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+  <dependency className="crr.gorgeoussandwich.IUser" />
+  <dependency className="crr.gorgeoussandwich.Rate">
+    <classNode dependClassName="crr.gorgeoussandwich.IUser" />
+    <classNode dependClassName="crr.gorgeoussandwich.Reviewv" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.gorgeoussandwich.Reviewv">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.gorgeoussandwich.SApprovalFactory" />
+  <dependency className="crr.gorgeoussandwich.Sandwich">
+    <classNode dependClassName="crr.gorgeoussandwich.Comment" />
+    <classNode dependClassName="crr.gorgeoussandwich.Rate" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="crr.gorgeoussandwich.User">
+    <classNode dependClassName="crr.gorgeoussandwich.Utils" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.Scanner" />
+    <classNode extendsClassName="crr.gorgeoussandwich.IUser" />
+  </dependency>
+  <dependency className="crr.gorgeoussandwich.Utils">
+    <classNode dependClassName="crr.gorgeoussandwich.Comment" />
+    <classNode dependClassName="crr.gorgeoussandwich.GorgeousSandwich" />
+    <classNode dependClassName="crr.gorgeoussandwich.IUser" />
+    <classNode dependClassName="crr.gorgeoussandwich.Rate" />
+    <classNode dependClassName="crr.gorgeoussandwich.Reviewv" />
+    <classNode dependClassName="crr.gorgeoussandwich.Sandwich" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.reflect.Field" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+</dependenciesRoot>
+

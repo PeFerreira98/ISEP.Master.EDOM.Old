@@ -1,0 +1,12 @@
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part1\tool2-ms\CRR\Debugging\bin\Debug\Debugging.dll
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part1\tool2-ms\CRR\Debugging\bin\Debug\Debugging.pdb
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part1\tool2-ms\CRR\Debugging\obj\Debug\Debugging.csprojAssemblyReference.cache
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part1\tool2-ms\CRR\Debugging\obj\Debug\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part1\tool2-ms\CRR\Debugging\obj\Debug\Debugging.dll
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part1\tool2-ms\CRR\Debugging\obj\Debug\Debugging.pdb
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part2\tool2-ms\CRR\Debugging\bin\Debug\Debugging.dll
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part2\tool2-ms\CRR\Debugging\bin\Debug\Debugging.pdb
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part2\tool2-ms\CRR\Debugging\obj\Debug\Debugging.csprojAssemblyReference.cache
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part2\tool2-ms\CRR\Debugging\obj\Debug\Debugging.csproj.CoreCompileInputs.cache
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part2\tool2-ms\CRR\Debugging\obj\Debug\Debugging.dll
+C:\Users\rmvieira\Documents\edom\edom-20-21-team-106\part2\tool2-ms\CRR\Debugging\obj\Debug\Debugging.pdb

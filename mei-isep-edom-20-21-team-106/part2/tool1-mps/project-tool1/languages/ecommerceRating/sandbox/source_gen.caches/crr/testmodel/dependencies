@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="crr.testmodel.ApprovalComment">
+    <classNode dependClassName="crr.testmodel.Comment" />
+    <classNode dependClassName="crr.testmodel.SApprovalFactory" />
+    <classNode dependClassName="java.lang.System" />
+  </dependency>
+  <dependency className="crr.testmodel.Buyer">
+    <classNode dependClassName="crr.testmodel.Utils" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.Scanner" />
+    <classNode extendsClassName="crr.testmodel.IUser" />
+  </dependency>
+  <dependency className="crr.testmodel.Comment">
+    <classNode dependClassName="crr.testmodel.IUser" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.testmodel.GeneralUser">
+    <classNode dependClassName="crr.testmodel.Utils" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.Scanner" />
+    <classNode extendsClassName="crr.testmodel.IUser" />
+  </dependency>
+  <dependency className="crr.testmodel.IUser" />
+  <dependency className="crr.testmodel.IllegalWordsCheck">
+    <classNode dependClassName="crr.testmodel.Comment" />
+    <classNode dependClassName="crr.testmodel.SApprovalFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+  </dependency>
+  <dependency className="crr.testmodel.InvalidCharacterCheck">
+    <classNode dependClassName="crr.testmodel.Comment" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+  </dependency>
+  <dependency className="crr.testmodel.MinSizeCheck">
+    <classNode dependClassName="crr.testmodel.Rate" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+  </dependency>
+  <dependency className="crr.testmodel.MinSizeCommentCheck">
+    <classNode dependClassName="crr.testmodel.Comment" />
+    <classNode dependClassName="crr.testmodel.SApprovalFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+  </dependency>
+  <dependency className="crr.testmodel.Product">
+    <classNode dependClassName="crr.testmodel.Comment" />
+    <classNode dependClassName="crr.testmodel.Rate" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.List" />
+  </dependency>
+  <dependency className="crr.testmodel.ProfanityCheck">
+    <classNode dependClassName="crr.testmodel.Rate" />
+    <classNode dependClassName="crr.testmodel.SApprovalFactory" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.HashMap" />
+  </dependency>
+  <dependency className="crr.testmodel.Rate">
+    <classNode dependClassName="crr.testmodel.IUser" />
+    <classNode dependClassName="crr.testmodel.Review" />
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.testmodel.RateApproval">
+    <classNode dependClassName="crr.testmodel.Rate" />
+    <classNode dependClassName="crr.testmodel.SApprovalFactory" />
+    <classNode dependClassName="java.lang.System" />
+  </dependency>
+  <dependency className="crr.testmodel.Review">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="crr.testmodel.SApprovalFactory">
+    <classNode dependClassName="crr.testmodel.IllegalWordsCheck" />
+    <classNode dependClassName="crr.testmodel.InvalidCharacterCheck" />
+    <classNode dependClassName="crr.testmodel.MinSizeCheck" />
+    <classNode dependClassName="crr.testmodel.MinSizeCommentCheck" />
+    <classNode dependClassName="crr.testmodel.ProfanityCheck" />
+  </dependency>
+  <dependency className="crr.testmodel.TestModel">
+    <classNode dependClassName="crr.testmodel.Buyer" />
+    <classNode dependClassName="crr.testmodel.GeneralUser" />
+    <classNode dependClassName="crr.testmodel.Product" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+  <dependency className="crr.testmodel.Utils">
+    <classNode dependClassName="crr.testmodel.ApprovalComment" />
+    <classNode dependClassName="crr.testmodel.Comment" />
+    <classNode dependClassName="crr.testmodel.IUser" />
+    <classNode dependClassName="crr.testmodel.Product" />
+    <classNode dependClassName="crr.testmodel.Rate" />
+    <classNode dependClassName="crr.testmodel.RateApproval" />
+    <classNode dependClassName="crr.testmodel.Review" />
+    <classNode dependClassName="crr.testmodel.TestModel" />
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Double" />
+    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.Float" />
+    <classNode dependClassName="java.lang.Integer" />
+    <classNode dependClassName="java.lang.Object" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.lang.reflect.Field" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.Scanner" />
+  </dependency>
+</dependenciesRoot>
+

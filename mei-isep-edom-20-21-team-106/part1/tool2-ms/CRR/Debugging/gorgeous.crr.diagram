@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cRRDiagram dslVersion="1.0.0.0" Id="926fe890-5157-4f2f-b600-2a22ca027343" absoluteBounds="0, 0, 11, 8.5" name="TestInvalid">
+  <modelMoniker Id="875c9f7b-1798-4900-acca-855a7683c02b" />
+  <nestedChildShapes>
+    <namedElementShape Id="70c14e2f-abfc-4c5e-895f-5d673fb86047" absoluteBounds="3.375, 5.125, 1.5, 1">
+      <reviewMoniker Id="0ae0009c-54f2-4968-8a76-bef908235238" />
+    </namedElementShape>
+    <namedElementShape Id="842c1f86-90eb-4f05-96ec-de468162be1a" absoluteBounds="3.125, 3.25, 1.5, 1">
+      <rateMoniker Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09" />
+    </namedElementShape>
+    <attributesConnector Id="356967d1-4b93-456b-b7f3-d8752d3ca60d" edgePoints="[(4.03125 : 4.25); (4.03125 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <rateReferencesReviewMoniker Id="21c17880-cc8f-4e46-8854-95cbe128d64a" />
+      <nodes>
+        <namedElementShapeMoniker Id="842c1f86-90eb-4f05-96ec-de468162be1a" />
+        <namedElementShapeMoniker Id="70c14e2f-abfc-4c5e-895f-5d673fb86047" />
+      </nodes>
+    </attributesConnector>
+    <namedElementShape Id="082785ed-dc7a-4bfa-b0fd-73c26d4752db" absoluteBounds="0.75, 1.625, 1.5, 1">
+      <userMoniker Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7" />
+    </namedElementShape>
+    <namedElementShape Id="e331d032-df48-4293-a9eb-02d44532abc1" absoluteBounds="7.375, 1.375, 1.5, 1">
+      <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+    </namedElementShape>
+    <attributesShape Id="f9c8158c-16e6-4484-90af-b48f87bfe289" absoluteBounds="5.5, 1.375, 1.5, 1">
+      <attributeMoniker Id="1347c7e8-c0a9-497d-839a-6c6c2b28052f" />
+    </attributesShape>
+    <attributesConnector Id="eee08335-1ad6-4a7b-8c1e-f2eb5071760e" edgePoints="[(7 : 1.875); (7.375 : 1.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <attributeReferencesDataTypeMoniker Id="9eda974d-70f0-4b5f-9706-54ba01e19af6" />
+      <nodes>
+        <attributesShapeMoniker Id="f9c8158c-16e6-4484-90af-b48f87bfe289" />
+        <namedElementShapeMoniker Id="e331d032-df48-4293-a9eb-02d44532abc1" />
+      </nodes>
+    </attributesConnector>
+    <namedElementShape Id="cbde16d8-6d3d-403e-a8a0-fbd423b0bb43" absoluteBounds="2.75, 0.625, 1.5, 1">
+      <itemMoniker name="/875c9f7b-1798-4900-acca-855a7683c02b/Sandwich" />
+    </namedElementShape>
+    <attributesConnector Id="474bcb12-310a-4dcf-a564-1ad80fec17be" edgePoints="[(2.25 : 2.03125); (2.82291666666667 : 2.03125 : JumpStart); (3.09896083333333 : 2.03125 : JumpEnd); (3.60416666666667 : 2.03125 : JumpStart); (3.77083333333333 : 2.03125 : JumpEnd); (4.69791666666667 : 2.03125 : JumpStart); (4.86458333333333 : 2.03125 : JumpEnd); (5.53756168030138 : 2.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <userReferencesAttributesMoniker Id="54627ea1-7c43-4d47-b38e-4ec956ef1ad9" />
+      <nodes>
+        <namedElementShapeMoniker Id="082785ed-dc7a-4bfa-b0fd-73c26d4752db" />
+        <attributesShapeMoniker Id="f9c8158c-16e6-4484-90af-b48f87bfe289" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="8ece9a7d-494e-4d4a-84e1-52aa6859a975" edgePoints="[(4.46875 : 3.25); (4.46875 : 2.203125); (4.69791666666667 : 2.203125 : JumpStart); (4.86458333333333 : 2.203125 : JumpEnd); (5.68409235307892 : 2.203125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <rateReferencesAttributesMoniker Id="416b5c56-e4cd-46bc-9f6c-4024b24a85e2" />
+      <nodes>
+        <namedElementShapeMoniker Id="842c1f86-90eb-4f05-96ec-de468162be1a" />
+        <attributesShapeMoniker Id="f9c8158c-16e6-4484-90af-b48f87bfe289" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="e98bc535-13d3-4a62-a65f-0625325c435b" edgePoints="[(4.78125 : 5.125); (4.78125 : 1.859375); (5.50036630038815 : 1.859375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <reviewReferencesAttributesMoniker Id="2a582197-0c9d-44b4-b20e-a4a996d79dd7" />
+      <nodes>
+        <namedElementShapeMoniker Id="70c14e2f-abfc-4c5e-895f-5d673fb86047" />
+        <attributesShapeMoniker Id="f9c8158c-16e6-4484-90af-b48f87bfe289" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="a44f6b50-3bd1-4fed-80b6-790c5f1b326c" edgePoints="[(4.25 : 1.5); (5.75392162917539 : 1.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <itemReferencesAttributesMoniker Id="85babad5-c14b-42b7-b922-2cc676e323cf" />
+      <nodes>
+        <namedElementShapeMoniker Id="cbde16d8-6d3d-403e-a8a0-fbd423b0bb43" />
+        <attributesShapeMoniker Id="f9c8158c-16e6-4484-90af-b48f87bfe289" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="2a11d122-a8c4-4ad4-a39d-c07c5830ffb3" edgePoints="[(3.125 : 3.75); (3.09896083333333 : 3.75 : JumpStart); (2.93229416666667 : 3.75 : JumpEnd); (2.02083333333333 : 3.75 : JumpStart); (1.85416666666667 : 3.75 : JumpEnd); (1.5 : 3.75); (1.5 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <rateReferencesUserMoniker Id="5d7936dc-8ef3-46ba-b263-bda2f0ea1235" />
+      <nodes>
+        <namedElementShapeMoniker Id="842c1f86-90eb-4f05-96ec-de468162be1a" />
+        <namedElementShapeMoniker Id="082785ed-dc7a-4bfa-b0fd-73c26d4752db" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="0ba1cf8e-b7da-4876-bf94-375854295a7e" edgePoints="[(3.6875 : 1.625); (3.6875 : 3.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <itemReferencesRateMoniker Id="08c7dcbe-4085-44eb-8bd6-d3b94811531b" />
+      <nodes>
+        <namedElementShapeMoniker Id="cbde16d8-6d3d-403e-a8a0-fbd423b0bb43" />
+        <namedElementShapeMoniker Id="842c1f86-90eb-4f05-96ec-de468162be1a" />
+      </nodes>
+    </attributesConnector>
+    <attributesShape Id="863a71da-41c0-4c8e-8289-4e0de8f0623f" absoluteBounds="6, 2.875, 1.5, 1">
+      <attributeMoniker Id="5e014cd9-6036-4f03-96d7-7051b68a7410" />
+    </attributesShape>
+    <attributesConnector Id="c8e19fdc-0075-4613-a42b-56f18ec0ff97" edgePoints="[(2.90625 : 1.625); (2.90625 : 3.03125); (2.93229416666667 : 3.03125 : JumpStart); (3.09896083333333 : 3.03125 : JumpEnd); (3.60416666666667 : 3.03125 : JumpStart); (3.77083333333333 : 3.03125 : JumpEnd); (4.38541666666667 : 3.03125 : JumpStart); (4.55208333333333 : 3.03125 : JumpEnd); (4.69791666666667 : 3.03125 : JumpStart); (4.86458333333333 : 3.03125 : JumpEnd); (6.20536171693958 : 3.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <itemReferencesAttributesMoniker Id="0b203c34-995e-4771-a1d2-458d6a31fc98" />
+      <nodes>
+        <namedElementShapeMoniker Id="cbde16d8-6d3d-403e-a8a0-fbd423b0bb43" />
+        <attributesShapeMoniker Id="863a71da-41c0-4c8e-8289-4e0de8f0623f" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="7ad9d6ba-b4d3-4fed-94ba-0036085c8053" edgePoints="[(7.49853372293772 : 3.34375); (7.66666666666667 : 3.34375 : JumpStart); (7.83333333333333 : 3.34375 : JumpEnd); (8.1875005 : 3.34375); (8.1875005 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <attributeReferencesDataTypeMoniker Id="b4cac508-9a9d-4349-87a2-b06d2f6e1ce4" />
+      <nodes>
+        <attributesShapeMoniker Id="863a71da-41c0-4c8e-8289-4e0de8f0623f" />
+        <namedElementShapeMoniker Id="e331d032-df48-4293-a9eb-02d44532abc1" />
+      </nodes>
+    </attributesConnector>
+    <attributesShape Id="a308e8c9-90c5-445d-a464-e53bd588431c" absoluteBounds="5.75, 5.125, 1.5, 1">
+      <attributeMoniker Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" />
+    </attributesShape>
+    <attributesConnector Id="c45e4340-27e7-4ff3-b74a-bb49ec775453" edgePoints="[(7.25 : 5.625); (7.75 : 5.625); (7.75 : 2.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <attributeReferencesDataTypeMoniker Id="d2b84e98-6823-488e-8884-744744e55632" />
+      <nodes>
+        <attributesShapeMoniker Id="a308e8c9-90c5-445d-a464-e53bd588431c" />
+        <namedElementShapeMoniker Id="e331d032-df48-4293-a9eb-02d44532abc1" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="0b38e921-ea41-4578-b65b-22cd2c4e5afc" edgePoints="[(4.875 : 5.625); (5.75 : 5.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <reviewReferencesAttributesMoniker Id="9b6514a6-17d3-466a-894e-6f1b1d9cfb1b" />
+      <nodes>
+        <namedElementShapeMoniker Id="70c14e2f-abfc-4c5e-895f-5d673fb86047" />
+        <attributesShapeMoniker Id="a308e8c9-90c5-445d-a464-e53bd588431c" />
+      </nodes>
+    </attributesConnector>
+    <attributesShape Id="08133a14-a11a-444c-b729-ac9a9c59b0b8" absoluteBounds="5.125, 4, 1.5, 1">
+      <attributeMoniker Id="9cd0f5d8-b3d9-4197-a66b-63f4e0b6d987" />
+    </attributesShape>
+    <namedElementShape Id="765a5e1d-86da-426b-993b-72219e7bc9d7" absoluteBounds="8, 3.875, 1.5, 1">
+      <dataTypeMoniker Id="bf95d0e1-73af-4f95-9d7e-aa821b978873" />
+    </namedElementShape>
+    <attributesConnector Id="b034cb11-c8e9-4e6f-9468-fe8a78dfeb87" edgePoints="[(6.61911755623692 : 4.4375); (7.66666666666667 : 4.4375 : JumpStart); (7.83333333333333 : 4.4375 : JumpEnd); (8 : 4.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <attributeReferencesDataTypeMoniker Id="7b20d811-3c69-4ce6-85ba-55ff5833b3ba" />
+      <nodes>
+        <attributesShapeMoniker Id="08133a14-a11a-444c-b729-ac9a9c59b0b8" />
+        <namedElementShapeMoniker Id="765a5e1d-86da-426b-993b-72219e7bc9d7" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="b86a5227-65d0-4dc6-bc76-17c04402d4fe" edgePoints="[(4.625 : 4.125); (4.69791666666667 : 4.125 : JumpStart); (4.86458333333333 : 4.125 : JumpEnd); (5.37892162917539 : 4.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <rateReferencesAttributesMoniker Id="df76731c-bd45-4277-9eb2-54ee886fa8ec" />
+      <nodes>
+        <namedElementShapeMoniker Id="842c1f86-90eb-4f05-96ec-de468162be1a" />
+        <attributesShapeMoniker Id="08133a14-a11a-444c-b729-ac9a9c59b0b8" />
+      </nodes>
+    </attributesConnector>
+    <namedElementShape Id="5a275224-5178-4c3b-95ce-e3bc08a93643" absoluteBounds="1.125, 4.375, 1.5, 1">
+      <commentMoniker Id="14c1b1ed-1510-4159-89f0-8737b1bcef06" />
+    </namedElementShape>
+    <attributesConnector Id="9df0d7ec-1887-46d9-9343-387939e3952d" edgePoints="[(3.0156275 : 1.625); (3.0156275 : 4.71875); (2.625 : 4.71875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <itemReferencesCommentMoniker Id="af2d4bee-4382-43e9-b844-7ced1a554030" />
+      <nodes>
+        <namedElementShapeMoniker Id="cbde16d8-6d3d-403e-a8a0-fbd423b0bb43" />
+        <namedElementShapeMoniker Id="5a275224-5178-4c3b-95ce-e3bc08a93643" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="2ccd1607-ba98-4f11-bba0-45310acd6f29" edgePoints="[(2.625 : 4.9218775); (3.94791666666667 : 4.9218775 : JumpStart); (4.11458333333333 : 4.9218775 : JumpEnd); (4.69791666666667 : 4.9218775 : JumpStart); (4.86458333333333 : 4.9218775 : JumpEnd); (5.0625 : 4.9218775); (5.0625 : 5.0625); (6.5 : 5.0625); (6.5 : 5.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesAttributesMoniker Id="dd82d2dc-956a-40c0-b2ef-00841d766814" />
+      <nodes>
+        <namedElementShapeMoniker Id="5a275224-5178-4c3b-95ce-e3bc08a93643" />
+        <attributesShapeMoniker Id="a308e8c9-90c5-445d-a464-e53bd588431c" />
+      </nodes>
+    </attributesConnector>
+    <attributesConnector Id="bf4daa42-8985-47ba-8d08-593ad8126b6b" edgePoints="[(1.9375 : 4.375); (1.9375 : 2.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <commentReferencesUserMoniker Id="74f2859f-25f6-4099-8326-bad5a38860b4" />
+      <nodes>
+        <namedElementShapeMoniker Id="5a275224-5178-4c3b-95ce-e3bc08a93643" />
+        <namedElementShapeMoniker Id="082785ed-dc7a-4bfa-b0fd-73c26d4752db" />
+      </nodes>
+    </attributesConnector>
+  </nestedChildShapes>
+</cRRDiagram>

@@ -1,0 +1,209 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\TestModel.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(null != this.Model)
+{
+#>
+package crr.<#= this.Model.Name.ToLower() #>;
+
+import java.lang.reflect.Field;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class Utils
+{
+    private static void setFieldValue(Field field, Object obj)
+    {
+        System.out.print(field.getName() + ": ");
+        Scanner input = new Scanner(System.in);
+        var fieldValue = input.nextLine();
+
+        try
+        {
+            switch (field.getType().getName())
+            {
+                case "int":
+                    field.set(obj, Integer.parseInt(fieldValue));
+                    break;
+                case "double":
+                    field.set(obj, Double.parseDouble(fieldValue));
+                    break;
+                case "float":
+                    field.set(obj, Float.parseFloat(fieldValue));
+                    break;
+                case "boolean":
+                    field.set(obj, Boolean.parseBoolean(fieldValue));
+                    break;
+                default:
+                    field.set(obj, fieldValue);
+                    break;
+            }
+        } 
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public static void displayItems(){
+        for (var prod : <#= this.Model.Name #>.<#= this.Model.Item.Name #>s) {
+            System.out.println(prod.toString() + "\n===============\n");
+        }
+    }
+
+    private static <#= this.Model.Item.Name #> get<#= this.Model.Item.Name #>ById(int id)
+    {
+        <#= this.Model.Item.Name #> item = null;
+
+        for (var otherItem : <#= this.Model.Name #>.<#= this.Model.Item.Name #>s)
+        {
+            if (otherItem.Id == id)
+            {
+                item = otherItem;
+                break;
+            }
+        }
+
+        return item;
+    }
+
+<#
+if(null != this.Model.Comment)
+{
+#>
+    public static void create<#= this.Model.Comment.Name #>(IUser user)
+    {
+        Scanner input = new Scanner(System.in);
+        var comment = new <#= this.Model.Comment.Name #>();
+
+        System.out.println("<#= this.Model.Comment.Name #> section");
+
+        System.out.print("Select item id: ");
+        var itemId = input.nextLine();
+
+        <#= this.Model.Item.Name #> item = null;
+        try
+        {
+            item = get<#= this.Model.Item.Name #>ById(Integer.parseInt(itemId));
+        } 
+        catch (Exception e)
+        {
+            // do nothing
+        }
+
+        if (item == null)
+        {
+            System.out.println("<#= this.Model.Item.Name #> not found");
+            return;
+        }
+
+        List<String> attributesNotToShow = Arrays.asList("Id", "Author", "Approved");
+
+        for (Field attr : comment.getClass().getDeclaredFields())
+        {
+            if (attributesNotToShow.contains(attr.getName()))
+                continue;
+
+            setFieldValue(attr, comment);
+        }
+
+        comment.Author = user;
+<#
+if(null != this.Model.Comment.ApprovalProcess)
+{
+#>
+        comment.Approved = <#= this.Model.Comment.ApprovalProcess.Name #>.init<#= this.Model.Comment.ApprovalProcess.Name #>(comment);
+<#
+}
+#>
+        item.<#= this.Model.Comment.Name #>s.add(comment);
+    }
+
+<#
+}
+if(null != this.Model.Rate)
+{
+#>
+    public static void create<#= this.Model.Rate.Name #>(IUser user)
+    {
+        Scanner input = new Scanner(System.in);
+        <#= this.Model.Rate.Name #> rate = new <#= this.Model.Rate.Name #>();
+
+        System.out.println("<#= this.Model.Rate.Name #> section");
+        System.out.print("Select item id: ");
+        String itemId = input.nextLine();
+
+        <#= this.Model.Item.Name #> item = null;
+        try
+        {
+            item = get<#= this.Model.Item.Name #>ById(Integer.parseInt(itemId));
+        } 
+        catch (Exception e)
+        {
+            // do nothing
+        }
+
+        if(item == null)
+        {
+            System.out.println("Item not found");
+            return;
+        }
+
+        List<String> attributesNotToShow = Arrays.asList("Id", "Author", "Review", "Approved");
+
+        for (Field attr : rate.getClass().getDeclaredFields())
+        {
+            if (attributesNotToShow.contains(attr.getName()))
+                continue;
+
+            setFieldValue(attr, rate);
+        }
+
+<#
+    if(null != this.Model.Review && null != this.Model.Rate.Review)
+    {
+#>
+        System.out.println("You want to <#= this.Model.Review.Name #> too? [Y]es/No(Press any key)");
+        var opt = input.nextLine();
+        if(opt.equals("y") || opt.equals("Y")){
+            System.out.println("<#= this.Model.Review.Name #>");
+            var review = new <#= this.Model.Review.Name #>();
+
+            for (Field attr : review.getClass().getDeclaredFields())
+            {
+                if(attr.getName() == "Id") 
+                    continue;
+
+                setFieldValue(attr, review);
+            }
+
+            rate.<#= this.Model.Review.Name #> = review;
+        }
+<#
+    }
+#>
+
+        rate.Author = user;
+<#
+if(null != this.Model.Rate.ApprovalProcess)
+{
+#>
+        rate.Approved = <#= this.Model.Rate.ApprovalProcess.Name #>.init<#= this.Model.Rate.ApprovalProcess.Name #>(rate);
+<#
+}
+#>
+        item.<#= this.Model.Rate.Name #>s.add(rate);
+    }
+<#
+}
+#>
+}
+<#
+}
+#>

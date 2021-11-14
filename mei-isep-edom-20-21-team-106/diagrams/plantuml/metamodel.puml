@@ -1,0 +1,83 @@
+@startuml
+
+class Model {
+  name : string
+}
+
+class Item{
+  name : string
+}
+
+class Review{
+  name : string
+}
+
+class Comment{
+  name : string
+}
+
+class User{
+  name : string
+}
+
+class Attribute{
+  name : string
+}
+
+class Rate{
+  name : string
+}
+
+class DataType{
+  name : string
+}
+
+class ApprovalProcess{
+  name : string
+}
+
+class ApprovalStart{
+  name : string
+}
+
+class ApprovalStep{
+  name : string
+}
+
+Model "1" *-- "1..*" User
+Model "1" *-- "1" Item
+Model "1" *-- "0..1" Comment
+Model "1" *-- "0..1" Rate
+Model "1" *-- "0..1" Review
+Model "1" *-- "1..*" Attribute
+Model "1" *-- "1..*" DataType
+Model "1" *-- "*" ApprovalProcess
+
+Attribute "1..*" o-- "1" DataType
+Attribute "1..*" --o "*" User
+Attribute "1..*" --o "*" Item
+Attribute "1..*" --o "*" Review
+Attribute "1..*" --o "*" Comment
+Attribute "1..*" --o "*" Rate
+
+Item "1" --o "0..1" Comment
+User "*" --o "0..1" Comment
+
+Comment "0..1" o-- "0..1" ApprovalProcess
+
+Review "0..1" o-- "0..1" ApprovalProcess
+
+Rate "0..1" o-- "*" User
+Rate "0..1" o-- "1" Item
+Rate "1" o-- "0..1" Review
+Rate "0..1" o-- "0..1" ApprovalProcess
+
+ApprovalProcess "1" *-- "1" ApprovalStart
+ApprovalProcess "1" *-- "1..*" ApprovalStep
+
+ApprovalStart "0..1" o-- "1" ApprovalStep
+
+ApprovalStep "*" o-- "0..1" ApprovalStep : "failure"
+ApprovalStep "*" o-- "0..1" ApprovalStep : "success"
+
+@enduml

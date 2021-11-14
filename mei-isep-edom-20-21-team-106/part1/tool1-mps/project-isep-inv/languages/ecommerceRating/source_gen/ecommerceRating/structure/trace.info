@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,187,0" name="ecommerceRating.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,68,0" name="ecommerceRating.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,318,0" name="ecommerceRating.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/1631034710848223269">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1631034710848223269" at="22,0,23,0" concept="1" trace="props_Comment" />
+      <node id="1631034710848223269" at="108,36,109,76" concept="3" />
+      <node id="1631034710848223269" at="109,76,110,35" concept="0" />
+      <node id="1631034710848223269" at="110,35,111,39" concept="0" />
+      <node id="1631034710848223269" at="112,9,113,29" concept="4" />
+      <node id="1631034710848223269" at="107,41,112,9" concept="2" />
+      <scope id="1631034710848223269" at="108,36,111,39">
+        <var name="cpb" id="1631034710848223269" />
+      </scope>
+      <scope id="1631034710848223269" at="107,41,113,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1631034710848223269" at="22,0,23,0" concept="5" trace="Comment" />
+      <node id="1631034710848223269" at="45,57,46,46" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1631034710848223269" at="25,0,26,0" concept="1" trace="myConceptComment" />
+      <node id="1631034710848223269" at="77,41,78,32" concept="4" />
+      <node id="1631034710848223269" at="206,65,207,157" concept="3" />
+      <node id="1631034710848223269" at="207,157,208,34" concept="0" />
+      <node id="1631034710848223269" at="208,34,209,71" concept="0" />
+      <node id="1631034710848223269" at="209,71,210,102" concept="0" />
+      <node id="1631034710848223269" at="210,102,211,17" concept="0" />
+      <node id="2375610599283239784" at="211,17,212,170" concept="0" />
+      <node id="6227873571036117347" at="212,170,213,179" concept="0" />
+      <node id="1631034710848231879" at="213,179,214,203" concept="0" />
+      <node id="1631034710848223269" at="214,203,215,22" concept="4" />
+      <node id="1631034710848223269" at="206,0,217,0" concept="6" trace="createDescriptorForComment#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1631034710848223269" at="77,41,78,32" />
+      <scope id="1631034710848223269" at="206,65,215,22">
+        <var name="b" id="1631034710848223269" />
+      </scope>
+      <scope id="1631034710848223269" at="206,0,217,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/1631034710848223277">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="1631034710848223277" at="29,0,30,0" concept="1" trace="props_Rate" />
+      <node id="1631034710848223277" at="156,33,157,76" concept="3" />
+      <node id="1631034710848223277" at="157,76,158,35" concept="0" />
+      <node id="1631034710848223277" at="158,35,159,36" concept="0" />
+      <node id="1631034710848223277" at="160,9,161,26" concept="4" />
+      <node id="1631034710848223277" at="155,38,160,9" concept="2" />
+      <scope id="1631034710848223277" at="156,33,159,36">
+        <var name="cpb" id="1631034710848223277" />
+      </scope>
+      <scope id="1631034710848223277" at="155,38,161,26" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="1631034710848223277" at="29,0,30,0" concept="5" trace="Rate" />
+      <node id="1631034710848223277" at="52,44,53,43" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="1631034710848223277" at="32,0,33,0" concept="1" trace="myConceptRate" />
+      <node id="1631034710848223277" at="91,38,92,29" concept="4" />
+      <node id="1631034710848223277" at="277,62,278,154" concept="3" />
+      <node id="1631034710848223277" at="278,154,279,34" concept="0" />
+      <node id="1631034710848223277" at="279,34,280,71" concept="0" />
+      <node id="1631034710848223277" at="280,71,281,102" concept="0" />
+      <node id="1631034710848223277" at="281,102,282,17" concept="0" />
+      <node id="6480714450574988792" at="282,17,283,169" concept="0" />
+      <node id="6480714450574988797" at="283,169,284,169" concept="0" />
+      <node id="6227873571036117486" at="284,169,285,179" concept="0" />
+      <node id="1631034710848231883" at="285,179,286,202" concept="0" />
+      <node id="1631034710848223277" at="286,202,287,22" concept="4" />
+      <node id="1631034710848223277" at="277,0,289,0" concept="6" trace="createDescriptorForRate#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="1631034710848223277" at="91,38,92,29" />
+      <scope id="1631034710848223277" at="277,62,287,22">
+        <var name="b" id="1631034710848223277" />
+      </scope>
+      <scope id="1631034710848223277" at="277,0,289,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/2034984141711743439">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2034984141711743439" at="25,0,26,0" concept="1" trace="props_Item" />
+      <node id="2034984141711743439" at="129,33,130,76" concept="3" />
+      <node id="2034984141711743439" at="130,76,131,35" concept="0" />
+      <node id="2034984141711743439" at="131,35,132,36" concept="0" />
+      <node id="2034984141711743439" at="133,9,134,26" concept="4" />
+      <node id="2034984141711743439" at="128,38,133,9" concept="2" />
+      <scope id="2034984141711743439" at="129,33,132,36">
+        <var name="cpb" id="2034984141711743439" />
+      </scope>
+      <scope id="2034984141711743439" at="128,38,134,26" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2034984141711743439" at="25,0,26,0" concept="5" trace="Item" />
+      <node id="2034984141711743439" at="48,46,49,43" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2034984141711743439" at="28,0,29,0" concept="1" trace="myConceptItem" />
+      <node id="2034984141711743439" at="83,38,84,29" concept="4" />
+      <node id="2034984141711743439" at="234,62,235,154" concept="3" />
+      <node id="2034984141711743439" at="235,154,236,34" concept="0" />
+      <node id="2034984141711743439" at="236,34,237,71" concept="0" />
+      <node id="2034984141711743439" at="238,76,239,102" concept="0" />
+      <node id="2034984141711743439" at="239,102,240,17" concept="0" />
+      <node id="6480714450574988783" at="240,17,241,170" concept="0" />
+      <node id="6480714450574988786" at="241,170,242,167" concept="0" />
+      <node id="9069000020241411451" at="242,167,243,203" concept="0" />
+      <node id="2034984141711743439" at="243,203,244,22" concept="4" />
+      <node id="2034984141711743439" at="234,0,246,0" concept="6" trace="createDescriptorForItem#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2034984141711743439" at="83,38,84,29" />
+      <scope id="2034984141711743439" at="234,62,244,22">
+        <var name="b" id="2034984141711743439" />
+      </scope>
+      <scope id="2034984141711743439" at="234,0,246,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/2034984141711820132">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2034984141711820132" at="30,0,31,0" concept="1" trace="props_Review" />
+      <node id="2034984141711820132" at="163,35,164,76" concept="3" />
+      <node id="2034984141711820132" at="164,76,165,35" concept="0" />
+      <node id="2034984141711820132" at="165,35,166,38" concept="0" />
+      <node id="2034984141711820132" at="167,9,168,28" concept="4" />
+      <node id="2034984141711820132" at="162,40,167,9" concept="2" />
+      <scope id="2034984141711820132" at="163,35,166,38">
+        <var name="cpb" id="2034984141711820132" />
+      </scope>
+      <scope id="2034984141711820132" at="162,40,168,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2034984141711820132" at="30,0,31,0" concept="5" trace="Review" />
+      <node id="2034984141711820132" at="53,43,54,45" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2034984141711820132" at="33,0,34,0" concept="1" trace="myConceptReview" />
+      <node id="2034984141711820132" at="93,40,94,31" concept="4" />
+      <node id="2034984141711820132" at="289,64,290,156" concept="3" />
+      <node id="2034984141711820132" at="290,156,291,34" concept="0" />
+      <node id="2034984141711820132" at="291,34,292,71" concept="0" />
+      <node id="2034984141711820132" at="292,71,293,102" concept="0" />
+      <node id="2034984141711820132" at="293,102,294,17" concept="0" />
+      <node id="6227873571036117191" at="294,17,295,179" concept="0" />
+      <node id="2034984141711863176" at="295,179,296,203" concept="0" />
+      <node id="2034984141711820132" at="296,203,297,22" concept="4" />
+      <node id="2034984141711820132" at="289,0,299,0" concept="6" trace="createDescriptorForReview#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2034984141711820132" at="93,40,94,31" />
+      <scope id="2034984141711820132" at="289,64,297,22">
+        <var name="b" id="2034984141711820132" />
+      </scope>
+      <scope id="2034984141711820132" at="289,0,299,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/2034984141711820137">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2034984141711820137" at="32,0,33,0" concept="1" trace="props_User" />
+      <node id="2034984141711820137" at="177,33,178,76" concept="3" />
+      <node id="2034984141711820137" at="178,76,179,35" concept="0" />
+      <node id="2034984141711820137" at="179,35,180,36" concept="0" />
+      <node id="2034984141711820137" at="181,9,182,26" concept="4" />
+      <node id="2034984141711820137" at="176,38,181,9" concept="2" />
+      <scope id="2034984141711820137" at="177,33,180,36">
+        <var name="cpb" id="2034984141711820137" />
+      </scope>
+      <scope id="2034984141711820137" at="176,38,182,26" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2034984141711820137" at="32,0,33,0" concept="5" trace="User" />
+      <node id="2034984141711820137" at="55,49,56,43" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2034984141711820137" at="35,0,36,0" concept="1" trace="myConceptUser" />
+      <node id="2034984141711820137" at="97,38,98,29" concept="4" />
+      <node id="2034984141711820137" at="308,62,309,154" concept="3" />
+      <node id="2034984141711820137" at="309,154,310,34" concept="0" />
+      <node id="2034984141711820137" at="310,34,311,71" concept="0" />
+      <node id="2034984141711820137" at="311,71,312,102" concept="0" />
+      <node id="2034984141711820137" at="312,102,313,17" concept="0" />
+      <node id="2034984141711989333" at="313,17,314,203" concept="0" />
+      <node id="2034984141711820137" at="314,203,315,22" concept="4" />
+      <node id="2034984141711820137" at="308,0,317,0" concept="6" trace="createDescriptorForUser#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2034984141711820137" at="97,38,98,29" />
+      <scope id="2034984141711820137" at="308,62,315,22">
+        <var name="b" id="2034984141711820137" />
+      </scope>
+      <scope id="2034984141711820137" at="308,0,317,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/2034984141711863173">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2034984141711863173" at="19,0,20,0" concept="1" trace="props_Attribute" />
+      <node id="2034984141711863173" at="88,38,89,76" concept="3" />
+      <node id="2034984141711863173" at="89,76,90,35" concept="0" />
+      <node id="2034984141711863173" at="90,35,91,41" concept="0" />
+      <node id="2034984141711863173" at="92,9,93,31" concept="4" />
+      <node id="2034984141711863173" at="87,43,92,9" concept="2" />
+      <scope id="2034984141711863173" at="88,38,91,41">
+        <var name="cpb" id="2034984141711863173" />
+      </scope>
+      <scope id="2034984141711863173" at="87,43,93,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2034984141711863173" at="19,0,20,0" concept="5" trace="Attribute" />
+      <node id="2034984141711863173" at="42,60,43,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2034984141711863173" at="22,0,23,0" concept="1" trace="myConceptAttribute" />
+      <node id="2034984141711863173" at="71,43,72,34" concept="4" />
+      <node id="2034984141711863173" at="179,67,180,159" concept="3" />
+      <node id="2034984141711863173" at="180,159,181,34" concept="0" />
+      <node id="2034984141711863173" at="181,34,182,71" concept="0" />
+      <node id="2034984141711863173" at="183,76,184,102" concept="0" />
+      <node id="2034984141711863173" at="184,102,185,17" concept="0" />
+      <node id="2802895946156614011" at="185,17,186,198" concept="0" />
+      <node id="2034984141711863173" at="186,198,187,22" concept="4" />
+      <node id="2034984141711863173" at="179,0,189,0" concept="6" trace="createDescriptorForAttribute#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2034984141711863173" at="71,43,72,34" />
+      <scope id="2034984141711863173" at="179,67,187,22">
+        <var name="b" id="2034984141711863173" />
+      </scope>
+      <scope id="2034984141711863173" at="179,0,189,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/2802895946156614008">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2802895946156614008" at="23,0,24,0" concept="1" trace="props_DataType" />
+      <node id="2802895946156614008" at="115,37,116,76" concept="3" />
+      <node id="2802895946156614008" at="116,76,117,35" concept="0" />
+      <node id="2802895946156614008" at="117,35,118,40" concept="0" />
+      <node id="2802895946156614008" at="119,9,120,30" concept="4" />
+      <node id="2802895946156614008" at="114,42,119,9" concept="2" />
+      <scope id="2802895946156614008" at="115,37,118,40">
+        <var name="cpb" id="2802895946156614008" />
+      </scope>
+      <scope id="2802895946156614008" at="114,42,120,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2802895946156614008" at="23,0,24,0" concept="5" trace="DataType" />
+      <node id="2802895946156614008" at="46,46,47,47" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2802895946156614008" at="26,0,27,0" concept="1" trace="myConceptDataType" />
+      <node id="2802895946156614008" at="79,42,80,33" concept="4" />
+      <node id="2802895946156614008" at="217,66,218,158" concept="3" />
+      <node id="2802895946156614008" at="218,158,219,34" concept="0" />
+      <node id="2802895946156614008" at="219,34,220,71" concept="0" />
+      <node id="2802895946156614008" at="220,71,221,102" concept="0" />
+      <node id="2802895946156614008" at="221,102,222,17" concept="0" />
+      <node id="2802895946156614008" at="222,17,223,22" concept="4" />
+      <node id="2802895946156614008" at="217,0,225,0" concept="6" trace="createDescriptorForDataType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2802895946156614008" at="79,42,80,33" />
+      <scope id="2802895946156614008" at="217,66,223,22">
+        <var name="b" id="2802895946156614008" />
+      </scope>
+      <scope id="2802895946156614008" at="217,0,225,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6227873571036116944">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6227873571036116944" at="14,0,15,0" concept="1" trace="props_ApprovalProcess" />
+      <node id="6227873571036116944" at="54,44,55,76" concept="3" />
+      <node id="6227873571036116944" at="55,76,56,35" concept="0" />
+      <node id="6227873571036116944" at="56,35,57,47" concept="0" />
+      <node id="6227873571036116944" at="58,9,59,37" concept="4" />
+      <node id="6227873571036116944" at="53,49,58,9" concept="2" />
+      <scope id="6227873571036116944" at="54,44,57,47">
+        <var name="cpb" id="6227873571036116944" />
+      </scope>
+      <scope id="6227873571036116944" at="53,49,59,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6227873571036116944" at="14,0,15,0" concept="5" trace="ApprovalProcess" />
+      <node id="6227873571036116944" at="37,63,38,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6227873571036116944" at="17,0,18,0" concept="1" trace="myConceptApprovalProcess" />
+      <node id="6227873571036116944" at="61,49,62,40" concept="4" />
+      <node id="6227873571036116944" at="126,73,127,165" concept="3" />
+      <node id="6227873571036116944" at="127,165,128,34" concept="0" />
+      <node id="6227873571036116944" at="128,34,129,71" concept="0" />
+      <node id="6227873571036116944" at="129,71,130,102" concept="0" />
+      <node id="6227873571036116944" at="130,102,131,17" concept="0" />
+      <node id="6227873571041410521" at="131,17,132,169" concept="0" />
+      <node id="6227873571041410725" at="132,169,133,167" concept="0" />
+      <node id="6227873571041410804" at="133,167,134,170" concept="0" />
+      <node id="6227873571041137972" at="134,170,135,203" concept="0" />
+      <node id="6227873571036117809" at="135,203,136,199" concept="0" />
+      <node id="6227873571036118624" at="136,199,137,198" concept="0" />
+      <node id="6227873571036118780" at="137,198,138,201" concept="0" />
+      <node id="6227873571036116944" at="138,201,139,22" concept="4" />
+      <node id="6227873571036116944" at="126,0,141,0" concept="6" trace="createDescriptorForApprovalProcess#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6227873571036116944" at="61,49,62,40" />
+      <scope id="6227873571036116944" at="126,73,139,22">
+        <var name="b" id="6227873571036116944" />
+      </scope>
+      <scope id="6227873571036116944" at="126,0,141,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6227873571036117617">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6227873571036117617" at="15,0,16,0" concept="1" trace="props_ApprovalStart" />
+      <node id="6227873571036117617" at="61,42,62,76" concept="3" />
+      <node id="6227873571036117617" at="62,76,63,35" concept="0" />
+      <node id="6227873571036117617" at="63,35,64,45" concept="0" />
+      <node id="6227873571036117617" at="65,9,66,35" concept="4" />
+      <node id="6227873571036117617" at="60,47,65,9" concept="2" />
+      <scope id="6227873571036117617" at="61,42,64,45">
+        <var name="cpb" id="6227873571036117617" />
+      </scope>
+      <scope id="6227873571036117617" at="60,47,66,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6227873571036117617" at="15,0,16,0" concept="5" trace="ApprovalStart" />
+      <node id="6227873571036117617" at="38,54,39,52" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6227873571036117617" at="18,0,19,0" concept="1" trace="myConceptApprovalStart" />
+      <node id="6227873571036117617" at="63,47,64,38" concept="4" />
+      <node id="6227873571036117617" at="141,71,142,163" concept="3" />
+      <node id="6227873571036117617" at="142,163,143,34" concept="0" />
+      <node id="6227873571036117617" at="143,34,144,71" concept="0" />
+      <node id="6227873571036117617" at="144,71,145,102" concept="0" />
+      <node id="6227873571036117617" at="145,102,146,17" concept="0" />
+      <node id="6227873571036118393" at="146,17,147,168" concept="0" />
+      <node id="6227873571036117617" at="147,168,148,22" concept="4" />
+      <node id="6227873571036117617" at="141,0,150,0" concept="6" trace="createDescriptorForApprovalStart#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6227873571036117617" at="63,47,64,38" />
+      <scope id="6227873571036117617" at="141,71,148,22">
+        <var name="b" id="6227873571036117617" />
+      </scope>
+      <scope id="6227873571036117617" at="141,0,150,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6227873571036118126">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6227873571036118126" at="16,0,17,0" concept="1" trace="props_ApprovalStep" />
+      <node id="6227873571036118126" at="68,41,69,76" concept="3" />
+      <node id="6227873571036118126" at="69,76,70,35" concept="0" />
+      <node id="6227873571036118126" at="70,35,71,44" concept="0" />
+      <node id="6227873571036118126" at="72,9,73,34" concept="4" />
+      <node id="6227873571036118126" at="67,46,72,9" concept="2" />
+      <scope id="6227873571036118126" at="68,41,71,44">
+        <var name="cpb" id="6227873571036118126" />
+      </scope>
+      <scope id="6227873571036118126" at="67,46,73,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6227873571036118126" at="16,0,17,0" concept="5" trace="ApprovalStep" />
+      <node id="6227873571036118126" at="39,52,40,51" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6227873571036118126" at="19,0,20,0" concept="1" trace="myConceptApprovalStep" />
+      <node id="6227873571036118126" at="65,46,66,37" concept="4" />
+      <node id="6227873571036118126" at="150,70,151,162" concept="3" />
+      <node id="6227873571036118126" at="151,162,152,34" concept="0" />
+      <node id="6227873571036118126" at="152,34,153,71" concept="0" />
+      <node id="6227873571036118126" at="154,76,155,102" concept="0" />
+      <node id="6227873571036118126" at="155,102,156,17" concept="0" />
+      <node id="6227873571036165032" at="156,17,157,201" concept="0" />
+      <node id="6227873571037373609" at="157,201,158,200" concept="0" />
+      <node id="6227873571037519200" at="158,200,159,202" concept="0" />
+      <node id="6227873571036118126" at="159,202,160,22" concept="4" />
+      <node id="6227873571036118126" at="150,0,162,0" concept="6" trace="createDescriptorForApprovalStep#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6227873571036118126" at="65,46,66,37" />
+      <scope id="6227873571036118126" at="150,70,160,22">
+        <var name="b" id="6227873571036118126" />
+      </scope>
+      <scope id="6227873571036118126" at="150,0,162,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6227873571036118255">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6227873571036118255" at="12,0,13,0" concept="1" trace="props_ApprovalOutcome" />
+      <node id="6227873571036118255" at="40,44,41,76" concept="3" />
+      <node id="6227873571036118255" at="41,76,42,35" concept="0" />
+      <node id="6227873571036118255" at="42,35,43,47" concept="0" />
+      <node id="6227873571036118255" at="44,9,45,37" concept="4" />
+      <node id="6227873571036118255" at="39,49,44,9" concept="2" />
+      <scope id="6227873571036118255" at="40,44,43,47">
+        <var name="cpb" id="6227873571036118255" />
+      </scope>
+      <scope id="6227873571036118255" at="39,49,45,37" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6227873571036118255" at="12,0,13,0" concept="5" trace="ApprovalOutcome" />
+      <node id="6227873571036118255" at="35,116,36,54" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6227873571036118255" at="15,0,16,0" concept="1" trace="myConceptApprovalOutcome" />
+      <node id="6227873571036118255" at="57,49,58,40" concept="4" />
+      <node id="6227873571036118255" at="109,73,110,165" concept="3" />
+      <node id="6227873571036118255" at="110,165,111,34" concept="0" />
+      <node id="6227873571036118255" at="111,34,112,71" concept="0" />
+      <node id="6227873571036118255" at="112,71,113,102" concept="0" />
+      <node id="6227873571036118255" at="113,102,114,17" concept="0" />
+      <node id="6227873571036118255" at="114,17,115,22" concept="4" />
+      <node id="6227873571036118255" at="109,0,117,0" concept="6" trace="createDescriptorForApprovalOutcome#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6227873571036118255" at="57,49,58,40" />
+      <scope id="6227873571036118255" at="109,73,115,22">
+        <var name="b" id="6227873571036118255" />
+      </scope>
+      <scope id="6227873571036118255" at="109,0,117,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6227873571036165189">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6227873571036165189" at="18,0,19,0" concept="1" trace="props_ApprovalStepReference" />
+      <node id="6227873571036165189" at="81,50,82,76" concept="3" />
+      <node id="6227873571036165189" at="82,76,83,35" concept="0" />
+      <node id="6227873571036165189" at="83,35,84,53" concept="0" />
+      <node id="6227873571036165189" at="85,9,86,43" concept="4" />
+      <node id="6227873571036165189" at="80,55,85,9" concept="2" />
+      <scope id="6227873571036165189" at="81,50,84,53">
+        <var name="cpb" id="6227873571036165189" />
+      </scope>
+      <scope id="6227873571036165189" at="80,55,86,43" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6227873571036165189" at="18,0,19,0" concept="5" trace="ApprovalStepReference" />
+      <node id="6227873571036165189" at="41,59,42,60" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6227873571036165189" at="21,0,22,0" concept="1" trace="myConceptApprovalStepReference" />
+      <node id="6227873571036165189" at="69,55,70,46" concept="4" />
+      <node id="6227873571036165189" at="170,79,171,171" concept="3" />
+      <node id="6227873571036165189" at="171,171,172,34" concept="0" />
+      <node id="6227873571036165189" at="172,34,173,118" concept="0" />
+      <node id="6227873571036165189" at="173,118,174,102" concept="0" />
+      <node id="6227873571036165189" at="174,102,175,17" concept="0" />
+      <node id="6227873571036165343" at="175,17,176,168" concept="0" />
+      <node id="6227873571036165189" at="176,168,177,22" concept="4" />
+      <node id="6227873571036165189" at="170,0,179,0" concept="6" trace="createDescriptorForApprovalStepReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6227873571036165189" at="69,55,70,46" />
+      <scope id="6227873571036165189" at="170,79,177,22">
+        <var name="b" id="6227873571036165189" />
+      </scope>
+      <scope id="6227873571036165189" at="170,0,179,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6227873571036165580">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6227873571036165580" at="17,0,18,0" concept="1" trace="props_ApprovalStepListItem" />
+      <node id="6227873571036165580" at="75,49,76,76" concept="3" />
+      <node id="6227873571036165580" at="76,76,77,52" concept="0" />
+      <node id="6227873571036165580" at="78,9,79,42" concept="4" />
+      <node id="6227873571036165580" at="74,54,78,9" concept="2" />
+      <scope id="6227873571036165580" at="75,49,77,52">
+        <var name="cpb" id="6227873571036165580" />
+      </scope>
+      <scope id="6227873571036165580" at="74,54,79,42" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6227873571036165580" at="17,0,18,0" concept="5" trace="ApprovalStepListItem" />
+      <node id="6227873571036165580" at="40,51,41,59" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6227873571036165580" at="20,0,21,0" concept="1" trace="myConceptApprovalStepListItem" />
+      <node id="6227873571036165580" at="67,54,68,45" concept="4" />
+      <node id="6227873571036165580" at="153,71,154,76" concept="0" />
+      <node id="6227873571036165580" at="162,78,163,170" concept="3" />
+      <node id="6227873571036165580" at="163,170,164,19" concept="0" />
+      <node id="6227873571036165580" at="164,19,165,71" concept="0" />
+      <node id="6227873571036165580" at="165,71,166,102" concept="0" />
+      <node id="6227873571036165580" at="166,102,167,17" concept="0" />
+      <node id="6227873571036165580" at="167,17,168,22" concept="4" />
+      <node id="6227873571036165580" at="162,0,170,0" concept="6" trace="createDescriptorForApprovalStepListItem#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6227873571036165580" at="67,54,68,45" />
+      <scope id="6227873571036165580" at="162,78,168,22">
+        <var name="b" id="6227873571036165580" />
+      </scope>
+      <scope id="6227873571036165580" at="162,0,170,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6227873571037066577">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6227873571037066577" at="13,0,14,0" concept="1" trace="props_ApprovalOutcomeReference" />
+      <node id="6227873571037066577" at="47,53,48,76" concept="3" />
+      <node id="6227873571037066577" at="48,76,49,35" concept="0" />
+      <node id="6227873571037066577" at="49,35,50,56" concept="0" />
+      <node id="6227873571037066577" at="51,9,52,46" concept="4" />
+      <node id="6227873571037066577" at="46,58,51,9" concept="2" />
+      <scope id="6227873571037066577" at="47,53,50,56">
+        <var name="cpb" id="6227873571037066577" />
+      </scope>
+      <scope id="6227873571037066577" at="46,58,52,46" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6227873571037066577" at="13,0,14,0" concept="5" trace="ApprovalOutcomeReference" />
+      <node id="6227873571037066577" at="36,54,37,63" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6227873571037066577" at="16,0,17,0" concept="1" trace="myConceptApprovalOutcomeReference" />
+      <node id="6227873571037066577" at="59,58,60,49" concept="4" />
+      <node id="6227873571037066577" at="117,82,118,174" concept="3" />
+      <node id="6227873571037066577" at="118,174,119,34" concept="0" />
+      <node id="6227873571037066577" at="119,34,120,121" concept="0" />
+      <node id="6227873571037066577" at="120,121,121,102" concept="0" />
+      <node id="6227873571037066577" at="121,102,122,17" concept="0" />
+      <node id="6227873571037066695" at="122,17,123,171" concept="0" />
+      <node id="6227873571037066577" at="123,171,124,22" concept="4" />
+      <node id="6227873571037066577" at="117,0,126,0" concept="6" trace="createDescriptorForApprovalOutcomeReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6227873571037066577" at="59,58,60,49" />
+      <scope id="6227873571037066577" at="117,82,124,22">
+        <var name="b" id="6227873571037066577" />
+      </scope>
+      <scope id="6227873571037066577" at="117,0,126,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6480714450572494774">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6480714450572494774" at="21,0,22,0" concept="1" trace="props_AttributeReference" />
+      <node id="6480714450572494774" at="101,47,102,76" concept="3" />
+      <node id="6480714450572494774" at="102,76,103,35" concept="0" />
+      <node id="6480714450572494774" at="103,35,104,50" concept="0" />
+      <node id="6480714450572494774" at="105,9,106,40" concept="4" />
+      <node id="6480714450572494774" at="100,52,105,9" concept="2" />
+      <scope id="6480714450572494774" at="101,47,104,50">
+        <var name="cpb" id="6480714450572494774" />
+      </scope>
+      <scope id="6480714450572494774" at="100,52,106,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6480714450572494774" at="21,0,22,0" concept="5" trace="AttributeReference" />
+      <node id="6480714450572494774" at="44,56,45,57" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6480714450572494774" at="24,0,25,0" concept="1" trace="myConceptAttributeReference" />
+      <node id="6480714450572494774" at="75,52,76,43" concept="4" />
+      <node id="6480714450572494774" at="197,76,198,168" concept="3" />
+      <node id="6480714450572494774" at="198,168,199,34" concept="0" />
+      <node id="6480714450572494774" at="199,34,200,115" concept="0" />
+      <node id="6480714450572494774" at="200,115,201,102" concept="0" />
+      <node id="6480714450572494774" at="201,102,202,17" concept="0" />
+      <node id="6480714450572512061" at="202,17,203,173" concept="0" />
+      <node id="6480714450572494774" at="203,173,204,22" concept="4" />
+      <node id="6480714450572494774" at="197,0,206,0" concept="6" trace="createDescriptorForAttributeReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6480714450572494774" at="75,52,76,43" />
+      <scope id="6480714450572494774" at="197,76,204,22">
+        <var name="b" id="6480714450572494774" />
+      </scope>
+      <scope id="6480714450572494774" at="197,0,206,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6480714450572752280">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6480714450572752280" at="27,0,28,0" concept="1" trace="props_ItemReference" />
+      <node id="6480714450572752280" at="142,42,143,76" concept="3" />
+      <node id="6480714450572752280" at="143,76,144,35" concept="0" />
+      <node id="6480714450572752280" at="144,35,145,45" concept="0" />
+      <node id="6480714450572752280" at="146,9,147,35" concept="4" />
+      <node id="6480714450572752280" at="141,47,146,9" concept="2" />
+      <scope id="6480714450572752280" at="142,42,145,45">
+        <var name="cpb" id="6480714450572752280" />
+      </scope>
+      <scope id="6480714450572752280" at="141,47,147,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6480714450572752280" at="27,0,28,0" concept="5" trace="ItemReference" />
+      <node id="6480714450572752280" at="50,51,51,52" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6480714450572752280" at="30,0,31,0" concept="1" trace="myConceptItemReference" />
+      <node id="6480714450572752280" at="87,47,88,38" concept="4" />
+      <node id="6480714450572752280" at="253,71,254,163" concept="3" />
+      <node id="6480714450572752280" at="254,163,255,34" concept="0" />
+      <node id="6480714450572752280" at="255,34,256,110" concept="0" />
+      <node id="6480714450572752280" at="256,110,257,102" concept="0" />
+      <node id="6480714450572752280" at="257,102,258,17" concept="0" />
+      <node id="6480714450572752281" at="258,17,259,168" concept="0" />
+      <node id="6480714450572752280" at="259,168,260,22" concept="4" />
+      <node id="6480714450572752280" at="253,0,262,0" concept="6" trace="createDescriptorForItemReference#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6480714450572752280" at="87,47,88,38" />
+      <scope id="6480714450572752280" at="253,71,260,22">
+        <var name="b" id="6480714450572752280" />
+      </scope>
+      <scope id="6480714450572752280" at="253,0,262,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6480714450574326200">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6480714450574326200" at="20,0,21,0" concept="1" trace="props_AttributeListItem" />
+      <node id="6480714450574326200" at="95,46,96,76" concept="3" />
+      <node id="6480714450574326200" at="96,76,97,49" concept="0" />
+      <node id="6480714450574326200" at="98,9,99,39" concept="4" />
+      <node id="6480714450574326200" at="94,51,98,9" concept="2" />
+      <scope id="6480714450574326200" at="95,46,97,49">
+        <var name="cpb" id="6480714450574326200" />
+      </scope>
+      <scope id="6480714450574326200" at="94,51,99,39" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6480714450574326200" at="20,0,21,0" concept="5" trace="AttributeListItem" />
+      <node id="6480714450574326200" at="43,48,44,56" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6480714450574326200" at="23,0,24,0" concept="1" trace="myConceptAttributeListItem" />
+      <node id="6480714450574326200" at="73,51,74,42" concept="4" />
+      <node id="6480714450574326200" at="182,71,183,76" concept="0" />
+      <node id="6480714450574326200" at="189,75,190,167" concept="3" />
+      <node id="6480714450574326200" at="190,167,191,19" concept="0" />
+      <node id="6480714450574326200" at="191,19,192,71" concept="0" />
+      <node id="6480714450574326200" at="192,71,193,102" concept="0" />
+      <node id="6480714450574326200" at="193,102,194,17" concept="0" />
+      <node id="6480714450574326200" at="194,17,195,22" concept="4" />
+      <node id="6480714450574326200" at="189,0,197,0" concept="6" trace="createDescriptorForAttributeListItem#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6480714450574326200" at="73,51,74,42" />
+      <scope id="6480714450574326200" at="189,75,195,22">
+        <var name="b" id="6480714450574326200" />
+      </scope>
+      <scope id="6480714450574326200" at="189,0,197,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/6480714450574927581">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6480714450574927581" at="26,0,27,0" concept="1" trace="props_ItemListItem" />
+      <node id="6480714450574927581" at="136,41,137,76" concept="3" />
+      <node id="6480714450574927581" at="137,76,138,44" concept="0" />
+      <node id="6480714450574927581" at="139,9,140,34" concept="4" />
+      <node id="6480714450574927581" at="135,46,139,9" concept="2" />
+      <scope id="6480714450574927581" at="136,41,138,44">
+        <var name="cpb" id="6480714450574927581" />
+      </scope>
+      <scope id="6480714450574927581" at="135,46,140,34" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6480714450574927581" at="26,0,27,0" concept="5" trace="ItemListItem" />
+      <node id="6480714450574927581" at="49,43,50,51" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6480714450574927581" at="29,0,30,0" concept="1" trace="myConceptItemListItem" />
+      <node id="6480714450574927581" at="85,46,86,37" concept="4" />
+      <node id="6480714450574927581" at="237,71,238,76" concept="0" />
+      <node id="6480714450574927581" at="246,70,247,162" concept="3" />
+      <node id="6480714450574927581" at="247,162,248,19" concept="0" />
+      <node id="6480714450574927581" at="248,19,249,102" concept="0" />
+      <node id="6480714450574927581" at="249,102,250,17" concept="0" />
+      <node id="6480714450574927581" at="250,17,251,22" concept="4" />
+      <node id="6480714450574927581" at="246,0,253,0" concept="6" trace="createDescriptorForItemListItem#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6480714450574927581" at="85,46,86,37" />
+      <scope id="6480714450574927581" at="246,70,251,22">
+        <var name="b" id="6480714450574927581" />
+      </scope>
+      <scope id="6480714450574927581" at="246,0,253,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/9069000020241105978">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9069000020241105978" at="24,0,25,0" concept="1" trace="props_IntType" />
+      <node id="9069000020241105978" at="122,36,123,76" concept="3" />
+      <node id="9069000020241105978" at="123,76,124,35" concept="0" />
+      <node id="9069000020241105978" at="124,35,125,39" concept="0" />
+      <node id="9069000020241105978" at="126,9,127,29" concept="4" />
+      <node id="9069000020241105978" at="121,41,126,9" concept="2" />
+      <scope id="9069000020241105978" at="122,36,125,39">
+        <var name="cpb" id="9069000020241105978" />
+      </scope>
+      <scope id="9069000020241105978" at="121,41,127,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9069000020241105978" at="24,0,25,0" concept="5" trace="IntType" />
+      <node id="9069000020241105978" at="47,47,48,46" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9069000020241105978" at="27,0,28,0" concept="1" trace="myConceptIntType" />
+      <node id="9069000020241105978" at="81,41,82,32" concept="4" />
+      <node id="9069000020241105978" at="225,65,226,157" concept="3" />
+      <node id="9069000020241105978" at="226,157,227,34" concept="0" />
+      <node id="9069000020241105978" at="227,34,228,114" concept="0" />
+      <node id="9069000020241105978" at="228,114,229,71" concept="0" />
+      <node id="9069000020241105978" at="229,71,230,102" concept="0" />
+      <node id="9069000020241105978" at="230,102,231,17" concept="0" />
+      <node id="9069000020241105978" at="231,17,232,22" concept="4" />
+      <node id="9069000020241105978" at="225,0,234,0" concept="6" trace="createDescriptorForIntType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9069000020241105978" at="81,41,82,32" />
+      <scope id="9069000020241105978" at="225,65,232,22">
+        <var name="b" id="9069000020241105978" />
+      </scope>
+      <scope id="9069000020241105978" at="225,0,234,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/9069000020241105981">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9069000020241105981" at="31,0,32,0" concept="1" trace="props_StringType" />
+      <node id="9069000020241105981" at="170,39,171,76" concept="3" />
+      <node id="9069000020241105981" at="171,76,172,35" concept="0" />
+      <node id="9069000020241105981" at="172,35,173,42" concept="0" />
+      <node id="9069000020241105981" at="174,9,175,32" concept="4" />
+      <node id="9069000020241105981" at="169,44,174,9" concept="2" />
+      <scope id="9069000020241105981" at="170,39,173,42">
+        <var name="cpb" id="9069000020241105981" />
+      </scope>
+      <scope id="9069000020241105981" at="169,44,175,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9069000020241105981" at="31,0,32,0" concept="5" trace="StringType" />
+      <node id="9069000020241105981" at="54,45,55,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9069000020241105981" at="34,0,35,0" concept="1" trace="myConceptStringType" />
+      <node id="9069000020241105981" at="95,44,96,35" concept="4" />
+      <node id="9069000020241105981" at="299,68,300,160" concept="3" />
+      <node id="9069000020241105981" at="300,160,301,34" concept="0" />
+      <node id="9069000020241105981" at="301,34,302,114" concept="0" />
+      <node id="9069000020241105981" at="302,114,303,71" concept="0" />
+      <node id="9069000020241105981" at="303,71,304,102" concept="0" />
+      <node id="9069000020241105981" at="304,102,305,17" concept="0" />
+      <node id="9069000020241105981" at="305,17,306,22" concept="4" />
+      <node id="9069000020241105981" at="299,0,308,0" concept="6" trace="createDescriptorForStringType#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9069000020241105981" at="95,44,96,35" />
+      <scope id="9069000020241105981" at="299,68,306,22">
+        <var name="b" id="9069000020241105981" />
+      </scope>
+      <scope id="9069000020241105981" at="299,0,308,0" />
+    </file>
+  </root>
+  <root nodeRef="r:c065a2fe-9ac5-41ab-a01a-9101cb5fa9b5(ecommerceRating.structure)/9069000020241150955">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="9069000020241150955" at="28,0,29,0" concept="1" trace="props_Model" />
+      <node id="9069000020241150955" at="149,34,150,76" concept="3" />
+      <node id="9069000020241150955" at="150,76,151,35" concept="0" />
+      <node id="9069000020241150955" at="151,35,152,37" concept="0" />
+      <node id="9069000020241150955" at="153,9,154,27" concept="4" />
+      <node id="9069000020241150955" at="148,39,153,9" concept="2" />
+      <scope id="9069000020241150955" at="149,34,152,37">
+        <var name="cpb" id="9069000020241150955" />
+      </scope>
+      <scope id="9069000020241150955" at="148,39,154,27" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="9069000020241150955" at="28,0,29,0" concept="5" trace="Model" />
+      <node id="9069000020241150955" at="51,52,52,44" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="9069000020241150955" at="31,0,32,0" concept="1" trace="myConceptModel" />
+      <node id="9069000020241150955" at="89,39,90,30" concept="4" />
+      <node id="9069000020241150955" at="262,63,263,155" concept="3" />
+      <node id="9069000020241150955" at="263,155,264,33" concept="0" />
+      <node id="9069000020241150955" at="264,33,265,71" concept="0" />
+      <node id="9069000020241150955" at="265,71,266,102" concept="0" />
+      <node id="9069000020241150955" at="266,102,267,17" concept="0" />
+      <node id="6480714450572494960" at="267,17,268,203" concept="0" />
+      <node id="9069000020241629570" at="268,203,269,198" concept="0" />
+      <node id="9069000020241629572" at="269,198,270,198" concept="0" />
+      <node id="9069000020242158046" at="270,198,271,200" concept="0" />
+      <node id="3012366510333776587" at="271,200,272,201" concept="0" />
+      <node id="3012366510333776592" at="272,201,273,198" concept="0" />
+      <node id="6227873571036119150" at="273,198,274,209" concept="0" />
+      <node id="9069000020241150955" at="274,209,275,22" concept="4" />
+      <node id="9069000020241150955" at="262,0,277,0" concept="6" trace="createDescriptorForModel#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="9069000020241150955" at="89,39,90,30" />
+      <scope id="9069000020241150955" at="262,63,275,22">
+        <var name="b" id="9069000020241150955" />
+      </scope>
+      <scope id="9069000020241150955" at="262,0,277,0" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,32 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\UCUS</RelativePathOnDisk>
+    <TemplateFileName>CSharp.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{c01beecc-92e1-48cd-99e0-86783ee7b53d}</TemplateID>
+        <Name Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="103" />
+        <Description Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="102" />
+        <Icon Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="201" />
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>UCUS.UCUS</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VisualBasic\1033\UCUS</RelativePathOnDisk>
+    <TemplateFileName>VisualBasic.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{759b6a10-20c9-44e8-99d8-60a33dcc864f}</TemplateID>
+        <Name Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="103" />
+        <Description Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="102" />
+        <Icon Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="201" />
+        <ProjectType>VisualBasic</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>UCUS.UCUS</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

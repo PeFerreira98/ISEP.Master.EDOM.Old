@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="354px" preserveAspectRatio="none" style="width:123px;height:354px;" version="1.1" viewBox="0 0 123 354" width="123px" zoomAndPan="magnify"><defs><filter height="300%" id="fa5cldjco9paa" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8515a37c80da559ff7ce07f8a9e75d30]
+class Place--><rect codeLine="1" fill="#FEFECE" filter="url(#fa5cldjco9paa)" height="79.5469" id="Place" style="stroke:#A80036;stroke-width:1.5;" width="91" x="12.5" y="7"/><ellipse cx="37.4" cy="25.9688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M40.3688,31.6094 Q39.7906,31.9063 39.15,32.0469 Q38.5094,32.2031 37.8063,32.2031 Q35.3063,32.2031 33.9781,30.5625 Q32.6656,28.9063 32.6656,25.7813 Q32.6656,22.6563 33.9781,21 Q35.3063,19.3438 37.8063,19.3438 Q38.5094,19.3438 39.15,19.5 Q39.8063,19.6563 40.3688,19.9531 L40.3688,22.6719 Q39.7438,22.0938 39.15,21.8281 Q38.5563,21.5469 37.9313,21.5469 Q36.5875,21.5469 35.9,22.625 Q35.2125,23.6875 35.2125,25.7813 Q35.2125,27.875 35.9,28.9531 Q36.5875,30.0156 37.9313,30.0156 Q38.5563,30.0156 39.15,29.75 Q39.7438,29.4688 40.3688,28.8906 L40.3688,31.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="41" x="51.6" y="23.1387">«Item»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34" x="55.1" y="37.1074">Place</text><line style="stroke:#A80036;stroke-width:1.5;" x1="13.5" x2="102.5" y1="44.9375" y2="44.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="18.5" y="59.1479">ID : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="79" x="18.5" y="71.9526">Name : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="13.5" x2="102.5" y1="78.5469" y2="78.5469"/><!--MD5=[042fa140da40c49659127f611bcff931]
+class Comment--><rect codeLine="17" fill="#FEFECE" filter="url(#fa5cldjco9paa)" height="66.7422" id="Comment" style="stroke:#A80036;stroke-width:1.5;" width="102" x="7" y="147"/><ellipse cx="26.95" cy="165.9688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M29.9188,171.6094 Q29.3406,171.9063 28.7,172.0469 Q28.0594,172.2031 27.3563,172.2031 Q24.8563,172.2031 23.5281,170.5625 Q22.2156,168.9063 22.2156,165.7813 Q22.2156,162.6563 23.5281,161 Q24.8563,159.3438 27.3563,159.3438 Q28.0594,159.3438 28.7,159.5 Q29.3563,159.6563 29.9188,159.9531 L29.9188,162.6719 Q29.2938,162.0938 28.7,161.8281 Q28.1063,161.5469 27.4813,161.5469 Q26.1375,161.5469 25.45,162.625 Q24.7625,163.6875 24.7625,165.7813 Q24.7625,167.875 25.45,168.9531 Q26.1375,170.0156 27.4813,170.0156 Q28.1063,170.0156 28.7,169.75 Q29.2938,169.4688 29.9188,168.8906 L29.9188,171.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="43.55" y="163.1387">«Review»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="59" x="42.05" y="177.1074">Comment</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="108" y1="184.9375" y2="184.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="90" x="13" y="199.1479">Content : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="108" y1="205.7422" y2="205.7422"/><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><rect codeLine="9" fill="#FEFECE" filter="url(#fa5cldjco9paa)" height="66.7422" id="User" style="stroke:#A80036;stroke-width:1.5;" width="71" x="22.5" y="274"/><ellipse cx="37.5" cy="292.9688" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M40.4688,298.6094 Q39.8906,298.9063 39.25,299.0469 Q38.6094,299.2031 37.9063,299.2031 Q35.4063,299.2031 34.0781,297.5625 Q32.7656,295.9063 32.7656,292.7813 Q32.7656,289.6563 34.0781,288 Q35.4063,286.3438 37.9063,286.3438 Q38.6094,286.3438 39.25,286.5 Q39.9063,286.6563 40.4688,286.9531 L40.4688,289.6719 Q39.8438,289.0938 39.25,288.8281 Q38.6563,288.5469 38.0313,288.5469 Q36.6875,288.5469 36,289.625 Q35.3125,290.6875 35.3125,292.7813 Q35.3125,294.875 36,295.9531 Q36.6875,297.0156 38.0313,297.0156 Q38.6563,297.0156 39.25,296.75 Q39.8438,296.4688 40.4688,295.8906 L40.4688,298.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="43" x="49.5" y="290.1387">«User»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="29" x="56.5" y="304.1074">User</text><line style="stroke:#A80036;stroke-width:1.5;" x1="23.5" x2="92.5" y1="311.9375" y2="311.9375"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="57" x="28.5" y="326.1479">ID : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="23.5" x2="92.5" y1="332.7422" y2="332.7422"/><!--MD5=[1a9edebc78482e159fa03fde74b048bd]
+reverse link Place to Comment--><path codeLine="7" d="M58,100.4441 C58,116.0819 58,132.7351 58,146.78 " fill="none" id="Place-backto-Comment" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="58,87.0544,54,93.0544,58,99.0544,62,93.0544,58,87.0544" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="8" x="49.3625" y="106.747">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="50.3328" y="136.0266">*</text><!--MD5=[ccaede06ee77bfde95f2854fcaa72abb]
+reverse link Comment to User--><path codeLine="21" d="M58,227.2499 C58,242.6265 58,259.4143 58,273.6423 " fill="none" id="Comment-backto-User" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#FFFFFF" points="58,214.2002,54,220.2002,58,226.2002,62,220.2002,58,214.2002" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="50.3547" y="233.8994">*</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="7" x="50.3328" y="262.8626">*</text><!--MD5=[b67de0f44522d7ebbb1e627d7fdfe69a]
+@startuml
+class Place <<Item>> {
+					ID : String
+					Name : String
+			}
+
+	
+			Place "1" *- - "*" Comment
+	
+	class User <<User>> {
+					ID : String
+			}
+
+
+
+
+
+	class Comment <<Review>> {
+					Content : String
+			}
+	
+	Comment "*" o- - "*" User
+@enduml
+
+PlantUML version 1.2020.22(Sun Dec 06 09:36:27 UTC 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

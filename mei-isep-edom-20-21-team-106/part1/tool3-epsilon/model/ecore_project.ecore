@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ecore_project" nsURI="http://www.example.org/ecore_project"
+    nsPrefix="ecore_project">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="review" eType="#//Review"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datatype" lowerBound="1"
+        eType="#//DataType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        upperBound="-1" eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="item" lowerBound="1" upperBound="-1"
+        eType="#//Item" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rate" eType="#//Rate" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" lowerBound="1" upperBound="-1"
+        eType="#//User" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalprocess" lowerBound="1"
+        upperBound="-1" eType="#//ApprovalProcess" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comment" eType="#//Comment"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataType">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Item">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rate" eType="#//Rate" eOpposite="#//Rate/item"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        upperBound="-1" eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="comment" upperBound="-1"
+        eType="#//Comment" containment="true" eOpposite="#//Comment/item"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="User">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        upperBound="-1" eType="#//Attribute" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Review">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        upperBound="-1" eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" lowerBound="1" upperBound="-1"
+        eType="#//User" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalprocess" eType="#//ApprovalProcess"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rate">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalprocess" eType="#//ApprovalProcess"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="review" eType="#//Review"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" lowerBound="1" upperBound="-1"
+        eType="#//User" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        upperBound="-1" eType="#//Attribute" containment="true" eOpposite="#//Attribute/rate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="item" lowerBound="1" upperBound="-1"
+        eType="#//Item" containment="true" eOpposite="#//Item/rate"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="datatype" lowerBound="1"
+        upperBound="-1" eType="#//DataType" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rate" eType="#//Rate" eOpposite="#//Rate/attribute"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApprovalProcess">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalstart" lowerBound="1"
+        eType="#//ApprovalStart" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalstep" lowerBound="1"
+        upperBound="-1" eType="#//ApprovalStep" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvaloutcome" lowerBound="1"
+        upperBound="2" eType="#//ApprovalOutcome" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        upperBound="-1" eType="#//Attribute" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApprovalStep">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalstep" eType="#//ApprovalStep"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvaloutcome" eType="#//ApprovalOutcome"
+        eOpposite="#//ApprovalOutcome/approvalstep"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApprovalOutcome">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalstep" lowerBound="1"
+        upperBound="-1" eType="#//ApprovalStep" eOpposite="#//ApprovalStep/approvaloutcome"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApprovalStart">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalstep" eType="#//ApprovalStep"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Comment">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="mustHaveName nameMustStartWithUppercase"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="mustHaveName" value="not self.name.oclIsUndefined()"/>
+      <details key="nameMustStartWithUppercase" value="self.name.substring(1,1).toUpper().compareTo(self.name.substring(1, 1)) = 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="approvalprocess" eType="#//ApprovalProcess"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" lowerBound="1"
+        upperBound="-1" eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" lowerBound="1" upperBound="-1"
+        eType="#//User" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="item" eType="#//Item" eOpposite="#//Item/comment"/>
+  </eClassifiers>
+</ecore:EPackage>

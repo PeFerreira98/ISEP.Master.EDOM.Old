@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<uCUSDiagram dslVersion="1.0.0.0" Id="fac644e6-51a3-4889-be8b-6461f99f276f" absoluteBounds="0, 0, 11, 8.5" name="UCUS1">
+  <modelMoniker Id="68045fb9-b521-41d2-82bd-9479d4ec3169" />
+  <nestedChildShapes>
+    <genericShape Id="08d0cc5a-10bc-4dda-839d-35240d3183b5" absoluteBounds="0.625, 0.875, 2, 0.75">
+      <actorMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/User" />
+    </genericShape>
+    <genericShape Id="87aa8253-08b2-4929-806d-0c62d9de3958" absoluteBounds="2.875, 4, 2, 0.75">
+      <subjectMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/EcommerceSite" />
+    </genericShape>
+    <useCaseShape Id="2b60709b-b4ad-4edb-bade-e0790cae7c04" absoluteBounds="3.875, 1, 1.5, 1">
+      <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/ReviewProduct" />
+    </useCaseShape>
+    <genericConnector Id="44ae0eaa-352d-42d9-9718-0ed37ae3c018" edgePoints="[(4.375 : 4); (4.375 : 1.97140452079103)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <subjectReferencesUseCaseMoniker Id="d19379f3-0ab0-47e9-a36c-9f75aa0f12c7" />
+      <nodes>
+        <genericShapeMoniker Id="87aa8253-08b2-4929-806d-0c62d9de3958" />
+        <useCaseShapeMoniker Id="2b60709b-b4ad-4edb-bade-e0790cae7c04" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="3aee2cfd-84bf-4952-88c0-8e75945bb218" edgePoints="[(2.625 : 1.3125); (3.92973139183478 : 1.3125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <actorPerformsUseCaseMoniker Id="7482091d-b131-4c2b-852c-fa3508375751" />
+      <nodes>
+        <genericShapeMoniker Id="08d0cc5a-10bc-4dda-839d-35240d3183b5" />
+        <useCaseShapeMoniker Id="2b60709b-b4ad-4edb-bade-e0790cae7c04" />
+      </nodes>
+    </genericConnector>
+    <useCaseShape Id="569d23ba-0c64-403e-8808-481f745cea0e" absoluteBounds="6.75, 2, 1.5, 1">
+      <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/InsertPicture" />
+    </useCaseShape>
+    <genericConnector Id="738c579d-e8c1-471c-8f55-f7fa410e89c5" edgePoints="[(5.37353372293772 : 1.46875); (7.5 : 1.46875); (7.5 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <useCaseIncludesUseCaseMoniker Id="5980a7fd-1b9e-42d6-a28b-caacd53507b4" />
+      <nodes>
+        <useCaseShapeMoniker Id="2b60709b-b4ad-4edb-bade-e0790cae7c04" />
+        <useCaseShapeMoniker Id="569d23ba-0c64-403e-8808-481f745cea0e" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="66398a9a-4a24-40d9-bcdb-9257ea05009f" edgePoints="[(3.5937475 : 4); (3.5937475 : 2.53125); (4.29166666666667 : 2.53125 : JumpStart); (4.45833333333333 : 2.53125 : JumpEnd); (6.75146627706228 : 2.53125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <subjectReferencesUseCaseMoniker Id="c693ed61-0bbc-4573-9856-9d0c4b580781" />
+      <nodes>
+        <genericShapeMoniker Id="87aa8253-08b2-4929-806d-0c62d9de3958" />
+        <useCaseShapeMoniker Id="569d23ba-0c64-403e-8808-481f745cea0e" />
+      </nodes>
+    </genericConnector>
+  </nestedChildShapes>
+</uCUSDiagram>

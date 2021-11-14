@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,55,0" name="ecommerceRating.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233758818">
+    <file name="User_Constraints.java">
+      <node id="7626634450233758818" at="18,29,19,28" concept="7" />
+      <node id="1120097950882797145" at="23,59,24,40" concept="7" />
+      <node id="1120097950882797145" at="27,35,28,18" concept="4" />
+      <node id="1120097950882797145" at="31,68,32,82" concept="1" />
+      <node id="1120097950882797328" at="34,82,35,127" concept="1" />
+      <node id="7626634450233758818" at="39,84,40,119" concept="3" />
+      <node id="1120097950882797145" at="40,119,41,61" concept="1" />
+      <node id="7626634450233758818" at="41,61,42,22" concept="4" />
+      <node id="7626634450233758818" at="46,0,47,0" concept="5" trace="User$Ho" />
+      <node id="7626634450233758818" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233758818" at="18,0,21,0" concept="0" trace="User_Constraints#()V" />
+      <node id="1120097950882797145" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="1120097950882797145" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="1120097950882797145" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="1120097950882797145" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233758818" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233758818" at="18,29,19,28" />
+      <scope id="1120097950882797145" at="23,59,24,40" />
+      <scope id="1120097950882797145" at="27,35,28,18" />
+      <scope id="1120097950882797145" at="31,68,32,82" />
+      <scope id="1120097950882797268" at="34,82,35,127" />
+      <scope id="7626634450233758818" at="18,0,21,0" />
+      <scope id="1120097950882797145" at="23,0,26,0">
+        <var name="container" id="1120097950882797145" />
+      </scope>
+      <scope id="1120097950882797145" at="34,0,37,0">
+        <var name="node" id="1120097950882797145" />
+        <var name="propertyValue" id="1120097950882797145" />
+      </scope>
+      <scope id="7626634450233758818" at="39,84,42,22">
+        <var name="properties" id="7626634450233758818" />
+      </scope>
+      <scope id="1120097950882797145" at="26,0,30,0" />
+      <scope id="1120097950882797145" at="30,0,34,0">
+        <var name="node" id="1120097950882797145" />
+        <var name="propertyValue" id="1120097950882797145" />
+      </scope>
+      <scope id="7626634450233758818" at="38,0,44,0" />
+      <unit id="7626634450233758818" at="45,0,48,0" name="ecommerceRating.constraints.User_Constraints$CONCEPTS" />
+      <unit id="7626634450233758818" at="49,0,52,0" name="ecommerceRating.constraints.User_Constraints$PROPS" />
+      <unit id="1120097950882797145" at="22,0,38,0" name="ecommerceRating.constraints.User_Constraints$Name_Property" />
+      <unit id="7626634450233758818" at="17,0,53,0" name="ecommerceRating.constraints.User_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233760803">
+    <file name="ApprovalProcess_Constraints.java">
+      <node id="7626634450233760803" at="18,40,19,39" concept="7" />
+      <node id="7626634450233760804" at="23,59,24,40" concept="7" />
+      <node id="7626634450233760804" at="27,35,28,18" concept="4" />
+      <node id="7626634450233760804" at="31,68,32,82" concept="1" />
+      <node id="7626634450233760807" at="34,82,35,127" concept="1" />
+      <node id="7626634450233760803" at="39,84,40,119" concept="3" />
+      <node id="7626634450233760804" at="40,119,41,61" concept="1" />
+      <node id="7626634450233760803" at="41,61,42,22" concept="4" />
+      <node id="7626634450233760803" at="46,0,47,0" concept="5" trace="ApprovalProcess$hL" />
+      <node id="7626634450233760803" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233760803" at="18,0,21,0" concept="0" trace="ApprovalProcess_Constraints#()V" />
+      <node id="7626634450233760804" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233760804" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233760804" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233760804" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233760803" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233760803" at="18,40,19,39" />
+      <scope id="7626634450233760804" at="23,59,24,40" />
+      <scope id="7626634450233760804" at="27,35,28,18" />
+      <scope id="7626634450233760804" at="31,68,32,82" />
+      <scope id="7626634450233760806" at="34,82,35,127" />
+      <scope id="7626634450233760803" at="18,0,21,0" />
+      <scope id="7626634450233760804" at="23,0,26,0">
+        <var name="container" id="7626634450233760804" />
+      </scope>
+      <scope id="7626634450233760804" at="34,0,37,0">
+        <var name="node" id="7626634450233760804" />
+        <var name="propertyValue" id="7626634450233760804" />
+      </scope>
+      <scope id="7626634450233760803" at="39,84,42,22">
+        <var name="properties" id="7626634450233760803" />
+      </scope>
+      <scope id="7626634450233760804" at="26,0,30,0" />
+      <scope id="7626634450233760804" at="30,0,34,0">
+        <var name="node" id="7626634450233760804" />
+        <var name="propertyValue" id="7626634450233760804" />
+      </scope>
+      <scope id="7626634450233760803" at="38,0,44,0" />
+      <unit id="7626634450233760803" at="45,0,48,0" name="ecommerceRating.constraints.ApprovalProcess_Constraints$CONCEPTS" />
+      <unit id="7626634450233760803" at="49,0,52,0" name="ecommerceRating.constraints.ApprovalProcess_Constraints$PROPS" />
+      <unit id="7626634450233760804" at="22,0,38,0" name="ecommerceRating.constraints.ApprovalProcess_Constraints$Name_Property" />
+      <unit id="7626634450233760803" at="17,0,53,0" name="ecommerceRating.constraints.ApprovalProcess_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233761259">
+    <file name="ApprovalStep_Constraints.java">
+      <node id="7626634450233761259" at="18,37,19,36" concept="7" />
+      <node id="7626634450233761306" at="23,59,24,40" concept="7" />
+      <node id="7626634450233761306" at="27,35,28,18" concept="4" />
+      <node id="7626634450233761306" at="31,68,32,82" concept="1" />
+      <node id="7626634450233761309" at="34,82,35,127" concept="1" />
+      <node id="7626634450233761259" at="39,84,40,119" concept="3" />
+      <node id="7626634450233761306" at="40,119,41,61" concept="1" />
+      <node id="7626634450233761259" at="41,61,42,22" concept="4" />
+      <node id="7626634450233761259" at="46,0,47,0" concept="5" trace="ApprovalStep$iJ" />
+      <node id="7626634450233761259" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233761259" at="18,0,21,0" concept="0" trace="ApprovalStep_Constraints#()V" />
+      <node id="7626634450233761306" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233761306" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233761306" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233761306" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233761259" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233761259" at="18,37,19,36" />
+      <scope id="7626634450233761306" at="23,59,24,40" />
+      <scope id="7626634450233761306" at="27,35,28,18" />
+      <scope id="7626634450233761306" at="31,68,32,82" />
+      <scope id="7626634450233761308" at="34,82,35,127" />
+      <scope id="7626634450233761259" at="18,0,21,0" />
+      <scope id="7626634450233761306" at="23,0,26,0">
+        <var name="container" id="7626634450233761306" />
+      </scope>
+      <scope id="7626634450233761306" at="34,0,37,0">
+        <var name="node" id="7626634450233761306" />
+        <var name="propertyValue" id="7626634450233761306" />
+      </scope>
+      <scope id="7626634450233761259" at="39,84,42,22">
+        <var name="properties" id="7626634450233761259" />
+      </scope>
+      <scope id="7626634450233761306" at="26,0,30,0" />
+      <scope id="7626634450233761306" at="30,0,34,0">
+        <var name="node" id="7626634450233761306" />
+        <var name="propertyValue" id="7626634450233761306" />
+      </scope>
+      <scope id="7626634450233761259" at="38,0,44,0" />
+      <unit id="7626634450233761259" at="45,0,48,0" name="ecommerceRating.constraints.ApprovalStep_Constraints$CONCEPTS" />
+      <unit id="7626634450233761259" at="49,0,52,0" name="ecommerceRating.constraints.ApprovalStep_Constraints$PROPS" />
+      <unit id="7626634450233761306" at="22,0,38,0" name="ecommerceRating.constraints.ApprovalStep_Constraints$Name_Property" />
+      <unit id="7626634450233761259" at="17,0,53,0" name="ecommerceRating.constraints.ApprovalStep_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233762835">
+    <file name="Comment_Constraints.java">
+      <node id="7626634450233762835" at="18,32,19,31" concept="7" />
+      <node id="7626634450233762836" at="23,59,24,40" concept="7" />
+      <node id="7626634450233762836" at="27,35,28,18" concept="4" />
+      <node id="7626634450233762836" at="31,68,32,82" concept="1" />
+      <node id="7626634450233762839" at="34,82,35,127" concept="1" />
+      <node id="7626634450233762835" at="39,84,40,119" concept="3" />
+      <node id="7626634450233762836" at="40,119,41,61" concept="1" />
+      <node id="7626634450233762835" at="41,61,42,22" concept="4" />
+      <node id="7626634450233762835" at="46,0,47,0" concept="5" trace="Comment$uQ" />
+      <node id="7626634450233762835" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233762835" at="18,0,21,0" concept="0" trace="Comment_Constraints#()V" />
+      <node id="7626634450233762836" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233762836" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233762836" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233762836" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233762835" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233762835" at="18,32,19,31" />
+      <scope id="7626634450233762836" at="23,59,24,40" />
+      <scope id="7626634450233762836" at="27,35,28,18" />
+      <scope id="7626634450233762836" at="31,68,32,82" />
+      <scope id="7626634450233762838" at="34,82,35,127" />
+      <scope id="7626634450233762835" at="18,0,21,0" />
+      <scope id="7626634450233762836" at="23,0,26,0">
+        <var name="container" id="7626634450233762836" />
+      </scope>
+      <scope id="7626634450233762836" at="34,0,37,0">
+        <var name="node" id="7626634450233762836" />
+        <var name="propertyValue" id="7626634450233762836" />
+      </scope>
+      <scope id="7626634450233762835" at="39,84,42,22">
+        <var name="properties" id="7626634450233762835" />
+      </scope>
+      <scope id="7626634450233762836" at="26,0,30,0" />
+      <scope id="7626634450233762836" at="30,0,34,0">
+        <var name="node" id="7626634450233762836" />
+        <var name="propertyValue" id="7626634450233762836" />
+      </scope>
+      <scope id="7626634450233762835" at="38,0,44,0" />
+      <unit id="7626634450233762835" at="45,0,48,0" name="ecommerceRating.constraints.Comment_Constraints$CONCEPTS" />
+      <unit id="7626634450233762835" at="49,0,52,0" name="ecommerceRating.constraints.Comment_Constraints$PROPS" />
+      <unit id="7626634450233762836" at="22,0,38,0" name="ecommerceRating.constraints.Comment_Constraints$Name_Property" />
+      <unit id="7626634450233762835" at="17,0,53,0" name="ecommerceRating.constraints.Comment_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233764369">
+    <file name="Attribute_Constraints.java">
+      <node id="7626634450233764369" at="18,34,19,33" concept="7" />
+      <node id="7626634450233764468" at="23,59,24,40" concept="7" />
+      <node id="7626634450233764468" at="27,35,28,18" concept="4" />
+      <node id="7626634450233764468" at="31,68,32,82" concept="1" />
+      <node id="7626634450233764471" at="34,82,35,127" concept="1" />
+      <node id="7626634450233764369" at="39,84,40,119" concept="3" />
+      <node id="7626634450233764468" at="40,119,41,61" concept="1" />
+      <node id="7626634450233764369" at="41,61,42,22" concept="4" />
+      <node id="7626634450233764369" at="46,0,47,0" concept="5" trace="Attribute$tS" />
+      <node id="7626634450233764369" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233764369" at="18,0,21,0" concept="0" trace="Attribute_Constraints#()V" />
+      <node id="7626634450233764468" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233764468" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233764468" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233764468" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233764369" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233764369" at="18,34,19,33" />
+      <scope id="7626634450233764468" at="23,59,24,40" />
+      <scope id="7626634450233764468" at="27,35,28,18" />
+      <scope id="7626634450233764468" at="31,68,32,82" />
+      <scope id="7626634450233764470" at="34,82,35,127" />
+      <scope id="7626634450233764369" at="18,0,21,0" />
+      <scope id="7626634450233764468" at="23,0,26,0">
+        <var name="container" id="7626634450233764468" />
+      </scope>
+      <scope id="7626634450233764468" at="34,0,37,0">
+        <var name="node" id="7626634450233764468" />
+        <var name="propertyValue" id="7626634450233764468" />
+      </scope>
+      <scope id="7626634450233764369" at="39,84,42,22">
+        <var name="properties" id="7626634450233764369" />
+      </scope>
+      <scope id="7626634450233764468" at="26,0,30,0" />
+      <scope id="7626634450233764468" at="30,0,34,0">
+        <var name="node" id="7626634450233764468" />
+        <var name="propertyValue" id="7626634450233764468" />
+      </scope>
+      <scope id="7626634450233764369" at="38,0,44,0" />
+      <unit id="7626634450233764369" at="45,0,48,0" name="ecommerceRating.constraints.Attribute_Constraints$CONCEPTS" />
+      <unit id="7626634450233764369" at="49,0,52,0" name="ecommerceRating.constraints.Attribute_Constraints$PROPS" />
+      <unit id="7626634450233764468" at="22,0,38,0" name="ecommerceRating.constraints.Attribute_Constraints$Name_Property" />
+      <unit id="7626634450233764369" at="17,0,53,0" name="ecommerceRating.constraints.Attribute_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233766110">
+    <file name="Item_Constraints.java">
+      <node id="7626634450233766110" at="18,29,19,28" concept="7" />
+      <node id="7626634450233766111" at="23,59,24,40" concept="7" />
+      <node id="7626634450233766111" at="27,35,28,18" concept="4" />
+      <node id="7626634450233766111" at="31,68,32,82" concept="1" />
+      <node id="7626634450233766114" at="34,82,35,127" concept="1" />
+      <node id="7626634450233766110" at="39,84,40,119" concept="3" />
+      <node id="7626634450233766111" at="40,119,41,61" concept="1" />
+      <node id="7626634450233766110" at="41,61,42,22" concept="4" />
+      <node id="7626634450233766110" at="46,0,47,0" concept="5" trace="Item$wj" />
+      <node id="7626634450233766110" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233766110" at="18,0,21,0" concept="0" trace="Item_Constraints#()V" />
+      <node id="7626634450233766111" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233766111" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233766111" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233766111" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233766110" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233766110" at="18,29,19,28" />
+      <scope id="7626634450233766111" at="23,59,24,40" />
+      <scope id="7626634450233766111" at="27,35,28,18" />
+      <scope id="7626634450233766111" at="31,68,32,82" />
+      <scope id="7626634450233766113" at="34,82,35,127" />
+      <scope id="7626634450233766110" at="18,0,21,0" />
+      <scope id="7626634450233766111" at="23,0,26,0">
+        <var name="container" id="7626634450233766111" />
+      </scope>
+      <scope id="7626634450233766111" at="34,0,37,0">
+        <var name="node" id="7626634450233766111" />
+        <var name="propertyValue" id="7626634450233766111" />
+      </scope>
+      <scope id="7626634450233766110" at="39,84,42,22">
+        <var name="properties" id="7626634450233766110" />
+      </scope>
+      <scope id="7626634450233766111" at="26,0,30,0" />
+      <scope id="7626634450233766111" at="30,0,34,0">
+        <var name="node" id="7626634450233766111" />
+        <var name="propertyValue" id="7626634450233766111" />
+      </scope>
+      <scope id="7626634450233766110" at="38,0,44,0" />
+      <unit id="7626634450233766110" at="45,0,48,0" name="ecommerceRating.constraints.Item_Constraints$CONCEPTS" />
+      <unit id="7626634450233766110" at="49,0,52,0" name="ecommerceRating.constraints.Item_Constraints$PROPS" />
+      <unit id="7626634450233766111" at="22,0,38,0" name="ecommerceRating.constraints.Item_Constraints$Name_Property" />
+      <unit id="7626634450233766110" at="17,0,53,0" name="ecommerceRating.constraints.Item_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233767644">
+    <file name="Model_Constraints.java">
+      <node id="7626634450233767644" at="18,30,19,29" concept="7" />
+      <node id="7626634450233767645" at="23,59,24,40" concept="7" />
+      <node id="7626634450233767645" at="27,35,28,18" concept="4" />
+      <node id="7626634450233767645" at="31,68,32,82" concept="1" />
+      <node id="7626634450233767648" at="34,82,35,127" concept="1" />
+      <node id="7626634450233767644" at="39,84,40,119" concept="3" />
+      <node id="7626634450233767645" at="40,119,41,61" concept="1" />
+      <node id="7626634450233767644" at="41,61,42,22" concept="4" />
+      <node id="7626634450233767644" at="46,0,47,0" concept="5" trace="Model$xh" />
+      <node id="7626634450233767644" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233767644" at="18,0,21,0" concept="0" trace="Model_Constraints#()V" />
+      <node id="7626634450233767645" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233767645" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233767645" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233767645" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233767644" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233767644" at="18,30,19,29" />
+      <scope id="7626634450233767645" at="23,59,24,40" />
+      <scope id="7626634450233767645" at="27,35,28,18" />
+      <scope id="7626634450233767645" at="31,68,32,82" />
+      <scope id="7626634450233767647" at="34,82,35,127" />
+      <scope id="7626634450233767644" at="18,0,21,0" />
+      <scope id="7626634450233767645" at="23,0,26,0">
+        <var name="container" id="7626634450233767645" />
+      </scope>
+      <scope id="7626634450233767645" at="34,0,37,0">
+        <var name="node" id="7626634450233767645" />
+        <var name="propertyValue" id="7626634450233767645" />
+      </scope>
+      <scope id="7626634450233767644" at="39,84,42,22">
+        <var name="properties" id="7626634450233767644" />
+      </scope>
+      <scope id="7626634450233767645" at="26,0,30,0" />
+      <scope id="7626634450233767645" at="30,0,34,0">
+        <var name="node" id="7626634450233767645" />
+        <var name="propertyValue" id="7626634450233767645" />
+      </scope>
+      <scope id="7626634450233767644" at="38,0,44,0" />
+      <unit id="7626634450233767644" at="45,0,48,0" name="ecommerceRating.constraints.Model_Constraints$CONCEPTS" />
+      <unit id="7626634450233767644" at="49,0,52,0" name="ecommerceRating.constraints.Model_Constraints$PROPS" />
+      <unit id="7626634450233767645" at="22,0,38,0" name="ecommerceRating.constraints.Model_Constraints$Name_Property" />
+      <unit id="7626634450233767644" at="17,0,53,0" name="ecommerceRating.constraints.Model_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233768640">
+    <file name="Rate_Constraints.java">
+      <node id="7626634450233768640" at="18,29,19,28" concept="7" />
+      <node id="7626634450233768641" at="23,59,24,40" concept="7" />
+      <node id="7626634450233768641" at="27,35,28,18" concept="4" />
+      <node id="7626634450233768641" at="31,68,32,82" concept="1" />
+      <node id="7626634450233768644" at="34,82,35,127" concept="1" />
+      <node id="7626634450233768640" at="39,84,40,119" concept="3" />
+      <node id="7626634450233768641" at="40,119,41,61" concept="1" />
+      <node id="7626634450233768640" at="41,61,42,22" concept="4" />
+      <node id="7626634450233768640" at="46,0,47,0" concept="5" trace="Rate$xK" />
+      <node id="7626634450233768640" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233768640" at="18,0,21,0" concept="0" trace="Rate_Constraints#()V" />
+      <node id="7626634450233768641" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233768641" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233768641" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233768641" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233768640" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233768640" at="18,29,19,28" />
+      <scope id="7626634450233768641" at="23,59,24,40" />
+      <scope id="7626634450233768641" at="27,35,28,18" />
+      <scope id="7626634450233768641" at="31,68,32,82" />
+      <scope id="7626634450233768643" at="34,82,35,127" />
+      <scope id="7626634450233768640" at="18,0,21,0" />
+      <scope id="7626634450233768641" at="23,0,26,0">
+        <var name="container" id="7626634450233768641" />
+      </scope>
+      <scope id="7626634450233768641" at="34,0,37,0">
+        <var name="node" id="7626634450233768641" />
+        <var name="propertyValue" id="7626634450233768641" />
+      </scope>
+      <scope id="7626634450233768640" at="39,84,42,22">
+        <var name="properties" id="7626634450233768640" />
+      </scope>
+      <scope id="7626634450233768641" at="26,0,30,0" />
+      <scope id="7626634450233768641" at="30,0,34,0">
+        <var name="node" id="7626634450233768641" />
+        <var name="propertyValue" id="7626634450233768641" />
+      </scope>
+      <scope id="7626634450233768640" at="38,0,44,0" />
+      <unit id="7626634450233768640" at="45,0,48,0" name="ecommerceRating.constraints.Rate_Constraints$CONCEPTS" />
+      <unit id="7626634450233768640" at="49,0,52,0" name="ecommerceRating.constraints.Rate_Constraints$PROPS" />
+      <unit id="7626634450233768641" at="22,0,38,0" name="ecommerceRating.constraints.Rate_Constraints$Name_Property" />
+      <unit id="7626634450233768640" at="17,0,53,0" name="ecommerceRating.constraints.Rate_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450233769632">
+    <file name="Review_Constraints.java">
+      <node id="7626634450233769632" at="18,31,19,30" concept="7" />
+      <node id="7626634450233769633" at="23,59,24,40" concept="7" />
+      <node id="7626634450233769633" at="27,35,28,18" concept="4" />
+      <node id="7626634450233769633" at="31,68,32,82" concept="1" />
+      <node id="7626634450233769636" at="34,82,35,127" concept="1" />
+      <node id="7626634450233769632" at="39,84,40,119" concept="3" />
+      <node id="7626634450233769633" at="40,119,41,61" concept="1" />
+      <node id="7626634450233769632" at="41,61,42,22" concept="4" />
+      <node id="7626634450233769632" at="46,0,47,0" concept="5" trace="Review$Gq" />
+      <node id="7626634450233769632" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450233769632" at="18,0,21,0" concept="0" trace="Review_Constraints#()V" />
+      <node id="7626634450233769633" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450233769633" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450233769633" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450233769633" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450233769632" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450233769632" at="18,31,19,30" />
+      <scope id="7626634450233769633" at="23,59,24,40" />
+      <scope id="7626634450233769633" at="27,35,28,18" />
+      <scope id="7626634450233769633" at="31,68,32,82" />
+      <scope id="7626634450233769635" at="34,82,35,127" />
+      <scope id="7626634450233769632" at="18,0,21,0" />
+      <scope id="7626634450233769633" at="23,0,26,0">
+        <var name="container" id="7626634450233769633" />
+      </scope>
+      <scope id="7626634450233769633" at="34,0,37,0">
+        <var name="node" id="7626634450233769633" />
+        <var name="propertyValue" id="7626634450233769633" />
+      </scope>
+      <scope id="7626634450233769632" at="39,84,42,22">
+        <var name="properties" id="7626634450233769632" />
+      </scope>
+      <scope id="7626634450233769633" at="26,0,30,0" />
+      <scope id="7626634450233769633" at="30,0,34,0">
+        <var name="node" id="7626634450233769633" />
+        <var name="propertyValue" id="7626634450233769633" />
+      </scope>
+      <scope id="7626634450233769632" at="38,0,44,0" />
+      <unit id="7626634450233769632" at="45,0,48,0" name="ecommerceRating.constraints.Review_Constraints$CONCEPTS" />
+      <unit id="7626634450233769632" at="49,0,52,0" name="ecommerceRating.constraints.Review_Constraints$PROPS" />
+      <unit id="7626634450233769633" at="22,0,38,0" name="ecommerceRating.constraints.Review_Constraints$Name_Property" />
+      <unit id="7626634450233769632" at="17,0,53,0" name="ecommerceRating.constraints.Review_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450235710601">
+    <file name="IntType_Constraints.java">
+      <node id="7626634450235710601" at="18,32,19,31" concept="7" />
+      <node id="7626634450235710602" at="23,59,24,40" concept="7" />
+      <node id="7626634450235710602" at="27,35,28,18" concept="4" />
+      <node id="7626634450235710602" at="31,68,32,82" concept="1" />
+      <node id="7626634450235710926" at="34,82,35,60" concept="1" />
+      <node id="7626634450235710601" at="39,84,40,119" concept="3" />
+      <node id="7626634450235710602" at="40,119,41,61" concept="1" />
+      <node id="7626634450235710601" at="41,61,42,22" concept="4" />
+      <node id="7626634450235710601" at="46,0,47,0" concept="5" trace="IntType$vO" />
+      <node id="7626634450235710601" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450235710601" at="18,0,21,0" concept="0" trace="IntType_Constraints#()V" />
+      <node id="7626634450235710602" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450235710602" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450235710602" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450235710602" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450235710601" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450235710601" at="18,32,19,31" />
+      <scope id="7626634450235710602" at="23,59,24,40" />
+      <scope id="7626634450235710602" at="27,35,28,18" />
+      <scope id="7626634450235710602" at="31,68,32,82" />
+      <scope id="7626634450235710693" at="34,82,35,60" />
+      <scope id="7626634450235710601" at="18,0,21,0" />
+      <scope id="7626634450235710602" at="23,0,26,0">
+        <var name="container" id="7626634450235710602" />
+      </scope>
+      <scope id="7626634450235710602" at="34,0,37,0">
+        <var name="node" id="7626634450235710602" />
+        <var name="propertyValue" id="7626634450235710602" />
+      </scope>
+      <scope id="7626634450235710601" at="39,84,42,22">
+        <var name="properties" id="7626634450235710601" />
+      </scope>
+      <scope id="7626634450235710602" at="26,0,30,0" />
+      <scope id="7626634450235710602" at="30,0,34,0">
+        <var name="node" id="7626634450235710602" />
+        <var name="propertyValue" id="7626634450235710602" />
+      </scope>
+      <scope id="7626634450235710601" at="38,0,44,0" />
+      <unit id="7626634450235710601" at="45,0,48,0" name="ecommerceRating.constraints.IntType_Constraints$CONCEPTS" />
+      <unit id="7626634450235710601" at="49,0,52,0" name="ecommerceRating.constraints.IntType_Constraints$PROPS" />
+      <unit id="7626634450235710602" at="22,0,38,0" name="ecommerceRating.constraints.IntType_Constraints$Name_Property" />
+      <unit id="7626634450235710601" at="17,0,53,0" name="ecommerceRating.constraints.IntType_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450235715623">
+    <file name="StringType_Constraints.java">
+      <node id="7626634450235715623" at="18,35,19,34" concept="7" />
+      <node id="7626634450235715624" at="23,59,24,40" concept="7" />
+      <node id="7626634450235715624" at="27,35,28,18" concept="4" />
+      <node id="7626634450235715624" at="31,68,32,82" concept="1" />
+      <node id="7626634450235715735" at="34,82,35,63" concept="1" />
+      <node id="7626634450235715623" at="39,84,40,119" concept="3" />
+      <node id="7626634450235715624" at="40,119,41,61" concept="1" />
+      <node id="7626634450235715623" at="41,61,42,22" concept="4" />
+      <node id="7626634450235715623" at="46,0,47,0" concept="5" trace="StringType$GT" />
+      <node id="7626634450235715623" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450235715623" at="18,0,21,0" concept="0" trace="StringType_Constraints#()V" />
+      <node id="7626634450235715624" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450235715624" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450235715624" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450235715624" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450235715623" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450235715623" at="18,35,19,34" />
+      <scope id="7626634450235715624" at="23,59,24,40" />
+      <scope id="7626634450235715624" at="27,35,28,18" />
+      <scope id="7626634450235715624" at="31,68,32,82" />
+      <scope id="7626634450235715671" at="34,82,35,63" />
+      <scope id="7626634450235715623" at="18,0,21,0" />
+      <scope id="7626634450235715624" at="23,0,26,0">
+        <var name="container" id="7626634450235715624" />
+      </scope>
+      <scope id="7626634450235715624" at="34,0,37,0">
+        <var name="node" id="7626634450235715624" />
+        <var name="propertyValue" id="7626634450235715624" />
+      </scope>
+      <scope id="7626634450235715623" at="39,84,42,22">
+        <var name="properties" id="7626634450235715623" />
+      </scope>
+      <scope id="7626634450235715624" at="26,0,30,0" />
+      <scope id="7626634450235715624" at="30,0,34,0">
+        <var name="node" id="7626634450235715624" />
+        <var name="propertyValue" id="7626634450235715624" />
+      </scope>
+      <scope id="7626634450235715623" at="38,0,44,0" />
+      <unit id="7626634450235715623" at="45,0,48,0" name="ecommerceRating.constraints.StringType_Constraints$CONCEPTS" />
+      <unit id="7626634450235715623" at="49,0,52,0" name="ecommerceRating.constraints.StringType_Constraints$PROPS" />
+      <unit id="7626634450235715624" at="22,0,38,0" name="ecommerceRating.constraints.StringType_Constraints$Name_Property" />
+      <unit id="7626634450235715623" at="17,0,53,0" name="ecommerceRating.constraints.StringType_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450236643838">
+    <file name="FloatType_Constraints.java">
+      <node id="7626634450236643838" at="18,34,19,33" concept="7" />
+      <node id="7626634450236643839" at="23,59,24,40" concept="7" />
+      <node id="7626634450236643839" at="27,35,28,18" concept="4" />
+      <node id="7626634450236643839" at="31,68,32,82" concept="1" />
+      <node id="7626634450236643862" at="34,82,35,62" concept="1" />
+      <node id="7626634450236643838" at="39,84,40,119" concept="3" />
+      <node id="7626634450236643839" at="40,119,41,61" concept="1" />
+      <node id="7626634450236643838" at="41,61,42,22" concept="4" />
+      <node id="7626634450236643838" at="46,0,47,0" concept="5" trace="FloatType$Bm" />
+      <node id="7626634450236643838" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450236643838" at="18,0,21,0" concept="0" trace="FloatType_Constraints#()V" />
+      <node id="7626634450236643839" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450236643839" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450236643839" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450236643839" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450236643838" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450236643838" at="18,34,19,33" />
+      <scope id="7626634450236643839" at="23,59,24,40" />
+      <scope id="7626634450236643839" at="27,35,28,18" />
+      <scope id="7626634450236643839" at="31,68,32,82" />
+      <scope id="7626634450236643842" at="34,82,35,62" />
+      <scope id="7626634450236643838" at="18,0,21,0" />
+      <scope id="7626634450236643839" at="23,0,26,0">
+        <var name="container" id="7626634450236643839" />
+      </scope>
+      <scope id="7626634450236643839" at="34,0,37,0">
+        <var name="node" id="7626634450236643839" />
+        <var name="propertyValue" id="7626634450236643839" />
+      </scope>
+      <scope id="7626634450236643838" at="39,84,42,22">
+        <var name="properties" id="7626634450236643838" />
+      </scope>
+      <scope id="7626634450236643839" at="26,0,30,0" />
+      <scope id="7626634450236643839" at="30,0,34,0">
+        <var name="node" id="7626634450236643839" />
+        <var name="propertyValue" id="7626634450236643839" />
+      </scope>
+      <scope id="7626634450236643838" at="38,0,44,0" />
+      <unit id="7626634450236643838" at="45,0,48,0" name="ecommerceRating.constraints.FloatType_Constraints$CONCEPTS" />
+      <unit id="7626634450236643838" at="49,0,52,0" name="ecommerceRating.constraints.FloatType_Constraints$PROPS" />
+      <unit id="7626634450236643839" at="22,0,38,0" name="ecommerceRating.constraints.FloatType_Constraints$Name_Property" />
+      <unit id="7626634450236643838" at="17,0,53,0" name="ecommerceRating.constraints.FloatType_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450250685232">
+    <file name="DoubleType_Constraints.java">
+      <node id="7626634450250685232" at="18,35,19,34" concept="7" />
+      <node id="7626634450250685233" at="23,59,24,40" concept="7" />
+      <node id="7626634450250685233" at="27,35,28,18" concept="4" />
+      <node id="7626634450250685233" at="31,68,32,82" concept="1" />
+      <node id="7626634450250685443" at="34,82,35,63" concept="1" />
+      <node id="7626634450250685232" at="39,84,40,119" concept="3" />
+      <node id="7626634450250685233" at="40,119,41,61" concept="1" />
+      <node id="7626634450250685232" at="41,61,42,22" concept="4" />
+      <node id="7626634450250685232" at="46,0,47,0" concept="5" trace="DoubleType$Lz" />
+      <node id="7626634450250685232" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450250685232" at="18,0,21,0" concept="0" trace="DoubleType_Constraints#()V" />
+      <node id="7626634450250685233" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450250685233" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450250685233" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450250685233" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450250685232" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450250685232" at="18,35,19,34" />
+      <scope id="7626634450250685233" at="23,59,24,40" />
+      <scope id="7626634450250685233" at="27,35,28,18" />
+      <scope id="7626634450250685233" at="31,68,32,82" />
+      <scope id="7626634450250685236" at="34,82,35,63" />
+      <scope id="7626634450250685232" at="18,0,21,0" />
+      <scope id="7626634450250685233" at="23,0,26,0">
+        <var name="container" id="7626634450250685233" />
+      </scope>
+      <scope id="7626634450250685233" at="34,0,37,0">
+        <var name="node" id="7626634450250685233" />
+        <var name="propertyValue" id="7626634450250685233" />
+      </scope>
+      <scope id="7626634450250685232" at="39,84,42,22">
+        <var name="properties" id="7626634450250685232" />
+      </scope>
+      <scope id="7626634450250685233" at="26,0,30,0" />
+      <scope id="7626634450250685233" at="30,0,34,0">
+        <var name="node" id="7626634450250685233" />
+        <var name="propertyValue" id="7626634450250685233" />
+      </scope>
+      <scope id="7626634450250685232" at="38,0,44,0" />
+      <unit id="7626634450250685232" at="45,0,48,0" name="ecommerceRating.constraints.DoubleType_Constraints$CONCEPTS" />
+      <unit id="7626634450250685232" at="49,0,52,0" name="ecommerceRating.constraints.DoubleType_Constraints$PROPS" />
+      <unit id="7626634450250685233" at="22,0,38,0" name="ecommerceRating.constraints.DoubleType_Constraints$Name_Property" />
+      <unit id="7626634450250685232" at="17,0,53,0" name="ecommerceRating.constraints.DoubleType_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:9fbe7af5-ac1e-4be9-adf5-c30a0aa97cf5(ecommerceRating.constraints)/7626634450253799501">
+    <file name="BooleanType_Constraints.java">
+      <node id="7626634450253799501" at="18,36,19,35" concept="7" />
+      <node id="7626634450253799502" at="23,59,24,40" concept="7" />
+      <node id="7626634450253799502" at="27,35,28,18" concept="4" />
+      <node id="7626634450253799502" at="31,68,32,82" concept="1" />
+      <node id="7626634450253799613" at="34,82,35,61" concept="1" />
+      <node id="7626634450253799501" at="39,84,40,119" concept="3" />
+      <node id="7626634450253799502" at="40,119,41,61" concept="1" />
+      <node id="7626634450253799501" at="41,61,42,22" concept="4" />
+      <node id="7626634450253799501" at="46,0,47,0" concept="5" trace="BooleanType$dY" />
+      <node id="7626634450253799501" at="50,0,51,0" concept="5" trace="name$MnvL" />
+      <node id="7626634450253799501" at="18,0,21,0" concept="0" trace="BooleanType_Constraints#()V" />
+      <node id="7626634450253799502" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="7626634450253799502" at="34,0,37,0" concept="6" trace="staticSetPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="7626634450253799502" at="26,0,30,0" concept="2" trace="hasOwnSetter#()Z" />
+      <node id="7626634450253799502" at="30,0,34,0" concept="2" trace="setPropertyValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="7626634450253799501" at="38,0,44,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="7626634450253799501" at="18,36,19,35" />
+      <scope id="7626634450253799502" at="23,59,24,40" />
+      <scope id="7626634450253799502" at="27,35,28,18" />
+      <scope id="7626634450253799502" at="31,68,32,82" />
+      <scope id="7626634450253799549" at="34,82,35,61" />
+      <scope id="7626634450253799501" at="18,0,21,0" />
+      <scope id="7626634450253799502" at="23,0,26,0">
+        <var name="container" id="7626634450253799502" />
+      </scope>
+      <scope id="7626634450253799502" at="34,0,37,0">
+        <var name="node" id="7626634450253799502" />
+        <var name="propertyValue" id="7626634450253799502" />
+      </scope>
+      <scope id="7626634450253799501" at="39,84,42,22">
+        <var name="properties" id="7626634450253799501" />
+      </scope>
+      <scope id="7626634450253799502" at="26,0,30,0" />
+      <scope id="7626634450253799502" at="30,0,34,0">
+        <var name="node" id="7626634450253799502" />
+        <var name="propertyValue" id="7626634450253799502" />
+      </scope>
+      <scope id="7626634450253799501" at="38,0,44,0" />
+      <unit id="7626634450253799501" at="45,0,48,0" name="ecommerceRating.constraints.BooleanType_Constraints$CONCEPTS" />
+      <unit id="7626634450253799501" at="49,0,52,0" name="ecommerceRating.constraints.BooleanType_Constraints$PROPS" />
+      <unit id="7626634450253799502" at="22,0,38,0" name="ecommerceRating.constraints.BooleanType_Constraints$Name_Property" />
+      <unit id="7626634450253799501" at="17,0,53,0" name="ecommerceRating.constraints.BooleanType_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

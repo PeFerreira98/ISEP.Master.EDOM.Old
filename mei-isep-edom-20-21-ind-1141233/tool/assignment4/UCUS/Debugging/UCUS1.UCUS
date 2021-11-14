@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="68045fb9-b521-41d2-82bd-9479d4ec3169" xmlns="http://schemas.microsoft.com/dsltools/UCUS">
+  <useCases>
+    <useCase Id="ac77c011-b41f-4f35-8c9d-0086c28c4e72" name="UseCase001">
+      <targetIncludedUseCases>
+        <useCaseIncludesUseCase Id="dc2a2adb-5f00-49ee-a41f-008848069148">
+          <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase003" />
+        </useCaseIncludesUseCase>
+        <useCaseIncludesUseCase Id="5980a7fd-1b9e-42d6-a28b-caacd53507b4">
+          <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase002" />
+        </useCaseIncludesUseCase>
+      </targetIncludedUseCases>
+      <targetExtendedUseCases>
+        <useCaseExtendsUseCase Id="6c2ab2a7-87be-4b68-b250-65a9a9157c01" constraint="Constraint">
+          <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase005" />
+        </useCaseExtendsUseCase>
+      </targetExtendedUseCases>
+    </useCase>
+    <useCase Id="d9274751-a0cf-44ee-8495-62df03f8fa89" name="UseCase002">
+      <targetIncludedUseCases>
+        <useCaseIncludesUseCase Id="1707ff1d-7fc6-4171-b533-a22bd81e9173">
+          <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase004" />
+        </useCaseIncludesUseCase>
+      </targetIncludedUseCases>
+    </useCase>
+    <useCase Id="5dc9a27e-0a3e-4a83-8cda-55e895efbe89" name="UseCase003" />
+    <useCase Id="aaa126b8-33d3-436c-bbe2-d597d808224e" name="UseCase004">
+      <targetIncludedUseCases>
+        <useCaseIncludesUseCase Id="e206f399-b30a-4a71-bcc1-93a29d71d7f5">
+          <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase006" />
+        </useCaseIncludesUseCase>
+        <useCaseIncludesUseCase Id="caf2eca9-1298-443a-aa44-ea692905890c">
+          <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase007" />
+        </useCaseIncludesUseCase>
+      </targetIncludedUseCases>
+    </useCase>
+    <useCase Id="5c69ea55-210b-45ed-8278-3e29fc0606bb" name="UseCase005" />
+    <useCase Id="7af84458-9a16-43c7-a009-b0acde8078e4" name="UseCase006" />
+    <useCase Id="440dfc44-d506-43bf-837e-5cb3cb4eeda7" name="UseCase007" />
+  </useCases>
+  <actors>
+    <modelHasActors Id="e3b643f3-80e6-408b-8e56-4f088420505a">
+      <actor Id="24536135-54f4-4b4b-9cef-e35783af8f7c" name="User">
+        <useCase>
+          <actorPerformsUseCase Id="7482091d-b131-4c2b-852c-fa3508375751">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase001" />
+          </actorPerformsUseCase>
+        </useCase>
+      </actor>
+    </modelHasActors>
+  </actors>
+  <subjects>
+    <modelHasSubjects Id="e8f63e12-5374-47fe-8ff3-2297b2f9e58e">
+      <subject Id="68064097-00d0-4121-b9ff-84b9b81c148d" name="Ecommerce">
+        <useCases>
+          <subjectReferencesUseCase Id="d19379f3-0ab0-47e9-a36c-9f75aa0f12c7">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase001" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="e1fd0977-b807-4c0c-9dad-93a5cca973b9">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase005" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="c9a11b9b-2c00-41a9-a115-20e9c78eb22b">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase003" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="c693ed61-0bbc-4573-9856-9d0c4b580781">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase002" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="71628d4c-9b70-4f1f-941b-b12ada25fb6d">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase004" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="ea386d92-6032-4fc7-95d8-15c9d2a3c1d9">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase006" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="29eec7ad-7d8a-4656-af7f-e5445cf3ad8a">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/UseCase007" />
+          </subjectReferencesUseCase>
+        </useCases>
+      </subject>
+    </modelHasSubjects>
+  </subjects>
+</model>

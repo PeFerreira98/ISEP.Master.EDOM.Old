@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:5c256580-c888-4d74-b0c6-187cffe29db4(crr.aliexpress)/1120097950887122881">
+    <file name="AliExpress.java">
+      <node id="1120097950887122881" at="9,0,10,0" concept="11" trace="Items" />
+      <node id="1120097950887770072" at="10,0,11,0" concept="11" trace="Users" />
+      <node id="1120097950887122881" at="12,42,13,11" concept="3" />
+      <node id="1120097950887122881" at="13,11,14,15" concept="3" />
+      <node id="1120097950887122881" at="17,33,18,23" concept="8" />
+      <node id="1120097950887122881" at="18,23,19,43" concept="8" />
+      <node id="1120097950887122881" at="19,43,20,0" concept="10" />
+      <node id="1120097950887122881" at="21,28,22,39" concept="3" />
+      <node id="1120097950887122881" at="22,39,23,37" concept="3" />
+      <node id="1120097950887770072" at="23,37,24,37" concept="3" />
+      <node id="1120097950887122881" at="24,37,25,0" concept="10" />
+      <node id="1120097950887122881" at="26,11,27,55" concept="3" />
+      <node id="1120097950887122881" at="28,30,29,46" concept="3" />
+      <node id="1120097950887122881" at="29,46,30,17" concept="2" />
+      <node id="1120097950887122881" at="31,7,32,0" concept="10" />
+      <node id="1120097950887122881" at="34,15,35,16" concept="0" />
+      <node id="1120097950887770072" at="36,15,37,53" concept="8" />
+      <node id="1120097950887770072" at="38,50,39,46" concept="3" />
+      <node id="1120097950887770072" at="39,46,40,56" concept="3" />
+      <node id="1120097950887770072" at="42,15,43,73" concept="8" />
+      <node id="1120097950887770072" at="43,73,44,53" concept="3" />
+      <node id="1120097950887770072" at="45,34,46,50" concept="3" />
+      <node id="1120097950887770072" at="46,50,47,21" concept="2" />
+      <node id="1120097950887770072" at="48,11,49,0" concept="10" />
+      <node id="1120097950887770072" at="49,0,50,16" concept="0" />
+      <node id="1120097950887122881" at="51,16,52,47" concept="3" />
+      <node id="1120097950887122881" at="52,47,53,16" concept="0" />
+      <node id="1120097950887122881" at="58,0,60,0" concept="12" trace="seed#()V" />
+      <node id="1120097950887122881" at="12,0,16,0" concept="12" trace="main#([Ljava/lang/String;)V" />
+      <node id="1120097950887770072" at="37,53,41,11" concept="5" />
+      <node id="1120097950887122881" at="25,0,31,7" concept="14" />
+      <node id="1120097950887770072" at="41,11,48,11" concept="14" />
+      <node id="1120097950887122881" at="32,0,54,7" concept="13" />
+      <node id="1120097950887122881" at="20,0,55,5" concept="15" />
+      <node id="1120097950887122881" at="17,0,57,0" concept="12" trace="userMenu#()V" />
+      <scope id="1120097950887122881" at="58,29,58,29" />
+      <scope id="1120097950887122881" at="26,11,27,55" />
+      <scope id="1120097950887122881" at="34,15,35,16" />
+      <scope id="1120097950887122881" at="12,42,14,15" />
+      <scope id="1120097950887122881" at="28,30,30,17" />
+      <scope id="1120097950887770072" at="38,50,40,56" />
+      <scope id="1120097950887770072" at="42,15,44,53">
+        <var name="optSelectedUser" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887770072" at="45,34,47,21" />
+      <scope id="1120097950887122881" at="51,16,53,16" />
+      <scope id="1120097950887122881" at="58,0,60,0" />
+      <scope id="1120097950887122881" at="28,7,31,7">
+        <var name="ex" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887770072" at="45,11,48,11">
+        <var name="ex" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887122881" at="12,0,16,0">
+        <var name="args" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887770072" at="37,53,41,11">
+        <var name="i" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887770072" at="36,15,50,16">
+        <var name="inputUser" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887122881" at="21,28,54,7" />
+      <scope id="1120097950887122881" at="17,33,55,5">
+        <var name="input" id="1120097950887122881" />
+        <var name="selection" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="17,0,57,0" />
+      <unit id="1120097950887122881" at="8,0,62,0" name="crr.aliexpress.AliExpress" />
+    </file>
+    <file name="IUser.java">
+      <node id="1120097950887122881" at="7,0,8,0" concept="7" trace="execute#()V" />
+      <scope id="1120097950887122881" at="7,0,8,0" />
+      <unit id="1120097950887122881" at="6,0,9,0" name="crr.aliexpress.IUser" />
+    </file>
+    <file name="Item.java">
+      <node id="1120097950888092057" at="10,0,11,0" concept="4" trace="Id" />
+      <node id="1120097950888133534" at="11,0,12,0" concept="4" trace="Description" />
+      <node id="1120097950888133568" at="12,0,13,0" concept="4" trace="Name" />
+      <node id="7626634450236469175" at="13,0,14,0" concept="4" trace="Price" />
+      <node id="1120097950888092057" at="14,0,15,0" concept="4" trace="Rates" />
+      <node id="1120097950888092057" at="19,67,20,12" concept="3" />
+      <node id="1120097950888133534" at="20,12,21,35" concept="3" />
+      <node id="1120097950888133568" at="21,35,22,21" concept="3" />
+      <node id="7626634450236469175" at="22,21,23,23" concept="3" />
+      <node id="1120097950888092057" at="26,28,27,20" concept="8" />
+      <node id="1120097950888092057" at="27,20,28,0" concept="10" />
+      <node id="1120097950888092057" at="28,0,29,31" concept="3" />
+      <node id="1120097950888133534" at="29,31,30,54" concept="3" />
+      <node id="1120097950888133568" at="30,54,31,40" concept="3" />
+      <node id="7626634450236469175" at="31,40,32,42" concept="3" />
+      <node id="1120097950888092057" at="32,42,33,0" concept="10" />
+      <node id="1120097950888092057" at="33,0,34,27" concept="3" />
+      <node id="1120097950888092057" at="34,27,35,0" concept="10" />
+      <node id="1120097950888092057" at="35,0,36,24" concept="3" />
+      <node id="1120097950888092057" at="37,44,38,37" concept="3" />
+      <node id="1120097950888092057" at="38,37,39,27" concept="3" />
+      <node id="1120097950888092057" at="40,5,41,0" concept="10" />
+      <node id="1120097950888092057" at="41,0,42,15" concept="9" />
+      <node id="1120097950888092057" at="16,0,18,0" concept="1" trace="Item#()V" />
+      <node id="1120097950888092057" at="36,24,40,5" concept="5" />
+      <node id="1120097950888092057" at="19,0,25,0" concept="1" trace="Item#(ILjava/lang/String;Ljava/lang/String;I)V" />
+      <node id="1120097950888092057" at="26,0,44,0" concept="7" trace="toString#()Ljava/lang/String;" />
+      <scope id="1120097950888092057" at="16,17,16,17" />
+      <scope id="1120097950888092057" at="16,0,18,0" />
+      <scope id="1120097950888092057" at="37,44,39,27" />
+      <scope id="1120097950888092057" at="19,67,23,23" />
+      <scope id="1120097950888092057" at="36,24,40,5">
+        <var name="i" id="1120097950888092057" />
+      </scope>
+      <scope id="1120097950888092057" at="19,0,25,0">
+        <var name="Description" id="1120097950888133534" />
+        <var name="Name" id="1120097950888133568" />
+        <var name="Price" id="7626634450236469175" />
+        <var name="id" id="1120097950888092057" />
+      </scope>
+      <scope id="1120097950888092057" at="26,28,42,15">
+        <var name="res" id="1120097950888092057" />
+      </scope>
+      <scope id="1120097950888092057" at="26,0,44,0" />
+      <unit id="1120097950888092057" at="8,0,45,0" name="crr.aliexpress.Item" />
+    </file>
+    <file name="Rate.java">
+      <node id="7626634450232576116" at="7,0,8,0" concept="4" trace="Id" />
+      <node id="7626634450232576116" at="8,0,9,0" concept="4" trace="Author" />
+      <node id="7626634450232576116" at="9,0,10,0" concept="4" trace="Review" />
+      <node id="7626634450236333696" at="10,0,11,0" concept="4" trace="Value" />
+      <node id="7626634450232576116" at="15,28,16,20" concept="8" />
+      <node id="7626634450236333696" at="16,20,17,37" concept="3" />
+      <node id="7626634450232576116" at="17,37,18,67" concept="3" />
+      <node id="7626634450232576116" at="18,67,19,15" concept="9" />
+      <node id="7626634450232576116" at="12,0,14,0" concept="1" trace="Rate#()V" />
+      <node id="7626634450232576116" at="15,0,21,0" concept="7" trace="toString#()Ljava/lang/String;" />
+      <scope id="7626634450232576116" at="12,17,12,17" />
+      <scope id="7626634450232576116" at="12,0,14,0" />
+      <scope id="7626634450232576116" at="15,28,19,15">
+        <var name="res" id="7626634450232576116" />
+      </scope>
+      <scope id="7626634450232576116" at="15,0,21,0" />
+      <unit id="7626634450232576116" at="6,0,22,0" name="crr.aliexpress.Rate" />
+    </file>
+    <file name="Review.java">
+      <node id="7626634450233879114" at="7,0,8,0" concept="4" trace="Id" />
+      <node id="7626634450236333679" at="8,0,9,0" concept="4" trace="Content" />
+      <node id="7626634450233879114" at="13,28,14,20" concept="8" />
+      <node id="7626634450236333679" at="14,20,15,39" concept="9" />
+      <node id="7626634450233879114" at="10,0,12,0" concept="1" trace="Review#()V" />
+      <node id="7626634450233879114" at="13,0,17,0" concept="7" trace="toString#()Ljava/lang/String;" />
+      <scope id="7626634450233879114" at="10,19,10,19" />
+      <scope id="7626634450233879114" at="10,0,12,0" />
+      <scope id="7626634450233879114" at="13,28,15,39">
+        <var name="res" id="7626634450233879114" />
+      </scope>
+      <scope id="7626634450233879114" at="13,0,17,0" />
+      <unit id="7626634450233879114" at="6,0,18,0" name="crr.aliexpress.Review" />
+    </file>
+    <file name="SApprovalFactory.java">
+      <unit id="1120097950887122881" at="6,0,8,0" name="crr.aliexpress.SApprovalFactory" />
+    </file>
+    <file name="User.java">
+      <node id="1120097950887770072" at="9,0,10,0" concept="4" trace="Id" />
+      <node id="7626634450236333666" at="10,0,11,0" concept="4" trace="Name" />
+      <node id="1120097950887770072" at="12,36,13,12" concept="3" />
+      <node id="7626634450236333666" at="13,12,14,21" concept="3" />
+      <node id="1120097950887770072" at="17,28,18,20" concept="8" />
+      <node id="1120097950887770072" at="18,20,19,31" concept="3" />
+      <node id="7626634450236333666" at="19,31,20,35" concept="3" />
+      <node id="1120097950887770072" at="20,35,21,15" concept="9" />
+      <node id="1120097950887770072" at="24,25,25,25" concept="8" />
+      <node id="1120097950887770072" at="25,25,26,18" concept="8" />
+      <node id="1120097950887770072" at="26,18,27,43" concept="8" />
+      <node id="1120097950887770072" at="27,43,28,0" concept="10" />
+      <node id="1120097950887770072" at="29,21,30,49" concept="3" />
+      <node id="1120097950887770072" at="30,49,31,0" concept="10" />
+      <node id="1120097950887770072" at="31,0,32,37" concept="3" />
+      <node id="1120097950887770072" at="32,37,33,47" concept="3" />
+      <node id="1120097950887770072" at="33,47,34,47" concept="3" />
+      <node id="1120097950887770072" at="34,47,35,0" concept="10" />
+      <node id="1120097950887770072" at="36,11,37,55" concept="3" />
+      <node id="1120097950887770072" at="38,30,39,46" concept="3" />
+      <node id="1120097950887770072" at="39,46,40,17" concept="2" />
+      <node id="1120097950887770072" at="41,7,42,0" concept="10" />
+      <node id="1120097950887770072" at="44,15,45,22" concept="3" />
+      <node id="1120097950887770072" at="45,22,46,16" concept="0" />
+      <node id="1120097950887770072" at="47,15,48,31" concept="3" />
+      <node id="1120097950887770072" at="48,31,49,16" concept="0" />
+      <node id="1120097950887770072" at="50,15,51,33" concept="3" />
+      <node id="1120097950887770072" at="51,33,52,16" concept="0" />
+      <node id="1120097950887770072" at="53,16,54,48" concept="3" />
+      <node id="1120097950887770072" at="54,48,55,16" concept="0" />
+      <node id="1120097950887770072" at="12,0,16,0" concept="1" trace="User#(ILjava/lang/String;)V" />
+      <node id="1120097950887770072" at="17,0,23,0" concept="7" trace="toString#()Ljava/lang/String;" />
+      <node id="1120097950887770072" at="35,0,41,7" concept="14" />
+      <node id="1120097950887770072" at="42,0,56,7" concept="13" />
+      <node id="1120097950887770072" at="28,0,57,5" concept="15" />
+      <node id="1120097950887770072" at="24,0,59,0" concept="7" trace="execute#()V" />
+      <scope id="1120097950887770072" at="36,11,37,55" />
+      <scope id="1120097950887770072" at="12,36,14,21" />
+      <scope id="1120097950887770072" at="38,30,40,17" />
+      <scope id="1120097950887770072" at="44,15,46,16" />
+      <scope id="1120097950887770072" at="47,15,49,16" />
+      <scope id="1120097950887770072" at="50,15,52,16" />
+      <scope id="1120097950887770072" at="53,16,55,16" />
+      <scope id="1120097950887770072" at="38,7,41,7">
+        <var name="ex" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887770072" at="12,0,16,0">
+        <var name="Name" id="7626634450236333666" />
+        <var name="id" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887770072" at="17,28,21,15">
+        <var name="res" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887770072" at="17,0,23,0" />
+      <scope id="1120097950887770072" at="29,21,56,7" />
+      <scope id="1120097950887770072" at="24,25,57,5">
+        <var name="exit" id="1120097950887770072" />
+        <var name="input" id="1120097950887770072" />
+        <var name="selection" id="1120097950887770072" />
+      </scope>
+      <scope id="1120097950887770072" at="24,0,59,0" />
+      <unit id="1120097950887770072" at="7,0,60,0" name="crr.aliexpress.User" />
+    </file>
+    <file name="Utils.java">
+      <node id="1120097950887122881" at="12,45,13,43" concept="8" />
+      <node id="1120097950887122881" at="13,43,14,27" concept="8" />
+      <node id="1120097950887122881" at="14,27,15,0" concept="10" />
+      <node id="1120097950887122881" at="15,0,16,39" concept="3" />
+      <node id="1120097950887122881" at="16,39,17,43" concept="3" />
+      <node id="1120097950887122881" at="17,43,18,37" concept="8" />
+      <node id="1120097950887122881" at="18,37,19,0" concept="10" />
+      <node id="1120097950887122881" at="19,0,20,54" concept="8" />
+      <node id="1120097950887122881" at="21,23,22,44" concept="3" />
+      <node id="1120097950887122881" at="22,44,23,13" concept="9" />
+      <node id="1120097950887122881" at="24,5,25,0" concept="10" />
+      <node id="1120097950887122881" at="25,0,26,91" concept="8" />
+      <node id="1120097950887122881" at="26,91,27,0" concept="10" />
+      <node id="1120097950887122881" at="28,74,29,58" concept="8" />
+      <node id="1120097950887122881" at="30,57,31,17" concept="2" />
+      <node id="1120097950887122881" at="32,7,33,0" concept="10" />
+      <node id="1120097950887122881" at="33,0,34,32" concept="3" />
+      <node id="1120097950887122881" at="35,5,36,0" concept="10" />
+      <node id="1120097950887122881" at="36,0,37,74" concept="3" />
+      <node id="1120097950887122881" at="37,74,38,34" concept="8" />
+      <node id="1120097950887122881" at="39,45,40,35" concept="3" />
+      <node id="1120097950887122881" at="40,35,41,35" concept="8" />
+      <node id="1120097950887122881" at="41,35,42,0" concept="10" />
+      <node id="1120097950887122881" at="44,80,45,64" concept="8" />
+      <node id="1120097950887122881" at="45,64,46,0" concept="10" />
+      <node id="1120097950887122881" at="47,39,48,21" concept="2" />
+      <node id="1120097950887122881" at="49,11,50,0" concept="10" />
+      <node id="1120097950887122881" at="50,0,51,52" concept="3" />
+      <node id="1120097950887122881" at="51,52,52,46" concept="8" />
+      <node id="1120097950887122881" at="52,46,53,0" concept="10" />
+      <node id="1120097950887122881" at="55,23,56,60" concept="3" />
+      <node id="1120097950887122881" at="56,60,57,20" concept="0" />
+      <node id="1120097950887122881" at="57,20,58,0" concept="10" />
+      <node id="1120097950887122881" at="59,26,60,62" concept="3" />
+      <node id="1120097950887122881" at="60,62,61,20" concept="0" />
+      <node id="1120097950887122881" at="61,20,62,0" concept="10" />
+      <node id="1120097950887122881" at="63,20,64,42" concept="3" />
+      <node id="1120097950887122881" at="64,42,65,20" concept="0" />
+      <node id="1120097950887122881" at="68,30,69,29" concept="3" />
+      <node id="1120097950887122881" at="70,7,71,0" concept="10" />
+      <node id="1120097950887122881" at="71,0,72,27" concept="3" />
+      <node id="1120097950887122881" at="73,5,74,0" concept="10" />
+      <node id="1120097950887122881" at="74,0,75,23" concept="3" />
+      <node id="1120097950887122881" at="75,23,76,25" concept="3" />
+      <node id="1120097950887122881" at="80,55,81,50" concept="3" />
+      <node id="1120097950887122881" at="81,50,82,52" concept="3" />
+      <node id="1120097950887122881" at="86,43,87,29" concept="8" />
+      <node id="1120097950887122881" at="87,29,88,0" concept="10" />
+      <node id="1120097950887122881" at="90,45,91,47" concept="3" />
+      <node id="1120097950887122881" at="91,47,92,14" concept="0" />
+      <node id="1120097950887122881" at="94,5,95,0" concept="10" />
+      <node id="1120097950887122881" at="95,0,96,24" concept="9" />
+      <node id="1120097950887122881" at="99,62,100,47" concept="3" />
+      <node id="1120097950887122881" at="100,47,101,43" concept="8" />
+      <node id="1120097950887122881" at="101,43,102,41" concept="8" />
+      <node id="1120097950887122881" at="102,41,103,0" concept="10" />
+      <node id="1120097950887122881" at="106,19,107,55" concept="3" />
+      <node id="1120097950887122881" at="107,55,108,16" concept="0" />
+      <node id="1120097950887122881" at="109,22,110,57" concept="3" />
+      <node id="1120097950887122881" at="110,57,111,16" concept="0" />
+      <node id="1120097950887122881" at="112,21,113,55" concept="3" />
+      <node id="1120097950887122881" at="113,55,114,16" concept="0" />
+      <node id="1120097950887122881" at="115,23,116,59" concept="3" />
+      <node id="1120097950887122881" at="117,16,118,37" concept="3" />
+      <node id="1120097950887122881" at="118,37,119,16" concept="0" />
+      <node id="1120097950887122881" at="121,28,122,27" concept="3" />
+      <node id="1120097950887122881" at="29,58,32,7" concept="6" />
+      <node id="1120097950887122881" at="46,0,49,11" concept="6" />
+      <node id="1120097950887122881" at="20,54,24,5" concept="6" />
+      <node id="1120097950887122881" at="79,37,83,5" concept="5" />
+      <node id="1120097950887122881" at="89,55,93,7" concept="6" />
+      <node id="1120097950887122881" at="79,0,85,0" concept="12" trace="displayItems#()V" />
+      <node id="1120097950887122881" at="88,0,94,5" concept="5" />
+      <node id="1120097950887122881" at="27,0,35,5" concept="5" />
+      <node id="1120097950887122881" at="86,0,98,0" concept="12" trace="getItemById#(I)Lcrr/aliexpress/Item;" />
+      <node id="1120097950887122881" at="53,0,66,11" concept="13" />
+      <node id="1120097950887122881" at="104,9,120,7" concept="13" />
+      <node id="1120097950887122881" at="103,0,123,5" concept="14" />
+      <node id="1120097950887122881" at="43,11,67,9" concept="5" />
+      <node id="1120097950887122881" at="99,0,125,0" concept="12" trace="setFieldValue#(Ljava/lang/reflect/Field;Ljava/lang/Object;)V" />
+      <node id="1120097950887122881" at="42,0,70,7" concept="14" />
+      <node id="1120097950887122881" at="38,34,73,5" concept="6" />
+      <node id="1120097950887122881" at="12,0,78,0" concept="12" trace="createRate#(Lcrr/aliexpress/IUser;)V" />
+      <scope id="1120097950887122881" at="30,57,31,17" />
+      <scope id="1120097950887122881" at="47,39,48,21" />
+      <scope id="1120097950887122881" at="68,30,69,29" />
+      <scope id="1120097950887122881" at="115,23,116,59" />
+      <scope id="1120097950887122881" at="121,28,122,27" />
+      <scope id="1120097950887122881" at="21,23,23,13" />
+      <scope id="1120097950887122881" at="63,20,65,20" />
+      <scope id="1120097950887122881" at="68,7,70,7">
+        <var name="ex" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="80,55,82,52" />
+      <scope id="1120097950887122881" at="90,45,92,14" />
+      <scope id="1120097950887122881" at="106,19,108,16" />
+      <scope id="1120097950887122881" at="109,22,111,16" />
+      <scope id="1120097950887122881" at="112,21,114,16" />
+      <scope id="1120097950887122881" at="117,16,119,16" />
+      <scope id="1120097950887122881" at="121,5,123,5">
+        <var name="ex" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="55,23,58,0" />
+      <scope id="1120097950887122881" at="59,26,62,0" />
+      <scope id="1120097950887122881" at="79,37,83,5" />
+      <scope id="1120097950887122881" at="79,37,83,5">
+        <var name="i" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="89,55,93,7" />
+      <scope id="1120097950887122881" at="28,74,34,32">
+        <var name="attr" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="79,0,85,0" />
+      <scope id="1120097950887122881" at="88,0,94,5">
+        <var name="i" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="27,0,35,5">
+        <var name="i" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="86,43,96,24">
+        <var name="itemSelected" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="86,0,98,0">
+        <var name="id" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="104,9,120,7" />
+      <scope id="1120097950887122881" at="44,80,66,11">
+        <var name="attr" id="1120097950887122881" />
+        <var name="attrvalue" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="43,11,67,9" />
+      <scope id="1120097950887122881" at="43,11,67,9">
+        <var name="i" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="99,62,123,5">
+        <var name="fieldValue" id="1120097950887122881" />
+        <var name="input" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="99,0,125,0">
+        <var name="field" id="1120097950887122881" />
+        <var name="obj" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="39,45,72,27">
+        <var name="review" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="12,45,76,25">
+        <var name="attributesNotToShow" id="1120097950887122881" />
+        <var name="input" id="1120097950887122881" />
+        <var name="item" id="1120097950887122881" />
+        <var name="itemId" id="1120097950887122881" />
+        <var name="opt" id="1120097950887122881" />
+        <var name="rate" id="1120097950887122881" />
+      </scope>
+      <scope id="1120097950887122881" at="12,0,78,0">
+        <var name="user" id="1120097950887122881" />
+      </scope>
+      <unit id="1120097950887122881" at="10,0,126,0" name="crr.aliexpress.Utils" />
+    </file>
+  </root>
+</debug-info>
+

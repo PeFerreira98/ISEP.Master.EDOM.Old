@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/ecore_project/src-gen" creationIcons="false" editDirectory="/ecore_project.edit/src-gen"
+    editorDirectory="/ecore_project.editor/src-gen" modelPluginID="ecore_project"
+    modelName="Ecore_project" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>ecore_project.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Ecore_project" disposableProviderFactory="true" ecorePackage="ecore_project.ecore#/">
+    <genClasses ecoreClass="ecore_project.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//Model/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/review"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/datatype"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/item"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/rate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/user"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/approvalprocess"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Model/comment"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//DataType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//DataType/name"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//Item">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//Item/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Item/rate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Item/attribute"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Item/comment"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//User/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//User/attribute"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//Review">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//Review/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Review/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Review/user"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Review/approvalprocess"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//Rate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//Rate/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Rate/approvalprocess"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Rate/review"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Rate/user"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Rate/attribute"/>
+      <genFeatures children="true" createChild="true" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Rate/item"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//Attribute/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Attribute/datatype"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Attribute/rate"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//ApprovalProcess">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//ApprovalProcess/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalProcess/approvalstart"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalProcess/approvalstep"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalProcess/approvaloutcome"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalProcess/attribute"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//ApprovalStep">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//ApprovalStep/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalStep/approvalstep"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalStep/approvaloutcome"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//ApprovalOutcome">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//ApprovalOutcome/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalOutcome/approvalstep"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//ApprovalStart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//ApprovalStart/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//ApprovalStart/approvalstep"/>
+    </genClasses>
+    <genClasses ecoreClass="ecore_project.ecore#//Comment">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ecore_project.ecore#//Comment/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Comment/approvalprocess"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Comment/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Comment/user"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ecore_project.ecore#//Comment/item"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

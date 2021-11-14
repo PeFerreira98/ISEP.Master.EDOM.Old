@@ -1,0 +1,37 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ UCUS processor="UCUSDirectiveProcessor" requires="fileName='Model.UCUS'" #>
+
+// Generated material. Generating code in C# Master Race!.
+
+package pt.isep.edom.atb.ucusdsl.proto1;
+
+public interface Interaction {
+	public void execute();
+}
+
+public interface Role {
+	public void execute();
+}
+
+public interface Factory {
+	// Use Cases
+<#
+  foreach (UseCase uc in this.Model.UseCases)
+  {
+#>
+	public Interaction get<#= uc.Name #>();
+<#    
+  }
+#>
+
+	// Actors
+<#
+  foreach (Actor a in this.Model.Actors)
+  {
+#>
+	public Role get<#= a.Name #>();
+<#    
+  }
+#>
+}

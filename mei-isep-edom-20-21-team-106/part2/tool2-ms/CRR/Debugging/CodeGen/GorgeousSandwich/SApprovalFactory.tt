@@ -1,0 +1,28 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\GorgeousSandwich.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(this.Model.ApprovalProcesses.Any())
+{
+#>
+package crr.<#= this.Model.Name.ToLower() #>;
+
+public class SApprovalFactory
+{
+<#
+foreach(var step in this.Model.ApprovalProcesses.SelectMany(x => x.Steps) )
+{
+#>
+	public static <#= step.Name #> create<#= step.Name #>(){ return new <#= step.Name #>(); }
+
+<#
+}
+#>
+}
+<#
+}
+#>

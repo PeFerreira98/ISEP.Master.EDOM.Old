@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<uCUSDiagram dslVersion="1.0.0.0" Id="b048dfd0-9e19-404e-85b4-246e01dacdfd" absoluteBounds="0, 0, 13.25, 8.5" name="Test">
+  <modelMoniker Id="61037f92-a1ba-474e-beb0-4f35b7d55bb3" />
+  <nestedChildShapes>
+    <useCaseShape Id="d8d5beec-12c8-4fb9-82a3-d4529a342762" absoluteBounds="3.875, 3, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase1" />
+    </useCaseShape>
+    <genericShape Id="e0c5eff9-c9f1-40ad-8573-dd07cf0f3e5b" absoluteBounds="0.75, 3.25, 2, 0.75">
+      <actorMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/Actor1" />
+    </genericShape>
+    <genericConnector Id="c39ec6d3-4449-4623-a022-4b1552849b8d" edgePoints="[(2.75 : 3.625); (3.89881562258611 : 3.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <actorPerformsUseCaseMoniker Id="f498eb85-61a1-464e-b150-a458d238596e" />
+      <nodes>
+        <genericShapeMoniker Id="e0c5eff9-c9f1-40ad-8573-dd07cf0f3e5b" />
+        <useCaseShapeMoniker Id="d8d5beec-12c8-4fb9-82a3-d4529a342762" />
+      </nodes>
+    </genericConnector>
+    <useCaseShape Id="456d2a2c-6403-4e69-bed2-1257a5ad359e" absoluteBounds="3.625, 0.5, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase2" />
+    </useCaseShape>
+    <useCaseShape Id="eb30f94a-3f50-453e-99dc-4ec2d37d3864" absoluteBounds="6.5, 3.125, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase3" />
+    </useCaseShape>
+    <useCaseShape Id="05f39d7f-8303-49fd-abde-f5f37e97bf8e" absoluteBounds="4.375, 5.5, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase4" />
+    </useCaseShape>
+    <genericShape Id="325d6d4e-0ef2-4193-aa0a-36c473dc842e" absoluteBounds="1.25, 5.5, 2, 0.75">
+      <actorMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/Actor2" />
+    </genericShape>
+    <genericConnector Id="1856cab1-dd10-4e0e-827c-561bf0e7520b" edgePoints="[(3.25 : 5.875); (4.39881562258611 : 5.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <actorPerformsUseCaseMoniker Id="11ce3cfc-3564-49c3-a2b1-2c93eaa39a26" />
+      <nodes>
+        <genericShapeMoniker Id="325d6d4e-0ef2-4193-aa0a-36c473dc842e" />
+        <useCaseShapeMoniker Id="05f39d7f-8303-49fd-abde-f5f37e97bf8e" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="5545e8a2-8014-49e6-8ca0-96a491199778" edgePoints="[(5.36911755623692 : 3.5625); (6.50588244376308 : 3.5625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseIncludesUseCaseMoniker Id="6abbe1a8-c177-4aa4-b72c-6b6999bf9e08" />
+      <nodes>
+        <useCaseShapeMoniker Id="d8d5beec-12c8-4fb9-82a3-d4529a342762" />
+        <useCaseShapeMoniker Id="eb30f94a-3f50-453e-99dc-4ec2d37d3864" />
+      </nodes>
+    </genericConnector>
+    <extendsConnector Id="8d9b6655-ba47-4ceb-a72a-e975b718dc80" edgePoints="[(4.5 : 3.00699335140837); (4.5 : 1.49300664859163)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseExtendsUseCaseMoniker Id="f10bc98c-fe40-4556-b138-738e96dc7a16" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="d8d5beec-12c8-4fb9-82a3-d4529a342762" />
+        <useCaseShapeMoniker Id="456d2a2c-6403-4e69-bed2-1257a5ad359e" />
+      </nodes>
+    </extendsConnector>
+    <genericShape Id="468ff003-6762-4876-bb62-24678e70d76c" absoluteBounds="0.625, 1.625, 2, 0.75">
+      <subjectMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/Subject1" />
+    </genericShape>
+    <genericConnector Id="dd5c06fe-b58f-4a4c-9806-8c292b8c822b" edgePoints="[(2.625 : 2); (4.9375 : 2); (4.9375 : 3.04547032855685)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <subjectReferencesUseCaseMoniker Id="46ac30ed-0ee4-4b5a-9a43-ab4bc9ac7541" />
+      <nodes>
+        <genericShapeMoniker Id="468ff003-6762-4876-bb62-24678e70d76c" />
+        <useCaseShapeMoniker Id="d8d5beec-12c8-4fb9-82a3-d4529a342762" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="1d79b334-3383-4218-947b-afba398d7aa1" edgePoints="[(2.625 : 1.7812475); (4.0625 : 1.7812475); (4.0625 : 1.45452967144315)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <subjectReferencesUseCaseMoniker Id="806e1706-a4a5-4c10-b32e-ff9a71f29da3" />
+      <nodes>
+        <genericShapeMoniker Id="468ff003-6762-4876-bb62-24678e70d76c" />
+        <useCaseShapeMoniker Id="456d2a2c-6403-4e69-bed2-1257a5ad359e" />
+      </nodes>
+    </genericConnector>
+    <useCaseShape Id="e433ad42-f73f-4d66-a957-b39e9037cb9a" absoluteBounds="9.125, 3.125, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase5" />
+    </useCaseShape>
+    <useCaseShape Id="77df94f3-50fc-4d80-8ce6-db09840f1216" absoluteBounds="6, 0.875, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase6" />
+    </useCaseShape>
+    <genericShape Id="b0c6f42e-8f46-4459-bb95-1f766fa8232d" absoluteBounds="2.625, 7, 2, 0.75">
+      <subjectMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/Subject2" />
+    </genericShape>
+    <genericConnector Id="823284cc-ecb9-499d-b8ae-38459a9425f8" edgePoints="[(4.5 : 7); (4.5 : 6.27638539919628)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <subjectReferencesUseCaseMoniker Id="9263368e-7de0-4715-9323-bd48b09a933b" />
+      <nodes>
+        <genericShapeMoniker Id="b0c6f42e-8f46-4459-bb95-1f766fa8232d" />
+        <useCaseShapeMoniker Id="05f39d7f-8303-49fd-abde-f5f37e97bf8e" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="2ef525b7-69b3-4a01-9603-aa29c3a8e944" edgePoints="[(5.28125 : 3.25793854086204); (5.28125 : 1.67187375); (6.14651143568241 : 1.67187375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseIncludesUseCaseMoniker Id="6873498c-69b9-477f-bce9-a74689f5a064" />
+      <nodes>
+        <useCaseShapeMoniker Id="d8d5beec-12c8-4fb9-82a3-d4529a342762" />
+        <useCaseShapeMoniker Id="77df94f3-50fc-4d80-8ce6-db09840f1216" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="5bf3c399-1bcb-46e2-91b6-9cdf09dcaa23" edgePoints="[(8 : 3.625); (9.125 : 3.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseIncludesUseCaseMoniker Id="ffbd1071-bb26-489c-8bf8-888a2798931e" />
+      <nodes>
+        <useCaseShapeMoniker Id="eb30f94a-3f50-453e-99dc-4ec2d37d3864" />
+        <useCaseShapeMoniker Id="e433ad42-f73f-4d66-a957-b39e9037cb9a" />
+      </nodes>
+    </genericConnector>
+    <useCaseShape Id="091a2fd6-0174-42e3-9952-5d424441b784" absoluteBounds="8.75, 1.125, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase7" />
+    </useCaseShape>
+    <useCaseShape Id="674d465d-d884-46f1-b87e-08ccff8b2f2f" absoluteBounds="11.5, 3.375, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase8" />
+    </useCaseShape>
+    <genericConnector Id="5fb16585-6e45-4b88-b8a9-c059624dfcb6" edgePoints="[(7.78125 : 3.27206095112297); (7.78125 : 2.03125); (8.29166666666667 : 2.03125 : JumpStart); (8.45833333333333 : 2.03125 : JumpEnd); (9.06277910688646 : 2.03125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseIncludesUseCaseMoniker Id="419951d2-9a93-4460-bfc1-2c755a342e3a" />
+      <nodes>
+        <useCaseShapeMoniker Id="eb30f94a-3f50-453e-99dc-4ec2d37d3864" />
+        <useCaseShapeMoniker Id="091a2fd6-0174-42e3-9952-5d424441b784" />
+      </nodes>
+    </genericConnector>
+    <useCaseShape Id="bf0f025a-41b6-4092-816f-9deb72a64840" absoluteBounds="11.375, 1.625, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase9" />
+    </useCaseShape>
+    <useCaseShape Id="2d5d26d8-d36a-4b2d-8baf-416b026dfeb8" absoluteBounds="9.125, 4.375, 1.5, 1">
+      <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase10" />
+    </useCaseShape>
+    <genericConnector Id="556d554f-b3f5-4191-baaf-52767a0d7d2d" edgePoints="[(7.25 : 4.125); (7.25 : 4.875); (9.125 : 4.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseIncludesUseCaseMoniker Id="079f1e2a-6e4b-43e4-b0ea-a636fd67d7bc" />
+      <nodes>
+        <useCaseShapeMoniker Id="eb30f94a-3f50-453e-99dc-4ec2d37d3864" />
+        <useCaseShapeMoniker Id="2d5d26d8-d36a-4b2d-8baf-416b026dfeb8" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="cb369010-fd1a-4728-a2ea-86fda3fe88cb" edgePoints="[(10.6011843774139 : 3.75); (11.5238156225861 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseIncludesUseCaseMoniker Id="7ebbe998-11ec-43cf-8b6a-7adadba28e6c" />
+      <nodes>
+        <useCaseShapeMoniker Id="e433ad42-f73f-4d66-a957-b39e9037cb9a" />
+        <useCaseShapeMoniker Id="674d465d-d884-46f1-b87e-08ccff8b2f2f" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="f4fd65a7-1b4f-4f5f-8566-b19025721259" edgePoints="[(10.46875 : 3.31952336877885); (10.46875 : 2.40625); (11.5049020364692 : 2.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <useCaseIncludesUseCaseMoniker Id="0d20a1a1-cc8e-4263-93f1-44d5eb5373a5" />
+      <nodes>
+        <useCaseShapeMoniker Id="e433ad42-f73f-4d66-a957-b39e9037cb9a" />
+        <useCaseShapeMoniker Id="bf0f025a-41b6-4092-816f-9deb72a64840" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="2fdbf63e-a469-4eff-94c4-f72096b12fb4" edgePoints="[(2.625 : 2.2187525); (4.41666666666667 : 2.2187525 : JumpStart); (4.58333333333333 : 2.2187525 : JumpEnd); (4.85416666666667 : 2.2187525 : JumpStart); (5.02083333333333 : 2.2187525 : JumpEnd); (5.19791666666667 : 2.2187525 : JumpStart); (5.36458333333333 : 2.2187525 : JumpEnd); (6.75 : 2.2187525); (6.75 : 1.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <subjectReferencesUseCaseMoniker Id="18d47df7-4fed-459b-810e-ffa4010dddf8" />
+      <nodes>
+        <genericShapeMoniker Id="468ff003-6762-4876-bb62-24678e70d76c" />
+        <useCaseShapeMoniker Id="77df94f3-50fc-4d80-8ce6-db09840f1216" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="312da91f-0851-4cc8-9f49-f71cc93835da" edgePoints="[(2.625 : 2.09374875); (4.85416666666667 : 2.09374875 : JumpStart); (5.02083333333333 : 2.09374875 : JumpEnd); (5.19791666666667 : 2.09374875 : JumpStart); (5.36458333333333 : 2.09374875 : JumpEnd); (7.671875 : 2.09374875); (7.671875 : 3.21160135764616)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <subjectReferencesUseCaseMoniker Id="c79bf768-bce7-44e5-b572-6071b9688fa4" />
+      <nodes>
+        <genericShapeMoniker Id="468ff003-6762-4876-bb62-24678e70d76c" />
+        <useCaseShapeMoniker Id="eb30f94a-3f50-453e-99dc-4ec2d37d3864" />
+      </nodes>
+    </genericConnector>
+    <genericConnector Id="31df610a-6dcf-44a6-ae19-2af122e011f7" edgePoints="[(1.625 : 2.375); (1.625 : 2.625); (4.85416666666667 : 2.625 : JumpStart); (5.02083333333333 : 2.625 : JumpEnd); (8.375 : 2.625); (8.375 : 1.5781255); (8.75330310177962 : 1.5781255)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <subjectReferencesUseCaseMoniker Id="d3585a7b-03d2-4f47-8330-af39a815aa8e" />
+      <nodes>
+        <genericShapeMoniker Id="468ff003-6762-4876-bb62-24678e70d76c" />
+        <useCaseShapeMoniker Id="091a2fd6-0174-42e3-9952-5d424441b784" />
+      </nodes>
+    </genericConnector>
+  </nestedChildShapes>
+</uCUSDiagram>

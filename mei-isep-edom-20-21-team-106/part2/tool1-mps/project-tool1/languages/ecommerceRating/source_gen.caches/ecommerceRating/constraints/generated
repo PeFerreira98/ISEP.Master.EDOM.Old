@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="a4x8ycly9b935l4uf2qm3kdcraqsu5a">
+  <files names="ApprovalProcess_Constraints.java:ApprovalStep_Constraints.java:Attribute_Constraints.java:BooleanType_Constraints.java:Comment_Constraints.java:ConstraintsAspectDescriptor.java:DoubleType_Constraints.java:FloatType_Constraints.java:IntType_Constraints.java:Item_Constraints.java:Model_Constraints.java:Rate_Constraints.java:Review_Constraints.java:StringType_Constraints.java:User_Constraints.java" />
+</product>
+

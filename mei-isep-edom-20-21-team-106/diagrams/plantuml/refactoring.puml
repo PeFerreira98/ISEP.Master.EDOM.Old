@@ -1,0 +1,61 @@
+@startuml
+note "Refactoring\nName must start with upper case" as N1
+
+note "Refactoring\nCan't reference itself" as N2
+
+class Item{
+  Name : string
+}
+
+class Review{
+  name : string
+}
+
+class Comment{
+  name : string
+}
+
+class User{
+  name : string
+}
+
+class UserType{
+  name : string
+}
+
+class Attribute{
+  name : string
+}
+
+class Rate{
+  name : string
+}
+
+class ApprovalProcess{
+  name : string
+}
+class ApprovalStart{
+  name : string
+}
+class ApprovalStep{
+  name : string
+}
+class ApprovalOutcome{
+  name : string
+}
+
+N1 .. Item
+N1 .. Review
+N1 .. Comment
+N1 .. User
+N1 .. UserType
+N1 .. Rate
+N1 .. Attribute
+N1 .. ApprovalProcess
+N1 .. ApprovalStart
+N1 .. ApprovalStep
+N1 .. ApprovalOutcome
+
+N2 .. ApprovalStep
+
+@enduml

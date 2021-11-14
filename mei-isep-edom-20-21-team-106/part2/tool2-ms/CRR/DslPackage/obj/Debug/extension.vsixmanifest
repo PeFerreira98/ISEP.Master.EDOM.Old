@@ -1,0 +1,23 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="e03ca39d-1a01-4136-8599-83502dd51572" Version="1.0.0.0" Language="en-US" Publisher="Edom" />
+    <DisplayName>CRR</DisplayName>
+    <Description>Description for Edom.CRR.CRR</Description>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Version="[16.0,17.0)" Id="Microsoft.VisualStudio.Community" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.6,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" Version="[16.0,17.0)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Edom.CRR.DslPackage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Edom.CRR.DslPackage.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Edom.CRR.Dsl.dll" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
+  </Assets>
+</PackageManifest>

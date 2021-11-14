@@ -1,0 +1,151 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\GorgeousSandwich.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+package crr.<#= this.Model.Name.ToLower() #>;
+
+interface IUser {
+    void execute();
+}
+
+<#
+if(null != this.Model.Users.Any())
+{
+    foreach(var user in this.Model.Users)
+    {
+#>
+
+class <#= user.Name #> implements IUser
+{
+    public int Id;
+
+<#
+    foreach(var attr in user.Attributes)
+    {
+#>
+    public <#= attr.DataType.Name #> <#= attr.Name #>;
+<#
+    }
+#>
+
+    public <#= user.Name #>(){}
+
+    public <#= user.Name #>(int id
+<#
+    foreach(var attr in user.Attributes)
+    {
+#>
+    , <#= attr.DataType.Name #> <#= attr.Name #>
+<#
+    }
+#>
+    )
+    {
+        this.Id = id;
+<#
+    foreach(var attr in user.Attributes)
+    {
+#>
+        this.<#= attr.Name #> = <#= attr.Name #>;
+<#
+    }
+#>
+    }
+
+    public String toString()
+    {
+        var res = "Id: " + this.Id + ";";
+<#
+    foreach(var attr in user.Attributes)
+    {
+#>
+        res += "\n<#= attr.Name #>: " + this.<#= attr.Name #> + ";";
+<#
+    }
+#>
+
+        return res;
+    }
+
+    @Override
+    public void execute()
+    {
+        int selection = -1;
+        var input = new java.util.Scanner(System.in);
+
+        while (true)
+        {
+            System.out.println("Please select option: ");
+
+            System.out.println("0- Exit");
+            System.out.println("1 - List <#= this.Model.Item.Name #>s");
+<# 
+var i = 2;
+if(null != user.Comment) 
+{
+#>
+            System.out.println("<#= i #> - <#= this.Model.Comment.Name #> <#= this.Model.Item.Name #>");
+<# 
+    i++;
+}
+if(null != user.Rate) 
+{
+#>
+            System.out.println("<#= i #> - <#= this.Model.Rate.Name #> <#= this.Model.Item.Name #>");
+<# 
+    i++;
+} 
+#>
+
+            try
+            {
+                selection = Integer.parseInt(input.nextLine());
+            } 
+            catch (Exception ex)
+            {
+                System.out.println("Invalid option!");
+                continue;
+            }
+
+            switch (selection)
+            {
+                case 0:
+                    return;
+                case 1:
+                    Utils.displayItems();
+                    break;
+<# 
+i = 2;
+if(null != user.Comment) 
+{
+#>
+                case <#= i #>:
+                    Utils.create<#= this.Model.Comment.Name #>(this);
+                    break;
+<# 
+    i++;
+}
+if(null != user.Rate) 
+{
+#>
+                case <#= i #>:
+                    Utils.create<#= this.Model.Rate.Name #>(this);
+                    break;
+<# 
+    i++;
+} 
+#>
+                default:
+                    System.out.println("Invalid option!");
+                    break;
+            } 
+        }
+    }
+}
+<#
+    }
+}
+#>

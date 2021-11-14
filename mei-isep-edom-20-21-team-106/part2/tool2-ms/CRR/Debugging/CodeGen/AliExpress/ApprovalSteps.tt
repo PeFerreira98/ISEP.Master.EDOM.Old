@@ -1,0 +1,120 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\AliExpress.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(this.Model.ApprovalProcesses.Any())
+{
+#>
+package crr.<#= this.Model.Name.ToLower() #>;
+
+import java.util.HashMap;
+<#
+foreach(var approval in this.Model.ApprovalProcesses )
+{
+    foreach(var step in approval.Steps )
+    {
+#>
+
+abstract class <#= step.Name #>
+{
+<#
+if(null != approval.Comment)
+{
+#>
+    public boolean execute(<#= approval.Comment.Name #> comment, HashMap<String, Object> args)
+    {
+        if(validate(comment))
+        {
+<#
+    if(null != step.TargetScucessStep)
+    {
+#>
+            return SApprovalFactory.create<#= step.TargetScucessStep.Name #>().execute(comment, null);
+<#
+    }
+    else
+    {
+#>
+            return true;
+<#
+    }
+#>
+        }
+        else
+        {
+<#
+    if(null != step.TargetFailureStep)
+    {
+#>
+            return SApprovalFactory.create<#= step.TargetFailureStep.Name #>().execute(comment, null);
+<#
+    }
+    else
+    {
+#>
+            return false;
+<#
+    }
+#>
+        }
+    }
+
+    protected abstract boolean validate(<#= approval.Comment.Name #> comment);
+<#
+}
+
+if(null != approval.Rate)
+{
+#>
+	public boolean execute(<#= approval.Rate.Name #> rate, HashMap<String, Object> args)
+    {
+        if(this.validate(rate))
+        {
+<#
+    if(null != step.TargetScucessStep)
+    {
+#>
+            return SApprovalFactory.create<#= step.TargetScucessStep.Name #>().execute(rate, null);
+<#
+    }
+    else
+    {
+#>
+            return true;
+<#
+    }
+#>
+        }
+        else
+        {
+<#
+    if(null != step.TargetFailureStep)
+    {
+#>
+            return SApprovalFactory.create<#= step.TargetFailureStep.Name #>().execute(rate, null);
+<#
+    }
+    else
+    {
+#>
+            return false;
+<#
+    }
+#>
+        }
+    }
+
+    protected abstract boolean validate(<#= approval.Rate.Name #> rate);
+<#
+}
+#>
+}
+<#
+    }
+}
+}
+#>

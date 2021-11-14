@@ -1,0 +1,178 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".puml" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='TestModel.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+@startuml
+
+	interface IUser {
+		execute() : void
+	}
+
+	class <#= this.Model.Item.Name #> <<Item>> {
+		Id : int
+		<#
+		  foreach (Edom.CRR.Attribute attr in this.Model.Item.Attributes)
+		  {
+		#>
+			<#= attr.Name #> : <#= attr.DataType.Name #>
+		<#    
+		  }
+		#>
+	}
+
+	<#
+	  if(null != this.Model.Item.Rate)
+	  {
+	#>
+		<#= this.Model.Item.Name #> "1" *-- "*" <#= this.Model.Item.Rate.Name #>
+	<#
+	  }
+
+	  if(null != this.Model.Item.Comment)
+	  {
+	#>
+		<#= this.Model.Item.Name #> "1" *-- "*" <#= this.Model.Item.Comment.Name #>
+	<#
+	  }
+
+  foreach (User item in this.Model.Users)
+  {
+#>
+	class <#= item.Name #> <<User>> {
+		Id : int
+		<#
+		  foreach (Edom.CRR.Attribute attr in item.Attributes)
+		  {
+		#>
+			<#= attr.Name #> : <#= attr.DataType.Name #>
+		<#    
+		  }
+		#>
+		execute() : void
+	}
+
+	<#= item.Name #> <|-- IUser
+
+<#    
+  }
+
+  if(null != this.Model.Rate)
+  {
+#>
+	class <#= this.Model.Rate.Name #> <<Rate>> {
+		Id : int
+		Author : IUser
+		<#
+		  foreach (Edom.CRR.Attribute attr in this.Model.Rate.Attributes)
+		  {
+		#>
+			<#= attr.Name #> : <#= attr.DataType.Name #>
+		<#    
+		  }
+		#>
+	}
+
+	<#
+	  if(null != this.Model.Rate.Review)
+	  {
+	#>
+		<#= this.Model.Rate.Name #> "1" *-- "1" <#= this.Model.Rate.Review.Name #> 
+	<#
+	  }
+	  foreach (User item in this.Model.Rate.Users)
+	  {
+	#>
+		<#= this.Model.Rate.Name #> "*" o-- "1" <#= item.Name #>
+
+	<#
+	  }
+	  if(null != this.Model.Rate.ApprovalProcess)
+	  {
+	#>
+		<#= this.Model.Rate.Name #> -> ApprovalProcess 
+	<#
+	  }  
+  }
+
+  if(null != this.Model.Review)
+  {
+#>
+	class <#= this.Model.Review.Name #> <<Review>> {
+		Id : int
+		<#
+		  foreach (Edom.CRR.Attribute attr in this.Model.Review.Attributes)
+		  {
+		#>
+			<#= attr.Name #> : <#= attr.DataType.Name #>
+		<#    
+		  }
+		#>
+	}
+
+	<#
+	  if(null != this.Model.Review.ApprovalProcess)
+	  {
+	#>
+		<#= this.Model.Review.Name #> -> ApprovalProcess 
+	<#
+	  }
+  }
+
+  // Comment
+  if(null != this.Model.Comment)
+  {
+#>
+	class <#= this.Model.Comment.Name #> <<Comment>> {
+		Id : int
+		Author : User
+		<#
+		  foreach (Edom.CRR.Attribute attr in this.Model.Comment.Attributes)
+		  {
+		#>
+			<#= attr.Name #> : <#= attr.DataType.Name #>
+		<#    
+		  }
+		#>
+	}
+
+	<#
+	  foreach (User item in this.Model.Comment.Users)
+	  {
+	#>
+		<#= this.Model.Comment.Name #> "*" o-- "1" <#= item.Name #>
+
+	<#
+	  }
+
+	  if(null != this.Model.Comment.ApprovalProcess)
+	  {
+	#>
+		<#= this.Model.Comment.Name #> "1" o-- "1" <#= this.Model.Comment.ApprovalProcess.Name #>
+	<#
+	  }
+	#>
+<#    
+  }
+#>
+
+<#
+  if(this.Model?.ApprovalProcesses?.Any() ?? false)
+  {
+#>
+	class ApprovalProcess{
+		initApprovalProcess() : boolean
+	}
+
+	class ApprovalStep{
+		execute() : boolean
+	}
+
+	ApprovalProcess "*" *-- "1..*" ApprovalStep 
+<#    
+  }
+#>
+
+@enduml

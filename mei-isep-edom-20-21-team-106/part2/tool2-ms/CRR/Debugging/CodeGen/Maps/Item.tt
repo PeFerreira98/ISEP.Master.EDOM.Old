@@ -1,0 +1,108 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\Maps.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(null != this.Model.Item)
+{
+#>
+
+package crr.<#= this.Model.Name.ToLower() #>;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class <#= this.Model.Item.Name #>
+{
+    public int Id;
+
+<#
+    if(null != this.Model.Item.Comment)
+    {
+#>
+    public final List<<#= this.Model.Item.Comment.Name #>> <#= this.Model.Item.Comment.Name #>s = new ArrayList<>();
+<#
+    }
+    if(null != this.Model.Item.Rate)
+    {
+#>
+    public final List<<#= this.Model.Item.Rate.Name #>> <#= this.Model.Item.Rate.Name #>s = new ArrayList<>();
+<#
+    }
+    foreach(var attr in this.Model.Item.Attributes)
+    {
+#>
+
+    public <#= attr.DataType.Name #> <#= attr.Name #>;
+<#
+    }
+#>
+
+    public <#= this.Model.Item.Name #>(){}
+
+    public <#= this.Model.Item.Name #>(int id
+<#
+    foreach(var attr in this.Model.Item.Attributes)
+    {
+#>
+    , <#= attr.DataType.Name #> <#= attr.Name #>
+<#
+    }
+#>
+    )
+    {
+        this.Id = id;
+<#
+    foreach(var attr in this.Model.Item.Attributes)
+    {
+#>
+        this.<#= attr.Name #> = <#= attr.Name #>;
+<#
+    }
+#>
+    }
+
+    public String toString(){
+        var res = "Id: " + this.Id + ";";
+<#
+    foreach(var attr in this.Model.Item.Attributes)
+    {
+#>
+        res += "\n<#= attr.Name #>: " + this.<#= attr.Name #> + ";";
+<#
+    }
+
+    if(null != this.Model.Item.Comment)
+    {
+#>
+
+        res += "\n<#= this.Model.Item.Comment.Name #>s:\n";
+        for (var comment: <#= this.Model.Item.Comment.Name #>s<# if (null != this.Model.Comment.ApprovalProcess) { #>.stream().filter(c -> c.Approved).toArray()<# } #>) {
+            res += null == comment ? "" : comment.toString();
+            res += "\n-----------\n";
+        }
+<#
+    }
+    if(null != this.Model.Item.Rate)
+    {
+#>
+
+        res += "\n<#= this.Model.Item.Rate.Name #>s:\n";
+        for (var rate: <#= this.Model.Item.Rate.Name #>s<# if (null != this.Model.Rate.ApprovalProcess) { #>.stream().filter(c -> c.Approved).toArray()<# } #>)
+        {
+            res += null == rate ? "" : rate.toString();
+            res += "\n-----------\n";
+        }
+<#
+    }
+#>
+
+        return res;
+    }
+}
+<#
+}
+#>

@@ -1,0 +1,48 @@
+﻿
+
+
+@startuml
+
+
+	class Item <<Item>> {
+					ID : String
+					Name : String
+			}
+
+			Item "1" *-- "*" Rate
+	
+	
+	class User <<User>> {
+					ID : String
+			}
+
+
+	class Rate <<Rate>> {
+					ID : String
+			}
+
+			Rate "1" *-- "1" Review 
+	
+	Rate "*" o-- "1" User
+
+	
+	class Review <<Review>> {
+					ID : String
+					Content : String
+			}
+
+			Review "1" o-- "1" ApprovalProcess 
+	
+
+
+	class ApprovalProcess{
+					ID : String
+			}
+
+	class Approval Steps{
+					ID : String
+			}
+
+	ApprovalProcess "*" o-- "1..*" ApprovalSteps 
+
+@enduml

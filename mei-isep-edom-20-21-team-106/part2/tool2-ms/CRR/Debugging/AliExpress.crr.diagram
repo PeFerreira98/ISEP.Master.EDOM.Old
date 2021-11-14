@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cRRDiagram dslVersion="1.0.0.0" Id="926fe890-5157-4f2f-b600-2a22ca027343" absoluteBounds="0, 0, 11.5, 8.5" name="TestInvalid">
+  <modelMoniker Id="875c9f7b-1798-4900-acca-855a7683c02b" />
+  <nestedChildShapes>
+    <attributesShape Id="863a71da-41c0-4c8e-8289-4e0de8f0623f" absoluteBounds="7, 0.5, 1.5, 1">
+      <attributeMoniker Id="5e014cd9-6036-4f03-96d7-7051b68a7410" />
+    </attributesShape>
+    <attributesShape Id="a308e8c9-90c5-445d-a464-e53bd588431c" absoluteBounds="6.625, 2.375, 1.5, 1">
+      <attributeMoniker Id="0b8893f1-2cc4-4b07-8c8b-b3a987fe9a5f" />
+    </attributesShape>
+    <attributesShape Id="093129dd-0d4f-4a6e-a55d-af8b4085c7b4" absoluteBounds="7.625, 3.5, 1.5, 1">
+      <attributeMoniker Id="ac798db1-7b4b-4b35-8090-57475c3df475" />
+    </attributesShape>
+    <attributesShape Id="01d4fed2-0c39-449b-badb-46cb89eb9fd8" absoluteBounds="7.625, 4.75, 1.5, 1">
+      <attributeMoniker Id="54ffb6c0-8b01-4a49-8aa4-1c3c41c0d39d" />
+    </attributesShape>
+    <userElementShape Id="d8e89d57-2a89-47f0-b32d-1b62d0473158" absoluteBounds="1, 4.25, 1.5, 1">
+      <userMoniker Id="f2d7ecbf-7a19-4491-9e63-a394d7e86bf7" />
+    </userElementShape>
+    <dataTypeElementShape Id="cfe367b3-b578-4f7d-8c02-95521a22d42c" absoluteBounds="9.75, 1.5, 1.5, 1">
+      <dataTypeMoniker Id="cf25a536-3fcc-444f-8111-cbd5e13523d5" />
+    </dataTypeElementShape>
+    <dataTypeElementShape Id="fc03dd0b-ae51-4ee6-9370-7ed443fb0cd4" absoluteBounds="9.75, 3.375, 1.5, 1">
+      <dataTypeMoniker Id="d9f9a3b2-cbf8-46b5-94fc-611ab8f92fbe" />
+    </dataTypeElementShape>
+    <rateElementShape Id="e021e2c8-8ab7-4f90-a99a-b066cd4f7a7c" absoluteBounds="2.5, 0.5, 1.5, 1">
+      <rateMoniker Id="b4b08a0c-5386-45e4-b2f5-3af6150afd09" />
+    </rateElementShape>
+    <reviewElementShape Id="4dc7a653-207b-4ee2-bcc4-3d1ccf50254d" absoluteBounds="0.75, 1.875, 1.5, 1">
+      <reviewMoniker Id="0ae0009c-54f2-4968-8a76-bef908235238" />
+    </reviewElementShape>
+    <elementsConnector Id="402664cf-07af-4186-9930-2fdf02b10bb5" edgePoints="[(1.75 : 4.25); (1.75 : 3.125); (3.23014361979167 : 3.125 : JumpStart); (3.39681028645833 : 3.125 : JumpEnd); (3.52213760416667 : 3.125 : JumpStart); (3.68880427083333 : 3.125 : JumpEnd); (4.25 : 3.125); (4.25 : 0.7343755); (7.11458819947263 : 0.7343755)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <userReferencesAttributesMoniker Id="04091974-311d-4f13-9c83-f87dc8666c48" />
+      <nodes>
+        <userElementShapeMoniker Id="d8e89d57-2a89-47f0-b32d-1b62d0473158" />
+        <attributesShapeMoniker Id="863a71da-41c0-4c8e-8289-4e0de8f0623f" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="e1cdb93d-8b0a-4110-adc8-99c27d499786" edgePoints="[(8.49853372293772 : 0.96875); (10.5 : 0.96875); (10.5 : 1.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <attributeReferencesDataTypeMoniker Id="b4cac508-9a9d-4349-87a2-b06d2f6e1ce4" />
+      <nodes>
+        <attributesShapeMoniker Id="863a71da-41c0-4c8e-8289-4e0de8f0623f" />
+        <dataTypeElementShapeMoniker Id="cfe367b3-b578-4f7d-8c02-95521a22d42c" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="45943a66-8ebd-4ffd-a9bd-cdd1d44b1135" edgePoints="[(8.12353367597052 : 2.9062505); (10.5 : 2.9062505); (10.5 : 2.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <attributeReferencesDataTypeMoniker Id="d2b84e98-6823-488e-8884-744744e55632" />
+      <nodes>
+        <attributesShapeMoniker Id="a308e8c9-90c5-445d-a464-e53bd588431c" />
+        <dataTypeElementShapeMoniker Id="cfe367b3-b578-4f7d-8c02-95521a22d42c" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="f51ef047-da31-4527-bfeb-08d5dbb90eb1" edgePoints="[(9.11911755623692 : 3.9375); (9.75588244376308 : 3.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <attributeReferencesDataTypeMoniker Id="011cebf2-5c80-4aba-bbf1-cdf433e47be7" />
+      <nodes>
+        <attributesShapeMoniker Id="093129dd-0d4f-4a6e-a55d-af8b4085c7b4" />
+        <dataTypeElementShapeMoniker Id="fc03dd0b-ae51-4ee6-9370-7ed443fb0cd4" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="1f8576c4-1e35-43f6-bd29-24c7ed75ed79" edgePoints="[(3.6054709375 : 1.5); (3.6054709375 : 5.0625); (7.67973139183478 : 5.0625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <rateReferencesAttributesMoniker Id="898fd0b9-db64-41b8-af64-0805638d9c83" />
+      <nodes>
+        <rateElementShapeMoniker Id="e021e2c8-8ab7-4f90-a99a-b066cd4f7a7c" />
+        <attributesShapeMoniker Id="01d4fed2-0c39-449b-badb-46cb89eb9fd8" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="ca374edf-74db-4727-ab67-1769c21c8d9d" edgePoints="[(3.02148296875 : 1.5); (3.02148296875 : 2.375); (2.25 : 2.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <rateReferencesReviewMoniker Id="21c17880-cc8f-4e46-8854-95cbe128d64a" />
+      <nodes>
+        <rateElementShapeMoniker Id="e021e2c8-8ab7-4f90-a99a-b066cd4f7a7c" />
+        <reviewElementShapeMoniker Id="4dc7a653-207b-4ee2-bcc4-3d1ccf50254d" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="311486d5-359c-44f9-9113-09a0f439de4b" edgePoints="[(2.25 : 2.71875); (3.23014361979167 : 2.71875 : JumpStart); (3.39681028645833 : 2.71875 : JumpEnd); (3.52213760416667 : 2.71875 : JumpStart); (3.68880427083333 : 2.71875 : JumpEnd); (4.16666666666667 : 2.71875 : JumpStart); (4.33333333333333 : 2.71875 : JumpEnd); (5.41666666666667 : 2.71875 : JumpStart); (5.58333333333333 : 2.71875 : JumpEnd); (6.66256168030138 : 2.71875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <reviewReferencesAttributesMoniker Id="9b6514a6-17d3-466a-894e-6f1b1d9cfb1b" />
+      <nodes>
+        <reviewElementShapeMoniker Id="4dc7a653-207b-4ee2-bcc4-3d1ccf50254d" />
+        <attributesShapeMoniker Id="a308e8c9-90c5-445d-a464-e53bd588431c" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="4fd7e2d1-c50b-4598-a983-ac927a239570" edgePoints="[(3.313476953125 : 1.5); (3.313476953125 : 4.65625); (2.5 : 4.65625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <rateReferencesUsersMoniker Id="1a374389-0d73-4888-ab7e-edae1b3331e9" />
+      <nodes>
+        <rateElementShapeMoniker Id="e021e2c8-8ab7-4f90-a99a-b066cd4f7a7c" />
+        <userElementShapeMoniker Id="d8e89d57-2a89-47f0-b32d-1b62d0473158" />
+      </nodes>
+    </elementsConnector>
+    <itemElementShape Id="8dae81f0-1745-4d34-a30f-34cfd4122173" absoluteBounds="4.75, 1.5, 1.5, 1">
+      <itemMoniker name="/875c9f7b-1798-4900-acca-855a7683c02b/Item" />
+    </itemElementShape>
+    <elementsConnector Id="1fb946c2-bd52-44c6-a528-28a62140a17f" edgePoints="[(5.5 : 2.5); (5.5 : 4); (7.625 : 4)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <itemReferencesAttributesMoniker Id="7a98c436-ca80-4d5e-b845-f02cfb38a526" />
+      <nodes>
+        <itemElementShapeMoniker Id="8dae81f0-1745-4d34-a30f-34cfd4122173" />
+        <attributesShapeMoniker Id="093129dd-0d4f-4a6e-a55d-af8b4085c7b4" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="a877d4d5-8261-4fa4-a534-0eaddc6c43e4" edgePoints="[(5.9062525 : 1.5); (5.9062525 : 0.854615384615385); (7.03240508946809 : 0.854615384615385)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <itemReferencesAttributesMoniker Id="81b7db29-a507-42e5-b453-e1d0ff66919f" />
+      <nodes>
+        <itemElementShapeMoniker Id="8dae81f0-1745-4d34-a30f-34cfd4122173" />
+        <attributesShapeMoniker Id="863a71da-41c0-4c8e-8289-4e0de8f0623f" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="f36f0bde-d904-4610-abd6-ecc14206a9b6" edgePoints="[(5.5 : 1.5); (5.5 : 0.96875); (4.33333333333333 : 0.968749999999999 : JumpStart); (4.16666666666667 : 0.96875 : JumpEnd); (4 : 0.96875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <itemReferencesRateMoniker Id="f0093d0b-b74b-4ffb-9079-42c1372a4098" />
+      <nodes>
+        <itemElementShapeMoniker Id="8dae81f0-1745-4d34-a30f-34cfd4122173" />
+        <rateElementShapeMoniker Id="e021e2c8-8ab7-4f90-a99a-b066cd4f7a7c" />
+      </nodes>
+    </elementsConnector>
+    <attributesShape Id="ab01be2f-acda-45b9-9604-77a833ccf5db" absoluteBounds="7.625, 1.5, 1.5, 1">
+      <attributeMoniker Id="7c466312-ec96-4953-b4fc-2e01097ab08b" />
+    </attributesShape>
+    <elementsConnector Id="d67209d1-b30f-4afd-81f3-75a8b7ec6fb6" edgePoints="[(9.125 : 2); (9.75 : 2)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <attributeReferencesDataTypeMoniker Id="7fb984e8-fe9e-43e7-94b6-6f9cb9239d57" />
+      <nodes>
+        <attributesShapeMoniker Id="ab01be2f-acda-45b9-9604-77a833ccf5db" />
+        <dataTypeElementShapeMoniker Id="cfe367b3-b578-4f7d-8c02-95521a22d42c" />
+      </nodes>
+    </elementsConnector>
+    <elementsConnector Id="17056fa5-004c-4a81-999b-33b8630741cf" edgePoints="[(6.25 : 1.9375); (7.63088244376308 : 1.9375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <itemReferencesAttributesMoniker Id="f033c805-a2ab-4963-bc3b-576a4fdfa956" />
+      <nodes>
+        <itemElementShapeMoniker Id="8dae81f0-1745-4d34-a30f-34cfd4122173" />
+        <attributesShapeMoniker Id="ab01be2f-acda-45b9-9604-77a833ccf5db" />
+      </nodes>
+    </elementsConnector>
+    <dataTypeElementShape Id="c9642bac-1753-4e44-8893-2671158fe702" absoluteBounds="9.75, 4.75, 1.5, 1">
+      <dataTypeMoniker Id="99cd48f1-f1c0-4c80-b9bc-57837cf3403e" />
+    </dataTypeElementShape>
+    <elementsConnector Id="e76f388d-6768-4234-9ec5-91fe47ff86c0" edgePoints="[(9.125 : 5.25); (9.75 : 5.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <attributeReferencesDataTypeMoniker Id="fb09481a-ccac-4013-bcb9-f35b83de9e8b" />
+      <nodes>
+        <attributesShapeMoniker Id="01d4fed2-0c39-449b-badb-46cb89eb9fd8" />
+        <dataTypeElementShapeMoniker Id="c9642bac-1753-4e44-8893-2671158fe702" />
+      </nodes>
+    </elementsConnector>
+  </nestedChildShapes>
+</cRRDiagram>

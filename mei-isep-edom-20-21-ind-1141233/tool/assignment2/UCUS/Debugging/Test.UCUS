@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="61037f92-a1ba-474e-beb0-4f35b7d55bb3" xmlns="http://schemas.microsoft.com/dsltools/UCUS">
+  <elements>
+    <useCase Id="ba0af07e-da92-4cd4-b519-a27b585fd843" name="UseCase1">
+      <targetIncludedUseCases>
+        <useCaseIncludesUseCase Id="6abbe1a8-c177-4aa4-b72c-6b6999bf9e08">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase3" />
+        </useCaseIncludesUseCase>
+        <useCaseIncludesUseCase Id="6873498c-69b9-477f-bce9-a74689f5a064">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase6" />
+        </useCaseIncludesUseCase>
+      </targetIncludedUseCases>
+      <targetExtendedUseCases>
+        <useCaseExtendsUseCase Id="f10bc98c-fe40-4556-b138-738e96dc7a16">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase2" />
+        </useCaseExtendsUseCase>
+      </targetExtendedUseCases>
+    </useCase>
+    <useCase Id="417004f0-a923-4dd3-bc52-8f9090fa5756" name="UseCase2" />
+    <useCase Id="f26e3e68-72a8-49af-b08a-082db65aa2c7" name="UseCase3">
+      <targetIncludedUseCases>
+        <useCaseIncludesUseCase Id="ffbd1071-bb26-489c-8bf8-888a2798931e">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase5" />
+        </useCaseIncludesUseCase>
+        <useCaseIncludesUseCase Id="419951d2-9a93-4460-bfc1-2c755a342e3a">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase7" />
+        </useCaseIncludesUseCase>
+        <useCaseIncludesUseCase Id="079f1e2a-6e4b-43e4-b0ea-a636fd67d7bc">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase10" />
+        </useCaseIncludesUseCase>
+      </targetIncludedUseCases>
+    </useCase>
+    <useCase Id="de5b7ed1-155a-41a6-b668-bb5647102ec8" name="UseCase4" />
+    <useCase Id="7fd1028a-05fa-4eca-9403-0fa3e9306d8b" name="UseCase5">
+      <targetIncludedUseCases>
+        <useCaseIncludesUseCase Id="7ebbe998-11ec-43cf-8b6a-7adadba28e6c">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase8" />
+        </useCaseIncludesUseCase>
+        <useCaseIncludesUseCase Id="0d20a1a1-cc8e-4263-93f1-44d5eb5373a5">
+          <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase9" />
+        </useCaseIncludesUseCase>
+      </targetIncludedUseCases>
+    </useCase>
+    <useCase Id="4c67f5ef-3faf-47ae-bd05-9381bbeb207a" name="UseCase6" />
+    <useCase Id="88e798ba-f081-413e-8414-ecd98926ee3e" name="UseCase7" />
+    <useCase Id="c4726111-1416-47f5-b944-bc87a45391be" name="UseCase8" />
+    <useCase Id="66280fcf-22b1-4bdb-9518-a9ef69b3fdf7" name="UseCase9" />
+    <useCase Id="5a4c66af-a4e3-4a4e-bfe2-f66493a2864e" name="UseCase10" />
+  </elements>
+  <actors>
+    <modelHasActors Id="37b8b605-bd4e-4deb-87e9-6d827906a75a">
+      <actor Id="ab953856-6760-49f4-9829-60f2a7b42a7f" name="Actor1">
+        <useCase>
+          <actorPerformsUseCase Id="f498eb85-61a1-464e-b150-a458d238596e">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase1" />
+          </actorPerformsUseCase>
+        </useCase>
+      </actor>
+    </modelHasActors>
+    <modelHasActors Id="9d0e4d86-6562-4e46-84f8-9d70a93c7fae">
+      <actor Id="77d453ae-1367-45ce-b03c-2aca6cea015b" name="Actor2">
+        <useCase>
+          <actorPerformsUseCase Id="11ce3cfc-3564-49c3-a2b1-2c93eaa39a26">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase4" />
+          </actorPerformsUseCase>
+        </useCase>
+      </actor>
+    </modelHasActors>
+  </actors>
+  <subjects>
+    <modelHasSubjects Id="d057b4d4-7dc0-4ff0-9ae6-40f10b5f8b60">
+      <subject Id="0819de8d-5aa3-4cb6-b558-d1d68010322a" name="Subject1">
+        <useCases>
+          <subjectReferencesUseCase Id="46ac30ed-0ee4-4b5a-9a43-ab4bc9ac7541">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase1" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="806e1706-a4a5-4c10-b32e-ff9a71f29da3">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase2" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="18d47df7-4fed-459b-810e-ffa4010dddf8">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase6" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="c79bf768-bce7-44e5-b572-6071b9688fa4">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase3" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="d3585a7b-03d2-4f47-8330-af39a815aa8e">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase7" />
+          </subjectReferencesUseCase>
+        </useCases>
+      </subject>
+    </modelHasSubjects>
+    <modelHasSubjects Id="ae2fee02-df62-4df0-a338-dbceb8274fe4">
+      <subject Id="fcad286d-0bcd-47a7-8c56-bf5609d43be1" name="Subject2">
+        <useCases>
+          <subjectReferencesUseCase Id="9263368e-7de0-4715-9323-bd48b09a933b">
+            <useCaseMoniker name="/61037f92-a1ba-474e-beb0-4f35b7d55bb3/UseCase4" />
+          </subjectReferencesUseCase>
+        </useCases>
+      </subject>
+    </modelHasSubjects>
+  </subjects>
+</model>

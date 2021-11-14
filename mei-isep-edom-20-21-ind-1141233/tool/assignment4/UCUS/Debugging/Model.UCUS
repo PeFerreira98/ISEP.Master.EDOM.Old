@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<model xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="68045fb9-b521-41d2-82bd-9479d4ec3169" xmlns="http://schemas.microsoft.com/dsltools/UCUS">
+  <useCases>
+    <useCase Id="ac77c011-b41f-4f35-8c9d-0086c28c4e72" name="ReviewProduct">
+      <targetIncludedUseCases>
+        <useCaseIncludesUseCase Id="5980a7fd-1b9e-42d6-a28b-caacd53507b4">
+          <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/InsertPicture" />
+        </useCaseIncludesUseCase>
+      </targetIncludedUseCases>
+    </useCase>
+    <useCase Id="d9274751-a0cf-44ee-8495-62df03f8fa89" name="InsertPicture" />
+  </useCases>
+  <actors>
+    <modelHasActors Id="e3b643f3-80e6-408b-8e56-4f088420505a">
+      <actor Id="24536135-54f4-4b4b-9cef-e35783af8f7c" name="User">
+        <useCase>
+          <actorPerformsUseCase Id="7482091d-b131-4c2b-852c-fa3508375751">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/ReviewProduct" />
+          </actorPerformsUseCase>
+        </useCase>
+      </actor>
+    </modelHasActors>
+  </actors>
+  <subjects>
+    <modelHasSubjects Id="e8f63e12-5374-47fe-8ff3-2297b2f9e58e">
+      <subject Id="68064097-00d0-4121-b9ff-84b9b81c148d" name="EcommerceSite">
+        <useCases>
+          <subjectReferencesUseCase Id="d19379f3-0ab0-47e9-a36c-9f75aa0f12c7">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/ReviewProduct" />
+          </subjectReferencesUseCase>
+          <subjectReferencesUseCase Id="c693ed61-0bbc-4573-9856-9d0c4b580781">
+            <useCaseMoniker name="/68045fb9-b521-41d2-82bd-9479d4ec3169/InsertPicture" />
+          </subjectReferencesUseCase>
+        </useCases>
+      </subject>
+    </modelHasSubjects>
+  </subjects>
+</model>

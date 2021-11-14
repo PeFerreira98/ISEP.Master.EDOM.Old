@@ -1,0 +1,1779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Edom.CRR.CRRDomainModel.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CRR</value>
+    <comment>Description for DslLibrary &apos;CRR&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CRRDomainModel.DisplayName" xml:space="preserve">
+    <value>CRR</value>
+    <comment>DisplayName for DslLibrary &apos;CRR&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Model.Description" xml:space="preserve">
+    <value>The root in which all other elements are embedded. Appears as a diagram.</value>
+    <comment>Description for DomainClass &apos;Model&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainClass &apos;Model&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Model/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Model.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Model&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Model/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Model&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Item.Description" xml:space="preserve">
+    <value>Elements embedded in the model. Appear as boxes on the diagram.</value>
+    <comment>Description for DomainClass &apos;Item&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Item.DisplayName" xml:space="preserve">
+    <value>Item</value>
+    <comment>DisplayName for DomainClass &apos;Item&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Item/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Item.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Item&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Item/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Item&apos;</comment>
+  </data>
+  <data name="Edom.CRR.User.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.User</value>
+    <comment>Description for DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="Edom.CRR.User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="Edom.CRR.User/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.User.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="Edom.CRR.User/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;User&apos;</comment>
+  </data>
+  <data name="Edom.CRR.DataType.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.DataType</value>
+    <comment>Description for DomainClass &apos;DataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.DataType.DisplayName" xml:space="preserve">
+    <value>Data Type</value>
+    <comment>DisplayName for DomainClass &apos;DataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.DataType/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.DataType.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;DataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.DataType/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;DataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Attribute</value>
+    <comment>Description for DomainClass &apos;Attribute&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainClass &apos;Attribute&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Attribute/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Attribute.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Attribute&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Attribute/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Attribute&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Comment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Comment</value>
+    <comment>Description for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Comment/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Comment.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Comment/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Comment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Rate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Rate</value>
+    <comment>Description for DomainClass &apos;Rate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Rate.DisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>DisplayName for DomainClass &apos;Rate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Rate/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Rate.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Rate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Rate/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Rate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Review.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Review</value>
+    <comment>Description for DomainClass &apos;Review&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Review.DisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>DisplayName for DomainClass &apos;Review&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Review/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.Review.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Review&apos;</comment>
+  </data>
+  <data name="Edom.CRR.Review/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Review&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcess</value>
+    <comment>Description for DomainClass &apos;ApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcess/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcess.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;ApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcess/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;ApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStep</value>
+    <comment>Description for DomainClass &apos;ApprovalStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStep.DisplayName" xml:space="preserve">
+    <value>Approval Step</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStep/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStep.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;ApprovalStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStep/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;ApprovalStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStart.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStart</value>
+    <comment>Description for DomainClass &apos;ApprovalStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStart.DisplayName" xml:space="preserve">
+    <value>Approval Start</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStart/Name.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStart.Name</value>
+    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;ApprovalStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStart/Name.DisplayName" xml:space="preserve">
+    <value>Name</value>
+    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;ApprovalStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem.Description" xml:space="preserve">
+    <value>Embedding relationship between the Model and Elements</value>
+    <comment>Description for DomainClass &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem.DisplayName" xml:space="preserve">
+    <value>Model Has Item</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem/Model.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Item</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem/Element.Description" xml:space="preserve">
+    <value></value>
+    <comment>Description for DomainRole &apos;Element&apos; on DomainRelationship &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem/Element.DisplayName" xml:space="preserve">
+    <value>Element</value>
+    <comment>DisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasItem/Element.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;ModelHasItem&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasUsers</value>
+    <comment>Description for DomainClass &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers.DisplayName" xml:space="preserve">
+    <value>Model Has Users</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers/Model.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasUsers.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Users</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers/User.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasUsers.User</value>
+    <comment>Description for DomainRole &apos;User&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers/User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasUsers/User.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;ModelHasUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasDataTypes</value>
+    <comment>Description for DomainClass &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes.DisplayName" xml:space="preserve">
+    <value>Model Has Data Types</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes/Model.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasDataTypes.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Data Types</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes/DataType.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasDataTypes.DataType</value>
+    <comment>Description for DomainRole &apos;DataType&apos; on DomainRelationship &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes/DataType.DisplayName" xml:space="preserve">
+    <value>Data Type</value>
+    <comment>DisplayName for DomainRole &apos;DataType&apos; on DomainRelationship &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasDataTypes/DataType.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DataType&apos; on DomainRelationship &apos;ModelHasDataTypes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasAttributes</value>
+    <comment>Description for DomainClass &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes.DisplayName" xml:space="preserve">
+    <value>Model Has Attributes</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes/Model.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasAttributes.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes/Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasAttributes.Attribute</value>
+    <comment>Description for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes/Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasAttributes/Attribute.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ModelHasAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesAttributes</value>
+    <comment>Description for DomainClass &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes.DisplayName" xml:space="preserve">
+    <value>Item References Attributes</value>
+    <comment>DisplayName for DomainClass &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes/Item.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesAttributes.Item</value>
+    <comment>Description for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes/Item.DisplayName" xml:space="preserve">
+    <value>Item</value>
+    <comment>DisplayName for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes/Item.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes/Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesAttributes.Attribute</value>
+    <comment>Description for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes/Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesAttributes/Attribute.PropertyDisplayName" xml:space="preserve">
+    <value>Items</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ItemReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesAttributes</value>
+    <comment>Description for DomainClass &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes.DisplayName" xml:space="preserve">
+    <value>Comment References Attributes</value>
+    <comment>DisplayName for DomainClass &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes/Comment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesAttributes.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes/Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesAttributes.Attribute</value>
+    <comment>Description for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes/Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesAttributes/Attribute.PropertyDisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;CommentReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesAttributes</value>
+    <comment>Description for DomainClass &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes.DisplayName" xml:space="preserve">
+    <value>Rate References Attributes</value>
+    <comment>DisplayName for DomainClass &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes/Rate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesAttributes.Rate</value>
+    <comment>Description for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes/Rate.DisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>DisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes/Rate.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes/Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesAttributes.Attribute</value>
+    <comment>Description for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes/Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesAttributes/Attribute.PropertyDisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;RateReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.AttributeReferencesDataType</value>
+    <comment>Description for DomainClass &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType.DisplayName" xml:space="preserve">
+    <value>Attribute References Data Type</value>
+    <comment>DisplayName for DomainClass &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType/Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.AttributeReferencesDataType.Attribute</value>
+    <comment>Description for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType/Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType/Attribute.PropertyDisplayName" xml:space="preserve">
+    <value>Data Type</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType/DataType.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.AttributeReferencesDataType.DataType</value>
+    <comment>Description for DomainRole &apos;DataType&apos; on DomainRelationship &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType/DataType.DisplayName" xml:space="preserve">
+    <value>Data Type</value>
+    <comment>DisplayName for DomainRole &apos;DataType&apos; on DomainRelationship &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributeReferencesDataType/DataType.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;DataType&apos; on DomainRelationship &apos;AttributeReferencesDataType&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasComment</value>
+    <comment>Description for DomainClass &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment.DisplayName" xml:space="preserve">
+    <value>Model Has Comment</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment/Model.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasComment.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment/Comment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasComment.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasComment/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ModelHasComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasRate</value>
+    <comment>Description for DomainClass &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate.DisplayName" xml:space="preserve">
+    <value>Model Has Rate</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate/Model.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasRate.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate/Rate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasRate.Rate</value>
+    <comment>Description for DomainRole &apos;Rate&apos; on DomainRelationship &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate/Rate.DisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>DisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasRate/Rate.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;ModelHasRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasReview</value>
+    <comment>Description for DomainClass &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview.DisplayName" xml:space="preserve">
+    <value>Model Has Review</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview/Model.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasReview.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview/Review.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasReview.Review</value>
+    <comment>Description for DomainRole &apos;Review&apos; on DomainRelationship &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview/Review.DisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>DisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasReview/Review.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;ModelHasReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesReview</value>
+    <comment>Description for DomainClass &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview.DisplayName" xml:space="preserve">
+    <value>Rate References Review</value>
+    <comment>DisplayName for DomainClass &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview/Rate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesReview.Rate</value>
+    <comment>Description for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview/Rate.DisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>DisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview/Rate.PropertyDisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview/Review.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesReview.Review</value>
+    <comment>Description for DomainRole &apos;Review&apos; on DomainRelationship &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview/Review.DisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>DisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesReview/Review.PropertyDisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;RateReferencesReview&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ReviewReferencesAttributes</value>
+    <comment>Description for DomainClass &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes.DisplayName" xml:space="preserve">
+    <value>Review References Attributes</value>
+    <comment>DisplayName for DomainClass &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes/Review.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ReviewReferencesAttributes.Review</value>
+    <comment>Description for DomainRole &apos;Review&apos; on DomainRelationship &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes/Review.DisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>DisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes/Review.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes/Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ReviewReferencesAttributes.Attribute</value>
+    <comment>Description for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes/Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesAttributes/Attribute.PropertyDisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;ReviewReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.UserReferencesAttributes</value>
+    <comment>Description for DomainClass &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes.DisplayName" xml:space="preserve">
+    <value>User References Attributes</value>
+    <comment>DisplayName for DomainClass &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes/User.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.UserReferencesAttributes.User</value>
+    <comment>Description for DomainRole &apos;User&apos; on DomainRelationship &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes/User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes/User.PropertyDisplayName" xml:space="preserve">
+    <value>Attributes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes/Attribute.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.UserReferencesAttributes.Attribute</value>
+    <comment>Description for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes/Attribute.DisplayName" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>DisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserReferencesAttributes/Attribute.PropertyDisplayName" xml:space="preserve">
+    <value>Users</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Attribute&apos; on DomainRelationship &apos;UserReferencesAttributes&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesComment</value>
+    <comment>Description for DomainClass &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment.DisplayName" xml:space="preserve">
+    <value>Item References Comment</value>
+    <comment>DisplayName for DomainClass &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment/Item.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesComment.Item</value>
+    <comment>Description for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment/Item.DisplayName" xml:space="preserve">
+    <value>Item</value>
+    <comment>DisplayName for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment/Item.PropertyDisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment/Comment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesComment.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesComment/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Item</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;ItemReferencesComment&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesRate</value>
+    <comment>Description for DomainClass &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate.DisplayName" xml:space="preserve">
+    <value>Item References Rate</value>
+    <comment>DisplayName for DomainClass &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate/Item.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesRate.Item</value>
+    <comment>Description for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate/Item.DisplayName" xml:space="preserve">
+    <value>Item</value>
+    <comment>DisplayName for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate/Item.PropertyDisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Item&apos; on DomainRelationship &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate/Rate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemReferencesRate.Rate</value>
+    <comment>Description for DomainRole &apos;Rate&apos; on DomainRelationship &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate/Rate.DisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>DisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemReferencesRate/Rate.PropertyDisplayName" xml:space="preserve">
+    <value>Item</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;ItemReferencesRate&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesUsers</value>
+    <comment>Description for DomainClass &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers.DisplayName" xml:space="preserve">
+    <value>Rate References Users</value>
+    <comment>DisplayName for DomainClass &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers/Rate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesUsers.Rate</value>
+    <comment>Description for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers/Rate.DisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>DisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers/Rate.PropertyDisplayName" xml:space="preserve">
+    <value>Users</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers/User.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesUsers.User</value>
+    <comment>Description for DomainRole &apos;User&apos; on DomainRelationship &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers/User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesUsers/User.PropertyDisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>PropertyDisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;RateReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesUsers</value>
+    <comment>Description for DomainClass &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers.DisplayName" xml:space="preserve">
+    <value>Comment References Users</value>
+    <comment>DisplayName for DomainClass &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers/Comment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesUsers.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Users</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers/User.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesUsers.User</value>
+    <comment>Description for DomainRole &apos;User&apos; on DomainRelationship &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers/User.DisplayName" xml:space="preserve">
+    <value>User</value>
+    <comment>DisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesUsers/User.PropertyDisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>PropertyDisplayName for DomainRole &apos;User&apos; on DomainRelationship &apos;CommentReferencesUsers&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasApprovalProcesses</value>
+    <comment>Description for DomainClass &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses.DisplayName" xml:space="preserve">
+    <value>Model Has Approval Processes</value>
+    <comment>DisplayName for DomainClass &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses/Model.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasApprovalProcesses.Model</value>
+    <comment>Description for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses/Model.DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>DisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses/Model.PropertyDisplayName" xml:space="preserve">
+    <value>Approval Processes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Model&apos; on DomainRelationship &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses/ApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ModelHasApprovalProcesses.ApprovalProcess</value>
+    <comment>Description for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses/ApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ModelHasApprovalProcesses/ApprovalProcess.PropertyDisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ModelHasApprovalProcesses&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStartReferencesStep</value>
+    <comment>Description for DomainClass &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep.DisplayName" xml:space="preserve">
+    <value>Approval Start References Step</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep/ApprovalStart.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStartReferencesStep.ApprovalStart</value>
+    <comment>Description for DomainRole &apos;ApprovalStart&apos; on DomainRelationship &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep/ApprovalStart.DisplayName" xml:space="preserve">
+    <value>Approval Start</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalStart&apos; on DomainRelationship &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep/ApprovalStart.PropertyDisplayName" xml:space="preserve">
+    <value>Step</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalStart&apos; on DomainRelationship &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep/ApprovalStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStartReferencesStep.ApprovalStep</value>
+    <comment>Description for DomainRole &apos;ApprovalStep&apos; on DomainRelationship &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep/ApprovalStep.DisplayName" xml:space="preserve">
+    <value>Approval Step</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalStep&apos; on DomainRelationship &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartReferencesStep/ApprovalStep.PropertyDisplayName" xml:space="preserve">
+    <value>Start</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalStep&apos; on DomainRelationship &apos;ApprovalStartReferencesStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStepReferencesTargetScucessStep</value>
+    <comment>Description for DomainClass &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep.DisplayName" xml:space="preserve">
+    <value>Approval Step References Target Scucess Step</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep/SourceApprovalStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStepReferencesTargetScucessStep.SourceApprovalStep</value>
+    <comment>Description for DomainRole &apos;SourceApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep/SourceApprovalStep.DisplayName" xml:space="preserve">
+    <value>Source Approval Step</value>
+    <comment>DisplayName for DomainRole &apos;SourceApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep/SourceApprovalStep.PropertyDisplayName" xml:space="preserve">
+    <value>Target Scucess Step</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep/TargetApprovalStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStepReferencesTargetScucessStep.TargetApprovalStep</value>
+    <comment>Description for DomainRole &apos;TargetApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep/TargetApprovalStep.DisplayName" xml:space="preserve">
+    <value>Target Approval Step</value>
+    <comment>DisplayName for DomainRole &apos;TargetApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetScucessStep/TargetApprovalStep.PropertyDisplayName" xml:space="preserve">
+    <value>Source Steps</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetScucessStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcessHasSteps</value>
+    <comment>Description for DomainClass &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps.DisplayName" xml:space="preserve">
+    <value>Approval Process Has Steps</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps/ApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcessHasSteps.ApprovalProcess</value>
+    <comment>Description for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps/ApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps/ApprovalProcess.PropertyDisplayName" xml:space="preserve">
+    <value>Steps</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps/ApprovalStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcessHasSteps.ApprovalStep</value>
+    <comment>Description for DomainRole &apos;ApprovalStep&apos; on DomainRelationship &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps/ApprovalStep.DisplayName" xml:space="preserve">
+    <value>Approval Step</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalStep&apos; on DomainRelationship &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasSteps/ApprovalStep.PropertyDisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalStep&apos; on DomainRelationship &apos;ApprovalProcessHasSteps&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcessHasStart</value>
+    <comment>Description for DomainClass &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart.DisplayName" xml:space="preserve">
+    <value>Approval Process Has Start</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart/ApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcessHasStart.ApprovalProcess</value>
+    <comment>Description for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart/ApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart/ApprovalProcess.PropertyDisplayName" xml:space="preserve">
+    <value>Start</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart/ApprovalStart.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcessHasStart.ApprovalStart</value>
+    <comment>Description for DomainRole &apos;ApprovalStart&apos; on DomainRelationship &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart/ApprovalStart.DisplayName" xml:space="preserve">
+    <value>Approval Start</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalStart&apos; on DomainRelationship &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessHasStart/ApprovalStart.PropertyDisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalStart&apos; on DomainRelationship &apos;ApprovalProcessHasStart&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesApprovalProcess</value>
+    <comment>Description for DomainClass &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Comment References Approval Process</value>
+    <comment>DisplayName for DomainClass &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess/Comment.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesApprovalProcess.Comment</value>
+    <comment>Description for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess/Comment.DisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>DisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess/Comment.PropertyDisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Comment&apos; on DomainRelationship &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess/ApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentReferencesApprovalProcess.ApprovalProcess</value>
+    <comment>Description for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess/ApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentReferencesApprovalProcess/ApprovalProcess.PropertyDisplayName" xml:space="preserve">
+    <value>Comment</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;CommentReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesApprovalProcess</value>
+    <comment>Description for DomainClass &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Rate References Approval Process</value>
+    <comment>DisplayName for DomainClass &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess/Rate.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesApprovalProcess.Rate</value>
+    <comment>Description for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess/Rate.DisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>DisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess/Rate.PropertyDisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Rate&apos; on DomainRelationship &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess/ApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateReferencesApprovalProcess.ApprovalProcess</value>
+    <comment>Description for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess/ApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateReferencesApprovalProcess/ApprovalProcess.PropertyDisplayName" xml:space="preserve">
+    <value>Rate</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;RateReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ReviewReferencesApprovalProcess</value>
+    <comment>Description for DomainClass &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Review References Approval Process</value>
+    <comment>DisplayName for DomainClass &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess/Review.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ReviewReferencesApprovalProcess.Review</value>
+    <comment>Description for DomainRole &apos;Review&apos; on DomainRelationship &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess/Review.DisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>DisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess/Review.PropertyDisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Review&apos; on DomainRelationship &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess/ApprovalProcess.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ReviewReferencesApprovalProcess.ApprovalProcess</value>
+    <comment>Description for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess/ApprovalProcess.DisplayName" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>DisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewReferencesApprovalProcess/ApprovalProcess.PropertyDisplayName" xml:space="preserve">
+    <value>Review</value>
+    <comment>PropertyDisplayName for DomainRole &apos;ApprovalProcess&apos; on DomainRelationship &apos;ReviewReferencesApprovalProcess&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStepReferencesTargetFailureStep</value>
+    <comment>Description for DomainClass &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep.DisplayName" xml:space="preserve">
+    <value>Approval Step References Target Failure Step</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep/SourceApprovalStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStepReferencesTargetFailureStep.SourceApprovalStep</value>
+    <comment>Description for DomainRole &apos;SourceApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep/SourceApprovalStep.DisplayName" xml:space="preserve">
+    <value>Source Approval Step</value>
+    <comment>DisplayName for DomainRole &apos;SourceApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep/SourceApprovalStep.PropertyDisplayName" xml:space="preserve">
+    <value>Target Failure Step</value>
+    <comment>PropertyDisplayName for DomainRole &apos;SourceApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep/TargetApprovalStep.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStepReferencesTargetFailureStep.TargetApprovalStep</value>
+    <comment>Description for DomainRole &apos;TargetApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep/TargetApprovalStep.DisplayName" xml:space="preserve">
+    <value>Target Approval Step</value>
+    <comment>DisplayName for DomainRole &apos;TargetApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepReferencesTargetFailureStep/TargetApprovalStep.PropertyDisplayName" xml:space="preserve">
+    <value>Source Approval Stepped</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TargetApprovalStep&apos; on DomainRelationship &apos;ApprovalStepReferencesTargetFailureStep&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ItemElementShape</value>
+    <comment>Description for DomainClass &apos;ItemElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ItemElementShape.DisplayName" xml:space="preserve">
+    <value>Item Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;ItemElementShape&apos;</comment>
+  </data>
+  <data name="ItemElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.AttributesShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.AttributesShape</value>
+    <comment>Description for DomainClass &apos;AttributesShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.AttributesShape.DisplayName" xml:space="preserve">
+    <value>Attributes Shape</value>
+    <comment>DisplayName for DomainClass &apos;AttributesShape&apos;</comment>
+  </data>
+  <data name="AttributesShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.UserElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.UserElementShape</value>
+    <comment>Description for DomainClass &apos;UserElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.UserElementShape.DisplayName" xml:space="preserve">
+    <value>User Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;UserElementShape&apos;</comment>
+  </data>
+  <data name="UserElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.DataTypeElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.DataTypeElementShape</value>
+    <comment>Description for DomainClass &apos;DataTypeElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.DataTypeElementShape.DisplayName" xml:space="preserve">
+    <value>Data Type Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;DataTypeElementShape&apos;</comment>
+  </data>
+  <data name="DataTypeElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.CommentElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CommentElementShape</value>
+    <comment>Description for DomainClass &apos;CommentElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CommentElementShape.DisplayName" xml:space="preserve">
+    <value>Comment Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;CommentElementShape&apos;</comment>
+  </data>
+  <data name="CommentElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.RateElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.RateElementShape</value>
+    <comment>Description for DomainClass &apos;RateElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.RateElementShape.DisplayName" xml:space="preserve">
+    <value>Rate Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;RateElementShape&apos;</comment>
+  </data>
+  <data name="RateElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.ReviewElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ReviewElementShape</value>
+    <comment>Description for DomainClass &apos;ReviewElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ReviewElementShape.DisplayName" xml:space="preserve">
+    <value>Review Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;ReviewElementShape&apos;</comment>
+  </data>
+  <data name="ReviewElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalProcessElementShape</value>
+    <comment>Description for DomainClass &apos;ApprovalProcessElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalProcessElementShape.DisplayName" xml:space="preserve">
+    <value>Approval Process Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalProcessElementShape&apos;</comment>
+  </data>
+  <data name="ApprovalProcessElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStartElementShape</value>
+    <comment>Description for DomainClass &apos;ApprovalStartElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStartElementShape.DisplayName" xml:space="preserve">
+    <value>Approval Start Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalStartElementShape&apos;</comment>
+  </data>
+  <data name="ApprovalStartElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalStepElementShape</value>
+    <comment>Description for DomainClass &apos;ApprovalStepElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalStepElementShape.DisplayName" xml:space="preserve">
+    <value>Approval Step Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalStepElementShape&apos;</comment>
+  </data>
+  <data name="ApprovalStepElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalOutcomeElementShape.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ApprovalOutcomeElementShape</value>
+    <comment>Description for DomainClass &apos;ApprovalOutcomeElementShape&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ApprovalOutcomeElementShape.DisplayName" xml:space="preserve">
+    <value>Approval Outcome Element Shape</value>
+    <comment>DisplayName for DomainClass &apos;ApprovalOutcomeElementShape&apos;</comment>
+  </data>
+  <data name="ApprovalOutcomeElementShapeNameDefaultText" xml:space="preserve">
+    <value>Name</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="Edom.CRR.ElementsConnector.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.ElementsConnector</value>
+    <comment>Description for DomainClass &apos;ElementsConnector&apos;</comment>
+  </data>
+  <data name="Edom.CRR.ElementsConnector.DisplayName" xml:space="preserve">
+    <value>Elements Connector</value>
+    <comment>DisplayName for DomainClass &apos;ElementsConnector&apos;</comment>
+  </data>
+  <data name="FormatList" xml:space="preserve">
+    <value>CRR (*.crr)|*.crr</value>
+    <comment>A list of file format specifiers for the Save dialog box</comment>
+  </data>
+  <data name="ModelExplorerTitle" xml:space="preserve">
+    <value>CRR Explorer</value>
+    <comment>Model Explorer Toolwindow title</comment>
+  </data>
+  <data name="Edom.CRR.CRRDiagram.Description" xml:space="preserve">
+    <value>Description for Edom.CRR.CRRDiagram</value>
+    <comment>Description for DomainClass &apos;CRRDiagram&apos;</comment>
+  </data>
+  <data name="Edom.CRR.CRRDiagram.DisplayName" xml:space="preserve">
+    <value>Minimal Language Diagram</value>
+    <comment>DisplayName for DomainClass &apos;CRRDiagram&apos;</comment>
+  </data>
+  <data name="CRRToolboxTab" xml:space="preserve">
+    <value>CRR</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="UserToolboxItem" xml:space="preserve">
+    <value>User</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="UserToolboxTooltip" xml:space="preserve">
+    <value>User</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ItemHasAttributeToolboxItem" xml:space="preserve">
+    <value>ItemHasAttribute</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ItemHasAttributeToolboxTooltip" xml:space="preserve">
+    <value>Item Has Attribute</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ItemToolboxItem" xml:space="preserve">
+    <value>Item</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ItemToolboxTooltip" xml:space="preserve">
+    <value>Item</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AttributeToolboxItem" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AttributeToolboxTooltip" xml:space="preserve">
+    <value>Attribute</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentToolboxItem" xml:space="preserve">
+    <value>Comment</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentToolboxTooltip" xml:space="preserve">
+    <value>Comment</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="DataTypeToolboxItem" xml:space="preserve">
+    <value>DataType</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="DataTypeToolboxTooltip" xml:space="preserve">
+    <value>Data Type</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AttributeHasDataTypeToolboxItem" xml:space="preserve">
+    <value>AttributeHasDataType</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AttributeHasDataTypeToolboxTooltip" xml:space="preserve">
+    <value>Attribute Has Data Type</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UserHasAttributeToolboxItem" xml:space="preserve">
+    <value>UserHasAttribute</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="UserHasAttributeToolboxTooltip" xml:space="preserve">
+    <value>User Has Attribute</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentHasAttributeToolboxItem" xml:space="preserve">
+    <value>CommentHasAttribute</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentHasAttributeToolboxTooltip" xml:space="preserve">
+    <value>Comment Has Attribute</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ItemHasCommentToolboxItem" xml:space="preserve">
+    <value>ItemHasComment</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ItemHasCommentToolboxTooltip" xml:space="preserve">
+    <value>Item Has Comment</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RateToolboxItem" xml:space="preserve">
+    <value>Rate</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RateToolboxTooltip" xml:space="preserve">
+    <value>Rate</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RateHasAttributesToolboxItem" xml:space="preserve">
+    <value>RateHasAttributes</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RateHasAttributesToolboxTooltip" xml:space="preserve">
+    <value>Rate Has Attributes</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ItemHasRateToolboxItem" xml:space="preserve">
+    <value>ItemHasRate</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ItemHasRateToolboxTooltip" xml:space="preserve">
+    <value>Item Has Rate</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ReviewToolboxItem" xml:space="preserve">
+    <value>Review</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ReviewToolboxTooltip" xml:space="preserve">
+    <value>Review</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RateHasReviewToolboxItem" xml:space="preserve">
+    <value>RateHasReview</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RateHasReviewToolboxTooltip" xml:space="preserve">
+    <value>Rate Has Review</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RateHasUserToolboxItem" xml:space="preserve">
+    <value>RateHasUser</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RateHasUserToolboxTooltip" xml:space="preserve">
+    <value>Rate Has User</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentHasUserToolboxItem" xml:space="preserve">
+    <value>CommentHasUser</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentHasUserToolboxTooltip" xml:space="preserve">
+    <value>Comment Has User</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ReviewHasAttributesToolboxItem" xml:space="preserve">
+    <value>ReviewHasAttributes</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ReviewHasAttributesToolboxTooltip" xml:space="preserve">
+    <value>Review Has Attributes</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ApprovalProcessToolboxItem" xml:space="preserve">
+    <value>ApprovalProcess</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ApprovalProcessToolboxTooltip" xml:space="preserve">
+    <value>Approval Process</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ApprovalStartToolboxItem" xml:space="preserve">
+    <value>ApprovalStart</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ApprovalStartToolboxTooltip" xml:space="preserve">
+    <value>Approval Start</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ApprovalStepToolboxItem" xml:space="preserve">
+    <value>ApprovalStep</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ApprovalStepToolboxTooltip" xml:space="preserve">
+    <value>Approval Step</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ApprovalStartHasStepToolboxItem" xml:space="preserve">
+    <value>ApprovalStartHasStep</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ApprovalStartHasStepToolboxTooltip" xml:space="preserve">
+    <value>Approval Start Has Step</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="CommentHasApprovalProcessToolboxItem" xml:space="preserve">
+    <value>CommentHasApprovalProcess</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="CommentHasApprovalProcessToolboxTooltip" xml:space="preserve">
+    <value>Comment Has Approval Process</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ReviewHasApprovalProcessToolboxItem" xml:space="preserve">
+    <value>ReviewHasApprovalProcess</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ReviewHasApprovalProcessToolboxTooltip" xml:space="preserve">
+    <value>Review Has Approval Process</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RateHasApprovalProcessToolboxItem" xml:space="preserve">
+    <value>RateHasApprovalProcess</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RateHasApprovalProcessToolboxTooltip" xml:space="preserve">
+    <value>Rate Has Approval Process</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ApprovalStepHasSuccessStepToolboxItem" xml:space="preserve">
+    <value>ApprovalStepHasSuccessStep</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ApprovalStepHasSuccessStepToolboxTooltip" xml:space="preserve">
+    <value>Approval Step Has Success Step</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="ApprovalStepHasFailureStepToolboxItem" xml:space="preserve">
+    <value>ApprovalStepHasFailureStep</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="ApprovalStepHasFailureStepToolboxTooltip" xml:space="preserve">
+    <value>Approval Step Has Failure Step</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="UnresolvedToolboxItem" xml:space="preserve">
+    <value>ToolboxItem {0} was not found</value>
+    <comment>Invalid toolId</comment>
+  </data>
+  <data name="UnsupportedToolboxFormat" xml:space="preserve">
+    <value>Unsupported toolbox format: {0}</value>
+    <comment>Unsupported format Id</comment>
+  </data>
+  <data name="UnrecognizedElementType" xml:space="preserve">
+    <value>ElementType {0} is not recognized as a type of domain class which belongs to this domain model.</value>
+    <comment>Incorrect ElementType passed in to Model.CreateElement method</comment>
+  </data>
+  <data name="UnrecognizedElementLinkType" xml:space="preserve">
+    <value>ElementLinkType {0} is not recognized as a type of domain relationship which belongs to this domain model.</value>
+    <comment>Incorrect ElementLinkType passed in to Model.CreateElementLink method</comment>
+  </data>
+  <data name="AmbiguousSchema" xml:space="preserve">
+    <value>More than one schema found for target namespace &apos;{0}&apos;, use the first one at &apos;{1}&apos;.</value>
+    <comment>Serialization Warning: AmbiguousSchema</comment>
+  </data>
+  <data name="ExpectingFullFormRelationship" xml:space="preserve">
+    <value>Element &apos;{0}&apos; is treated as the target role-player of a relationship &apos;{1}&apos; instance, which should be serialized in full-form.</value>
+    <comment>Serialization Warning: ExpectingFullFormRelationship</comment>
+  </data>
+  <data name="ExpectingShortFormRelationship" xml:space="preserve">
+    <value>Instances of relationship &apos;{0}&apos; should be serialized in short-form.</value>
+    <comment>Serialization Warning: ExpectingShortFormRelationship</comment>
+  </data>
+  <data name="IgnoredPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;, ignored.</value>
+    <comment>Serialization Warning: IgnoredPropertyValue</comment>
+  </data>
+  <data name="MissingId" xml:space="preserve">
+    <value>Missing &apos;Id&apos; attribute, a new Guid &apos;{0}&apos; is auto-generated.</value>
+    <comment>Serialization Warning: MissingId</comment>
+  </data>
+  <data name="MonikerResolvedToDuplicateLink" xml:space="preserve">
+    <value>Resolving moniker &apos;{0}&apos; causes a duplicate link to be created, so the link and the moniker are ignored.</value>
+    <comment>Serialization Warning: MonikerResolvedToDuplicateLink</comment>
+  </data>
+  <data name="NoSchema" xml:space="preserve">
+    <value>Cannot find a schema that defines target namespace &apos;{0}&apos;, schema validation skipped.</value>
+    <comment>Serialization Warning: NoSchema</comment>
+  </data>
+  <data name="UnexpectedXmlElement" xml:space="preserve">
+    <value>Unexpected XML element &apos;{0}&apos;, ignored.</value>
+    <comment>Serialization Warning: UnexpectedXmlElement</comment>
+  </data>
+  <data name="AmbiguousMoniker" xml:space="preserve">
+    <value>Ambiguous moniker &apos;{0}&apos; encountered. It is used for both &apos;{1}&apos; and &apos;{2}&apos;.</value>
+    <comment>Serialization Error: AmbiguousMoniker</comment>
+  </data>
+  <data name="CannotMonikerizeElement" xml:space="preserve">
+    <value>Instances of DomainClass &apos;{0}&apos; cannot be serialized as a moniker.
+A DomainClass can be serialized as a moniker only if 
+1) it has a defined/inherited DomainProperty marked as IsMonikerKey=true, or 
+2) it is marked/inherited with SerializeId=true.</value>
+    <comment>Serialization Error: CannotMonikerizeElement</comment>
+  </data>
+  <data name="CannotOpenDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotOpenDocument</comment>
+  </data>
+  <data name="CannotSaveDocument" xml:space="preserve">
+    <value>Error encountered, check Error List window for details.</value>
+    <comment>Serialization Error: CannotSaveDocument</comment>
+  </data>
+  <data name="DanglingRelationship" xml:space="preserve">
+    <value>Relationship &apos;{0}&apos; instance is missing target role-player.</value>
+    <comment>Serialization Error: DanglingRelationship</comment>
+  </data>
+  <data name="InvalidPropertyValue" xml:space="preserve">
+    <value>Invalid property value &apos;{0}&apos; for property &apos;{1}&apos; with type &apos;{2}&apos;.</value>
+    <comment>Serialization Error: InvalidPropertyValue</comment>
+  </data>
+  <data name="MissingMoniker" xml:space="preserve">
+    <value>Missing moniker. A moniker is expected in attribute &apos;{0}&apos;.</value>
+    <comment>Serialization Error: MissingMoniker</comment>
+  </data>
+  <data name="MissingTransaction" xml:space="preserve">
+    <value>This must be called within the context of an active transaction.</value>
+    <comment>Serialization Error: MissingTransaction</comment>
+  </data>
+  <data name="UnresolvedMoniker" xml:space="preserve">
+    <value>Cannot resolve moniker &apos;{0}&apos;.</value>
+    <comment>Serialization Error: UnresolvedMoniker</comment>
+  </data>
+  <data name="VersionMismatch" xml:space="preserve">
+    <value>Unsupported version &apos;{0}&apos;, can only support &apos;{1}&apos;.</value>
+    <comment>Serialization Error: VersionMismatch</comment>
+  </data>
+  <data name="CannotCloseExistingDiagramDocument" xml:space="preserve">
+    <value>Diagram file &apos;{0}&apos; cannot be closed.</value>
+    <comment>User cancel closing diagram file. Hence, the DSL model file cannot be opened</comment>
+  </data>
+  <data name="BindingErrorOccurred" xml:space="preserve">
+    <value>Extensions for this designer may not be found as a MEF binding error has occurred. The error that occurred was:
+{0}</value>
+    <comment>MEF binding error occurred - exception message being logged in the error window so the user is aware.</comment>
+  </data>
+  <data name="InvalidSaveRootElementType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid root element type.</value>
+    <comment>Exception message used if an invalid root element type is passed to IDomainModelSerializer.SaveModel / SaveModelAndDiagram</comment>
+  </data>
+  <data name="InvalidSaveDiagramType" xml:space="preserve">
+    <value>&apos;{0}&apos; is not a valid diagram type.</value>
+    <comment>Exception message used if an invalid diagram type is passed to IDomainModelSerializer.SaveModelAndDiagram</comment>
+  </data>
+  <data name="MinimumMultiplicityMissingLink" xml:space="preserve">
+    <value>{0} {1} has no {2}.</value>
+    <comment>Multiplicity underflow validation.</comment>
+  </data>
+  <data name="SaveOperationCancelled" xml:space="preserve">
+    <value>Save operation cancelled.</value>
+    <comment>Message when save is cancelled on validation errors</comment>
+  </data>
+  <data name="SaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors, continue save?</value>
+    <comment>Message when validation errors are found on save</comment>
+  </data>
+  <data name="UnloadableSaveValidationFailed" xml:space="preserve">
+    <value>There were validation errors. Continuing to save may cause the file to become unloadable, do you want to continue?</value>
+    <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="UserToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ItemHasAttributeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ItemToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AttributeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="DataTypeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AttributeHasDataTypeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="UserHasAttributeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentHasAttributeToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ItemHasCommentToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RateToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RateHasAttributesToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ItemHasRateToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ReviewToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RateHasReviewToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RateHasUserToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentHasUserToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ReviewHasAttributesToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ApprovalProcessToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ApprovalStartToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ApprovalStepToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ApprovalStartHasStepToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="CommentHasApprovalProcessToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ReviewHasApprovalProcessToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RateHasApprovalProcessToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ApprovalStepHasSuccessStepToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="ApprovalStepHasFailureStepToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+</root>
+
+

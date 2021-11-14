@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="3x7zz91rq93yf9y04dc4g90cwejr1v1">
+  <files names="ApprovalComment.java:Buyer.java:Comment.java:GeneralUser.java:IUser.java:IllegalWordsCheck.java:InvalidCharacterCheck.java:MinSizeCheck.java:MinSizeCommentCheck.java:Product.java:ProfanityCheck.java:Rate.java:RateApproval.java:Review.java:SApprovalFactory.java:TestModel.java:Utils.java" />
+</product>
+

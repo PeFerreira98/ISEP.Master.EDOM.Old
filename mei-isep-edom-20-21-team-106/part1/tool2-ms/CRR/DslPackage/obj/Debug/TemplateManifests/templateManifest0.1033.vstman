@@ -1,0 +1,32 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\CRR</RelativePathOnDisk>
+    <TemplateFileName>CSharp.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{501b01d0-e23f-4c21-a2d3-f2b5e9466f41}</TemplateID>
+        <Name Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="103" />
+        <Description Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="102" />
+        <Icon Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="201" />
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>CRR.crr</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VisualBasic\1033\CRR</RelativePathOnDisk>
+    <TemplateFileName>VisualBasic.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{cd72ce30-bb6e-4784-bf4f-f5d3542fb284}</TemplateID>
+        <Name Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="103" />
+        <Description Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="102" />
+        <Icon Package="{e03ca39d-1a01-4136-8599-83502dd51572}" ID="201" />
+        <ProjectType>VisualBasic</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>CRR.crr</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

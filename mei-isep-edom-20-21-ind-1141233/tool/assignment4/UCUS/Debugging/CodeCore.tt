@@ -1,0 +1,129 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ UCUS processor="UCUSDirectiveProcessor" requires="fileName='Model.UCUS'" #>
+
+// Generated material. Generating code in C# Master Race.
+
+package pt.isep.edom.atb.ucusdsl.proto1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Lets execute the "Model" with Default Behavior		
+		// ModelExecution.execute(null);
+		
+		// Lets execute the "Model" with Override Behavior
+		Factory f=new FactoryImpl();
+		ModelExecution.execute(f);		
+	}
+
+}
+
+public class ModelExecution {
+
+	public static void execute(Factory factory) {
+		// Setup default factory
+		SFactory.setInstance(factory);
+
+		// Execute the roles...
+		executeRoles();
+	}
+
+	private static void executeRoles() {
+		boolean exit = false;
+
+		java.util.Scanner in = new java.util.Scanner(System.in);
+
+		while (!exit) {
+			System.out.println("# Roles #");
+			System.out.println("Please select option:");
+
+			System.out.println("0- Exit");
+					<#
+			var i = 1;
+
+			foreach (Actor a in this.Model.Actors)
+			{
+		#>
+			System.out.println("<#= i #>- <#= a.Name #>");
+		<#
+			i++;
+			}
+		#>
+
+			// Read an integer from the input
+			int num = in.nextInt();
+
+			switch (num) {
+				case 0:
+					exit = true;
+					break;
+
+
+		<# i = 1;
+
+			foreach (Actor a in this.Model.Actors)
+			{
+		#>
+				case <#= i #>:
+					Role role = SFactory.getInstance().get<#= a.Name #>();
+					role.execute();
+					break;
+		<# i++; } #>
+				default:
+					exit=true;
+					break;
+			}
+		}
+	}
+}
+
+public class SFactory {
+
+	private static Factory factory=null;
+	
+	public static void setInstance(Factory f) {
+		factory=f;
+	}
+	
+	public static Factory getInstance() {
+		if (factory==null) {
+			factory=new FactoryImpl();
+		}
+		return factory;
+	}
+}
+
+
+public class FactoryImpl implements Factory {
+	// Use Cases
+<#
+  foreach (UseCase uc in this.Model.UseCases)
+  {
+#>
+	@Override
+	public Interaction get<#= uc.Name #>() {
+		// TODO Auto-generated method stub
+		return new <#= uc.Name #>();
+	}
+<#    
+  }
+#>
+
+	// Actors
+<#
+  foreach (Actor a in this.Model.Actors)
+  {
+#>
+	@Override
+	public Role get<#= a.Name #>() {
+		// TODO Auto-generated method stub
+		return new <#= a.Name #>();
+	}
+<#    
+  }
+#>
+
+}

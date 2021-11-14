@@ -1,0 +1,42 @@
+#Model AliExpress
+@startuml
+class Buyer{ 
+Id : string
+} 
+
+class Prodcut{
+Id : string
+Description : string
+}
+
+class Rate{
+Id : string
+}
+
+class Comment{
+Id : string
+}
+
+class Review{
+Id : string
+}
+
+class ApprovalProcess{
+Id : string
+}
+
+class Step{
+Id : string
+Name : string
+}
+
+Prodcut "1" -- "*" Comment
+
+Comment "*" -- "1" Buyer : "Author"
+Rate "*" -- "1" Buyer : "Author"
+Rate "1" -- "0..1" Review : "has"
+ApprovalProcess "1" -- "1..*" Step
+Step "*" -- "0..2" Step
+ApprovalProcess "1" -- "1" Review
+
+@enduml

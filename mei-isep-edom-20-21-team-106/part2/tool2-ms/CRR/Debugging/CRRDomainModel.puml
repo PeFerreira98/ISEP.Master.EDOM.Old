@@ -1,0 +1,70 @@
+﻿
+
+@startuml
+
+	interface IUser {
+		execute() : void
+	}
+
+	class Product <<Item>> {
+		Id : int
+					Name : String
+					Description : String
+			}
+
+			Product "1" *-- "*" Rate
+			Product "1" *-- "*" Comment
+		class Buyer <<User>> {
+		Id : int
+					Name : String
+				execute() : void
+	}
+
+	Buyer <|-- IUser
+
+	class GeneralUser <<User>> {
+		Id : int
+					Name : String
+				execute() : void
+	}
+
+	GeneralUser <|-- IUser
+
+	class Rate <<Rate>> {
+		Id : int
+		Author : IUser
+					Value : int
+			}
+
+			Rate "1" *-- "1" Review 
+			Rate "*" o-- "1" Buyer
+
+			Rate -> ApprovalProcess 
+		class Review <<Review>> {
+		Id : int
+					Content : String
+			}
+
+		class Comment <<Comment>> {
+		Id : int
+		Author : User
+					Content : String
+			}
+
+			Comment "*" o-- "1" Buyer
+
+			Comment "*" o-- "1" GeneralUser
+
+			Comment "1" o-- "1" ApprovalComment
+	
+	class ApprovalProcess{
+		initApprovalProcess() : boolean
+	}
+
+	class ApprovalStep{
+		execute() : boolean
+	}
+
+	ApprovalProcess "*" *-- "1..*" ApprovalStep 
+
+@enduml

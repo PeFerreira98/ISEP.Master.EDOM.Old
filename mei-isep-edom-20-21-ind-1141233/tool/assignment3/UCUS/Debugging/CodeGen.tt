@@ -1,0 +1,97 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ UCUS processor="UCUSDirectiveProcessor" requires="fileName='Model.UCUS'" #>
+
+// Generated material. Generating code in C# Master Race.
+
+package pt.isep.edom.atb.ucusdsl.proto1;
+
+<#
+  foreach (UseCase uc in this.Model.UseCases)
+  {
+#>
+public class <#= uc.Name #> implements Interaction {	
+	@Override
+	public void execute() {
+				
+		System.out.println("<#= uc.Name #>: Please add behaviour code");
+				
+		<#
+		  foreach (UseCase inc in uc.TargetIncludedUseCases)
+		  {
+		#>
+		// Calling included use case
+		Interaction inter=SFactory.getInstance().get<#= inc.Name #>();
+		inter.execute();
+		<#
+		  }
+		#>				
+	}			
+}
+<#
+  }
+#>
+
+// Actors
+<#
+  foreach (Actor a in this.Model.Actors)
+  {
+#>
+
+public class <#= a.Name #> implements Role {
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		boolean exit=false;
+
+		java.util.Scanner in = new java.util.Scanner(System.in);
+
+		while (!exit) {		
+			System.out.println("# <#= a.Name #> #");
+			System.out.println("Please select option:");
+			
+			System.out.println("0- Exit");
+		<#
+			var i = 1;
+
+			foreach (UseCase uc in a.UseCase)
+			{
+		#>
+			System.out.println("<#= i #>- <#= uc.Name #> (<#= uc.Subject.Name #>)");
+		<#
+			i++;
+			}
+		#>
+			// Read an integer from the input
+			int num = in.nextInt();
+
+			switch (num) {
+				case 0:
+					exit=true;
+					break;
+		<#
+			i = 1;
+
+			foreach (UseCase uc in a.UseCase)
+			{
+		#>
+				case <#= i #>:
+					Interaction app=SFactory.getInstance().get<#= uc.Name #>();
+					app.execute();
+	
+					break;
+		<#
+			i++;
+			}
+		#>
+				default:
+					exit=true;
+					break;
+			}		
+		}		
+	}		
+}
+<#    
+  }
+#>

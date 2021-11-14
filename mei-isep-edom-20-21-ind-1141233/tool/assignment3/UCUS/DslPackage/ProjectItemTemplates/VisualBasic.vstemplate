@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{759b6a10-20c9-44e8-99d8-60a33dcc864f}</TemplateID>
+		<Name Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="103"/>
+		<Description Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="102"/>
+		<Icon Package="{60d5beb3-730e-4418-b931-80567831080d}" ID="201" />
+		<ProjectType>VisualBasic</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>UCUS.UCUS</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.UCUS">UCUS.UCUS</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.UCUS.diagram">UCUS.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

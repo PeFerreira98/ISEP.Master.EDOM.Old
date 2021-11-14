@@ -1,0 +1,143 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".java" #>
+<#@ CRR processor="CRRDirectiveProcessor" requires="fileName='..\..\Maps.crr'" #>
+
+<#@ assembly name = "System.Core" #>
+<#@ import namespace="System.Linq" #>
+
+<#
+if(null != this.Model)
+{
+#>
+package crr.<#= this.Model.Name.ToLower() #>;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+class <#= this.Model.Name #>
+{
+    public static final List<<#= this.Model.Item.Name #>> <#= this.Model.Item.Name #>s = new ArrayList<>();
+    
+<#
+foreach(var user in this.Model.Users)
+{
+#>
+    public static final List<<#= user.Name #>> <#= user.Name #>s = new ArrayList<>();
+<#
+}
+#>
+
+    public static void main(String[] args)
+    {
+        seed();
+        userMenu();
+    }
+
+    public static void userMenu()
+    {
+        int selection = -1;
+        Scanner input = new Scanner(System.in);
+
+        while (true)
+        {
+            displayUserMenu();
+
+            try {
+                selection = Integer.parseInt(input.nextLine());
+            } catch (Exception ex) {
+                System.out.println("Invalid option!");
+                continue;
+            }
+
+            switch (selection)
+            {
+                case 0:
+                    return;
+<#
+int i = 1;
+
+foreach(var user in this.Model.Users)
+{
+#>
+                case <#= i #>:
+                    get<#= user.Name #>ById().execute();
+                    break;
+<#
+i++;
+}
+#>
+                default:
+                    System.out.println("Invalid option!");
+                    break;
+            }
+        }
+    }
+
+    private static void displayUserMenu()
+    {
+        System.out.println("Roles Menu");
+        System.out.println("0- Exit");
+<#
+i = 1;
+
+foreach(var user in this.Model.Users)
+{
+#>
+        System.out.println("<#= i #>- <#= user.Name #>");
+<#
+i++;
+}
+#>
+    }
+
+    private static void seed()
+    {
+        // add stuff to your liking e.g.
+<#
+for (i = 2; i <= 3; i++)
+{
+#>
+
+        //Products.add(new Product(<#= i #>, "Product Name <#= i #>", "Product Description <#= i #>"));
+<#
+    foreach(var user in this.Model.Users)
+    {
+#>
+        //<#= user.Name #>s.add(new <#= user.Name #>(<#= i #>, "<#= user.Name #> <#= i #>"));
+<#
+    }
+}
+#>
+    }
+
+<#
+foreach(var user in this.Model.Users)
+{
+#>
+    private static IUser get<#= user.Name #>ById()
+    {
+        Scanner input = new Scanner(System.in);
+
+        for (var user : <#= user.Name #>s)
+        {
+            System.out.println(user.toString());
+        }
+
+        int selection;
+        try {
+            selection = Integer.parseInt(input.nextLine());
+        } catch (Exception ex) {
+            System.out.println("Invalid option!");
+            return null;
+        }
+
+        return <#= user.Name #>s.stream().filter(b->b.Id == selection).findFirst().get();
+    }
+<#
+}
+#>
+}
+<#
+}
+#>
